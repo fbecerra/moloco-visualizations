@@ -1,0 +1,162 @@
+<head>
+    <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <section>
+        
+        <div id="geo-viz1"></div>
+        <div id="geo-viz4"></div>
+        
+    </section>
+
+    <script>
+
+        const drawBars = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
+            const textPadding = 7;
+
+            const margin = {top: 90, right: 30, bottom: 60, left: 90},
+                width = 460 - margin.left - margin.right,
+                height = 400 - margin.top - margin.bottom;
+
+            const svg = d3.select(divId)
+                .append("svg")
+                    .attr("width", width + margin.left + margin.right)
+                    .attr("height", height + margin.top + margin.bottom);
+
+            const g = svg.append("g")
+                .attr("transform",
+                    "translate(" + margin.left + "," + margin.top + ")");
+
+            const x = d3.scaleLinear()
+                .range([ 0, width]);
+
+            const y = d3.scaleBand()
+                .range([ 0, height ])
+                .padding(.15);
+
+            x.domain([0, d3.max(spend, d => d[xlabel])]);
+            y.domain(spend.map(d => d[ylabel]));
+
+            g.select('.y-axis').select(".domain").remove();
+            g.select('.y-axis').selectAll(".tick line").remove();
+
+            g.selectAll(".bar")
+                .data(spend)
+                .join("rect")
+                    .attr("class", "bar")
+                    .attr("x", x(0) )
+                    .attr("y", d => y(d[ylabel]))
+                    .attr("width", d => x(d[xlabel]))
+                    .attr("height", y.bandwidth() )
+                    .attr("fill", d => d[ylabel] === 'Others' ? "#ADD7F4" : "#0280FB");
+
+            g.selectAll(".country-name")
+                .data(spend)
+                .join("text")
+                    .attr("class", "country-name")
+                    .attr("x", -margin.left )
+                    .attr("y", d => y(d[ylabel]) + y.bandwidth() / 2 + 2)
+                    .style("dominant-baseline", "middle")
+                    .style("font-family", "Montserrat")
+                    .style("font-size", "14px")
+                    .text(d => d[ylabel]);
+
+            g.selectAll(".percentage")
+                .data(spend)
+                .join("text")
+                    .attr("class", "percentage")
+                    .attr("x", d => {
+                        if ((d[ylabel] === 'US') || (d[ylabel] === 'Others')) {
+                            return x(d[xlabel]) - textPadding;
+                        } else {
+                            return x(d[xlabel]) + textPadding;
+                        }
+                    })
+                    .attr("y", d => y(d['Market full name']) + y.bandwidth() / 2 + 2)
+                    .style("dominant-baseline", "middle")
+                    .style("font-family", "Space Grotesk")
+                    .style("font-size", "14px")
+                    .style("text-anchor", d => {
+                        if ((d[ylabel] === 'US') || (d[ylabel] === 'Others')) {
+                            return 'end';
+                        } else {
+                            return 'start';
+                        }
+                    })
+                    .style("fill", d => d[ylabel] === 'US' ? '#FFFFFF' : '#000000')
+                    .text(d => (d[xlabel] * 100).toFixed(1) + '%');
+
+            const titleSvg = svg.append("text")
+                    .attr("class", "viz-title")
+                    .attr("x", 0)
+                    .attr("y", 18);
+                    
+            titleSvg.selectAll("tspan")
+                .data(title)
+                .join("tspan")
+                    .attr("class", "viz-title")
+                    .style("font-family", "Montserrat")
+                    .style("font-size", "18px")
+                    .style("font-weight", 700)
+                    .attr("x", 0)
+                    .attr("dy", (_,i) => i * 22.5)
+                    .text(d => d);
+
+            svg.append("text")
+                .attr("class", "viz-subtitle")
+                .attr("x", 0)
+                .attr("y", 68)
+                .style("font-family", "Montserrat")
+                .style("font-size", "14px")
+                .style("font-weight", 400)
+                .text(subtitle);
+
+            svg.append("text")
+                .attr("class", "viz-sources")
+                .attr("x", 0)
+                .attr("y", height + margin.top + 40)
+                .style("font-family", "Montserrat")
+                .style("font-size", "14px")
+                .style("font-weight", 400)
+                .style("fill", "#808080")
+                .text(sources);  
+            
+        }
+        
+
+        Promise.all([
+            d3.csv("./data/data-viz1.csv"),
+            d3.csv("./data/data-viz4.csv")
+        ]).then((data) => {            
+
+            data[0].forEach(d => {
+                d['Percentage UA Spend'] = +d['Percentage UA Spend'];
+            });
+
+            data[1].forEach(d => {
+                d['Percentage revenue'] = +d['Percentage revenue'];
+            });
+
+            drawBars(data[0],
+                divId = "#geo-viz1",
+                xlabel = 'Percentage UA Spend',
+                ylabel = 'Market full name',
+                title = ["Three quarters of mobile games spend is", "concentrated in ten countries"],
+                subtitle = "Gaming spend for top countries, Aug 2023-Aug 2024",
+                sources = "Source: TBD"
+            )
+
+            drawBars(data[1],
+                divId = "#geo-viz4",
+                xlabel = 'Percentage revenue',
+                ylabel = 'Market full name',
+                title = ["Three quarters of mobile games revenue is", "concentrated in ten countries"],
+                subtitle = "Gaming revenue for top countries, Aug 2023-Aug 2024",
+                sources = "Source: TBD"
+            )
+            
+        })
+
+    </script>
+</body>
