@@ -1,0 +1,333 @@
+<head></head>
+    <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <style>
+
+        #select-dropdown {
+            line-height: 24px;
+            vertical-align: middle;
+        }
+
+        .dropbtn {
+        /* text-align: left; */
+            color: black;
+            padding: 1px 12px;
+            /* line-height: 150%; */
+            font-size: 14px;
+            border: 1px solid black;
+            cursor: pointer;
+            width: auto;
+            /* background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='28' viewBox='0 0 28 28' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"); */
+            background-image: url("../img/icon-chevron-down.svg");
+            background-repeat: no-repeat;
+            background-position-x: calc(100% - 12px);
+            background-position-y: 50%;
+            background-size: 16px;
+        }
+
+        .dropbtn svg {
+            padding-right: 10px;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            text-align: left;
+            /* margin: 5px 12px 5px 0px; */
+            position: relative;
+            display: block;
+            width: 126px;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 124px;
+            max-height: 360px;
+            /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+            z-index: 1000;
+            overflow: hidden;
+            background: #FFFFFF;
+            border: 1px solid black;
+            transform: translateY(-1px);
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            font-size: 14px;
+            color: #353535;
+            padding: 2px 12px;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd}
+
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {display:block;}
+
+    </style>
+</head>
+
+<body>
+    <section>
+        
+        <div id="geo-viz2"></div>
+        
+    </section>
+
+    <script>
+
+        d3.select("#geo-viz2")
+            .append("div")
+            .attr("class", "title")
+            .style("font-family", "Montserrat")
+            .style("font-size", "18px")
+            .style("font-weight", 700)
+            .html("Mobile gaming genres don't generate in-app revenue</br>the same way across markets");
+
+        d3.select("#geo-viz2")
+            .append("div")
+            .attr("class", "subtitle")
+            .style("font-family", "Montserrat")
+            .style("font-size", "14px")
+            .style("font-weight", 400)
+            .html("Percentage of estimated paid UA spend in top 20 markets split by Genre, Aug 2023-Aug 2024");
+
+        d3.select("#geo-viz2")
+            .append("div")
+            .attr("class", "select-label")
+            .style("font-family", "Montserrat")
+            .style("font-size", "14px")
+            .style("font-weight", 700)
+            .html("Select genre");
+
+        const dropdown = d3.select("#geo-viz2")
+            .append("div")
+            .attr("class", "dropdown")
+            .attr("id", "select-dropdown-2");
+
+        dropdown.append("div")
+            .attr("class", "dropbtn")
+            .attr("id", "select-dropbtn-2");
+
+        dropdown.append("div")
+            .attr("class", "dropdown-content")
+            .attr("id", "select-content-2");
+
+        const textPadding = 7;
+        const squaresPerRow = 5;
+        const squareSize = 100;
+        const squareHPadding = 10;
+        const squareVPadding = 54;
+        const labelPadding = 10;
+        const countryNamePadding = 20;
+
+        const margin = {top: 10, right: 10, bottom: 10, left: 10},
+            width = squaresPerRow * (squareSize + squareHPadding) - margin.left - margin.right,
+            height = squaresPerRow * (squareSize + squareVPadding) - margin.top - margin.bottom;
+
+        const svg = d3.select("#geo-viz2")
+            .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom);
+
+        // d3.select("#geo-viz2")
+        //     .append("div")
+        //     .attr("class", "sources")
+        //     .style("font-family", "Montserrat")
+        //     .style("font-size", "14px")
+        //     .style("font-weight", 400)
+        //     .style("color", "#808080")
+        //     .html("Sources: TBD");
+
+        window.onclick = function(event) {
+            if (!event.target.matches('#select-dropbtn-2')) {
+                const dropdown = document.getElementById("select-content-2");
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            }
+        }
+
+        function getUniquesMenu(df, thisVariable) {
+
+            var thisList = df.map(o => o[thisVariable]);
+
+            function uniq(a) {
+                return a.sort().filter(function(item, pos, ary) {
+                    return !pos || item != ary[pos - 1];
+                });
+            }
+
+            var uniqueList = uniq(thisList);
+
+            return uniqueList;
+        }
+
+        function addOptions(id, values) {
+            var element = d3.select("#"+id);
+            var options = element.selectAll("option").data(values);
+
+            options.enter().append("a")
+                .html(d => d);
+
+            options.exit().remove();
+
+            return element;
+        }
+
+
+        const g = svg.append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+        // const x = d3.scaleLinear()
+        //     .range([ 0, width]);
+
+        const y = d3.scaleLinear()
+            .range([0, squareSize])
+            .domain([0, 1]);
+
+        // const xAxis = g.append("g")
+        //     .attr("transform", "translate(0," + height + ")");
+
+        Promise.all([
+            d3.csv('./data/data-viz2.csv')
+        ]).then((data) => {
+            const spend = data[0];
+
+            let selectedGenre = "RPG";
+
+            spend.forEach(d => {
+                d['% of Spend'] = +d['% of Spend'];
+            });
+
+            const updatePlot = () => {
+                const xlabel = 'Market full name',
+                    ylabel = '% of Spend';
+                const dataToPlot = spend.filter(d => d.Genre === selectedGenre);
+
+                // x.domain([0, d3.max(dataToPlot, d => d[xlabel])]);
+                // y.domain(dataToPlot.map(d => d[ylabel]));
+
+                const groups = g.selectAll(".group")
+                    .data(dataToPlot)
+                    .join("g")
+                        .attr("transform", (d,i) => {
+                            const vIdx = Math.floor(i / squaresPerRow);
+                            const hIdx = i % squaresPerRow; 
+                            
+                            return "translate(" + hIdx * (squareSize + squareHPadding) + "," + vIdx * (squareSize + squareVPadding) + ")"
+                        })
+
+                groups.selectAll(".bg-square")
+                    .data(d => [d])
+                    .join("rect")
+                        .attr("class", "bg-square")
+                        .attr("x", 0)
+                        .attr("y", 0)
+                        .attr("width", squareSize)
+                        .attr("height", squareSize)
+                        .attr("fill", "#ECEDEE");
+
+                groups.selectAll(".fg-square")
+                    .data(d => [d])
+                    .join("rect")
+                        .attr("class", "fg-square")
+                        .attr("x", 0)
+                        .attr("y", d => squareSize - y(d[ylabel]))
+                        .attr("width", squareSize)
+                        .attr("height", d => y(d[ylabel]))
+                        .attr("fill", "#0280FB");
+
+                groups.selectAll(".percentage")
+                    .data(d => [d])
+                    .join("text")
+                        .attr("class", "percentage")
+                        .attr("x", 8)
+                        .attr("y", d => squareSize - y(d[ylabel]) - labelPadding)
+                        .style("font-family", "Space Grotesk")
+                        .style("font-size", "14px")
+                        .style("text-anchor", 'start')
+                        .attr("fill", "#000000")
+                        .text(d => (d[ylabel] * 100).toFixed(1) + '%');
+
+                groups.selectAll(".country-name")
+                    .data(d => [d])
+                    .join("text")
+                        .attr("class", "country-name")
+                        .attr("x", 0)
+                        .attr("y", d => squareSize + countryNamePadding)
+                        .style("font-family", "Montserrat")
+                        .style("font-size", "14px")
+                        .style("text-anchor", 'start')
+                        .attr("fill", "#000000")
+                        .text(d => d[xlabel])
+
+                // g.selectAll(".bar")
+                //     .data(dataToPlot)
+                //     .join("rect")
+                //         .attr("class", "bar")
+                //         .attr("x", x(0) )
+                //         .attr("y", d => y(d[ylabel]))
+                //         .attr("width", d => x(d[xlabel]))
+                //         .attr("height", y.bandwidth() )
+                //         .attr("fill", (d, i) => i < 3 ? "#C368F9" : "#D8DADC");
+
+                // xAxis.call(d3.axisBottom(x).ticks(20));
+                // xAxis.select(".domain").remove();
+                // xAxis.selectAll(".tick text").remove();
+                // xAxis.selectAll(".tick line").attr('y2', -height).style('stroke', '#FFF');
+                // xAxis.raise();
+
+                // g.selectAll(".country-name")
+                //     .data(dataToPlot)
+                //     .join("text")
+                //         .attr("class", "country-name")
+                //         .attr("x", -margin.left )
+                //         .attr("y", d => y(d[ylabel]) + y.bandwidth() / 2 + 2)
+                //         .style("dominant-baseline", "middle")
+                //         .style("font-family", "Montserrat")
+                //         .style("font-size", "14px")
+                //         .text(d => d[ylabel]);
+
+                // g.selectAll(".percentage")
+                //     .data(dataToPlot)
+                //     .join("text")
+                //         .attr("class", "percentage")
+                //         .attr("x", d => x(d[xlabel]) + textPadding)
+                //         .attr("y", d => y(d['Market full name']) + y.bandwidth() / 2 + 2)
+                //         .style("dominant-baseline", "middle")
+                //         .style("font-family", "Space Grotesk")
+                //         .style("font-size", "14px")
+                //         .style("text-anchor", 'start')
+                //         .style("fill", '#000000')
+                //         .text(d => d[xlabel].toFixed(1) + '$');
+
+                // g.selectAll(".percentage").raise();
+
+            }
+
+            const genre = getUniquesMenu(spend, 'Genre');
+            let genreOpts = addOptions("select-content-2", genre);
+
+            d3.select("#select-dropdown-2")
+                .on("click", function(d){
+                    document.getElementById("select-content-2").classList.toggle("show");
+                });
+            d3.select("#select-dropdown-2").select(".dropbtn").html('RPG');
+            genreOpts.selectAll("a").on("click", function(event, d){
+                if (d !== selectedGenre) {
+                    selectedGenre = d;
+                    d3.select("#select-dropdown-2").select(".dropbtn").html(selectedGenre);
+                    updatePlot();
+                }
+            })
+
+            updatePlot();
+        })
+
+    </script>
+</body>

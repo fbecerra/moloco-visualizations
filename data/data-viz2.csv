@@ -1,0 +1,521 @@
+Market,Market full name,Genre,% of Spend
+USA,US,RPG,0.254
+KOR,Korea,RPG,0.207
+JPN,Japan,RPG,0.077
+TWN,Taiwan,RPG,0.070
+GBR,UK,RPG,0.036
+VNM,Viet Nam,RPG,0.036
+DEU,Germany,RPG,0.035
+FRA,France,RPG,0.031
+RUS,Russia,RPG,0.026
+CAN,Canada,RPG,0.026
+AUS,Australia,RPG,0.019
+THA,Thailand,RPG,0.019
+SGP,Singapore,RPG,0.016
+IDN,Indonesia,RPG,0.012
+PHL,Philippines (the),RPG,0.010
+POL,Poland,RPG,0.008
+MYS,Malaysia,RPG,0.007
+BRA,Brazil,RPG,0.007
+ITA,Italy,RPG,0.006
+NLD,Netherlands,RPG,0.006
+USA,US,Match,0.483
+JPN,Japan,Match,0.062
+GBR,UK,Match,0.046
+DEU,Germany,Match,0.043
+KOR,Korea,Match,0.040
+IND,India,Match,0.026
+FRA,France,Match,0.025
+CAN,Canada,Match,0.024
+AUS,Australia,Match,0.021
+BRA,Brazil,Match,0.019
+ITA,Italy,Match,0.015
+PHL,Philippines (the),Match,0.011
+POL,Poland,Match,0.010
+TUR,Turkey,Match,0.009
+RUS,Russia,Match,0.008
+NLD,Netherlands,Match,0.008
+TWN,Taiwan,Match,0.007
+SAU,Saudi Arabia,Match,0.007
+THA,Thailand,Match,0.007
+MEX,Mexico,Match,0.007
+USA,US,Simulation,0.331
+GBR,UK,Simulation,0.046
+DEU,Germany,Simulation,0.045
+JPN,Japan,Simulation,0.038
+BRA,Brazil,Simulation,0.032
+RUS,Russia,Simulation,0.030
+FRA,France,Simulation,0.029
+KOR,Korea,Simulation,0.029
+CAN,Canada,Simulation,0.028
+IND,India,Simulation,0.026
+AUS,Australia,Simulation,0.023
+TUR,Turkey,Simulation,0.021
+SAU,Saudi Arabia,Simulation,0.020
+THA,Thailand,Simulation,0.018
+PHL,Philippines (the),Simulation,0.018
+VNM,Viet Nam,Simulation,0.016
+ITA,Italy,Simulation,0.016
+IDN,Indonesia,Simulation,0.015
+TWN,Taiwan,Simulation,0.014
+POL,Poland,Simulation,0.012
+USA,US,Strategy,0.318
+KOR,Korea,Strategy,0.062
+DEU,Germany,Strategy,0.057
+GBR,UK,Strategy,0.056
+JPN,Japan,Strategy,0.050
+FRA,France,Strategy,0.039
+CAN,Canada,Strategy,0.030
+RUS,Russia,Strategy,0.027
+AUS,Australia,Strategy,0.026
+SAU,Saudi Arabia,Strategy,0.026
+TWN,Taiwan,Strategy,0.023
+TUR,Turkey,Strategy,0.018
+IDN,Indonesia,Strategy,0.014
+POL,Poland,Strategy,0.013
+NLD,Netherlands,Strategy,0.012
+ITA,Italy,Strategy,0.012
+BRA,Brazil,Strategy,0.011
+VNM,Viet Nam,Strategy,0.011
+PHL,Philippines (the),Strategy,0.011
+ARE,United Arab Emirates (the),Strategy,0.010
+USA,US,Casino,0.551
+GBR,UK,Casino,0.082
+AUS,Australia,Casino,0.035
+DEU,Germany,Casino,0.035
+JPN,Japan,Casino,0.030
+TWN,Taiwan,Casino,0.029
+CAN,Canada,Casino,0.024
+TUR,Turkey,Casino,0.021
+VNM,Viet Nam,Casino,0.019
+FRA,France,Casino,0.013
+IDN,Indonesia,Casino,0.010
+IND,India,Casino,0.010
+BRA,Brazil,Casino,0.008
+KOR,Korea,Casino,0.007
+ITA,Italy,Casino,0.006
+THA,Thailand,Casino,0.006
+NLD,Netherlands,Casino,0.006
+ESP,Spain,Casino,0.006
+MYS,Malaysia,Casino,0.006
+SAU,Saudi Arabia,Casino,0.005
+USA,US,Hypercasual,0.241
+IND,India,Hypercasual,0.066
+BRA,Brazil,Hypercasual,0.049
+DEU,Germany,Hypercasual,0.038
+GBR,UK,Hypercasual,0.038
+RUS,Russia,Hypercasual,0.031
+IDN,Indonesia,Hypercasual,0.028
+TUR,Turkey,Hypercasual,0.026
+MEX,Mexico,Hypercasual,0.026
+FRA,France,Hypercasual,0.022
+JPN,Japan,Hypercasual,0.022
+CAN,Canada,Hypercasual,0.021
+KOR,Korea,Hypercasual,0.020
+VNM,Viet Nam,Hypercasual,0.019
+ITA,Italy,Hypercasual,0.019
+AUS,Australia,Hypercasual,0.017
+ESP,Spain,Hypercasual,0.015
+PHL,Philippines (the),Hypercasual,0.014
+POL,Poland,Hypercasual,0.013
+NLD,Netherlands,Hypercasual,0.013
+USA,US,Party,0.655
+GBR,UK,Party,0.046
+CAN,Canada,Party,0.032
+FRA,France,Party,0.029
+DEU,Germany,Party,0.029
+ITA,Italy,Party,0.017
+JPN,Japan,Party,0.015
+BRA,Brazil,Party,0.014
+AUS,Australia,Party,0.013
+POL,Poland,Party,0.009
+NLD,Netherlands,Party,0.009
+KOR,Korea,Party,0.009
+SAU,Saudi Arabia,Party,0.007
+PHL,Philippines (the),Party,0.007
+THA,Thailand,Party,0.007
+TUR,Turkey,Party,0.006
+BEL,Belgium,Party,0.006
+IND,India,Party,0.005
+RUS,Russia,Party,0.004
+ESP,Spain,Party,0.004
+USA,US,Action,0.278
+KOR,Korea,Action,0.044
+RUS,Russia,Action,0.041
+DEU,Germany,Action,0.041
+GBR,UK,Action,0.036
+FRA,France,Action,0.033
+IND,India,Action,0.030
+BRA,Brazil,Action,0.028
+JPN,Japan,Action,0.028
+TUR,Turkey,Action,0.028
+SAU,Saudi Arabia,Action,0.026
+IDN,Indonesia,Action,0.024
+CAN,Canada,Action,0.023
+PHL,Philippines (the),Action,0.020
+VNM,Viet Nam,Action,0.020
+AUS,Australia,Action,0.018
+MEX,Mexico,Action,0.018
+THA,Thailand,Action,0.017
+ITA,Italy,Action,0.014
+TWN,Taiwan,Action,0.014
+USA,US,Puzzle,0.437
+GBR,UK,Puzzle,0.053
+JPN,Japan,Puzzle,0.051
+DEU,Germany,Puzzle,0.042
+CAN,Canada,Puzzle,0.041
+FRA,France,Puzzle,0.032
+AUS,Australia,Puzzle,0.030
+KOR,Korea,Puzzle,0.027
+BRA,Brazil,Puzzle,0.020
+RUS,Russia,Puzzle,0.019
+ITA,Italy,Puzzle,0.019
+IND,India,Puzzle,0.012
+TUR,Turkey,Puzzle,0.012
+PHL,Philippines (the),Puzzle,0.010
+NLD,Netherlands,Puzzle,0.010
+POL,Poland,Puzzle,0.009
+TWN,Taiwan,Puzzle,0.008
+ESP,Spain,Puzzle,0.008
+BEL,Belgium,Puzzle,0.008
+SAU,Saudi Arabia,Puzzle,0.007
+USA,US,Tabletop,0.463
+DEU,Germany,Tabletop,0.055
+GBR,UK,Tabletop,0.054
+CAN,Canada,Tabletop,0.043
+FRA,France,Tabletop,0.028
+AUS,Australia,Tabletop,0.027
+JPN,Japan,Tabletop,0.023
+IND,India,Tabletop,0.022
+KOR,Korea,Tabletop,0.018
+RUS,Russia,Tabletop,0.017
+BRA,Brazil,Tabletop,0.017
+SAU,Saudi Arabia,Tabletop,0.014
+ITA,Italy,Tabletop,0.012
+NLD,Netherlands,Tabletop,0.011
+IDN,Indonesia,Tabletop,0.010
+TUR,Turkey,Tabletop,0.009
+POL,Poland,Tabletop,0.008
+MEX,Mexico,Tabletop,0.008
+ESP,Spain,Tabletop,0.008
+TWN,Taiwan,Tabletop,0.007
+USA,US,Kids,0.338
+BRA,Brazil,Kids,0.054
+GBR,UK,Kids,0.035
+DEU,Germany,Kids,0.031
+IND,India,Kids,0.029
+RUS,Russia,Kids,0.026
+TUR,Turkey,Kids,0.024
+SAU,Saudi Arabia,Kids,0.023
+CAN,Canada,Kids,0.022
+AUS,Australia,Kids,0.022
+PHL,Philippines (the),Kids,0.020
+ITA,Italy,Kids,0.019
+KOR,Korea,Kids,0.018
+FRA,France,Kids,0.018
+THA,Thailand,Kids,0.018
+IDN,Indonesia,Kids,0.017
+VNM,Viet Nam,Kids,0.016
+JPN,Japan,Kids,0.015
+MEX,Mexico,Kids,0.014
+POL,Poland,Kids,0.012
+USA,US,Sports,0.312
+GBR,UK,Sports,0.058
+KAZ,Kazakhstan,Sports,0.045
+DEU,Germany,Sports,0.044
+FRA,France,Sports,0.037
+KOR,Korea,Sports,0.034
+CAN,Canada,Sports,0.028
+JPN,Japan,Sports,0.026
+AUS,Australia,Sports,0.022
+IDN,Indonesia,Sports,0.021
+BRA,Brazil,Sports,0.021
+TUR,Turkey,Sports,0.020
+ITA,Italy,Sports,0.019
+IND,India,Sports,0.017
+RUS,Russia,Sports,0.016
+SAU,Saudi Arabia,Sports,0.014
+THA,Thailand,Sports,0.013
+VNM,Viet Nam,Sports,0.013
+UKR,Ukraine,Sports,0.013
+ZAF,South Africa,Sports,0.011
+USA,US,Shooting,0.248
+RUS,Russia,Shooting,0.056
+DEU,Germany,Shooting,0.043
+IDN,Indonesia,Shooting,0.041
+GBR,UK,Shooting,0.038
+IND,India,Shooting,0.035
+VNM,Viet Nam,Shooting,0.031
+SAU,Saudi Arabia,Shooting,0.029
+FRA,France,Shooting,0.028
+THA,Thailand,Shooting,0.028
+BRA,Brazil,Shooting,0.024
+TUR,Turkey,Shooting,0.024
+MEX,Mexico,Shooting,0.023
+PHL,Philippines (the),Shooting,0.023
+SGP,Singapore,Shooting,0.020
+AUS,Australia,Shooting,0.019
+KOR,Korea,Shooting,0.019
+CAN,Canada,Shooting,0.019
+TWN,Taiwan,Shooting,0.016
+JPN,Japan,Shooting,0.015
+USA,US,Racing,0.231
+IND,India,Racing,0.074
+BRA,Brazil,Racing,0.040
+DEU,Germany,Racing,0.038
+GBR,UK,Racing,0.035
+KOR,Korea,Racing,0.032
+RUS,Russia,Racing,0.029
+TUR,Turkey,Racing,0.027
+FRA,France,Racing,0.027
+SAU,Saudi Arabia,Racing,0.024
+AUS,Australia,Racing,0.022
+THA,Thailand,Racing,0.020
+IDN,Indonesia,Racing,0.018
+PHL,Philippines (the),Racing,0.018
+CAN,Canada,Racing,0.018
+ITA,Italy,Racing,0.017
+ZAF,South Africa,Racing,0.017
+MEX,Mexico,Racing,0.017
+JPN,Japan,Racing,0.016
+VNM,Viet Nam,Racing,0.015
+USA,US,Games,0.412
+GBR,UK,Games,0.046
+CAN,Canada,Games,0.040
+AUS,Australia,Games,0.035
+DEU,Germany,Games,0.035
+FRA,France,Games,0.034
+VNM,Viet Nam,Games,0.033
+JPN,Japan,Games,0.031
+SAU,Saudi Arabia,Games,0.024
+BRA,Brazil,Games,0.024
+ITA,Italy,Games,0.018
+NLD,Netherlands,Games,0.017
+RUS,Russia,Games,0.016
+TUR,Turkey,Games,0.012
+BEL,Belgium,Games,0.012
+SWE,Sweden,Games,0.011
+ESP,Spain,Games,0.011
+THA,Thailand,Games,0.010
+CHE,Switzerland,Games,0.010
+KOR,Korea,Games,0.009
+USA,US,Role Playing & Strategy,0.245
+KOR,Korea,Role Playing & Strategy,0.070
+RUS,Russia,Role Playing & Strategy,0.070
+VNM,Viet Nam,Role Playing & Strategy,0.069
+CAN,Canada,Role Playing & Strategy,0.050
+GBR,UK,Role Playing & Strategy,0.049
+JPN,Japan,Role Playing & Strategy,0.046
+DEU,Germany,Role Playing & Strategy,0.046
+PHL,Philippines (the),Role Playing & Strategy,0.037
+FRA,France,Role Playing & Strategy,0.035
+TWN,Taiwan,Role Playing & Strategy,0.032
+AUS,Australia,Role Playing & Strategy,0.028
+IDN,Indonesia,Role Playing & Strategy,0.023
+THA,Thailand,Role Playing & Strategy,0.018
+POL,Poland,Role Playing & Strategy,0.012
+MYS,Malaysia,Role Playing & Strategy,0.010
+SGP,Singapore,Role Playing & Strategy,0.009
+NLD,Netherlands,Role Playing & Strategy,0.008
+UKR,Ukraine,Role Playing & Strategy,0.008
+TUR,Turkey,Role Playing & Strategy,0.008
+USA,US,Lifestyle,0.857
+THA,Thailand,Lifestyle,0.025
+GBR,UK,Lifestyle,0.016
+JPN,Japan,Lifestyle,0.013
+CAN,Canada,Lifestyle,0.012
+ITA,Italy,Lifestyle,0.012
+VNM,Viet Nam,Lifestyle,0.005
+BEL,Belgium,Lifestyle,0.004
+NLD,Netherlands,Lifestyle,0.004
+ISR,Israel,Lifestyle,0.004
+FRA,France,Lifestyle,0.004
+ESP,Spain,Lifestyle,0.003
+ROU,Romania,Lifestyle,0.002
+ZAF,South Africa,Lifestyle,0.002
+BGR,Bulgaria,Lifestyle,0.002
+BRA,Brazil,Lifestyle,0.002
+RUS,Russia,Lifestyle,0.002
+KAZ,Kazakhstan,Lifestyle,0.002
+CHE,Switzerland,Lifestyle,0.001
+DEU,Germany,Lifestyle,0.001
+USA,US,Brain & Puzzle,0.200
+KOR,Korea,Brain & Puzzle,0.093
+JPN,Japan,Brain & Puzzle,0.081
+TWN,Taiwan,Brain & Puzzle,0.073
+GBR,UK,Brain & Puzzle,0.063
+DEU,Germany,Brain & Puzzle,0.051
+AUS,Australia,Brain & Puzzle,0.040
+BRA,Brazil,Brain & Puzzle,0.036
+CAN,Canada,Brain & Puzzle,0.034
+FRA,France,Brain & Puzzle,0.027
+RUS,Russia,Brain & Puzzle,0.022
+PHL,Philippines (the),Brain & Puzzle,0.021
+THA,Thailand,Brain & Puzzle,0.017
+MEX,Mexico,Brain & Puzzle,0.016
+ITA,Italy,Brain & Puzzle,0.016
+POL,Poland,Brain & Puzzle,0.015
+VNM,Viet Nam,Brain & Puzzle,0.014
+ZAF,South Africa,Brain & Puzzle,0.011
+MYS,Malaysia,Brain & Puzzle,0.009
+NLD,Netherlands,Brain & Puzzle,0.009
+USA,US,Arcade & Action,0.313
+KOR,Korea,Arcade & Action,0.068
+JPN,Japan,Arcade & Action,0.046
+GBR,UK,Arcade & Action,0.041
+DEU,Germany,Arcade & Action,0.035
+TWN,Taiwan,Arcade & Action,0.034
+VNM,Viet Nam,Arcade & Action,0.031
+CAN,Canada,Arcade & Action,0.030
+RUS,Russia,Arcade & Action,0.027
+AUS,Australia,Arcade & Action,0.026
+PHL,Philippines (the),Arcade & Action,0.022
+BRA,Brazil,Arcade & Action,0.020
+THA,Thailand,Arcade & Action,0.019
+POL,Poland,Arcade & Action,0.019
+TUR,Turkey,Arcade & Action,0.018
+ITA,Italy,Arcade & Action,0.017
+IDN,Indonesia,Arcade & Action,0.015
+FRA,France,Arcade & Action,0.015
+ESP,Spain,Arcade & Action,0.012
+MYS,Malaysia,Arcade & Action,0.011
+USA,US,Other,0.162
+DEU,Germany,Other,0.058
+BRA,Brazil,Other,0.055
+NLD,Netherlands,Other,0.051
+GBR,UK,Other,0.050
+IND,India,Other,0.038
+FRA,France,Other,0.037
+ESP,Spain,Other,0.028
+ITA,Italy,Other,0.027
+TUR,Turkey,Other,0.027
+RUS,Russia,Other,0.026
+JPN,Japan,Other,0.021
+CAN,Canada,Other,0.020
+AUS,Australia,Other,0.019
+IDN,Indonesia,Other,0.018
+POL,Poland,Other,0.017
+BEL,Belgium,Other,0.016
+MEX,Mexico,Other,0.015
+ARG,Argentina,Other,0.014
+AUT,Austria,Other,0.012
+USA,US,Adventure,0.231
+TWN,Taiwan,Adventure,0.100
+KOR,Korea,Adventure,0.064
+JPN,Japan,Adventure,0.061
+BRA,Brazil,Adventure,0.037
+TUR,Turkey,Adventure,0.033
+IND,India,Adventure,0.031
+DEU,Germany,Adventure,0.030
+PHL,Philippines (the),Adventure,0.029
+RUS,Russia,Adventure,0.029
+GBR,UK,Adventure,0.021
+THA,Thailand,Adventure,0.021
+CAN,Canada,Adventure,0.019
+ITA,Italy,Adventure,0.018
+VNM,Viet Nam,Adventure,0.017
+AUS,Australia,Adventure,0.017
+MEX,Mexico,Adventure,0.016
+POL,Poland,Adventure,0.015
+FRA,France,Adventure,0.014
+MYS,Malaysia,Adventure,0.013
+USA,US,Cards & Casino,0.384
+FRA,France,Cards & Casino,0.077
+CAN,Canada,Cards & Casino,0.065
+TUR,Turkey,Cards & Casino,0.055
+JPN,Japan,Cards & Casino,0.052
+VNM,Viet Nam,Cards & Casino,0.051
+BRA,Brazil,Cards & Casino,0.042
+GBR,UK,Cards & Casino,0.042
+AUS,Australia,Cards & Casino,0.027
+MEX,Mexico,Cards & Casino,0.026
+DEU,Germany,Cards & Casino,0.021
+TWN,Taiwan,Cards & Casino,0.018
+THA,Thailand,Cards & Casino,0.017
+ITA,Italy,Cards & Casino,0.011
+IDN,Indonesia,Cards & Casino,0.009
+NZL,New Zealand,Cards & Casino,0.008
+BEL,Belgium,Cards & Casino,0.008
+NLD,Netherlands,Cards & Casino,0.006
+ESP,Spain,Cards & Casino,0.006
+POL,Poland,Cards & Casino,0.005
+USA,US,Trivia,0.137
+ITA,Italy,Trivia,0.059
+RUS,Russia,Trivia,0.055
+DEU,Germany,Trivia,0.052
+GBR,UK,Trivia,0.051
+IRQ,Iraq,Trivia,0.048
+FRA,France,Trivia,0.042
+POL,Poland,Trivia,0.041
+BRA,Brazil,Trivia,0.040
+TUR,Turkey,Trivia,0.029
+ESP,Spain,Trivia,0.028
+NLD,Netherlands,Trivia,0.020
+KOR,Korea,Trivia,0.020
+AUS,Australia,Trivia,0.020
+PHL,Philippines (the),Trivia,0.017
+JPN,Japan,Trivia,0.017
+CAN,Canada,Trivia,0.016
+VNM,Viet Nam,Trivia,0.014
+BEL,Belgium,Trivia,0.013
+ARG,Argentina,Trivia,0.013
+USA,US,Board,0.202
+VNM,Viet Nam,Board,0.184
+RUS,Russia,Board,0.083
+MEX,Mexico,Board,0.055
+BRA,Brazil,Board,0.041
+IND,India,Board,0.037
+GBR,UK,Board,0.034
+TWN,Taiwan,Board,0.030
+KOR,Korea,Board,0.027
+PHL,Philippines (the),Board,0.020
+IDN,Indonesia,Board,0.019
+FRA,France,Board,0.018
+UKR,Ukraine,Board,0.017
+THA,Thailand,Board,0.016
+AUS,Australia,Board,0.014
+ESP,Spain,Board,0.011
+ITA,Italy,Board,0.009
+IRL,Ireland,Board,0.008
+IRQ,Iraq,Board,0.007
+FIN,Finland,Board,0.007
+USA,US,Word,0.315
+CAN,Canada,Word,0.069
+GBR,UK,Word,0.067
+DEU,Germany,Word,0.064
+FRA,France,Word,0.053
+JPN,Japan,Word,0.049
+AUS,Australia,Word,0.030
+TUR,Turkey,Word,0.025
+ITA,Italy,Word,0.022
+MEX,Mexico,Word,0.019
+RUS,Russia,Word,0.018
+SWE,Sweden,Word,0.016
+ESP,Spain,Word,0.015
+TWN,Taiwan,Word,0.014
+NLD,Netherlands,Word,0.013
+NZL,New Zealand,Word,0.012
+BEL,Belgium,Word,0.011
+IDN,Indonesia,Word,0.010
+VEN,Venezuela,Word,0.010
+BRA,Brazil,Word,0.009
+USA,US,All genres,0.375
+GBR,UK,All genres,0.047
+KOR,Korea,All genres,0.043
+DEU,Germany,All genres,0.042
+JPN,Japan,All genres,0.037
+FRA,France,All genres,0.028
+CAN,Canada,All genres,0.028
+BRA,Brazil,All genres,0.024
+RUS,Russia,All genres,0.023
+IND,India,All genres,0.023
+AUS,Australia,All genres,0.022
+TUR,Turkey,All genres,0.017
+TWN,Taiwan,All genres,0.016
+VNM,Viet Nam,All genres,0.015
+SAU,Saudi Arabia,All genres,0.015
+ITA,Italy,All genres,0.014
+IDN,Indonesia,All genres,0.014
+PHL,Philippines (the),All genres,0.013
+THA,Thailand,All genres,0.013
+MEX,Mexico,All genres,0.011
