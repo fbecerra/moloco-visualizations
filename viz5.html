@@ -106,15 +106,15 @@
         const dropdown = d3.select("#geo-viz5")
             .append("div")
             .attr("class", "dropdown")
-            .attr("id", "select-dropdown");
+            .attr("id", "select-dropdown-1");
 
         dropdown.append("div")
             .attr("class", "dropbtn")
-            .attr("id", "select-dropbtn");
+            .attr("id", "select-dropbtn-1");
 
         dropdown.append("div")
             .attr("class", "dropdown-content")
-            .attr("id", "select-content");
+            .attr("id", "select-content-1");
 
         const margin = {top: 10, right: 60, bottom: 10, left: 120},
             width = 460 - margin.left - margin.right,
@@ -135,8 +135,8 @@
             .html("Sources: TBD");
 
         window.onclick = function(event) {
-            if (!event.target.matches('#select-dropbtn')) {
-                const dropdown = document.getElementById("select-content");
+            if (!event.target.matches('#select-dropbtn-1')) {
+                const dropdown = document.getElementById("select-content-1");
                 if (dropdown.classList.contains('show')) {
                     dropdown.classList.remove('show');
                 }
@@ -253,17 +253,17 @@
             }
 
             const genre = getUniquesMenu(revenue, 'Genre');
-            let genreOpts = addOptions("select-content", genre);
+            let genreOpts = addOptions("select-content-1", genre);
 
-            d3.select("#select-dropdown")
+            d3.select("#select-dropdown-1")
                 .on("click", function(d){
-                    document.getElementById("select-content").classList.toggle("show");
+                    document.getElementById("select-content-1").classList.toggle("show");
                 });
-            d3.select("#select-dropdown").select(".dropbtn").html('RPG');
+            d3.select("#select-dropdown-1").select(".dropbtn").html('RPG');
             genreOpts.selectAll("a").on("click", function(event, d){
                 if (d !== selectedGenre) {
                     selectedGenre = d;
-                    d3.select("#select-dropdown").select(".dropbtn").html(selectedGenre);
+                    d3.select("#select-dropdown-1").select(".dropbtn").html(selectedGenre);
                     updatePlot();
                 }
             })
