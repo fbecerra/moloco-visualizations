@@ -1,0 +1,106 @@
+Market,Market full name,Genre,Revenue %,ARPPU ($)
+USA,US,RPG,0.205,22.53
+KOR,Korea,RPG,0.196,45.45
+JPN,Japan,RPG,0.157,30.49
+TWN,Taiwan,RPG,0.094,44.67
+HKG,Hong Kong,RPG,0.043,78.84
+THA,Thailand,RPG,0.036,21.94
+DEU,Germany,RPG,0.031,19.59
+FRA,France,RPG,0.027,21.86
+GBR,UK,RPG,0.017,14.71
+CAN,Canada,RPG,0.016,19.13
+PHL,Philippines (the),RPG,0.015,11.17
+IDN,Indonesia,RPG,0.014,12.58
+AUS,Australia,RPG,0.014,22.96
+RUS,Russia,RPG,0.012,6.94
+VNM,Viet Nam,RPG,0.012,11.20
+USA,US,Match,0.512,5.90
+GBR,UK,Match,0.060,4.61
+JPN,Japan,Match,0.058,4.01
+DEU,Germany,Match,0.058,3.52
+KOR,Korea,Match,0.043,4.22
+FRA,France,Match,0.025,1.85
+CAN,Canada,Match,0.023,4.22
+AUS,Australia,Match,0.022,5.58
+BRA,Brazil,Match,0.014,0.34
+ITA,Italy,Match,0.014,1.47
+MEX,Mexico,Match,0.010,0.33
+ESP,Spain,Match,0.010,1.13
+NLD,Netherlands,Match,0.009,2.67
+CHE,Switzerland,Match,0.008,7.19
+TUR,Turkey,Match,0.007,0.49
+USA,US,Simulation,0.382,5.11
+JPN,Japan,Simulation,0.164,15.44
+DEU,Germany,Simulation,0.053,3.96
+GBR,UK,Simulation,0.051,3.65
+KOR,Korea,Simulation,0.040,5.25
+CAN,Canada,Simulation,0.027,3.93
+FRA,France,Simulation,0.025,2.33
+AUS,Australia,Simulation,0.025,4.83
+TWN,Taiwan,Simulation,0.018,5.18
+BRA,Brazil,Simulation,0.014,0.41
+RUS,Russia,Simulation,0.012,0.38
+NLD,Netherlands,Simulation,0.010,3.52
+TUR,Turkey,Simulation,0.009,0.78
+HKG,Hong Kong,Simulation,0.009,9.33
+MEX,Mexico,Simulation,0.009,0.46
+USA,US,Strategy,0.322,16.76
+KOR,Korea,Strategy,0.102,20.53
+JPN,Japan,Strategy,0.072,21.99
+DEU,Germany,Strategy,0.057,14.22
+GBR,UK,Strategy,0.040,11.58
+TWN,Taiwan,Strategy,0.040,23.66
+FRA,France,Strategy,0.028,11.12
+HKG,Hong Kong,Strategy,0.028,64.77
+RUS,Russia,Strategy,0.025,4.45
+CAN,Canada,Strategy,0.023,11.83
+AUS,Australia,Strategy,0.020,14.78
+TUR,Turkey,Strategy,0.016,5.98
+VNM,Viet Nam,Strategy,0.014,5.12
+SAU,Saudi Arabia,Strategy,0.013,17.93
+BRA,Brazil,Strategy,0.012,3.27
+USA,US,Casino,0.517,29.12
+AUS,Australia,Casino,0.051,34.15
+DEU,Germany,Casino,0.040,28.88
+JPN,Japan,Casino,0.036,33.25
+KOR,Korea,Casino,0.033,55.84
+GBR,UK,Casino,0.033,22.46
+CAN,Canada,Casino,0.029,28.49
+BRA,Brazil,Casino,0.028,9.06
+TUR,Turkey,Casino,0.021,47.89
+TWN,Taiwan,Casino,0.021,44.47
+KWT,Kuwait,Casino,0.013,830.12
+FRA,France,Casino,0.011,19.94
+ITA,Italy,Casino,0.010,12.88
+NLD,Netherlands,Casino,0.010,31.94
+IND,India,Casino,0.009,1.88
+USA,US,Hypercasual,0.472,1.13
+GBR,UK,Hypercasual,0.054,0.69
+JPN,Japan,Hypercasual,0.050,1.01
+DEU,Germany,Hypercasual,0.042,0.63
+KOR,Korea,Hypercasual,0.038,1.15
+CAN,Canada,Hypercasual,0.029,0.75
+RUS,Russia,Hypercasual,0.028,0.17
+BRA,Brazil,Hypercasual,0.024,0.10
+FRA,France,Hypercasual,0.024,0.36
+AUS,Australia,Hypercasual,0.022,0.84
+MEX,Mexico,Hypercasual,0.016,0.11
+TWN,Taiwan,Hypercasual,0.015,1.07
+ITA,Italy,Hypercasual,0.011,0.24
+IND,India,Hypercasual,0.011,0.03
+TUR,Turkey,Hypercasual,0.009,0.07
+USA,US,All genres,0.398,4.00
+JPN,Japan,All genres,0.083,7.06
+KOR,Korea,All genres,0.076,8.66
+DEU,Germany,All genres,0.049,3.16
+GBR,UK,All genres,0.042,2.55
+TWN,Taiwan,All genres,0.034,10.06
+FRA,France,All genres,0.027,1.94
+CAN,Canada,All genres,0.024,2.83
+AUS,Australia,All genres,0.022,3.91
+BRA,Brazil,All genres,0.020,0.43
+HKG,Hong Kong,All genres,0.016,16.88
+ITA,Italy,All genres,0.013,1.34
+RUS,Russia,All genres,0.013,0.42
+THA,Thailand,All genres,0.012,1.55
+TUR,Turkey,All genres,0.010,0.52
