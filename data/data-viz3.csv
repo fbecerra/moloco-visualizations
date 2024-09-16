@@ -1,0 +1,65 @@
+HQ country,HQ country full name,Destination,spend %
+CHN,China,US,0.344
+USA,US,US,0.599
+CYP,Cyprus,US,0.303
+KOR,Korea,US,0.232
+GBR,UK,US,0.374
+TUR,Turkey,US,0.460
+VNM,Viet Nam,US,0.229
+FIN,Finland,US,0.333
+ISR,Israel,US,0.469
+FRA,France,US,0.323
+DEU,Germany,US,0.371
+RUS,Russia,US,0.241
+IRL,Ireland,US,0.505
+SGP,Singapore,US,0.247
+IND,India,US,0.327
+CAN,Canada,US,0.469
+CHN,China,APAC,0.274
+USA,US,APAC,0.103
+CYP,Cyprus,APAC,0.209
+KOR,Korea,APAC,0.525
+GBR,UK,APAC,0.179
+TUR,Turkey,APAC,0.174
+VNM,Viet Nam,APAC,0.304
+FIN,Finland,APAC,0.179
+ISR,Israel,APAC,0.143
+FRA,France,APAC,0.183
+DEU,Germany,APAC,0.131
+RUS,Russia,APAC,0.178
+IRL,Ireland,APAC,0.187
+SGP,Singapore,APAC,0.372
+IND,India,APAC,0.262
+CAN,Canada,APAC,0.128
+CHN,China,EMEA,0.309
+USA,US,EMEA,0.233
+CYP,Cyprus,EMEA,0.378
+KOR,Korea,EMEA,0.186
+GBR,UK,EMEA,0.360
+TUR,Turkey,EMEA,0.309
+VNM,Viet Nam,EMEA,0.352
+FIN,Finland,EMEA,0.400
+ISR,Israel,EMEA,0.300
+FRA,France,EMEA,0.389
+DEU,Germany,EMEA,0.411
+RUS,Russia,EMEA,0.484
+IRL,Ireland,EMEA,0.250
+SGP,Singapore,EMEA,0.276
+IND,India,EMEA,0.325
+CAN,Canada,EMEA,0.296
+CHN,China,RoW,0.044
+USA,US,RoW,0.030
+CYP,Cyprus,RoW,0.087
+KOR,Korea,RoW,0.040
+GBR,UK,RoW,0.057
+TUR,Turkey,RoW,0.041
+VNM,Viet Nam,RoW,0.096
+FIN,Finland,RoW,0.056
+ISR,Israel,RoW,0.064
+FRA,France,RoW,0.075
+DEU,Germany,RoW,0.054
+RUS,Russia,RoW,0.076
+IRL,Ireland,RoW,0.030
+SGP,Singapore,RoW,0.087
+IND,India,RoW,0.059
+CAN,Canada,RoW,0.070

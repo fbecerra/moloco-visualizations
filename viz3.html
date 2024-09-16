@@ -1,0 +1,374 @@
+<head></head>
+    <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <style>
+
+        #select-dropdown {
+            line-height: 24px;
+            vertical-align: middle;
+        }
+
+        .dropbtn {
+        /* text-align: left; */
+            color: black;
+            padding: 1px 12px;
+            /* line-height: 150%; */
+            font-size: 14px;
+            border: 1px solid black;
+            cursor: pointer;
+            width: auto;
+            /* background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='28' viewBox='0 0 28 28' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"); */
+            background-image: url("../img/icon-chevron-down.svg");
+            background-repeat: no-repeat;
+            background-position-x: calc(100% - 12px);
+            background-position-y: 50%;
+            background-size: 16px;
+        }
+
+        .dropbtn svg {
+            padding-right: 10px;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            text-align: left;
+            /* margin: 5px 12px 5px 0px; */
+            position: relative;
+            display: block;
+            width: 126px;
+        }
+
+        .dropdown-wrapper {
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 124px;
+            max-height: 360px;
+            /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+            z-index: 1000;
+            overflow: hidden;
+            background: #FFFFFF;
+            border: 1px solid black;
+            transform: translateY(-1px);
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            font-size: 14px;
+            color: #353535;
+            padding: 2px 12px;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd}
+
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {display:block;}
+
+    </style>
+</head>
+
+<body>
+    <section>
+        
+        <div id="geo-viz3"></div>
+        
+    </section>
+
+    <script>
+
+        d3.select("#geo-viz3")
+            .append("div")
+            .attr("class", "title")
+            .style("font-family", "Montserrat")
+            .style("font-size", "18px")
+            .style("font-weight", 700)
+            .html("Mobile gaming genres don't generate in-app revenue</br>the same way across markets");
+
+        d3.select("#geo-viz3")
+            .append("div")
+            .attr("class", "subtitle")
+            .style("font-family", "Montserrat")
+            .style("font-size", "14px")
+            .style("font-weight", 400)
+            .html("Percentage of estimated paid UA spend in top 20 markets split by Genre, Aug 2023-Aug 2024");
+
+        const dropdowns = d3.select("#geo-viz3")
+            .append("div")
+            .attr("class", "dropdowns");
+
+        const textPadding = 7;
+        const squaresPerRow = 5;
+        const squareSize = 15;
+        const squarePadding = 1;
+        const waffleSize = 10 * squareSize + 9 * squarePadding;
+        const waffleHPadding = 10;
+        const waffleVPadding = 54;
+        const countryNamePadding = 20;
+        const topText = countryNamePadding + 2 * squareSize + squarePadding;
+        const leftText = 6 * squareSize + 5 * squarePadding; 
+
+        const margin = {top: 10, right: 0, bottom: 10, left: 1},
+            width = 4 * waffleSize + 3 * waffleHPadding - margin.left - margin.right,
+            height = 2 * (countryNamePadding + waffleSize + waffleVPadding) - margin.top - margin.bottom;
+
+        const svg = d3.select("#geo-viz3")
+            .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom);
+
+        // d3.select("#geo-viz2")
+        //     .append("div")
+        //     .attr("class", "sources")
+        //     .style("font-family", "Montserrat")
+        //     .style("font-size", "14px")
+        //     .style("font-weight", 400)
+        //     .style("color", "#808080")
+        //     .html("Sources: TBD");
+
+        window.onclick = function(event) {
+            if (!event.target.matches('#country1-dropbtn-2')) {
+                const dropdown = document.getElementById("country1-content-2");
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            }
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('#country2-dropbtn-2')) {
+                const dropdown = document.getElementById("country2-content-2");
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            }
+        }
+
+        function getUniquesMenu(df, thisVariable) {
+
+            var thisList = df.map(o => o[thisVariable]);
+
+            function uniq(a) {
+                return a.sort().filter(function(item, pos, ary) {
+                    return !pos || item != ary[pos - 1];
+                });
+            }
+
+            var uniqueList = uniq(thisList);
+
+            return uniqueList;
+        }
+
+        function addOptions(id, values) {
+            var element = d3.select("#"+id);
+            var options = element.selectAll("option").data(values);
+
+            options.enter().append("a")
+                .html(d => d);
+
+            options.exit().remove();
+
+            return element;
+        }
+
+
+        const g = svg.append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+        // const x = d3.scaleLinear()
+        //     .range([ 0, width]);
+
+        const y = d3.scaleLinear()
+            .range([0, squareSize])
+            .domain([0, 1]);
+
+        // const xAxis = g.append("g")
+        //     .attr("transform", "translate(0," + height + ")");
+
+
+        const xlabel = 'HQ country full name',
+            ylabel = 'spend %';
+
+        Promise.all([
+            d3.csv('./data/data-viz3.csv')
+        ]).then((data) => {
+            const spend = data[0];
+
+            spend.forEach(d => {
+                d['spend %'] = +d['spend %'];
+            });
+
+            let country1 = "US";
+            let country2 = 'China';
+            // const uniqueDestinations = getUniquesMenu(spend, 'Destination');
+            const uniqueDestinations = ['US', 'APAC', 'EMEA', 'RoW'];
+
+            let countries = ["country1", "country2"];
+            countries.forEach(d => {
+
+                const dropdownWrapper = dropdowns.append("div")
+                    .attr("class", "dropdown-wrapper")
+
+                dropdownWrapper.append("div")
+                    .attr("class", "select-label")
+                    .style("font-family", "Montserrat")
+                    .style("font-size", "14px")
+                    .style("font-weight", 700)
+                    .html((d, i) => i === 0 ? "Select first HQ" : "Select second HQ");
+                    
+                const dropdown = dropdownWrapper.append("div")
+                    .attr("class", "dropdown inline")
+                    .attr("id", d+"-dropdown-2");
+
+                dropdown.append("div")
+                    .attr("class", "dropbtn")
+                    .attr("id", d+"-dropbtn-2");
+
+                dropdown.append("div")
+                    .attr("class", "dropdown-content")
+                    .attr("id", d+"-content-2");
+            });
+
+            const updatePlot = () => {
+                // const dataToPlot = spend.filter(d => d.Genre === selectedGenre);
+                const countriesToPlot = [country1, country2];
+                console.log(countriesToPlot)
+
+                const countryGroups = g.selectAll(".country-group")
+                    .data(countriesToPlot)
+                    .join("g")
+                        .attr("class", "country-group")
+                        .attr("transform", (d,i) => "translate(0," + i * (countryNamePadding + waffleSize + waffleVPadding) + ")")
+
+
+                // x.domain([0, d3.max(dataToPlot, d => d[xlabel])]);
+                // y.domain(dataToPlot.map(d => d[ylabel]));
+
+                const countryName = countryGroups.selectAll(".country-title")
+                    .data(d => [d])
+                    .join("text")
+                        .attr("class", "country-title")
+                        .attr("x", 0)
+                        .attr("y", 0)
+                        .text(d => "HQ in " + d)
+
+                const groups = countryGroups.selectAll(".group")
+                    .data(d => uniqueDestinations.map(ud => spend.filter(si => ((si[xlabel] === d) && (si.Destination === ud)))))
+                    .join("g")
+                        .attr("class", "group")
+                        .attr("transform", (d,i) => "translate(" + i * (waffleSize + waffleHPadding) + ",0)");
+
+                groups.selectAll(".square")
+                    .data(d => d3.range(0, 100, 1).map(idx => {
+                        return {
+                            idx: idx,
+                            spend: d[0][ylabel]
+                        }
+                    }))
+                    .join("rect")
+                        .attr("class", "square")
+                        .attr("x", d => waffleSize - (d.idx % 10 + 1) * (squareSize + squarePadding))
+                        .attr("y", d => countryNamePadding + Math.floor(d.idx / 10) * (squareSize + squarePadding))
+                        .attr("width", squareSize)
+                        .attr("height", squareSize)
+                        .attr("fill", d =>  d.idx >= 100 * (1 - d.spend) ? "#0280FB" : "#ECEDEE");
+
+                groups.selectAll(".fractional-square")
+                    .data(d => {
+                        const remainder = (d[0][ylabel] * 1000) % 10 / 10;
+                        const idx = Math.floor(100 - d[0][ylabel] * 100);
+                        console.log(d[0][ylabel], remainder, idx)
+                        return [{
+                            x: waffleSize - (idx % 10 + 1) * (squareSize + squarePadding),
+                            y: countryNamePadding + Math.floor(idx / 10) * (squareSize + squarePadding),
+                            height: y(remainder)
+                        }]
+                    })
+                    .join("rect")
+                        .attr("class", "fractional-square")
+                        .attr("x", d => d.x)
+                        .attr("y", d => d.y + (squareSize - d.height))
+                        .attr("width", squareSize)
+                        .attr("height", d => d.height)
+                        .attr("fill", "#0280FB");
+
+                // groups.selectAll(".fg-square")
+                //     .data(d => [d])
+                //     .join("rect")
+                //         .attr("class", "fg-square")
+                //         .attr("x", 0)
+                //         .attr("y", d => squareSize - y(d[ylabel]))
+                //         .attr("width", squareSize)
+                //         .attr("height", d => y(d[ylabel]))
+                //         .attr("fill", "#0280FB");
+
+                groups.selectAll(".percentage")
+                    .data(d => [d])
+                    .join("text")
+                        .attr("class", "percentage")
+                        .attr("x", leftText)
+                        .attr("y", topText)
+                        .style("font-family", "Space Grotesk")
+                        .style("font-size", "14px")
+                        .style("text-anchor", 'start')
+                        .attr("fill", "#000000")
+                        .text(d => (d[0][ylabel] * 100).toFixed(1) + '%');
+
+                groups.selectAll(".destination-name")
+                    .data(d => [d])
+                    .join("text")
+                        .attr("class", "destination-name")
+                        .attr("x", 0)
+                        .attr("y", d => countryNamePadding + waffleSize + 24)
+                        .style("font-family", "Montserrat")
+                        .style("font-size", "14px")
+                        .style("text-anchor", 'start')
+                        .attr("fill", "#000000")
+                        .text(d => 'Spend in ' + d[0]['Destination'])
+
+            }
+
+            const uniqueCountries = getUniquesMenu(spend, xlabel);
+            // const optsCountry1 = uniqueCountries.filter(d => (d !== country1) && (d !== country2));
+            // const optsCountry2 = uniqueCountries.filter(d => (d !== country2) && (d !== country2));
+            let country1Opts = addOptions("country1-content-2", uniqueCountries);
+            let country2Opts = addOptions("country2-content-2", uniqueCountries);
+
+            d3.select("#country1-dropdown-2")
+                .on("click", function(d){
+                    document.getElementById("country1-content-2").classList.toggle("show");
+                });
+            d3.select("#country1-dropdown-2").select(".dropbtn").html(country1);
+            country1Opts.selectAll("a").on("click", function(event, d){
+                if (d !== country1) {
+                    country1 = d;
+                    d3.select("#country1-dropdown-2").select(".dropbtn").html(country1);
+                    updatePlot();
+                }
+            });
+
+            d3.select("#country2-dropdown-2")
+                .on("click", function(d){
+                    document.getElementById("country2-content-2").classList.toggle("show");
+                });
+            d3.select("#country2-dropdown-2").select(".dropbtn").html(country2);
+            country2Opts.selectAll("a").on("click", function(event, d){
+                if (d !== country2) {
+                    country2 = d;
+                    d3.select("#country2-dropdown-2").select(".dropbtn").html(country2);
+                    updatePlot();
+                }
+            })
+
+            updatePlot();
+        })
+
+    </script>
+</body>
