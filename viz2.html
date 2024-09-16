@@ -215,6 +215,7 @@
                 const groups = g.selectAll(".group")
                     .data(dataToPlot)
                     .join("g")
+                        .attr("class", "group")
                         .attr("transform", (d,i) => {
                             const vIdx = Math.floor(i / squaresPerRow);
                             const hIdx = i % squaresPerRow; 
