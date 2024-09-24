@@ -201,8 +201,8 @@
             const updatePlot = () => {
                 const xlabel = 'ARPPU ($)',
                     ylabel = 'Market full name';
-                const dataToPlot = revenue.filter(d => d.Genre === selectedGenre);
-                    // .sort((a,b) => b[xlabel] - a[xlabel]);
+                const dataToPlot = revenue.filter(d => d.Genre === selectedGenre)
+                    .sort((a,b) => b[xlabel] - a[xlabel]);
 
 
                 x.domain([0, d3.max(dataToPlot, d => d[xlabel])]);

@@ -59,7 +59,7 @@ const graticule = d3.geoGraticule()
 
   Promise.all([
     d3.json('./data/land-110m.json'),
-    d3.csv("./data/Coordinates_Around_Selected_Countries.csv")
+    d3.csv("./data/Coordinates_with_Circle_Sizes.csv")
 ]).then((world) => {
 
     console.log(world)
@@ -81,7 +81,7 @@ const graticule = d3.geoGraticule()
     .style("fill", "none")
     .style("stroke", "#C6E3F7")
     .style("stroke-width", "0.72px")
-    .style("opacity", 0.2);
+    .style("opacity", 0.1);
 
 
     // var scrollSpeed = 30; var current = 0;
@@ -90,42 +90,42 @@ const graticule = d3.geoGraticule()
     // projection.rotate([λ(current), 0]);
     // svg.selectAll("path").attr("d", path);
     const config = {
-  speed: 0.005,
-  verticalTilt: -30,
-  horizontalTilt: 0
-}
+        speed: 0.005,
+        verticalTilt: -30,
+        horizontalTilt: 0
+    }
 
     function enableRotation() {
-  d3.timer(function (elapsed) {
-    projection.rotate([config.speed * elapsed - 120, config.verticalTilt, config.horizontalTilt]);
-    svg.selectAll("path").attr("d", path);
-    // svg.selectAll(".land").attr("d", path);
-    drawMarkers();
-  });
+        d3.timer(function (elapsed) {
+            projection.rotate([config.speed * elapsed - 120, config.verticalTilt, config.horizontalTilt]);
+            svg.selectAll("path").attr("d", path);
+            // svg.selectAll(".land").attr("d", path);
+            drawMarkers();
+        });
 
-}
+    }
 
-function drawMarkers() {
-                const markers = markerGroup.selectAll('circle')
-                    .data(world[1]);
-                markers
-                    .enter()
-                    .append('circle')
-                    .merge(markers)
-                    .attr('cx', d => projection([d.Longitude, d.Latitude])[0])
-                    .attr('cy', d => projection([d.Longitude, d.Latitude])[1])
-                    .attr('fill', d => {
-                        const coordinate = [d.Longitude, d.Latitude];
-                        gdistance = d3.geoDistance(coordinate, projection.invert(center));
-                        return gdistance > 1.57 ? 'none' : '#3599FC';
-                    })
-                    .attr('r', 12)
-                    .attr("opacity", 0.5);
+    function drawMarkers() {
+        const markers = markerGroup.selectAll('circle')
+            .data(world[1]);
+        markers
+            .enter()
+            .append('circle')
+            .merge(markers)
+            .attr('cx', d => projection([d.Longitude, d.Latitude])[0])
+            .attr('cy', d => projection([d.Longitude, d.Latitude])[1])
+            .attr('fill', d => {
+                const coordinate = [d.Longitude, d.Latitude];
+                gdistance = d3.geoDistance(coordinate, projection.invert(center));
+                return gdistance > 1.57 ? 'none' : '#3599FC';
+            })
+            .attr('r', d => d['Circle Size'] * 6)
+            .attr("opacity", 0.2);
 
-                markerGroup.each(function () {
-                    this.parentNode.appendChild(this);
-                });
-            }
+        markerGroup.each(function () {
+            this.parentNode.appendChild(this);
+        });
+    }
 
 enableRotation();
 // drawMarkers();
