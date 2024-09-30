@@ -117,16 +117,10 @@
             .attr("id", "select-content-2");
 
         const textPadding = 7;
-        const squaresPerRow = 5;
-        const squareSize = 100;
-        const squareHPadding = 10;
-        const squareVPadding = 54;
-        const labelPadding = 10;
-        const countryNamePadding = 20;
 
-        const margin = {top: 10, right: 10, bottom: 10, left: 10},
-            width = squaresPerRow * (squareSize + squareHPadding) - margin.left - margin.right,
-            height = squaresPerRow * (squareSize + squareVPadding) - margin.top - margin.bottom;
+        const margin = {top: 10, right: 10, bottom: 10, left: 90},
+            width = 460 - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom;
 
         const svg = d3.select("#geo-viz2")
             .append("svg")
@@ -183,15 +177,14 @@
             .attr("transform",
                 "translate(" + margin.left + "," + margin.top + ")");
 
-        // const x = d3.scaleLinear()
-        //     .range([ 0, width]);
+        const x = d3.scaleLinear()
+            .range([0, width / 2 - 20])
+            .domain([0, 100]);
 
-        const y = d3.scaleLinear()
-            .range([0, squareSize])
-            .domain([0, 1]);
+        const y = d3.scaleBand()
+            .range([0, height])
+            .padding(.15);
 
-        // const xAxis = g.append("g")
-        //     .attr("transform", "translate(0," + height + ")");
 
         Promise.all([
             d3.csv('./data/data-viz2.csv')
@@ -201,113 +194,120 @@
             let selectedGenre = "RPG";
 
             spend.forEach(d => {
-                d['% of Spend'] = +d['% of Spend'];
+                d['Android'] = +d['Android'].slice(0,-1);
+                d['iOS'] = +d['iOS'].slice(0,-1);
+                d['Total'] = +d['Total'].slice(0,-1);
             });
 
             const updatePlot = () => {
-                const xlabel = 'Market full name',
-                    ylabel = '% of Spend';
+                const ylabel = 'Market full name';
                 const dataToPlot = spend.filter(d => d.Genre === selectedGenre);
 
-                // x.domain([0, d3.max(dataToPlot, d => d[xlabel])]);
-                // y.domain(dataToPlot.map(d => d[ylabel]));
+                y.domain(dataToPlot.map(d => d[ylabel]));
 
-                const groups = g.selectAll(".group")
+                g.selectAll(".country-name")
                     .data(dataToPlot)
-                    .join("g")
-                        .attr("class", "group")
-                        .attr("transform", (d,i) => {
-                            const vIdx = Math.floor(i / squaresPerRow);
-                            const hIdx = i % squaresPerRow; 
-                            
-                            return "translate(" + hIdx * (squareSize + squareHPadding) + "," + vIdx * (squareSize + squareVPadding) + ")"
-                        })
-
-                groups.selectAll(".bg-square")
-                    .data(d => [d])
-                    .join("rect")
-                        .attr("class", "bg-square")
-                        .attr("x", 0)
-                        .attr("y", 0)
-                        .attr("width", squareSize)
-                        .attr("height", squareSize)
-                        .attr("fill", "#ECEDEE");
-
-                groups.selectAll(".fg-square")
-                    .data(d => [d])
-                    .join("rect")
-                        .attr("class", "fg-square")
-                        .attr("x", 0)
-                        .attr("y", d => squareSize - y(d[ylabel]))
-                        .attr("width", squareSize)
-                        .attr("height", d => y(d[ylabel]))
-                        .attr("fill", "#0280FB");
-
-                groups.selectAll(".percentage")
-                    .data(d => [d])
-                    .join("text")
-                        .attr("class", "percentage")
-                        .attr("x", 8)
-                        .attr("y", d => squareSize - y(d[ylabel]) - labelPadding)
-                        .style("font-family", "Space Grotesk")
-                        .style("font-size", "14px")
-                        .style("text-anchor", 'start')
-                        .attr("fill", "#000000")
-                        .text(d => (d[ylabel] * 100).toFixed(1) + '%');
-
-                groups.selectAll(".country-name")
-                    .data(d => [d])
                     .join("text")
                         .attr("class", "country-name")
-                        .attr("x", 0)
-                        .attr("y", d => squareSize + countryNamePadding)
+                        .attr("x", -margin.left )
+                        .attr("y", d => y(d[ylabel]) + y.bandwidth() / 2 + 2)
+                        .style("dominant-baseline", "middle")
                         .style("font-family", "Montserrat")
                         .style("font-size", "14px")
-                        .style("text-anchor", 'start')
-                        .attr("fill", "#000000")
-                        .text(d => d[xlabel])
+                        .text(d => d[ylabel]);
 
-                // g.selectAll(".bar")
-                //     .data(dataToPlot)
-                //     .join("rect")
-                //         .attr("class", "bar")
-                //         .attr("x", x(0) )
-                //         .attr("y", d => y(d[ylabel]))
-                //         .attr("width", d => x(d[xlabel]))
-                //         .attr("height", y.bandwidth() )
-                //         .attr("fill", (d, i) => i < 3 ? "#C368F9" : "#D8DADC");
 
-                // xAxis.call(d3.axisBottom(x).ticks(20));
-                // xAxis.select(".domain").remove();
-                // xAxis.selectAll(".tick text").remove();
-                // xAxis.selectAll(".tick line").attr('y2', -height).style('stroke', '#FFF');
-                // xAxis.raise();
+                // iOS
+                g.selectAll(".bg-ios")
+                    .data(dataToPlot)
+                    .join("rect")
+                        .attr("class", "bg-ios")
+                        .attr("x", x(0) )
+                        .attr("y", d => y(d[ylabel]))
+                        .attr("width", d => x(100))
+                        .attr("height", y.bandwidth() )
+                        .attr("fill", "#ECEDEE");
 
-                // g.selectAll(".country-name")
-                //     .data(dataToPlot)
-                //     .join("text")
-                //         .attr("class", "country-name")
-                //         .attr("x", -margin.left )
-                //         .attr("y", d => y(d[ylabel]) + y.bandwidth() / 2 + 2)
-                //         .style("dominant-baseline", "middle")
-                //         .style("font-family", "Montserrat")
-                //         .style("font-size", "14px")
-                //         .text(d => d[ylabel]);
+                g.selectAll(".bar-ios")
+                    .data(dataToPlot)
+                    .join("rect")
+                        .attr("class", "bar-ios")
+                        .attr("x", x(0) )
+                        .attr("y", d => y(d[ylabel]))
+                        .attr("width", d => x(d['iOS']))
+                        .attr("height", y.bandwidth() )
+                        .attr("fill", "#040078");
 
-                // g.selectAll(".percentage")
-                //     .data(dataToPlot)
-                //     .join("text")
-                //         .attr("class", "percentage")
-                //         .attr("x", d => x(d[xlabel]) + textPadding)
-                //         .attr("y", d => y(d['Market full name']) + y.bandwidth() / 2 + 2)
-                //         .style("dominant-baseline", "middle")
-                //         .style("font-family", "Space Grotesk")
-                //         .style("font-size", "14px")
-                //         .style("text-anchor", 'start')
-                //         .style("fill", '#000000')
-                //         .text(d => d[xlabel].toFixed(1) + '$');
+                g.selectAll(".percentage-ios")
+                    .data(dataToPlot)
+                    .join("text")
+                        .attr("class", "percentage-ios")
+                        .attr("x", d => {
+                            if (d.iOS > 80) {
+                                return x(d['iOS']) - textPadding;
+                            } else {
+                                return x(d['iOS']) + textPadding;
+                            }
+                        })
+                        .attr("y", d => y(d['Market full name']) + y.bandwidth() / 2 + 2)
+                        .style("dominant-baseline", "middle")
+                        .style("font-family", "Space Grotesk")
+                        .style("font-size", "14px")
+                        .style("text-anchor", d => {
+                            if (d.iOS > 80) {
+                                return 'end';
+                            } else {
+                                return 'start';
+                            }
+                        })
+                        .style("fill",'#000000')
+                        .text(d => d['iOS'].toFixed(1) + '%');
 
-                // g.selectAll(".percentage").raise();
+                // ANDROID
+                g.selectAll(".bg-android")
+                    .data(dataToPlot)
+                    .join("rect")
+                        .attr("class", "bg-android")
+                        .attr("x", width/2 + x(0) )
+                        .attr("y", d => y(d[ylabel]))
+                        .attr("width", d => x(100))
+                        .attr("height", y.bandwidth() )
+                        .attr("fill", "#ECEDEE");
+
+                g.selectAll(".bar-android")
+                    .data(dataToPlot)
+                    .join("rect")
+                        .attr("class", "bar-android")
+                        .attr("x", width/2 + x(0) )
+                        .attr("y", d => y(d[ylabel]))
+                        .attr("width", d => x(d['Android']))
+                        .attr("height", y.bandwidth() )
+                        .attr("fill", "#558FC9");
+
+                g.selectAll(".percentage-android")
+                    .data(dataToPlot)
+                    .join("text")
+                        .attr("class", "percentage-android")
+                        .attr("x", d => {
+                            if (d.iOS > 80) {
+                                return width/2 + x(d['Android']) - textPadding;
+                            } else {
+                                return width/2 + x(d['Android']) + textPadding;
+                            }
+                        })
+                        .attr("y", d => y(d['Market full name']) + y.bandwidth() / 2 + 2)
+                        .style("dominant-baseline", "middle")
+                        .style("font-family", "Space Grotesk")
+                        .style("font-size", "14px")
+                        .style("text-anchor", d => {
+                            if (d.iOS > 80) {
+                                return 'end';
+                            } else {
+                                return 'start';
+                            }
+                        })
+                        .style("fill",'#000000')
+                        .text(d => d['Android'].toFixed(1) + '%');
 
             }
 
