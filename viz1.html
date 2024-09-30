@@ -15,7 +15,7 @@
 
     <script>
 
-        const drawBars = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
+        const drawBars = (spend, divId, xlabels, ylabel, colors, title, subtitle, sources) => {
             const textPadding = 7;
 
             const margin = {top: 90, right: 30, bottom: 60, left: 90},
@@ -32,6 +32,13 @@
                 .attr("transform",
                     "translate(" + margin.left + "," + margin.top + ")");
 
+            const subgroups = xlabels;
+            const groups = spend.map(d => d[ylabel]);
+
+            const series = d3.stack()
+                .keys(subgroups)
+                (spend)
+
             const x = d3.scaleLinear()
                 .range([ 0, width]);
 
@@ -39,21 +46,35 @@
                 .range([ 0, height ])
                 .padding(.15);
 
-            x.domain([0, d3.max(spend, d => d[xlabel])]);
+            const color = d3.scaleOrdinal()
+                .domain(subgroups)
+                .range(colors)
+                .unknown("#ccc");
+
+            x.domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
             y.domain(spend.map(d => d[ylabel]));
 
             g.select('.y-axis').select(".domain").remove();
             g.select('.y-axis').selectAll(".tick line").remove();
 
-            g.selectAll(".bar")
-                .data(spend)
+            g.selectAll(".bars")
+                .data(series)
+                .join("g")
+                    .attr("class", "bars")
+                    .attr("fill", d => color(d.key))
+                .selectAll(".bar")
+                .data((d, i) => d.map(e => {
+                    const f = structuredClone(e);
+                    f.data.index = i;
+                    f.data.key = d.key;
+                    return f;
+                }))
                 .join("rect")
-                    .attr("class", "bar")
-                    .attr("x", x(0) )
-                    .attr("y", d => y(d[ylabel]))
-                    .attr("width", d => x(d[xlabel]))
-                    .attr("height", y.bandwidth() )
-                    .attr("fill", d => d[ylabel] === 'Others' ? "#ADD7F4" : "#0280FB");
+                    .attr("x", d => x(d[0]))
+                    .attr("y", d => y(d.data[ylabel]))
+                    .attr("height", y.bandwidth())
+                    .attr("width", d => x(d[1]) - x(d[0]))
+                    .attr("fill", d => d.data[ylabel] === 'Others' ? (d.data.key === 'iOS' ? "#CCC" : "#ECEDEE") : "");
 
             g.selectAll(".country-name")
                 .data(spend)
@@ -70,26 +91,14 @@
                 .data(spend)
                 .join("text")
                     .attr("class", "percentage")
-                    .attr("x", d => {
-                        if ((d[ylabel] === 'US') || (d[ylabel] === 'Others')) {
-                            return x(d[xlabel]) - textPadding;
-                        } else {
-                            return x(d[xlabel]) + textPadding;
-                        }
-                    })
+                    .attr("x", d => x(d['Total']) + textPadding)
                     .attr("y", d => y(d['Market full name']) + y.bandwidth() / 2 + 2)
                     .style("dominant-baseline", "middle")
                     .style("font-family", "Space Grotesk")
                     .style("font-size", "14px")
-                    .style("text-anchor", d => {
-                        if ((d[ylabel] === 'US') || (d[ylabel] === 'Others')) {
-                            return 'end';
-                        } else {
-                            return 'start';
-                        }
-                    })
-                    .style("fill", d => d[ylabel] === 'US' ? '#FFFFFF' : '#000000')
-                    .text(d => (d[xlabel] * 100).toFixed(1) + '%');
+                    .style("text-anchor", 'start')
+                    .style("fill", '#000000')
+                    .text(d => (d['Total'] * 100).toFixed(1) + '%');
 
             const titleSvg = svg.append("text")
                     .attr("class", "viz-title")
@@ -144,19 +153,11 @@
 
             drawBars(data[0],
                 divId = "#geo-viz1",
-                xlabel = 'Percentage UA Spend',
+                xlabels = ['iOS', 'Android'],
                 ylabel = 'Market full name',
+                colors = ["#040078", "#558FC9"],
                 title = ["Three quarters of mobile games spend is", "concentrated in ten countries"],
                 subtitle = "Gaming spend for top countries, Aug 2023-Aug 2024",
-                sources = "Source: TBD"
-            )
-
-            drawBars(data[1],
-                divId = "#geo-viz4",
-                xlabel = 'Percentage revenue',
-                ylabel = 'Market full name',
-                title = ["Three quarters of mobile games revenue is", "concentrated in ten countries"],
-                subtitle = "Gaming revenue for top countries, Aug 2023-Aug 2024",
                 sources = "Source: TBD"
             )
             
@@ -165,7 +166,6 @@
         function createPDF() {
             const svgContent1 = d3.select("#geo-viz1").html();
             const svgContent4 = d3.select("#geo-viz4").html();
-            console.log(svgContent1)
 
             var docDefinition = {
                 content: [

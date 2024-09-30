@@ -1,12 +1,12 @@
-Market,Market full name,Percentage UA Spend
-USA,US,0.445
-KOR,Korea,0.061
-GBR,UK,0.052
-DEU,Germany,0.047
-JPN,Japan,0.045
-CAN,Canada,0.026
-FRA,France,0.026
-BRA,Brazil,0.021
-AUS,Australia,0.020
-IND,India,0.016
-OTHER,Others,0.241
+Market,Market full name,Android,iOS,Total
+USA,US,0.220,0.209,0.429
+KOR,Korea,0.049,0.006,0.056
+GBR,UK,0.030,0.024,0.054
+DEU,Germany,0.036,0.015,0.051
+JPN,Japan,0.026,0.018,0.044
+CAN,Canada,0.015,0.015,0.030
+FRA,France,0.019,0.009,0.028
+BRA,Brazil,0.017,0.005,0.022
+AUS,Australia,0.010,0.010,0.020
+RUS,Russia,0.013,0.004,0.016
+OTHER,Others,0.166,0.083,0.250
