@@ -1,5 +1,6 @@
-<head></head>
+<head>
     <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <script src="utils.js" charset="utf-8"></script>
     <style>
 
         #select-dropdown {
@@ -79,21 +80,9 @@
 
     <script>
 
-        d3.select("#geo-viz5")
-            .append("div")
-            .attr("class", "title")
-            .style("font-family", "Montserrat")
-            .style("font-size", "18px")
-            .style("font-weight", 700)
-            .html("East Asia sweeps the podium when it comes to </br>revenue per paying user");
-
-        d3.select("#geo-viz5")
-            .append("div")
-            .attr("class", "subtitle")
-            .style("font-family", "Montserrat")
-            .style("font-size", "14px")
-            .style("font-weight", 400)
-            .html("ARPPU for top 15 countries, Aug 2023-Aug 2024");
+        addTitle("#geo-viz5", "East Asia sweeps the podium when it comes to </br>revenue per paying user")
+        
+        addSubtitle("#geo-viz5", "ARPPU for top 15 countries, Aug 2023-Aug 2024");
 
         d3.select("#geo-viz5")
             .append("div")
@@ -125,14 +114,7 @@
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom);
 
-        d3.select("#geo-viz5")
-            .append("div")
-            .attr("class", "sources")
-            .style("font-family", "Montserrat")
-            .style("font-size", "14px")
-            .style("font-weight", 400)
-            .style("color", "#808080")
-            .html("Sources: TBD");
+        addSources("#geo-viz5", "Sources: TBD");
 
         window.onclick = function(event) {
             if (!event.target.matches('#select-dropbtn-1')) {
@@ -141,33 +123,6 @@
                     dropdown.classList.remove('show');
                 }
             }
-        }
-
-        function getUniquesMenu(df, thisVariable) {
-
-            var thisList = df.map(o => o[thisVariable]);
-
-            function uniq(a) {
-                return a.sort().filter(function(item, pos, ary) {
-                    return !pos || item != ary[pos - 1];
-                });
-            }
-
-            var uniqueList = uniq(thisList);
-
-            return uniqueList;
-        }
-
-        function addOptions(id, values) {
-            var element = d3.select("#"+id);
-            var options = element.selectAll("option").data(values);
-
-            options.enter().append("a")
-                .html(d => d);
-
-            options.exit().remove();
-
-            return element;
         }
 
         const textPadding = 7;
