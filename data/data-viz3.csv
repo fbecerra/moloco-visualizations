@@ -1,65 +1,53 @@
-HQ country,HQ country full name,Destination,spend %
-CHN,China,US,0.344
-USA,US,US,0.599
-CYP,Cyprus,US,0.303
-KOR,Korea,US,0.232
-GBR,UK,US,0.374
-TUR,Turkey,US,0.460
-VNM,Viet Nam,US,0.229
-FIN,Finland,US,0.333
-ISR,Israel,US,0.469
-FRA,France,US,0.323
-DEU,Germany,US,0.371
-RUS,Russia,US,0.241
-IRL,Ireland,US,0.505
-SGP,Singapore,US,0.247
-IND,India,US,0.327
-CAN,Canada,US,0.469
-CHN,China,APAC,0.274
-USA,US,APAC,0.103
-CYP,Cyprus,APAC,0.209
-KOR,Korea,APAC,0.525
-GBR,UK,APAC,0.179
-TUR,Turkey,APAC,0.174
-VNM,Viet Nam,APAC,0.304
-FIN,Finland,APAC,0.179
-ISR,Israel,APAC,0.143
-FRA,France,APAC,0.183
-DEU,Germany,APAC,0.131
-RUS,Russia,APAC,0.178
-IRL,Ireland,APAC,0.187
-SGP,Singapore,APAC,0.372
-IND,India,APAC,0.262
-CAN,Canada,APAC,0.128
-CHN,China,EMEA,0.309
-USA,US,EMEA,0.233
-CYP,Cyprus,EMEA,0.378
-KOR,Korea,EMEA,0.186
-GBR,UK,EMEA,0.360
-TUR,Turkey,EMEA,0.309
-VNM,Viet Nam,EMEA,0.352
-FIN,Finland,EMEA,0.400
-ISR,Israel,EMEA,0.300
-FRA,France,EMEA,0.389
-DEU,Germany,EMEA,0.411
-RUS,Russia,EMEA,0.484
-IRL,Ireland,EMEA,0.250
-SGP,Singapore,EMEA,0.276
-IND,India,EMEA,0.325
-CAN,Canada,EMEA,0.296
-CHN,China,RoW,0.044
-USA,US,RoW,0.030
-CYP,Cyprus,RoW,0.087
-KOR,Korea,RoW,0.040
-GBR,UK,RoW,0.057
-TUR,Turkey,RoW,0.041
-VNM,Viet Nam,RoW,0.096
-FIN,Finland,RoW,0.056
-ISR,Israel,RoW,0.064
-FRA,France,RoW,0.075
-DEU,Germany,RoW,0.054
-RUS,Russia,RoW,0.076
-IRL,Ireland,RoW,0.030
-SGP,Singapore,RoW,0.087
-IND,India,RoW,0.059
-CAN,Canada,RoW,0.070
+HQ country,HQ country full name,Destination,Android,iOS,Total
+CHN,China,North America,0.221,0.179,0.400
+KOR,Korea,North America,0.264,0.208,0.472
+USA,US,North America,0.275,0.279,0.554
+TUR,Türkiye,North America,0.264,0.246,0.509
+CYP,Cyprus,North America,0.223,0.160,0.383
+GBR,UK,North America,0.167,0.274,0.441
+ISR,Israel,North America,0.339,0.260,0.599
+IRL,Ireland,North America,0.210,0.317,0.527
+DEU,Germany,North America,0.199,0.271,0.470
+VNM,Viet Nam,North America,0.202,0.080,0.282
+JPN,Japan,North America,0.123,0.144,0.267
+FIN,Finland,North America,0.506,0.197,0.703
+IND,India,North America,0.231,0.330,0.561
+CHN,China,Europe,0.169,0.080,0.249
+KOR,Korea,Europe,0.128,0.069,0.197
+USA,US,Europe,0.135,0.096,0.232
+TUR,Türkiye,Europe,0.187,0.081,0.269
+CYP,Cyprus,Europe,0.221,0.080,0.301
+GBR,UK,Europe,0.172,0.107,0.279
+ISR,Israel,Europe,0.158,0.096,0.254
+IRL,Ireland,Europe,0.097,0.127,0.224
+DEU,Germany,Europe,0.214,0.124,0.338
+VNM,Viet Nam,Europe,0.217,0.075,0.292
+JPN,Japan,Europe,0.104,0.065,0.169
+FIN,Finland,Europe,0.109,0.052,0.161
+IND,India,Europe,0.193,0.105,0.298
+CHN,China,Asia Pacific,0.173,0.071,0.244
+KOR,Korea,Asia Pacific,0.220,0.051,0.271
+USA,US,Asia Pacific,0.082,0.047,0.129
+TUR,Türkiye,Asia Pacific,0.102,0.047,0.150
+CYP,Cyprus,Asia Pacific,0.130,0.031,0.161
+GBR,UK,Asia Pacific,0.093,0.054,0.147
+ISR,Israel,Asia Pacific,0.054,0.029,0.083
+IRL,Ireland,Asia Pacific,0.087,0.100,0.187
+DEU,Germany,Asia Pacific,0.077,0.034,0.111
+VNM,Viet Nam,Asia Pacific,0.197,0.054,0.250
+JPN,Japan,Asia Pacific,0.308,0.198,0.506
+FIN,Finland,Asia Pacific,0.058,0.034,0.092
+IND,India,Asia Pacific,0.041,0.017,0.058
+CHN,China,Rest of World,0.072,0.036,0.107
+KOR,Korea,Rest of World,0.036,0.024,0.060
+USA,US,Rest of World,0.049,0.037,0.085
+TUR,Türkiye,Rest of World,0.048,0.024,0.072
+CYP,Cyprus,Rest of World,0.127,0.028,0.155
+GBR,UK,Rest of World,0.091,0.042,0.133
+ISR,Israel,Rest of World,0.045,0.020,0.064
+IRL,Ireland,Rest of World,0.024,0.038,0.062
+DEU,Germany,Rest of World,0.057,0.024,0.081
+VNM,Viet Nam,Rest of World,0.128,0.048,0.175
+JPN,Japan,Rest of World,0.035,0.024,0.058
+FIN,Finland,Rest of World,0.029,0.016,0.044
+IND,India,Rest of World,0.066,0.017,0.083

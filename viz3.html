@@ -92,7 +92,7 @@
         const textPadding = 7;
         const squaresPerRow = 5;
         const squareSize = 15;
-        const squarePadding = 1;
+        const squarePadding = 2;
         const waffleSize = 10 * squareSize + 9 * squarePadding;
         const waffleHPadding = 10;
         const waffleVPadding = 54;
@@ -152,7 +152,7 @@
         }
 
         const xlabel = 'HQ country full name',
-            ylabel = 'spend %';
+            ylabel = 'Total';
 
         Promise.all([
             d3.csv('./data/data-viz3.csv')
@@ -160,13 +160,15 @@
             const spend = data[0];
 
             spend.forEach(d => {
-                d['spend %'] = +d['spend %'];
+                d['Total'] = +d['Total'];
+                d['Android'] = +d['Android'];
+                d['iOS'] = +d['iOS'];
             });
 
             let country1 = "US";
             let country2 = 'China';
             // const uniqueDestinations = getUniquesMenu(spend, 'Destination');
-            const uniqueDestinations = ['US', 'APAC', 'EMEA', 'RoW'];
+            const uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World'];
 
             let countries = ["country2"];
             countries.forEach(d => {
@@ -190,17 +192,12 @@
             const updatePlot = (g, country) => {
                 // const dataToPlot = spend.filter(d => d.Genre === selectedGenre);
                 const countriesToPlot = [country];
-                console.log(countriesToPlot)
 
                 const countryGroups = g.selectAll(".country-group")
                     .data(countriesToPlot)
                     .join("g")
                         .attr("class", "country-group")
                         .attr("transform", (d,i) => "translate(0," + i * (countryNamePadding + waffleSize + waffleVPadding) + ")")
-
-
-                // x.domain([0, d3.max(dataToPlot, d => d[xlabel])]);
-                // y.domain(dataToPlot.map(d => d[ylabel]));
 
                 const groups = countryGroups.selectAll(".group")
                     .data(d => uniqueDestinations.map(ud => spend.filter(si => ((si[xlabel] === d) && (si.Destination === ud)))))
@@ -212,7 +209,8 @@
                     .data(d => d3.range(0, 100, 1).map(idx => {
                         return {
                             idx: idx,
-                            spend: d[0][ylabel]
+                            Android: d[0].Android,
+                            Total: d[0].Total
                         }
                     }))
                     .join("rect")
@@ -221,13 +219,12 @@
                         .attr("y", d => countryNamePadding + Math.floor(d.idx / 10) * (squareSize + squarePadding))
                         .attr("width", squareSize)
                         .attr("height", squareSize)
-                        .attr("fill", d =>  d.idx >= 100 * (1 - d.spend) ? "#0280FB" : "#ECEDEE");
+                        .attr("fill", d =>  (d.idx >= 100 * (1 - d.Android)) ? "#558FC9" : (d.idx >= 100 * (1 - d.Total)) ? "#040078" : "#ECEDEE");
 
-                groups.selectAll(".fractional-square")
+                groups.selectAll(".fractional-square-android")
                     .data(d => {
-                        const remainder = (d[0][ylabel] * 1000) % 10 / 10;
-                        const idx = Math.floor(100 - d[0][ylabel] * 100);
-                        console.log(d[0][ylabel], remainder, idx)
+                        const remainder = (d[0].Android * 1000) % 10 / 10;
+                        const idx = Math.floor(100 - d[0].Android * 100);
                         return [{
                             x: waffleSize - (idx % 10 + 1) * (squareSize + squarePadding),
                             y: countryNamePadding + Math.floor(idx / 10) * (squareSize + squarePadding),
@@ -235,22 +232,30 @@
                         }]
                     })
                     .join("rect")
-                        .attr("class", "fractional-square")
+                        .attr("class", "fractional-square-android")
                         .attr("x", d => d.x)
                         .attr("y", d => d.y + (squareSize - d.height))
                         .attr("width", squareSize)
                         .attr("height", d => d.height)
-                        .attr("fill", "#0280FB");
+                        .attr("fill", "#558FC9");
 
-                // groups.selectAll(".fg-square")
-                //     .data(d => [d])
-                //     .join("rect")
-                //         .attr("class", "fg-square")
-                //         .attr("x", 0)
-                //         .attr("y", d => squareSize - y(d[ylabel]))
-                //         .attr("width", squareSize)
-                //         .attr("height", d => y(d[ylabel]))
-                //         .attr("fill", "#0280FB");
+                groups.selectAll(".fractional-square-ios")
+                    .data(d => {
+                        const remainder = (d[0].Total * 1000) % 10 / 10;
+                        const idx = Math.floor(100 - d[0].Total * 100);
+                        return [{
+                            x: waffleSize - (idx % 10 + 1) * (squareSize + squarePadding),
+                            y: countryNamePadding + Math.floor(idx / 10) * (squareSize + squarePadding),
+                            height: y(remainder)
+                        }]
+                    })
+                    .join("rect")
+                        .attr("class", "fractional-square-ios")
+                        .attr("x", d => d.x)
+                        .attr("y", d => d.y + (squareSize - d.height))
+                        .attr("width", squareSize)
+                        .attr("height", d => d.height)
+                        .attr("fill", "#040078");
 
                 groups.selectAll(".percentage")
                     .data(d => [d])
@@ -279,23 +284,7 @@
             }
 
             const uniqueCountries = getUniquesMenu(spend, xlabel);
-            // // const optsCountry1 = uniqueCountries.filter(d => (d !== country1) && (d !== country2));
-            // // const optsCountry2 = uniqueCountries.filter(d => (d !== country2) && (d !== country2));
-            // let country1Opts = addOptions("country1-content-2", uniqueCountries);
             let country2Opts = addOptions("country2-content-2", uniqueCountries);
-
-            // d3.select("#country1-dropdown-2")
-            //     .on("click", function(d){
-            //         document.getElementById("country1-content-2").classList.toggle("show");
-            //     });
-            // d3.select("#country1-dropdown-2").select(".dropbtn").html(country1);
-            // country1Opts.selectAll("a").on("click", function(event, d){
-            //     if (d !== country1) {
-            //         country1 = d;
-            //         d3.select("#country1-dropdown-2").select(".dropbtn").html(country1);
-            //         updatePlot();
-            //     }
-            // });
 
             d3.select("#country2-dropdown-2")
                 .on("click", function(d){
