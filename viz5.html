@@ -84,26 +84,39 @@
         
         addSubtitle("#geo-viz5", "ARPPU for top 15 countries, Aug 2023-Aug 2024");
 
-        d3.select("#geo-viz5")
+        const dropdowns = d3.select("#geo-viz5")
             .append("div")
-            .attr("class", "select-label")
-            .style("font-family", "Montserrat")
-            .style("font-size", "14px")
-            .style("font-weight", 700)
-            .html("Select genre");
+            .attr("class", "dropdowns");
 
-        const dropdown = d3.select("#geo-viz5")
-            .append("div")
-            .attr("class", "dropdown")
-            .attr("id", "select-dropdown-1");
+        const dropdownsOpts = ['genre', 'OS'];
 
-        dropdown.append("div")
-            .attr("class", "dropbtn")
-            .attr("id", "select-dropbtn-1");
+        dropdownsOpts.forEach(d => {
 
-        dropdown.append("div")
-            .attr("class", "dropdown-content")
-            .attr("id", "select-content-1");
+            const dropdownWrapper = dropdowns.append("div")
+                .attr("class", "dropdown-wrapper")
+                .style("display", 'inline-block')
+                .style("margin-right", "38px");
+
+            dropdownWrapper.append("div")
+                .attr("class", "select-label")
+                .style("font-family", "Montserrat")
+                .style("font-size", "14px")
+                .style("font-weight", 700)
+                .html(`Select ${d}`);
+                
+            const dropdown = dropdownWrapper.append("div")
+                .attr("class", "dropdown inline")
+                .attr("id", d+"-dropdown");
+
+            dropdown.append("div")
+                .attr("class", "dropbtn")
+                .attr("id", d+"-dropbtn");
+
+            dropdown.append("div")
+                .attr("class", "dropdown-content")
+                .attr("id", d+"-content");
+        });
+
 
         const margin = {top: 10, right: 60, bottom: 10, left: 120},
             width = 460 - margin.left - margin.right,
@@ -117,8 +130,17 @@
         addSources("#geo-viz5", "Sources: TBD");
 
         window.onclick = function(event) {
-            if (!event.target.matches('#select-dropbtn-1')) {
-                const dropdown = document.getElementById("select-content-1");
+            if (!event.target.matches('#genre-dropbtn')) {
+                const dropdown = document.getElementById("genre-content");
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            }
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('#OS-dropbtn')) {
+                const dropdown = document.getElementById("OS-content");
                 if (dropdown.classList.contains('show')) {
                     dropdown.classList.remove('show');
                 }
@@ -146,15 +168,17 @@
         ]).then((data) => {
             const revenue = data[0];
 
-            let selectedGenre = "RPG";
+            let selectedGenre = "All genres";
+            let selectedOS = 'All systems';
 
             revenue.forEach(d => {
-                d['Revenue %'] = +d['Revenue %'];
-                d['ARPPU ($)'] = +d['ARPPU ($)'];
-            });
+                d['Android'] = +d['Android'];
+                d['iOS'] = +d['iOS'];
+                d['Total'] = +d['Total']
+;            });
 
             const updatePlot = () => {
-                const xlabel = 'ARPPU ($)',
+                const xlabel = selectedOS === 'All systems' ? 'Total' : selectedOS,
                     ylabel = 'Market full name';
                 const dataToPlot = revenue.filter(d => d.Genre === selectedGenre)
                     .sort((a,b) => b[xlabel] - a[xlabel]);
@@ -208,17 +232,33 @@
             }
 
             const genre = getUniquesMenu(revenue, 'Genre');
-            let genreOpts = addOptions("select-content-1", genre);
+            let genreOpts = addOptions("genre-content", genre);
 
-            d3.select("#select-dropdown-1")
+            d3.select("#genre-dropdown")
                 .on("click", function(d){
-                    document.getElementById("select-content-1").classList.toggle("show");
+                    document.getElementById("genre-content").classList.toggle("show");
                 });
-            d3.select("#select-dropdown-1").select(".dropbtn").html('RPG');
+            d3.select("#genre-dropdown").select(".dropbtn").html(selectedGenre);
             genreOpts.selectAll("a").on("click", function(event, d){
                 if (d !== selectedGenre) {
                     selectedGenre = d;
-                    d3.select("#select-dropdown-1").select(".dropbtn").html(selectedGenre);
+                    d3.select("#genre-dropdown").select(".dropbtn").html(selectedGenre);
+                    updatePlot();
+                }
+            })
+
+            const systems = ['All systems', 'Android', 'iOS'];
+            let systemOpts = addOptions("OS-content", systems);
+
+            d3.select("#OS-dropdown")
+                .on("click", function(d){
+                    document.getElementById("OS-content").classList.toggle("show");
+                });
+            d3.select("#OS-dropdown").select(".dropbtn").html(selectedOS);
+            systemOpts.selectAll("a").on("click", function(event, d){
+                if (d !== selectedOS) {
+                    selectedOS = d;
+                    d3.select("#OS-dropdown").select(".dropbtn").html(selectedOS);
                     updatePlot();
                 }
             })
