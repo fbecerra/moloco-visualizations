@@ -118,7 +118,7 @@
 
         const textPadding = 7;
 
-        const margin = {top: 10, right: 10, bottom: 10, left: 90},
+        const margin = {top: 40, right: 60, bottom: 10, left: 90},
             width = 460 - margin.left - margin.right,
             height = 400 - margin.top - margin.bottom;
 
@@ -218,6 +218,18 @@
 
 
                 // iOS
+                g.selectAll(".title-iOS")
+                    .data(['iOS'])
+                    .join("text")
+                        .attr("class", "title-iOS")
+                        .attr("x", x(0) )
+                        .attr("y", margin.top - 48)
+                        .style("dominant-baseline", "middle")
+                        .style("font-family", "Montserrat")
+                        .style("font-size", "14px")
+                        .style("font-weight", 700)
+                        .text(d => d);
+
                 g.selectAll(".bg-ios")
                     .data(dataToPlot)
                     .join("rect")
@@ -264,6 +276,18 @@
                         .text(d => d['iOS'].toFixed(1) + '%');
 
                 // ANDROID
+                g.selectAll(".title-android")
+                    .data(['Android'])
+                    .join("text")
+                        .attr("class", "title-android")
+                        .attr("x", width/2 + x(0) )
+                        .attr("y", margin.top - 48)
+                        .style("dominant-baseline", "middle")
+                        .style("font-family", "Montserrat")
+                        .style("font-size", "14px")
+                        .style("font-weight", 700)
+                        .text(d => d);
+
                 g.selectAll(".bg-android")
                     .data(dataToPlot)
                     .join("rect")
@@ -308,6 +332,33 @@
                         })
                         .style("fill",'#000000')
                         .text(d => d['Android'].toFixed(1) + '%');
+
+                // Total
+                g.selectAll(".title-total")
+                    .data(['Total'])
+                    .join("text")
+                        .attr("class", "title-total")
+                        .attr("x", width)
+                        .attr("y", margin.top - 48)
+                        .style("dominant-baseline", "middle")
+                        .style("font-family", "Montserrat")
+                        .style("font-size", "14px")
+                        .style("font-weight", 700)
+                        .text(d => d);
+
+                g.selectAll(".percentage-total")
+                    .data(dataToPlot)
+                    .join("text")
+                        .attr("class", "percentage-total")
+                        .attr("x", width)
+                        .attr("y", d => y(d['Market full name']) + y.bandwidth() / 2 + 2)
+                        .style("dominant-baseline", "middle")
+                        .style("font-family", "Space Grotesk")
+                        .style("font-size", "14px")
+                        .style("font-weight", 700)
+                        .style("text-anchor", 'start')
+                        .style("fill",'#000000')
+                        .text(d => d['Total'].toFixed(1) + '%');
 
             }
 
