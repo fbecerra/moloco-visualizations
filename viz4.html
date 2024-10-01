@@ -1,5 +1,6 @@
 <head>
     <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <script src="utils.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.12/pdfmake.min.js" integrity="sha512-axXaF5grZBaYl7qiM6OMHgsgVXdSLxqq0w7F4CQxuFyrcPmn0JfnqsOtYHUun80g6mRRdvJDrTCyL8LQqBOt/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.12/vfs_fonts.min.js" integrity="sha512-EFlschXPq/G5zunGPRSYqazR1CMKj0cQc8v6eMrQwybxgIbhsfoO5NAMQX3xFDQIbFlViv53o7Hy+yCWw6iZxA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
@@ -17,9 +18,12 @@
         const drawBars = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
             const textPadding = 7;
 
-            const margin = {top: 90, right: 30, bottom: 60, left: 90},
+            const margin = {top:40, right: 30, bottom: 60, left: 90},
                 width = 460 - margin.left - margin.right,
                 height = 400 - margin.top - margin.bottom;
+
+            addTitle(divId, title);
+            addSubtitle(divId, subtitle);
 
             const svg = d3.select(divId)
                 .append("svg")
@@ -55,6 +59,19 @@
                     .style("font-size", "14px")
                     .text(d => d[ylabel]);
 
+            // SPEND
+            g.selectAll(".title-spend")
+                .data(['Spend'])
+                .join("text")
+                    .attr("class", "title-spend")
+                    .attr("x", x(0) )
+                    .attr("y", margin.top - 48)
+                    .style("dominant-baseline", "middle")
+                    .style("font-family", "Montserrat")
+                    .style("font-size", "14px")
+                    .style("font-weight", 700)
+                    .text(d => d);
+
             g.selectAll(".bar-spend")
                 .data(spend)
                 .join("rect")
@@ -63,7 +80,7 @@
                     .attr("y", d => y(d[ylabel]))
                     .attr("width", d => x(d['UA Spend']))
                     .attr("height", y.bandwidth() )
-                    .attr("fill", d => d[ylabel] === 'Others' ? "#D9D9D9" : "#ECEDEE");
+                    .attr("fill", d => d[ylabel] === 'Others' ? "#ECEDEE" : "#D9D9D9");
 
             g.selectAll(".percentage-spend")
                 .data(spend)
@@ -89,6 +106,19 @@
                     })
                     .style("fill",'#000000')
                     .text(d => (d['UA Spend'] * 100).toFixed(1) + '%');
+
+            // REVENUE
+            g.selectAll(".title-revenue")
+                .data(['Revenue'])
+                .join("text")
+                    .attr("class", "title-revenue")
+                    .attr("x", width/2 + x(0) )
+                    .attr("y", margin.top - 48)
+                    .style("dominant-baseline", "middle")
+                    .style("font-family", "Montserrat")
+                    .style("font-size", "14px")
+                    .style("font-weight", 700)
+                    .text(d => d);
 
             g.selectAll(".bar-revenue")
                 .data(spend)
@@ -125,40 +155,7 @@
                     .style("fill", d => d[ylabel] === 'US' ? '#FFFFFF' : '#000000')
                     .text(d => (d['Revenue'] * 100).toFixed(1) + '%');
 
-            const titleSvg = svg.append("text")
-                    .attr("class", "viz-title")
-                    .attr("x", 0)
-                    .attr("y", 18);
-                    
-            titleSvg.selectAll("tspan")
-                .data(title)
-                .join("tspan")
-                    .attr("class", "viz-title")
-                    .style("font-family", "Montserrat")
-                    .style("font-size", "18px")
-                    .style("font-weight", 700)
-                    .attr("x", 0)
-                    .attr("dy", (_,i) => i * 22.5)
-                    .text(d => d);
-
-            svg.append("text")
-                .attr("class", "viz-subtitle")
-                .attr("x", 0)
-                .attr("y", 68)
-                .style("font-family", "Montserrat")
-                .style("font-size", "14px")
-                .style("font-weight", 400)
-                .text(subtitle);
-
-            svg.append("text")
-                .attr("class", "viz-sources")
-                .attr("x", 0)
-                .attr("y", height + margin.top + 40)
-                .style("font-family", "Montserrat")
-                .style("font-size", "14px")
-                .style("font-weight", 400)
-                .style("fill", "#808080")
-                .text(sources);  
+            addSources(divId, sources);
             
         }
         
@@ -175,7 +172,7 @@
                 divId = "#geo-viz4",
                 xlabel = 'Percentage revenue',
                 ylabel = 'Market full name',
-                title = ["Three quarters of mobile games revenue is", "concentrated in ten countries"],
+                title = "Three quarters of mobile games revenue is</br>concentrated in ten countries",
                 subtitle = "Gaming revenue for top countries, Aug 2023-Aug 2024",
                 sources = "Source: TBD"
             )
