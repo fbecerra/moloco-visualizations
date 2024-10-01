@@ -18,7 +18,7 @@
         const drawBars = (spend, divId, xlabels, ylabel, colors, title, subtitle, sources) => {
             const textPadding = 7;
 
-            const margin = {top: 10, right: 30, bottom: 10, left: 90},
+            const margin = {top: 10, right: 50, bottom: 10, left: 90},
                 width = 460 - margin.left - margin.right,
                 height = 400 - margin.top - margin.bottom;
 
@@ -79,6 +79,17 @@
                     .attr("height", y.bandwidth())
                     .attr("width", d => x(d[1]) - x(d[0]))
                     .attr("fill", d => d.data[ylabel] === 'Others' ? (d.data.key === 'iOS' ? "#CCC" : "#ECEDEE") : "");
+
+            g.selectAll(".divider")
+                .data(series[1])
+                .join("line")
+                    .attr("class", "divider")
+                    .attr("x1", d => x(d[0]))
+                    .attr("x2", d => x(d[0]))
+                    .attr("y1", d => y(d.data[ylabel]))
+                    .attr("y2", d => y(d.data[ylabel]) + y.bandwidth())
+                    .attr("stroke", "white")
+                    .attr("stroke-width", 1.5);
 
             g.selectAll(".country-name")
                 .data(spend)
