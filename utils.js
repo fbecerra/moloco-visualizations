@@ -55,3 +55,49 @@ function addSources(id, text) {
         .style("color", "#808080")
         .html(text);
 }
+
+function addLegend(id) {
+    const rectWidth = 20;
+
+    d3.select(id)
+        .append("div")
+        .attr("class", "legend-title")
+        .style("font-family", "Montserrat")
+        .style("font-size", "14px")
+        .style("font-weight", 700)
+        .html("Operating System");
+
+    const legendItem = d3.select(id)
+        .append("div")
+        .selectAll(".legend-item")
+        .data(["iOS", "Android"])
+        .join("span")
+            .attr("class", "legend-item")
+            .style("margin-right", 14);
+
+    legendItem.append("svg")
+        .attr("width", rectWidth)
+        .attr("height", rectWidth)
+        .style("vertical-align", "bottom")
+        .selectAll("rect")
+        .data(d => [d])
+        .join("rect")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("width", rectWidth)
+            .attr("height", rectWidth)
+            .attr("fill", d => d === 'iOS' ? "#040078" : "#558FC9");
+
+    legendItem.selectAll(".item-text")
+        .data(d => [d])
+        .join("span")
+            .attr("class", "item-text")
+            .style("font-family", "Montserrat")
+            .style("font-size", "14px")
+            .style("font-weight", 400)
+            .style("margin-left", "6px")
+            .style("vertical-align", "bottom")
+            .html(d => d)
+
+
+}
