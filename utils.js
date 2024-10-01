@@ -56,16 +56,21 @@ function addSources(id, text) {
         .html(text);
 }
 
-function addLegend(id) {
-    const rectWidth = 20;
-
+function addBoldText(id, text) {
     d3.select(id)
         .append("div")
-        .attr("class", "legend-title")
+        .attr("class", "bold-text")
         .style("font-family", "Montserrat")
         .style("font-size", "14px")
         .style("font-weight", 700)
-        .html("Operating System");
+        .style("color", "##000")
+        .html(text);
+}
+
+function addLegend(id) {
+    const rectWidth = 20;
+
+    addBoldText(id, "Operating System");
 
     const legendItem = d3.select(id)
         .append("div")

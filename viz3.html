@@ -1,5 +1,6 @@
-<head></head>
+<head>
     <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <script src="utils.js" charset="utf-8"></script>
     <style>
 
         #select-dropdown {
@@ -83,25 +84,10 @@
 
     <script>
 
-        d3.select("#geo-viz3")
-            .append("div")
-            .attr("class", "title")
-            .style("font-family", "Montserrat")
-            .style("font-size", "18px")
-            .style("font-weight", 700)
-            .html("Mobile gaming genres don't generate in-app revenue</br>the same way across markets");
-
-        d3.select("#geo-viz3")
-            .append("div")
-            .attr("class", "subtitle")
-            .style("font-family", "Montserrat")
-            .style("font-size", "14px")
-            .style("font-weight", 400)
-            .html("Percentage of estimated paid UA spend in top 20 markets split by Genre, Aug 2023-Aug 2024");
-
-        const dropdowns = d3.select("#geo-viz3")
-            .append("div")
-            .attr("class", "dropdowns");
+        addTitle("#geo-viz3", "Mobile gaming genres don't generate in-app revenue</br>the same way across markets");
+        addSubtitle("#geo-viz3", "Percentage of estimated paid UA spend in top 20 markets split by Genre, Aug 2023-Aug 2024");
+        addLegend("#geo-viz3");
+        addBoldText("#geo-viz3", "HQ in the US");
 
         const textPadding = 7;
         const squaresPerRow = 5;
@@ -112,73 +98,37 @@
         const waffleVPadding = 54;
         const countryNamePadding = 20;
         const topText = countryNamePadding + 2 * squareSize + squarePadding;
-        const leftText = 6 * squareSize + 5 * squarePadding; 
+        const leftText = 7 * squareSize + 6 * squarePadding; 
 
-        const margin = {top: 10, right: 0, bottom: 10, left: 1},
+        const margin = {top: 0, right: 0, bottom: 0, left: 1},
             width = 4 * waffleSize + 3 * waffleHPadding - margin.left - margin.right,
-            height = 2 * (countryNamePadding + waffleSize + waffleVPadding) - margin.top - margin.bottom;
+            height = (waffleSize + waffleVPadding) - margin.top - margin.bottom;
 
-        const svg = d3.select("#geo-viz3")
+        const svg1 = d3.select("#geo-viz3")
             .append("svg")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom);
 
-        // d3.select("#geo-viz2")
-        //     .append("div")
-        //     .attr("class", "sources")
-        //     .style("font-family", "Montserrat")
-        //     .style("font-size", "14px")
-        //     .style("font-weight", 400)
-        //     .style("color", "#808080")
-        //     .html("Sources: TBD");
+        const g1 = svg1.append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
 
-        window.onclick = function(event) {
-            if (!event.target.matches('#country1-dropbtn-2')) {
-                const dropdown = document.getElementById("country1-content-2");
-                if (dropdown.classList.contains('show')) {
-                    dropdown.classList.remove('show');
-                }
-            }
-        }
+        d3.select("#geo-viz3")
+            .append("div")
+            .attr("class", "separator")
+            .style("border-bottom", '1px dotted #808080');
 
-        window.onclick = function(event) {
-            if (!event.target.matches('#country2-dropbtn-2')) {
-                const dropdown = document.getElementById("country2-content-2");
-                if (dropdown.classList.contains('show')) {
-                    dropdown.classList.remove('show');
-                }
-            }
-        }
+        addBoldText("#geo-viz3", "Select HQ to compare");
+        const dropdowns = d3.select("#geo-viz3")
+            .append("div")
+            .attr("class", "dropdowns");
 
-        function getUniquesMenu(df, thisVariable) {
+        const svg2 = d3.select("#geo-viz3")
+            .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom);
 
-            var thisList = df.map(o => o[thisVariable]);
-
-            function uniq(a) {
-                return a.sort().filter(function(item, pos, ary) {
-                    return !pos || item != ary[pos - 1];
-                });
-            }
-
-            var uniqueList = uniq(thisList);
-
-            return uniqueList;
-        }
-
-        function addOptions(id, values) {
-            var element = d3.select("#"+id);
-            var options = element.selectAll("option").data(values);
-
-            options.enter().append("a")
-                .html(d => d);
-
-            options.exit().remove();
-
-            return element;
-        }
-
-
-        const g = svg.append("g")
+        const g2 = svg2.append("g")
             .attr("transform",
                 "translate(" + margin.left + "," + margin.top + ")");
 
@@ -192,6 +142,14 @@
         // const xAxis = g.append("g")
         //     .attr("transform", "translate(0," + height + ")");
 
+        window.onclick = function(event) {
+            if (!event.target.matches('#country2-dropbtn-2')) {
+                const dropdown = document.getElementById("country2-content-2");
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            }
+        }
 
         const xlabel = 'HQ country full name',
             ylabel = 'spend %';
@@ -210,18 +168,11 @@
             // const uniqueDestinations = getUniquesMenu(spend, 'Destination');
             const uniqueDestinations = ['US', 'APAC', 'EMEA', 'RoW'];
 
-            let countries = ["country1", "country2"];
+            let countries = ["country2"];
             countries.forEach(d => {
 
                 const dropdownWrapper = dropdowns.append("div")
                     .attr("class", "dropdown-wrapper")
-
-                dropdownWrapper.append("div")
-                    .attr("class", "select-label")
-                    .style("font-family", "Montserrat")
-                    .style("font-size", "14px")
-                    .style("font-weight", 700)
-                    .html((d, i) => i === 0 ? "Select first HQ" : "Select second HQ");
                     
                 const dropdown = dropdownWrapper.append("div")
                     .attr("class", "dropdown inline")
@@ -236,9 +187,9 @@
                     .attr("id", d+"-content-2");
             });
 
-            const updatePlot = () => {
+            const updatePlot = (g, country) => {
                 // const dataToPlot = spend.filter(d => d.Genre === selectedGenre);
-                const countriesToPlot = [country1, country2];
+                const countriesToPlot = [country];
                 console.log(countriesToPlot)
 
                 const countryGroups = g.selectAll(".country-group")
@@ -250,14 +201,6 @@
 
                 // x.domain([0, d3.max(dataToPlot, d => d[xlabel])]);
                 // y.domain(dataToPlot.map(d => d[ylabel]));
-
-                const countryName = countryGroups.selectAll(".country-title")
-                    .data(d => [d])
-                    .join("text")
-                        .attr("class", "country-title")
-                        .attr("x", 0)
-                        .attr("y", 0)
-                        .text(d => "HQ in " + d)
 
                 const groups = countryGroups.selectAll(".group")
                     .data(d => uniqueDestinations.map(ud => spend.filter(si => ((si[xlabel] === d) && (si.Destination === ud)))))
@@ -336,23 +279,23 @@
             }
 
             const uniqueCountries = getUniquesMenu(spend, xlabel);
-            // const optsCountry1 = uniqueCountries.filter(d => (d !== country1) && (d !== country2));
-            // const optsCountry2 = uniqueCountries.filter(d => (d !== country2) && (d !== country2));
-            let country1Opts = addOptions("country1-content-2", uniqueCountries);
+            // // const optsCountry1 = uniqueCountries.filter(d => (d !== country1) && (d !== country2));
+            // // const optsCountry2 = uniqueCountries.filter(d => (d !== country2) && (d !== country2));
+            // let country1Opts = addOptions("country1-content-2", uniqueCountries);
             let country2Opts = addOptions("country2-content-2", uniqueCountries);
 
-            d3.select("#country1-dropdown-2")
-                .on("click", function(d){
-                    document.getElementById("country1-content-2").classList.toggle("show");
-                });
-            d3.select("#country1-dropdown-2").select(".dropbtn").html(country1);
-            country1Opts.selectAll("a").on("click", function(event, d){
-                if (d !== country1) {
-                    country1 = d;
-                    d3.select("#country1-dropdown-2").select(".dropbtn").html(country1);
-                    updatePlot();
-                }
-            });
+            // d3.select("#country1-dropdown-2")
+            //     .on("click", function(d){
+            //         document.getElementById("country1-content-2").classList.toggle("show");
+            //     });
+            // d3.select("#country1-dropdown-2").select(".dropbtn").html(country1);
+            // country1Opts.selectAll("a").on("click", function(event, d){
+            //     if (d !== country1) {
+            //         country1 = d;
+            //         d3.select("#country1-dropdown-2").select(".dropbtn").html(country1);
+            //         updatePlot();
+            //     }
+            // });
 
             d3.select("#country2-dropdown-2")
                 .on("click", function(d){
@@ -363,11 +306,12 @@
                 if (d !== country2) {
                     country2 = d;
                     d3.select("#country2-dropdown-2").select(".dropbtn").html(country2);
-                    updatePlot();
+                    updatePlot(g2, country2);
                 }
             })
 
-            updatePlot();
+            updatePlot(g1, 'US');
+            updatePlot(g2, country2);
         })
 
     </script>
