@@ -1,4 +1,4 @@
-const drawBars = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
+const drawBars4 = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
     const textPadding = 7;
 
     const margin = {top:40, right: 30, bottom: 10, left: 90},
@@ -151,7 +151,7 @@ Promise.all([
         d['Percentage revenue'] = +d['Percentage revenue'];
     });
 
-    drawBars(data[0],
+    drawBars4(data[0],
         divId = "#geo-viz4",
         xlabel = 'Percentage revenue',
         ylabel = 'Market full name',
