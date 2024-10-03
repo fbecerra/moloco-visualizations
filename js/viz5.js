@@ -5,7 +5,8 @@ function drawViz5() {
 
     const dropdowns = d3.select("#geo-viz5")
         .append("div")
-        .attr("class", "dropdowns");
+        .attr("class", "dropdowns")
+        .style("display", "table");
 
     const dropdownsOpts = ['genre', 'OS'];
 

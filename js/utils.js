@@ -128,11 +128,18 @@ function clearDiv(divId) {
 }
 
 function fixWidth(divId) {
-    const children = d3.select(divId).selectChildren()._groups[0];
+    const children = d3.select(divId).selectChildren().filter(":not(.separator)");
     const maxWidth = d3.max(children, child => child.getBoundingClientRect().width);
     d3.select(divId)
         .style("width", `${maxWidth}px`)
         .style("margin", "auto")
         .style("display", "table");
+    const separators = d3.select(divId).selectChildren().filter(".separator");
+    console.log(children, separators)
+    if (separators._groups.length > 0) {
+        separators.style("width", `${maxWidth}px`)
+            .style("margin", "auto")
+            .style("display", "table");
+    }
 }
     

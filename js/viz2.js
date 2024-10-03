@@ -9,6 +9,7 @@ function drawViz2() {
         .style("font-family", "Montserrat")
         .style("font-size", "14px")
         .style("font-weight", 700)
+        .style("display", "table")
         .html("Select genre");
     
     const dropdown = d3.select("#geo-viz2")

@@ -39,7 +39,8 @@ function drawViz3() {
     addBoldText("#geo-viz3", "Select HQ to compare");
     const dropdowns = d3.select("#geo-viz3")
         .append("div")
-        .attr("class", "dropdowns");
+        .attr("class", "dropdowns")
+        .style("display", "table");
 
     const svg2 = d3.select("#geo-viz3")
         .append("svg")
