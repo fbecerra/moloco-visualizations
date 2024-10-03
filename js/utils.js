@@ -87,6 +87,7 @@ function addLegend(id) {
         .attr("width", rectWidth)
         .attr("height", rectWidth)
         .style("vertical-align", "bottom")
+        .style("display", 'inline-block')
         .selectAll("rect")
         .data(d => [d])
         .join("rect")
@@ -105,6 +106,7 @@ function addLegend(id) {
             .style("font-weight", 400)
             .style("margin-left", "6px")
             .style("vertical-align", "bottom")
+            .style("display", 'inline-block')
             .html(d => d)
 
 

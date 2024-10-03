@@ -76,6 +76,10 @@
     margin-top: 14px;
 }
 
-#geo-viz5 .legend-wrapper {
+#geo-viz3 .legend-wrapper {
     margin-bottom: 24px;
+}
+
+#geo-viz3 .dropdowns {
+    margin-top: 8px;
 }
