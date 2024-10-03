@@ -135,7 +135,6 @@ function fixWidth(divId) {
         .style("margin", "auto")
         .style("display", "table");
     const separators = d3.select(divId).selectChildren().filter(".separator");
-    console.log(children, separators)
     if (separators._groups.length > 0) {
         separators.style("width", `${maxWidth}px`)
             .style("margin", "auto")
