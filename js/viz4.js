@@ -1,6 +1,6 @@
 function drawViz4() {
     const drawBars4 = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
-        d3.select(divId + " img").style('display', 'none');
+        clearDiv(divId);
 
         const textPadding = 7;
     

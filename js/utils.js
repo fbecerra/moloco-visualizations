@@ -108,3 +108,13 @@ function addLegend(id) {
 
 
 }
+
+function clearDiv(divId) {
+    d3.select(`${divId} img`)
+        .style('display', 'none');
+    d3.select(divId)
+        .style('display', 'block')
+        .style("width", "460px")
+        .style("margin", "auto");
+}
+    

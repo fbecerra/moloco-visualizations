@@ -1,5 +1,5 @@
 function drawViz5() {
-    d3.select("#geo-viz5 img").style('display', 'none');
+    clearDiv("#geo-viz5");
     addTitle("#geo-viz5", "East Asia sweeps the podium when it comes to </br>revenue per paying user")   
     addSubtitle("#geo-viz5", "ARPPU for top 15 countries, Aug 2023-Aug 2024");
 
