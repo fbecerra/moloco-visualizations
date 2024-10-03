@@ -131,7 +131,7 @@ function fixWidth(divId) {
     const children = d3.select(divId).selectChildren()._groups[0];
     const maxWidth = d3.max(children, child => child.getBoundingClientRect().width);
     d3.select(divId)
-        .attr("width", `${maxWidth}px`)
+        .style("width", `${maxWidth}px`)
         .style("margin", "auto")
         .style("display", "table");
 }
