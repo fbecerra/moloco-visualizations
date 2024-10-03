@@ -1,5 +1,6 @@
 function drawViz1() {
     const drawBars1 = (spend, divId, xlabels, ylabel, colors, title, subtitle, sources) => {
+        d3.select(divId + " img").style('display', 'none');
         const textPadding = 7;
     
         const margin = {top: 10, right: 50, bottom: 10, left: 90},

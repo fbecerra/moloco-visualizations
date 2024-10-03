@@ -1,5 +1,7 @@
 function drawViz4() {
     const drawBars4 = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
+        d3.select(divId + " img").style('display', 'none');
+
         const textPadding = 7;
     
         const margin = {top:30, right: 30, bottom: 10, left: 90},
@@ -8,6 +10,7 @@ function drawViz4() {
     
         addTitle(divId, title);
         addSubtitle(divId, subtitle);
+        
     
         const svg = d3.select(divId)
             .append("svg")

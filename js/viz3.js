@@ -1,4 +1,5 @@
 function drawViz3() {
+    d3.select("#geo-viz3 img").style('display', 'none');
     addTitle("#geo-viz3", "Mobile gaming genres don't generate in-app revenue</br>the same way across markets");
     addSubtitle("#geo-viz3", "Percentage of estimated paid UA spend in top 20 markets split by Genre, Aug 2023-Aug 2024");
     addLegend("#geo-viz3");
