@@ -126,6 +126,6 @@ function fixWidth(divId) {
    const width = d3.select(divId).node().getBoundingClientRect().width;
    d3.select(divId)
     .attr("max-width", `${width}px`)
-    .style("margin", auto);
+    .style("margin", "auto");
 }
     
