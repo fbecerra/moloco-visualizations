@@ -143,7 +143,7 @@ function drawViz5() {
                     .style("font-size", "14px")
                     .style("text-anchor", 'start')
                     .style("fill", '#000000')
-                    .text(d => d[xlabel].toFixed(1) + '$');
+                    .text(d => '$' + d[xlabel].toFixed(1));
 
             g.selectAll(".percentage").raise();
 
