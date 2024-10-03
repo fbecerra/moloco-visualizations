@@ -81,7 +81,7 @@ function addLegend(id) {
         .join("span")
             .attr("class", "legend-item")
             .style("display", 'inline-block')
-            .style("margin-right", 14);
+            .style("margin-right", "14px");
 
     legendItem.append("svg")
         .attr("width", rectWidth)
