@@ -2,7 +2,7 @@ function drawViz4() {
     const drawBars4 = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
         const textPadding = 7;
     
-        const margin = {top:40, right: 30, bottom: 10, left: 90},
+        const margin = {top:30, right: 30, bottom: 10, left: 90},
             width = 460 - margin.left - margin.right,
             height = 400 - margin.top - margin.bottom;
     
