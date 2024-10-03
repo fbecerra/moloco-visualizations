@@ -121,4 +121,11 @@ function clearDiv(divId) {
         .style("margin", "auto")
         .style("background", "#FFF");
 }
+
+function fixWidth(divId) {
+   const width = d3.select(divId).node().getBoundingClientRect().width;
+   d3.select(divId)
+    .attr("max-width", `${width}px`)
+    .style("margin", auto);
+}
     

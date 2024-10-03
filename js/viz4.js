@@ -143,6 +143,7 @@ function drawViz4() {
                 .text(d => (d['Revenue'] * 100).toFixed(1) + '%');
     
         addSources(divId, sources);
+        fixWidth(divId);
         
     }
     

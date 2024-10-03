@@ -101,6 +101,7 @@ function drawViz1() {
                 .text(d => (d['Total'] * 100).toFixed(1) + '%');
     
         addSources(divId, sources);  
+        fixWidth(divId);
         
     }
     

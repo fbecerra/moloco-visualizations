@@ -148,6 +148,8 @@ function drawViz5() {
 
             g.selectAll(".percentage").raise();
 
+            fixWidth("#geo-viz5");
+
         }
 
         const genre = getUniquesMenu(revenue, 'Genre');

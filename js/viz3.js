@@ -199,6 +199,8 @@ function drawViz3() {
                     .attr("fill", "#000000")
                     .text(d => 'Spend in ' + d[0]['Destination'])
 
+            fixWidth("#geo-viz3");
+
         }
 
         const uniqueCountries = getUniquesMenu(spend, xlabel);

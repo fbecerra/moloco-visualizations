@@ -231,6 +231,8 @@ function drawViz2() {
                     .style("text-anchor", 'start')
                     .style("fill",'#000000')
                     .text(d => d['Total'].toFixed(1) + '%');
+
+            fixWidth("#geo-viz2");
     
         }
     
