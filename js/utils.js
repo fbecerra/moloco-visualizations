@@ -63,7 +63,7 @@ function addBoldText(id, text) {
         .style("font-family", "Montserrat")
         .style("font-size", "14px")
         .style("font-weight", 700)
-        .style("color", "##000")
+        .style("color", "#000")
         .html(text);
 }
 
@@ -80,6 +80,7 @@ function addLegend(id) {
         .data(["iOS", "Android"])
         .join("span")
             .attr("class", "legend-item")
+            .style("display", 'inline-block')
             .style("margin-right", 14);
 
     legendItem.append("svg")
@@ -114,7 +115,8 @@ function clearDiv(divId) {
         .style('display', 'none');
     d3.select(divId)
         .style('display', 'block')
-        .style("width", "460px")
-        .style("margin", "auto");
+        // .style("max-width", "100%")
+        .style("margin", "auto")
+        .style("background", "#FFF");
 }
     
