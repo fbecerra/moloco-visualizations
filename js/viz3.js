@@ -32,9 +32,7 @@ function drawViz3() {
     d3.select("#geo-viz3")
         .append("div")
         .attr("class", "separator")
-        .style("border-bottom", '1px dotted #808080')
-        .style("margin-top", "40px")
-        .style("margin-bottom", "25px");
+        .style("border-bottom", '1px dotted #808080');
 
     addBoldText("#geo-viz3", "Select HQ to compare");
     const dropdowns = d3.select("#geo-viz3")

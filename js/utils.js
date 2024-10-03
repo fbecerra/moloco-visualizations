@@ -137,7 +137,7 @@ function fixWidth(divId) {
     const separators = d3.select(divId).selectChildren().filter(".separator");
     if (separators._groups.length > 0) {
         separators.style("width", `${maxWidth}px`)
-            .style("margin", "auto")
+            .style("margin", "40px auto 25px auto")
             .style("display", "table");
     }
 }
