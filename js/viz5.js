@@ -83,7 +83,7 @@ function drawViz5() {
         .attr("transform", "translate(0," + height + ")")
 
     Promise.all([
-        d3.csv('./data/data-viz5.csv')
+        d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz5.csv')
     ]).then((data) => {
         const revenue = data[0];
 

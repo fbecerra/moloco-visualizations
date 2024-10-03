@@ -73,7 +73,7 @@ function drawViz3() {
         ylabel = 'Total';
 
     Promise.all([
-        d3.csv('./data/data-viz3.csv')
+        d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz3.csv')
     ]).then((data) => {
         const spend = data[0];
 
