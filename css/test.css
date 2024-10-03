@@ -75,3 +75,7 @@
 #geo-viz5 svg {
     margin-top: 14px;
 }
+
+#geo-viz5 .legend-wrapper {
+    margin-bottom: 24px;
+}

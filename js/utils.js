@@ -74,6 +74,7 @@ function addLegend(id) {
 
     const legendItem = d3.select(id)
         .append("div")
+        .attr("class", "legend-wrapper")
         .style("margin-top", "8px")
         .selectAll(".legend-item")
         .data(["iOS", "Android"])
