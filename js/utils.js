@@ -32,6 +32,7 @@ function addTitle(id, text) {
         .style("font-family", "Montserrat")
         .style("font-size", "18px")
         .style("font-weight", 700)
+        .style("display", "table")
         .html(text);
 }
 
@@ -42,6 +43,7 @@ function addSubtitle(id, text) {
         .style("font-family", "Montserrat")
         .style("font-size", "14px")
         .style("font-weight", 400)
+        .style("display", "table")
         .html(text);
 }
 
@@ -53,6 +55,7 @@ function addSources(id, text) {
         .style("font-size", "14px")
         .style("font-weight", 400)
         .style("color", "#808080")
+        .style("display", "table")
         .html(text);
 }
 
@@ -64,6 +67,7 @@ function addBoldText(id, text) {
         .style("font-size", "14px")
         .style("font-weight", 700)
         .style("color", "#000")
+        .style("display", "table")
         .html(text);
 }
 
@@ -76,6 +80,7 @@ function addLegend(id) {
         .append("div")
         .attr("class", "legend-wrapper")
         .style("margin-top", "8px")
+        .style("display", "table")
         .selectAll(".legend-item")
         .data(["iOS", "Android"])
         .join("span")
@@ -123,9 +128,11 @@ function clearDiv(divId) {
 }
 
 function fixWidth(divId) {
-   const width = d3.select(divId).node().getBoundingClientRect().width;
-   d3.select(divId)
-    .attr("max-width", `${width}px`)
-    .style("margin", "auto");
+    const children = d3.select(divId).selectChildren()._groups[0];
+    const maxWidth = d3.max(children, child => child.getBoundingClientRect().width);
+    d3.select(divId)
+        .attr("width", `${maxWidth}px`)
+        .style("margin", "auto")
+        .style("display", "table");
 }
     
