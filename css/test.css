@@ -6,7 +6,7 @@
 .dropbtn {
 /* text-align: left; */
     color: black;
-    padding: 1px 12px;
+    padding: 4px 12px;
     /* line-height: 150%; */
     font-size: 14px;
     border: 1px solid black;
@@ -14,9 +14,9 @@
     width: auto;
     background-image: url("../assets/chevron-down.svg");
     background-repeat: no-repeat;
-    background-position-x: calc(100% - 12px);
+    background-position-x: calc(100% - 6px);
     background-position-y: 50%;
-    background-size: 16px;
+    background-size: 14px;
 }
 
 .dropbtn svg {
