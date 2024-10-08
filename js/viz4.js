@@ -160,9 +160,9 @@ function drawViz4() {
             divId = "#geo-viz4",
             xlabel = 'Percentage revenue',
             ylabel = 'Market full name',
-            title = "Three quarters of mobile games revenue is</br>concentrated in ten countries",
-            subtitle = "Gaming revenue for top countries, Aug 2023-Aug 2024",
-            sources = "Source: TBD"
+            title = "Marketing spend and total in-app purchase </br>revenue is aligned in most countries",
+            subtitle = "Mobile gaming (IAP) user acquisition compared to mobile </br>gaming (IAP) D7 revenue",
+            sources = "Source: Moloco estimates of mobile gaming (IAP) user </br>acquisition spend (2025) & Moloco advertiser total gaming </br>IAP revenue (organic and paid) by market (Sep 2023 to </br>August 2024). Spend in mainland China is excluded from </br>this analysis, but spend by mobile gaming apps based in </br>China in non-domestic markets is included."
         )
         
     })

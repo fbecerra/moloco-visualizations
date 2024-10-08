@@ -1,7 +1,7 @@
 function drawViz3() {
     clearDiv("#geo-viz3");
-    addTitle("#geo-viz3", "Mobile gaming genres don't generate in-app revenue</br>the same way across markets");
-    addSubtitle("#geo-viz3", "Percentage of estimated paid UA spend in top 20 markets split by Genre, Aug 2023-Aug 2024");
+    addTitle("#geo-viz3", "Some marketers stick to their local regions, while others are quicker to expand globally");
+    addSubtitle("#geo-viz3", "Estimated user acquisition spend by country, filtered by app developer HQ location");
     addLegend("#geo-viz3");
     addBoldText("#geo-viz3", "HQ in the US");
 
@@ -58,6 +58,8 @@ function drawViz3() {
 
     // const xAxis = g.append("g")
     //     .attr("transform", "translate(0," + height + ")");
+
+    addSources("#geo-viz3", "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Spend in mainland </br>China is excluded from this analysis, but spend by mobile gaming apps based in China in </br>non-domestic markets is included.")
 
     window.onclick = function(event) {
         if (!event.target.matches('#country2-dropbtn-2')) {

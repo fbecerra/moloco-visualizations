@@ -119,9 +119,9 @@ function drawViz1() {
             xlabels = ['iOS', 'Android'],
             ylabel = 'Market full name',
             colors = ["#040078", "#558FC9"],
-            title = "Three quarters of mobile games spend is</br>concentrated in ten countries",
-            subtitle = "Gaming spend for top countries, Aug 2023-Aug 2024",
-            sources = "Source: TBD"
+            title = "Three-quarters of user acquisition spend for mobile</br>gaming is concentrated in ten countries",
+            subtitle = "Estimated user acquisition spend concentration by country",
+            sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition </br>spend (2025). Spend in mainland China is excluded from this </br>analysis, but spend by mobile gaming apps based in China in </br>non-domestic markets is included."
         )
         
     })

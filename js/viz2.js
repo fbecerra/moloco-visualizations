@@ -1,7 +1,7 @@
 function drawViz2() {
     clearDiv("#geo-viz2");
-    addTitle("#geo-viz2", "Mobile gaming genres don't generate in-app revenue</br>the same way across markets");
-    addSubtitle("#geo-viz2", "Percentage of estimated paid UA spend in top 20 markets split by Genre, Aug 2023-Aug 2024");
+    addTitle("#geo-viz2", "RPG games tend to target East Asia, while Match </br>and Casino games focus on English-speaking regions");
+    addSubtitle("#geo-viz2", "Estimated user acquisition spend by country within genre");
     
     d3.select("#geo-viz2")
         .append("div")
@@ -57,6 +57,8 @@ function drawViz2() {
     const y = d3.scaleBand()
         .range([0, height])
         .padding(.15);
+
+    addSources("#geo-viz2", "Source: Moloco estimates of mobile gaming (IAP) user acquisition </br>spend (2025). Spend in mainland China is excluded from this analysis,</br> but spend by mobile gaming apps based in China in non-domestic</br> markets is included.")
     
     
     Promise.all([
