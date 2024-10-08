@@ -182,7 +182,7 @@ function drawViz3() {
                     .attr("class", "percentage")
                     .attr("x", leftText)
                     .attr("y", topText)
-                    .style("font-family", "Space Grotesk")
+                    .style("font-family", "Spacegrotesk")
                     .style("font-size", "14px")
                     .style("text-anchor", 'start')
                     .attr("fill", "#000000")

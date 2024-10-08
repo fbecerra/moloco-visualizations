@@ -141,7 +141,7 @@ function drawViz5() {
                     .attr("x", d => x(d[xlabel]) + textPadding)
                     .attr("y", d => y(d['Market full name']) + y.bandwidth() / 2 + 2)
                     .style("dominant-baseline", "middle")
-                    .style("font-family", "Space Grotesk")
+                    .style("font-family", "Spacegrotesk")
                     .style("font-size", "14px")
                     .style("text-anchor", 'start')
                     .style("fill", '#000000')

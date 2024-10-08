@@ -138,7 +138,7 @@ function drawViz2() {
                     })
                     .attr("y", d => y(d['Market full name']) + y.bandwidth() / 2 + 2)
                     .style("dominant-baseline", "middle")
-                    .style("font-family", "Space Grotesk")
+                    .style("font-family", "Spacegrotesk")
                     .style("font-size", "14px")
                     .style("text-anchor", d => {
                         if (d.iOS > 80) {
@@ -196,7 +196,7 @@ function drawViz2() {
                     })
                     .attr("y", d => y(d['Market full name']) + y.bandwidth() / 2 + 2)
                     .style("dominant-baseline", "middle")
-                    .style("font-family", "Space Grotesk")
+                    .style("font-family", "Spacegrotesk")
                     .style("font-size", "14px")
                     .style("text-anchor", d => {
                         if (d.iOS > 80) {
@@ -228,7 +228,7 @@ function drawViz2() {
                     .attr("x", width)
                     .attr("y", d => y(d['Market full name']) + y.bandwidth() / 2 + 2)
                     .style("dominant-baseline", "middle")
-                    .style("font-family", "Space Grotesk")
+                    .style("font-family", "Spacegrotesk")
                     .style("font-size", "14px")
                     .style("font-weight", 700)
                     .style("text-anchor", 'start')
