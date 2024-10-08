@@ -17,6 +17,8 @@
     background-position-x: calc(100% - 6px);
     background-position-y: 50%;
     background-size: 14px;
+    font-family: "Montserrat";
+    font-size: 14px;
 }
 
 .dropbtn svg {
@@ -44,13 +46,14 @@
     background: #FFFFFF;
     border: 1px solid black;
     transform: translateY(-1px);
+    font-family: "Montserrat";
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
     font-size: 14px;
     color: #353535;
-    padding: 2px 12px;
+    padding: 4px 12px;
     text-decoration: none;
     display: block;
     cursor: pointer;

@@ -56,9 +56,7 @@ function drawViz5() {
                 dropdown.classList.remove('show');
             }
         }
-    }
 
-    window.onclick = function(event) {
         if (!event.target.matches('#OS-dropbtn')) {
             const dropdown = document.getElementById("OS-content");
             if (dropdown.classList.contains('show')) {
