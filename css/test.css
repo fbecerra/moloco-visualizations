@@ -85,3 +85,33 @@
 #geo-viz3 .dropdowns {
     margin-top: 8px;
 }
+
+#geo-viz6 .grid-wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+}
+
+#geo-viz6 .left-panel {
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+}
+
+#geo-viz6 .button-wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+}
