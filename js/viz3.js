@@ -1,8 +1,8 @@
 function drawViz3() {
     clearDiv("#geo-viz3");
-    addTitle("#geo-viz3", "Some marketers stick to their local regions, while others are quicker to expand globally");
+    addTitle("#geo-viz3", "Some marketers stick to their local regions, </br>while others are quicker to expand globally");
     addSubtitle("#geo-viz3", "Estimated user acquisition spend by country, filtered by app developer HQ location");
-    addLegend("#geo-viz3");
+    // addLegend("#geo-viz3");
     addBoldText("#geo-viz3", "HQ in the US");
 
     const textPadding = 7;
@@ -138,12 +138,12 @@ function drawViz3() {
                     .attr("y", d => countryNamePadding + Math.floor(d.idx / 10) * (squareSize + squarePadding))
                     .attr("width", squareSize)
                     .attr("height", squareSize)
-                    .attr("fill", d =>  (d.idx >= 100 * (1 - d.Android)) ? "#558FC9" : (d.idx >= 100 * (1 - d.Total)) ? "#040078" : "#ECEDEE");
+                    .attr("fill", d =>  (d.idx >= 100 * (1 - d.Total)) ? "#0280FB" : "#ECEDEE");
 
             groups.selectAll(".fractional-square-android")
                 .data(d => {
-                    const remainder = (d[0].Android * 1000) % 10 / 10;
-                    const idx = Math.floor(100 - d[0].Android * 100);
+                    const remainder = (d[0].Total * 1000) % 10 / 10;
+                    const idx = Math.floor(100 - d[0].Total * 100);
                     return [{
                         x: waffleSize - (idx % 10 + 1) * (squareSize + squarePadding),
                         y: countryNamePadding + Math.floor(idx / 10) * (squareSize + squarePadding),
@@ -156,37 +156,37 @@ function drawViz3() {
                     .attr("y", d => d.y + (squareSize - d.height))
                     .attr("width", squareSize)
                     .attr("height", d => d.height)
-                    .attr("fill", "#558FC9");
+                    .attr("fill", "#0280FB");
 
-            groups.selectAll(".fractional-square-ios")
-                .data(d => {
-                    const remainder = (d[0].Total * 1000) % 10 / 10;
-                    const idx = Math.floor(100 - d[0].Total * 100);
-                    return [{
-                        x: waffleSize - (idx % 10 + 1) * (squareSize + squarePadding),
-                        y: countryNamePadding + Math.floor(idx / 10) * (squareSize + squarePadding),
-                        height: y(remainder)
-                    }]
-                })
-                .join("rect")
-                    .attr("class", "fractional-square-ios")
-                    .attr("x", d => d.x)
-                    .attr("y", d => d.y + (squareSize - d.height))
-                    .attr("width", squareSize)
-                    .attr("height", d => d.height)
-                    .attr("fill", "#040078");
+            // groups.selectAll(".fractional-square-ios")
+            //     .data(d => {
+            //         const remainder = (d[0].Total * 1000) % 10 / 10;
+            //         const idx = Math.floor(100 - d[0].Total * 100);
+            //         return [{
+            //             x: waffleSize - (idx % 10 + 1) * (squareSize + squarePadding),
+            //             y: countryNamePadding + Math.floor(idx / 10) * (squareSize + squarePadding),
+            //             height: y(remainder)
+            //         }]
+            //     })
+            //     .join("rect")
+            //         .attr("class", "fractional-square-ios")
+            //         .attr("x", d => d.x)
+            //         .attr("y", d => d.y + (squareSize - d.height))
+            //         .attr("width", squareSize)
+            //         .attr("height", d => d.height)
+            //         .attr("fill", "#040078");
 
-            groups.selectAll(".percentage")
-                .data(d => [d])
-                .join("text")
-                    .attr("class", "percentage")
-                    .attr("x", leftText)
-                    .attr("y", topText)
-                    .style("font-family", "Spacegrotesk")
-                    .style("font-size", "14px")
-                    .style("text-anchor", 'start')
-                    .attr("fill", "#000000")
-                    .text(d => (d[0][ylabel] * 100).toFixed(1) + '%');
+            // groups.selectAll(".percentage")
+            //     .data(d => [d])
+            //     .join("text")
+            //         .attr("class", "percentage")
+            //         .attr("x", leftText)
+            //         .attr("y", topText)
+            //         .style("font-family", "Spacegrotesk")
+            //         .style("font-size", "14px")
+            //         .style("text-anchor", 'start')
+            //         .attr("fill", "#000000")
+            //         .text(d => (d[0][ylabel] * 100).toFixed(1) + '%');
 
             groups.selectAll(".destination-name")
                 .data(d => [d])
