@@ -18,10 +18,18 @@ function drawViz6() {
 
         values.forEach(d => {
             d.Revenue = +d.Revenue;
+            d.ARPPU = +d.ARPPU;
         })
 
         const groups = getUniquesMenu(values, 'Tier');
         let selectedGroup = 'US and English Language Markets';
+
+        const [min, max] = d3.extent(values, d => d.ARPPU);
+        console.log(min, max)
+
+        const x = d3.scaleLinear()
+            .domain([0, max])
+            .range([0, 100])
 
         addBoldText("#geo-viz6", "Select country group")
 
@@ -107,8 +115,6 @@ function drawViz6() {
         addBar("revenue", "gaming revenue");
         addBar("arppu", "ARPPU");
         
-        
-
         // LEFT PANEL
 
         const buttonsWrapper = leftPanel.append("div")
@@ -164,7 +170,7 @@ function drawViz6() {
             if (d !== selectedGenre) {
                 selectedGenre = d;
                 d3.select("#select-dropdown").select(".dropbtn").html(selectedGenre);
-                // updatePlot();
+                updatePlot();
             }
         })
 
@@ -212,6 +218,10 @@ function drawViz6() {
             d3.select("#budget-legend").html(paidBudgetLabel);
             d3.select("#revenue-bar").style("width", revenueLabel);
             d3.select("#revenue-legend").html(revenueLabel);
+            d3.select("#arppu-bar")
+                .style("left", x(minARPPU) + '%')
+                .style("width", (x(maxARPPU) - x(minARPPU)) + '%');
+            d3.select("#arppu-legend").html(minMaxLabel);
         }
 
         function updatePlot() {
@@ -220,7 +230,8 @@ function drawViz6() {
             paidBudgetLabel = (groupCountries.reduce((a,b) => a + b['UA Spend'], 0) * 100).toFixed(0) + '%';
             revenueLabel = (groupCountries.reduce((a,b) => a + b['Revenue'], 0) * 100).toFixed(0) + '%';
             [minARPPU, maxARPPU] = d3.extent(groupCountries, d => d.ARPPU);
-            // minMaxLabel = `$${minARPPU.toFixed(1)}-$${maxARPPU.toFixed(1)}`
+            minMaxLabel = `$${minARPPU.toFixed(1)}-$${maxARPPU.toFixed(1)}`;
+            console.log(minARPPU, maxARPPU)
 
             updateRightPanel();
 
