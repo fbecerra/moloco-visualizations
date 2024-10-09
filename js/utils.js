@@ -56,6 +56,7 @@ function addSources(id, text) {
         .style("font-weight", 400)
         .style("color", "#808080")
         .style("display", "table")
+        .style("margin-top", "16px")
         .html(text);
 }
 
