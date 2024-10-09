@@ -21,20 +21,35 @@ function drawViz6() {
             d.ARPPU = +d.ARPPU;
         })
 
-        const groups = getUniquesMenu(values, 'Tier');
+        // const groups = getUniquesMenu(values, 'Tier');
+        const groups = ['US and English Language Markets', 'Europe & Middle East (Tier 1)', 
+            'LATAM Spanish Speaking', 'East Asia Pacific',
+            'Europe & Middle East (Tier 2)', 'Global Developing Markets'];
+        const groupLabels = {
+            'US and English Language Markets': "US and English Language", 
+            'Europe & Middle East (Tier 1)': "Tier 1 European & Middle East", 
+            'LATAM Spanish Speaking': "LATAM Spanish Language", 
+            'East Asia Pacific': "East Asia Pacific",
+            'Europe & Middle East (Tier 2)': "Tier 2 European & Middle East", 
+            'Global Developing Markets': "Global Developing Markets"
+        }
         let selectedGroup = 'US and English Language Markets';
 
         const [min, max] = d3.extent(values, d => d.ARPPU);
-        console.log(min, max)
 
         const x = d3.scaleLinear()
             .domain([0, max])
-            .range([0, 100])
+            .range([0, 100]);
+
+        d3.select("#geo-viz6")
+            .style("font-family", "Montserrat")
+            .style("font-size", '14px')
 
         addBoldText("#geo-viz6", "Select country group")
 
         const gridWrapper = d3.select("#geo-viz6").append("div")
-            .attr("class", 'grid-wrapper');
+            .attr("class", 'grid-wrapper')
+            .style("margin-top", '12px');
 
         const leftPanel = gridWrapper.append("div")
             .attr("class", "left-panel");
@@ -66,7 +81,7 @@ function drawViz6() {
                 .attr('class', 'bar')
                 .style("position", "relative")
                 .style("width", '100%')
-                .style("margin", 'auto')
+                .style("margin-top", '24px')
                 .style("height", divId === 'arppu' ? '17px' : '11px')
 
             bar.append("div")
@@ -90,13 +105,15 @@ function drawViz6() {
                 .attr("class", 'legend')
                 .style('position', 'relative')
                 .style("width", '100%')
-                .style("margin", 'auto');
+                .style("margin-top", '8px');
 
             legend.append("div")
                 .attr("id", divId + '-legend')
                 .style("width", "40%")
                 .style("position", 'absolute')
                 .style("font-size", "32px")
+                .style('font-family', 'Spacegrotesk')
+                .style('font-weight', 500)
                 .style("color", blue)
                 .style("top", 0)
                 .style("left", 0)
@@ -114,6 +131,8 @@ function drawViz6() {
         addBar("budget", "paid UA budget");
         addBar("revenue", "gaming revenue");
         addBar("arppu", "ARPPU");
+
+        // addBoldText("#right-panel", "US ")
         
         // LEFT PANEL
 
@@ -130,14 +149,17 @@ function drawViz6() {
                 .attr("class", "country-button")
                 .style("background-color", d => d === selectedGroup ? blue : gray)
                 .style("color", d => d === selectedGroup ? "#FFFFFF" : "#000000")
+                .style("font-weight", d => d === selectedGroup ? 700 : 400)
                 .style("cursor", "pointer")
-                .html(d => d)
+                .style("padding", "10px")
+                .html(d => groupLabels[d])
                 .on("click", (evt, d) => {
                     if (selectedGroup !== d) {
                         selectedGroup = d;
                         d3.selectAll(".country-button")
                             .style("background-color", d => d === selectedGroup ? blue : gray)
                             .style("color", d => d === selectedGroup ? "#FFFFFF" : "#000000")
+                            .style("font-weight", d => d === selectedGroup ? 700 : 400);
                         updatePlot();
                     }
                 });
@@ -147,11 +169,14 @@ function drawViz6() {
         const dropdown = d3.select("#viz-wrapper")
             .append("div")
             .attr("class", "dropdown")
-            .attr("id", "select-dropdown");
+            .attr("id", "select-dropdown")
+            .style("margin-top", '10px')
+            .style("line-height", '16px');
         
         dropdown.append("div")
             .attr("class", "dropbtn")
-            .attr("id", "select-dropbtn");
+            .attr("id", "select-dropbtn")
+            .style("height", '16px');
         
         dropdown.append("div")
             .attr("class", "dropdown-content")
@@ -231,7 +256,6 @@ function drawViz6() {
             revenueLabel = (groupCountries.reduce((a,b) => a + b['Revenue'], 0) * 100).toFixed(0) + '%';
             [minARPPU, maxARPPU] = d3.extent(groupCountries, d => d.ARPPU);
             minMaxLabel = `$${minARPPU.toFixed(1)}-$${maxARPPU.toFixed(1)}`;
-            console.log(minARPPU, maxARPPU)
 
             updateRightPanel();
 
