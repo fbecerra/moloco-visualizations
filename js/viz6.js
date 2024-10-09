@@ -268,6 +268,16 @@ function drawViz6() {
                     // .attr("fill", d => color(valuemap.get(d.properties.name)))
                     .attr("fill", d => abbvCountries.indexOf(d.properties.a3) > 0 ? blue : gray)
                     .attr("d", path)
+                    .on("mouseover", (evt, d) => {
+                        if (abbvCountries.indexOf(d.properties.a3) > 0){
+                            d3.select(evt.target).attr("fill", "#C368F9");
+                        }
+                    })
+                    .on("mouseout", (evt, d) => {
+                        if (abbvCountries.indexOf(d.properties.a3) > 0){
+                            d3.select(evt.target).attr("fill", blue);
+                        }
+                    })
         
         
             svg.append("path")
