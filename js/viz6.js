@@ -1,8 +1,5 @@
 function drawViz6() {
 
-    
-
-
     Promise.all([
         // d3.json('./data/countries-50m.json'),
         d3.json('./data/world-110m-2024.json'),
@@ -101,7 +98,7 @@ function drawViz6() {
             }
         }
 
-        const width = 928;
+        const width = 828;
         const marginTop = 46;
         const height = 600 + marginTop;
 
