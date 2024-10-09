@@ -64,7 +64,8 @@ function drawViz6() {
 
         addBoldText('#right-panel', "Countries");
 
-        const countriesString = rightPanel.append("div");
+        const countriesString = rightPanel.append("div")
+            .style("height", '100px');
         const budgetBar = rightPanel.append("div")
             .attr("id", "budget")
             .style("height", '60px');
