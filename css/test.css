@@ -158,10 +158,6 @@
     vertical-align: middle;
 }
 
-#geo-viz8 .row-head,
-#geo-viz8 .row-item {
-    height: 48px;
-}
 
 #geo-viz8 .row-item .row-name {
     line-height: 48px;

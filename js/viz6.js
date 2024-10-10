@@ -85,6 +85,9 @@ function drawViz6() {
 
         rightPanel.append("div")
             .attr("id", 'selected-tier-info')
+            .style("font-family", "Montserrat")
+            .style("color", "#000")
+            .style("font-size", 14)
 
         function addBar(divId, legendText) {
             const bar = d3.select("#" + divId).append('div')
@@ -147,7 +150,7 @@ function drawViz6() {
         // LEFT PANEL
 
         const buttonsWrapper = leftPanel.append("div")
-            .attr("class", "button-wrapper")
+            .attr("class", "button-wrapper-viz")
 
         const vizWrapper = leftPanel.append("div")
             .attr("class", "viz-wrapper")
