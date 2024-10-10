@@ -56,7 +56,7 @@ function drawViz7() {
             .style("margin-top", '12px');
 
     Promise.all([
-        d3.csv('./data/data-viz8.csv')
+        d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz8.csv')
     ]).then((data) => {
         const markets = data[0];
 

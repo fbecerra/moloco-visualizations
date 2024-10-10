@@ -7,9 +7,8 @@ function drawViz6() {
     const darkerGray = "#D9D9D9";
 
     Promise.all([
-        // d3.json('./data/countries-50m.json'),
-        d3.json('./data/world-110m-2024.json'),
-        d3.csv('./data/data-viz6.csv')
+        d3.json('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/world-110m-2024.json'),
+        d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz6.csv')
     ]).then((data) => {
 
         const world = data[0];

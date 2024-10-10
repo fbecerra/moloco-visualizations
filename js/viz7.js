@@ -37,7 +37,7 @@ function drawViz7() {
 
 
     Promise.all([
-        d3.csv('./data/data-viz7.csv')
+        d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz7.csv')
     ]).then((data) => {
         const countries = data[0];
         countries.forEach(d => {
