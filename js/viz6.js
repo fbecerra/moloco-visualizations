@@ -84,10 +84,7 @@ function drawViz6() {
             .style('margin-top', '42px');
 
         rightPanel.append("div")
-            .attr("id", 'selected-tier-info')
-            .style("font-family", "Montserrat")
-            .style("color", "#000")
-            .style("font-size", 14)
+            .attr("id", 'selected-tier-info');
 
         function addBar(divId, legendText) {
             const bar = d3.select("#" + divId).append('div')
@@ -259,7 +256,7 @@ function drawViz6() {
                 .style("width", (x(maxARPPU) - x(minARPPU)) + '%');
             d3.select("#arppu-legend").html(minMaxLabel);
             d3.select("#selected-tier-name").html(selectedGroup);
-            d3.select("#selected-tier-info").html('<p>Lowest barrier to entry for non-native developers.</p><p>Of these markets the US is the obvious outlier in terms of total opportunity, but broadly these markets see similar levels of average user value ($x to $x) and share low barriers of entry to most app developers</p>');
+            d3.select("#selected-tier-info").html('<p style="font-family: Montserrat; color: #000": font-size: 14px">Lowest barrier to entry for non-native developers.</p><p style="font-family: Montserrat; color: #000": font-size: 14px">Of these markets the US is the obvious outlier in terms of total opportunity, but broadly these markets see similar levels of average user value ($x to $x) and share low barriers of entry to most app developers</p>');
         }
 
         function updatePlot() {
