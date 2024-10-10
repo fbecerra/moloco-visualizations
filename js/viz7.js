@@ -1,5 +1,7 @@
 function drawViz7() {
 
+    clearDiv("#geo-viz7");
+
     const gray = '#ECEDEE';
     const blue = '#0280FB';
     const darkerGray = "#808080";

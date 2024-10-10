@@ -1,5 +1,7 @@
 function drawViz6() {
 
+    clearDiv("#geo-viz6");
+
     const gray = '#ECEDEE';
     const blue = '#0280FB';
     const darkerGray = "#D9D9D9";
