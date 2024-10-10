@@ -99,7 +99,7 @@ function drawViz6() {
                 .style("background-color", darkerGray)
                 .style("height", '11px')
                 .style("position", 'absolute')
-                .style("top", divId === 'arppu' ? 3 : 0)
+                .style("top", divId === 'arppu' ? '3px' : 0)
                 .style("left", 0)
 
             bar.append("div")
@@ -180,13 +180,11 @@ function drawViz6() {
             .append("div")
             .attr("class", "dropdown")
             .attr("id", "select-dropdown")
-            .style("margin-top", '10px')
-            .style("line-height", '16px');
+            .style("margin-top", '10px');
         
         dropdown.append("div")
             .attr("class", "dropbtn")
-            .attr("id", "select-dropbtn")
-            .style("height", '16px');
+            .attr("id", "select-dropbtn");
         
         dropdown.append("div")
             .attr("class", "dropdown-content")
