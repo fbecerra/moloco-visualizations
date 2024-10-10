@@ -106,7 +106,7 @@
     grid-row-gap: 1.5rem;
 }
 
-#geo-viz6 .button-wrapper {
+#geo-viz6 .button-wrapper-viz {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
