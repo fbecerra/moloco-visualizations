@@ -81,7 +81,7 @@ function drawViz1() {
                     tooltip.style("display", "inline-block")
                         .style("background-color", d.data[ylabel] === 'Others' ? (d.data.key === 'iOS' ? "#CCC" : "#ECEDEE") : color(d.data.key))
                         .style("color", d.data[ylabel] === 'Others' ? "#000" : "#FFF")
-                        .html(`<p class="${pClass}">${(d.data[d.data.key] * 100).toFixed(1)}%</p>`);
+                        .html(`<span class="${pClass}">${(d.data[d.data.key] * 100).toFixed(1)}%</span>`);
 
                     const tooltipWidth = tooltip.node().getBoundingClientRect().width;
                     const tooltipHeight = tooltip.node().getBoundingClientRect().height;

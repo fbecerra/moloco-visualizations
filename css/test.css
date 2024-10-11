@@ -298,14 +298,14 @@ figure p {
 }
 
   
-.viz-tooltip p {  
+.viz-tooltip span {  
     position: relative;
     z-index: 1;
     margin: 0;
     padding: 0;
 }
 
-.viz-tooltip p::after {
+.viz-tooltip span::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -316,16 +316,16 @@ figure p {
     border-style: solid;
 }
 
-.viz-tooltip p.Android::after {
+.viz-tooltip span.Android::after {
     border-color: #558FC9 transparent transparent transparent;
 }
-.viz-tooltip p.iOS::after {
+.viz-tooltip span.iOS::after {
     border-color: #040078 transparent transparent transparent;
 }
-.viz-tooltip p.otherAndroid::after {
+.viz-tooltip span.otherAndroid::after {
     border-color: #ECEDEE transparent transparent transparent;
 }
-.viz-tooltip p.otheriOS::after {
+.viz-tooltip span.otheriOS::after {
     border-color: #CCC transparent transparent transparent;
 }
   
