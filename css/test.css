@@ -108,13 +108,18 @@
 
 #geo-viz6 .button-wrapper-viz {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 0.3fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
+    grid-auto-rows: 0.3fr;
     grid-auto-columns: 1fr;
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
 }
+
+#geo-viz6 .viz-wrapper {
+    margin-top: -30px;
+}
+
 
 #geo-viz8 .grid-wrapper {
     display: grid;
