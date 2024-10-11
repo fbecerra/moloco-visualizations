@@ -76,7 +76,7 @@ function drawViz7() {
             step.style("height", stepH + "px");
     
             var figureHeight = height / 2;
-            var figureMarginTop = 80; //(window.innerHeight - figureHeight) / 2;
+            var figureMarginTop = 156; //(window.innerHeight - figureHeight) / 2;
     
             figure
                 .style("height", figureHeight + "px")
