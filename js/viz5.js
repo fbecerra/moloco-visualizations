@@ -101,7 +101,7 @@ function drawViz5() {
             const dataToPlot = revenue.filter(d => d.Genre === selectedGenre)
                 .sort((a,b) => b[xlabel] - a[xlabel]);
 
-            x.domain([0, d3.max(dataToPlot, d => d[xlabel])]);
+            x.domain([0, Math.max(d3.max(revenue, d => d[xlabel]), 20)]);
             y.domain(dataToPlot.map(d => d[ylabel]));
 
             g.selectAll(".bar")
@@ -114,7 +114,7 @@ function drawViz5() {
                     .attr("height", y.bandwidth() )
                     .attr("fill", "#C368F9");
 
-            xAxis.call(d3.axisBottom(x).ticks(20));
+            xAxis.call(d3.axisBottom(x).ticks(14));
             xAxis.select(".domain").remove();
             xAxis.selectAll(".tick text").remove();
             xAxis.selectAll(".tick line").attr('y2', -height).style('stroke', '#FFF');
