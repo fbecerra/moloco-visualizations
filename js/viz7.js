@@ -16,10 +16,11 @@ function drawViz7() {
     const scrolly = main.append("section")
             .attr("id", "scrolly");
 
-    addTitle("#scrolly", "Top payers drive the majority of total IAP revenue");
-    addSubtitle("#scrolly", "Top payers drive the majority of total IAP revenue/ Let’s take a look at total (D7 IAP) revenue for the RPG genre in a selection of global markets.")
+    const figure = scrolly.append("figure")
+        .attr("id", "figure");
 
-    const figure = scrolly.append("figure");
+    addTitle("#figure", "Top payers drive the majority of total IAP revenue");
+    addSubtitle("#figure", "Top payers drive the majority of total IAP revenue/ Let’s take a look at total (D7 IAP) revenue for the RPG genre in a selection of global markets.")
 
     const article = scrolly.append("article");
 

@@ -198,7 +198,7 @@ article {
     margin: 0 auto;
 }
 
-figure, #scrolly .title, #scrolly .subtitle {
+figure {
     position: -webkit-sticky;
     position: sticky;
     left: 0;
@@ -208,21 +208,7 @@ figure, #scrolly .title, #scrolly .subtitle {
     -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     z-index: 0;
-}
-
-#scrolly .title {
-    top: 76px;
-    margin-bottom: 70%;
-}
-
-#scrolly .subtitle {
-    margin-top: 12px;
-    top: 108px;
-    margin-bottom: 65%;
-}
-
-figure {
-    margin-bottom: 30%;
+    margin-bottom: 40%;
 }
 
 figure p {
@@ -237,6 +223,15 @@ figure p {
     font-size: 8rem;
     font-weight: 900;
     color: #fff;
+}
+
+#scrolly .title {
+    top: 76px;
+}
+
+#scrolly .subtitle {
+    margin-top: 12px;
+    top: 108px;
 }
 
 .step {
