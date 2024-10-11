@@ -176,17 +176,17 @@ function drawViz3() {
             //         .attr("height", d => d.height)
             //         .attr("fill", "#040078");
 
-            // groups.selectAll(".percentage")
-            //     .data(d => [d])
-            //     .join("text")
-            //         .attr("class", "percentage")
-            //         .attr("x", leftText)
-            //         .attr("y", topText)
-            //         .style("font-family", "Spacegrotesk")
-            //         .style("font-size", "14px")
-            //         .style("text-anchor", 'start')
-            //         .attr("fill", "#000000")
-            //         .text(d => (d[0][ylabel] * 100).toFixed(1) + '%');
+            groups.selectAll(".percentage")
+                .data(d => [d])
+                .join("text")
+                    .attr("class", "percentage")
+                    .attr("x", leftText)
+                    .attr("y", topText)
+                    .style("font-family", "Spacegrotesk")
+                    .style("font-size", "14px")
+                    .style("text-anchor", 'start')
+                    .attr("fill", "#000000")
+                    .text(d => (d[0][ylabel] * 100).toFixed(1) + '%');
 
             groups.selectAll(".destination-name")
                 .data(d => [d])
