@@ -86,8 +86,8 @@ function drawViz1() {
                     const tooltipWidth = tooltip.node().getBoundingClientRect().width;
                     const tooltipHeight = tooltip.node().getBoundingClientRect().height;
 
-                    tooltip.style("left", evt.layerX - tooltipWidth/2)
-                        .style("top", evt.layerY - tooltipHeight - 18);
+                    tooltip.style("left", `${evt.layerX - tooltipWidth/2}px`)
+                        .style("top", `${evt.layerY - tooltipHeight - 18}px`);
                 })
                 .on("mouseout", (evt, d) => {
                     tooltip.style("display", "none");
