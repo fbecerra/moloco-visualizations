@@ -44,7 +44,10 @@ function drawViz6() {
 
         d3.select("#geo-viz6")
             .style("font-family", "Montserrat")
-            .style("font-size", '14px')
+            .style("font-size", '14px');
+
+        addTitle("#geo-viz6", "Mapping global opportunities ");
+        addSubtitle("#geo-viz6", "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics for markets of interest")
 
         addBoldText("#geo-viz6", "Select country group")
 
@@ -122,6 +125,7 @@ function drawViz6() {
                 .style("width", "40%")
                 .style("position", 'absolute')
                 .style("font-size", "32px")
+                .style("font-weight", 700)
                 .style('font-family', 'Spacegrotesk')
                 .style('font-weight', 500)
                 .style("color", blue)
@@ -218,10 +222,10 @@ function drawViz6() {
 
         const width = 828;
         const marginTop = 46;
-        const height = 600 + marginTop;
+        const height = 450 + marginTop;
 
         const projection = d3.geoMiller()
-            .fitExtent([[2, marginTop + 2], [width - 2, height]], {type: "Sphere"})
+            .fitExtent([[2, marginTop + 2 -100], [width - 2, height + 150]], {type: "Sphere"})
             // .scale(width/5);
         // const projection = d3.geoEqualEarth()
         //     .fitExtent([[2, marginTop + 2], [width - 2, height]], {type: "Sphere"});
@@ -256,7 +260,7 @@ function drawViz6() {
                 .style("width", (x(maxARPPU) - x(minARPPU)) + '%');
             d3.select("#arppu-legend").html(minMaxLabel);
             d3.select("#selected-tier-name").html(selectedGroup);
-            d3.select("#selected-tier-info").html('<p style="font-family: Montserrat; color: #000": font-size: 14px">Lowest barrier to entry for non-native developers.</p><p style="font-family: Montserrat; color: #000": font-size: 14px">Of these markets the US is the obvious outlier in terms of total opportunity, but broadly these markets see similar levels of average user value ($x to $x) and share low barriers of entry to most app developers</p>');
+            d3.select("#selected-tier-info").html('<p style="font-family: Montserrat; color: #000; letter-spacing: 0px; font-size: 14px">Lowest barrier to entry for non-native developers.</p><p style="font-family: Montserrat; color: #000: font-size: 14px; letter-spacing: 0px;">Of these markets the US is the obvious outlier in terms of total opportunity, but broadly these markets see similar levels of average user value ($x to $x) and share low barriers of entry to most app developers</p>');
         }
 
         function updatePlot() {
@@ -275,7 +279,7 @@ function drawViz6() {
                 .data(countries.features)
                 .join("path")
                     // .attr("fill", d => color(valuemap.get(d.properties.name)))
-                    .attr("fill", d => abbvCountries.indexOf(d.properties.a3) > 0 ? blue : gray)
+                    .attr("fill", d => abbvCountries.indexOf(d.properties.a3) >= 0 ? blue : gray)
                     .attr("d", path)
                     .on("mouseover", (evt, d) => {
                         if (abbvCountries.indexOf(d.properties.a3) > 0){
@@ -297,6 +301,8 @@ function drawViz6() {
         }
 
         updatePlot();
+
+        addSources("#geo-viz6", "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Sep 2023 to August 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included.")
 
         
     })
