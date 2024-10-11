@@ -60,7 +60,7 @@ function drawGlobe() {
         }
         function enableRotation() {
             d3.timer(function (elapsed) {
-                projection.rotate([config.speed * elapsed - 120, config.verticalTilt, config.horizontalTilt]);
+                projection.rotate([config.speed * elapsed - 90, config.verticalTilt, config.horizontalTilt]);
                 svg.selectAll("path").attr("d", path);
                 drawMarkers();
             });
