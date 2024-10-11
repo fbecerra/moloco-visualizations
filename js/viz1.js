@@ -20,7 +20,6 @@ function drawViz1() {
             .style("font-size", "14px")
             .style("font-weight", 400)
             .style("padding", "4px 6px")
-            // .style("display", "table")
             .html('');
     
         const svg = d3.select(divId)

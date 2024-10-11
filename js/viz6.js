@@ -46,6 +46,20 @@ function drawViz6() {
             .style("font-family", "Montserrat")
             .style("font-size", '14px');
 
+        const tooltip = d3.select("#geo-viz6")
+            .style("position", "relative")
+            .append("div")
+            .attr("class", "viz-tooltip")
+            .style("position", "absolute")
+            .style("font-family", "Montserrat")
+            .style("font-size", "14px")
+            .style("font-weight", 400)
+            .style("padding", "12px 24px")
+            .style("background-color", "white")
+            .style("border", "0.5px solid #000")
+            .style("z-index", 2)
+            .html('');
+
         addTitle("#geo-viz6", "Mapping global opportunities ");
         addSubtitle("#geo-viz6", "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics for markets of interest")
 
@@ -127,7 +141,6 @@ function drawViz6() {
                 .style("font-size", "32px")
                 .style("font-weight", 700)
                 .style('font-family', 'Spacegrotesk')
-                .style('font-weight', 500)
                 .style("color", blue)
                 .style("top", 0)
                 .style("left", 0)
@@ -144,7 +157,7 @@ function drawViz6() {
 
         addBar("budget", "paid UA budget");
         addBar("revenue", "gaming revenue");
-        addBar("arppu", "ARPPU");
+        addBar("arppu", "D7 ARPPU");
 
         // addBoldText("#right-panel", "US ")
         
@@ -274,6 +287,7 @@ function drawViz6() {
             updateRightPanel();
 
             const abbvCountries = groupCountries.map(d => d.Market);
+            const paddingRows = 36;
 
             g.selectAll("path")
                 .data(countries.features)
@@ -281,14 +295,52 @@ function drawViz6() {
                     // .attr("fill", d => color(valuemap.get(d.properties.name)))
                     .attr("fill", d => abbvCountries.indexOf(d.properties.a3) >= 0 ? blue : gray)
                     .attr("d", path)
-                    .on("mouseover", (evt, d) => {
-                        if (abbvCountries.indexOf(d.properties.a3) > 0){
+                    .on("mousemove", (evt, d) => {
+                        if (abbvCountries.indexOf(d.properties.a3) >= 0){
+                            const thisCountry = values.filter(v => v.Market === d.properties.a3)[0];
                             d3.select(evt.target).attr("fill", "#C368F9");
+
+                            tooltip.style("display", "inline-block")
+                                .html(`
+                                    <table>
+                                        <tr colspan="3">
+                                            <td style="font-weight: 700;padding-bottom: 24px;">${thisCountry['Market full name']}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-right: ${paddingRows}px">${(thisCountry['UA spend'] * 100).toFixed(1)}%
+                                            </td>
+                                            <td style="padding-right: ${paddingRows}px">${(thisCountry.Revenue * 100).toFixed(1)}%
+                                            </td>
+                                            <td>$${thisCountry.ARPPU}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-right: ${paddingRows}px">paid UA budget
+                                            </td>
+                                            <td style="padding-right: ${paddingRows}px">gaming revenue
+                                            </td>
+                                            <td>D7 ARPPU
+                                            </td>
+                                        </tr>
+                                    </table>`);
+
+                            const tooltipWidth = tooltip.node().getBoundingClientRect().width;
+                            const tooltipHeight = tooltip.node().getBoundingClientRect().height;
+
+                            let xPos = Math.max(0, evt.layerX - tooltipWidth/2);
+                            if (xPos + tooltipWidth > width) {
+                                xPos = width - tooltipWidth - 48;
+                            }
+
+                            tooltip.style("left", `${xPos}px`)
+                                .style("top", `${evt.layerY - tooltipHeight - 18}px`);
                         }
                     })
                     .on("mouseout", (evt, d) => {
-                        if (abbvCountries.indexOf(d.properties.a3) > 0){
+                        if (abbvCountries.indexOf(d.properties.a3) >= 0){
                             d3.select(evt.target).attr("fill", blue);
+                            tooltip.style("display", "none");
                         }
                     })
         
