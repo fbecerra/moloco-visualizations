@@ -57,7 +57,7 @@ function drawViz7() {
             height = 600;
 
         const pack = data => d3.pack()
-            .size([width, height + 200])
+            .size([width - 180, height + 200])
             .padding(3)
             (d3.hierarchy(data)
                 .sum(d => d.value)
