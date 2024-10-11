@@ -12,15 +12,19 @@ function drawViz7() {
         .style("max-width", "80%")
         .style("margin", "auto");
 
+    
     const scrolly = main.append("section")
             .attr("id", "scrolly");
+
+    addTitle("#scrolly", "Top payers drive the majority of total IAP revenue");
+    addSubtitle("#scrolly", "Top payers drive the majority of total IAP revenue/ Let’s take a look at total (D7 IAP) revenue for the RPG genre in a selection of global markets.")
 
     const figure = scrolly.append("figure");
 
     const article = scrolly.append("article");
 
-    const paragraphs = ['', '<p>The top 2% of paying users generate between XX and XX% of total in-app purchase revenue, a trend that holds true across different market sizes and gaming genres.</br><span class="bold-text">Hover over a country to see the user value ($)</span></p>',
-        '<p>Similarly, the top 10% of paying users account for XX% of IAP revenue.</p>'
+    const paragraphs = ['', '<p>The top 2% of paying users generate roughly 35% to 45% of total in-app purchase revenue, a trend that broadly holds across different market sizes and genres.</p>',
+        '<p>The top 10% of paying users account for 70% to 85% of total IAP revenue.</p>'
     ]
 
     paragraphs.forEach((d, i) => {
@@ -50,17 +54,19 @@ function drawViz7() {
         let colorFunction = d => d.children ? "white" : gray;
 
         const width = 1000,
-            height = 800;
+            height = 600;
 
         const pack = data => d3.pack()
-            .size([width, height])
+            .size([width, height + 200])
             .padding(3)
             (d3.hierarchy(data)
                 .sum(d => d.value)
                 .sort((a, b) => b.value - a.value))
 
         const svg = figure.append("svg")
-            .attr("viewBox", `0 0 ${width} ${height}`)
+            .attr("width", width)
+            .attr("height", height)
+            .attr("viewBox", `0 80 ${width} ${height + 80}`)
             .style("display", "block")
             .style("margin", "0 -14px");
 
@@ -70,7 +76,7 @@ function drawViz7() {
             step.style("height", stepH + "px");
     
             var figureHeight = height / 2;
-            var figureMarginTop = 20; //(window.innerHeight - figureHeight) / 2;
+            var figureMarginTop = 80; //(window.innerHeight - figureHeight) / 2;
     
             figure
                 .style("height", figureHeight + "px")
@@ -191,6 +197,8 @@ function drawViz7() {
         }
 
         updatePlot();
+
+        addSources("#geo-viz7", "Source: RPG total gaming IAP revenue by user (organic and paid, 7-day sample period in July 2024)")
         
     })
 }

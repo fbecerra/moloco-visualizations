@@ -198,7 +198,7 @@ article {
     margin: 0 auto;
 }
 
-figure {
+figure, #scrolly .title, #scrolly .subtitle {
     position: -webkit-sticky;
     position: sticky;
     left: 0;
@@ -208,7 +208,19 @@ figure {
     -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     z-index: 0;
-    margin-bottom: 25%;
+}
+
+#scrolly .title {
+    top: 0;
+}
+
+#scrolly .subtitle {
+    margin-top: 12px;
+    top: 32px;
+}
+
+figure {
+    margin-bottom: 30%;
 }
 
 figure p {
