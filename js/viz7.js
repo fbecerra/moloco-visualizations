@@ -152,7 +152,10 @@ function drawViz7() {
             .attr("fill", "#FFF")
             .attr("y", 22)
             .attr("x", 40)
-            .attr("text-anchor", "middle");
+            .attr("text-anchor", "middle")
+            .style("font-family", 'Spacegrotesk')
+            .style("font-size", "16px")
+            .style("font-weight", 700);
 
         function updatePlot(index) {
             console.log(index)
