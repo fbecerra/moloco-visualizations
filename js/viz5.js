@@ -92,15 +92,14 @@ function drawViz5() {
         revenue.forEach(d => {
             d['Android'] = +d['Android'];
             d['iOS'] = +d['iOS'];
-            d['Total'] = +d['Total']
-;            });
+            d['Total'] = +d['Total'];
+        });
 
         const updatePlot = () => {
             const xlabel = selectedOS === 'All systems' ? 'Total' : selectedOS,
                 ylabel = 'Market full name';
             const dataToPlot = revenue.filter(d => d.Genre === selectedGenre)
                 .sort((a,b) => b[xlabel] - a[xlabel]);
-
 
             x.domain([0, d3.max(dataToPlot, d => d[xlabel])]);
             y.domain(dataToPlot.map(d => d[ylabel]));
@@ -113,7 +112,7 @@ function drawViz5() {
                     .attr("y", d => y(d[ylabel]))
                     .attr("width", d => x(d[xlabel]))
                     .attr("height", y.bandwidth() )
-                    .attr("fill", (d, i) => i < 3 ? "#C368F9" : "#D8DADC");
+                    .attr("fill", "#C368F9");
 
             xAxis.call(d3.axisBottom(x).ticks(20));
             xAxis.select(".domain").remove();
