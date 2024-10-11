@@ -268,3 +268,54 @@ figure p {
     font-weight: 700;
     padding-top: 80px;
 }
+
+#geo-viz8 .bar-value {
+    font-family: 'Spacegrotesk';
+}
+
+/* Tooltip container */
+.column-tooltip {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  /* Tooltip text */
+  .column-tooltip .column-tooltip-text {
+    visibility: hidden;
+    /* width: 120px; */
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+    padding: 8px 12px;
+    border: 1px solid #ECEDEE;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: -150%;
+    /* margin-left: -60px; */
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  /* .column-tooltip .column-tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ECEDEE black transparent transparent;
+  } */
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .column-tooltip:hover .column-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
