@@ -212,11 +212,13 @@ figure, #scrolly .title, #scrolly .subtitle {
 
 #scrolly .title {
     top: 76px;
+    margin-bottom: 70%;
 }
 
 #scrolly .subtitle {
     margin-top: 12px;
     top: 108px;
+    margin-bottom: 65%;
 }
 
 figure {
