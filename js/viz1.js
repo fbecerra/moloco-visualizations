@@ -10,6 +10,18 @@ function drawViz1() {
         addTitle(divId, title);
         addSubtitle(divId, subtitle);
         addLegend(divId);
+
+        const tooltip = d3.select(divId)
+            .style("position", "relative")
+            .append("div")
+            .attr("class", "viz-tooltip")
+            .style("position", "absolute")
+            .style("font-family", "Montserrat")
+            .style("font-size", "14px")
+            .style("font-weight", 400)
+            .style("padding", "4px 6px")
+            // .style("display", "table")
+            .html('');
     
         const svg = d3.select(divId)
             .append("svg")
@@ -63,7 +75,23 @@ function drawViz1() {
                 .attr("y", d => y(d.data[ylabel]))
                 .attr("height", y.bandwidth())
                 .attr("width", d => x(d[1]) - x(d[0]))
-                .attr("fill", d => d.data[ylabel] === 'Others' ? (d.data.key === 'iOS' ? "#CCC" : "#ECEDEE") : "");
+                .attr("fill", d => d.data[ylabel] === 'Others' ? (d.data.key === 'iOS' ? "#CCC" : "#ECEDEE") : "")
+                .on("mousemove", (evt, d) => {
+                    const pClass = d.data[ylabel] === 'Others' ? (d.data.key === 'iOS' ? "otheriOS" : "otherAndroid") : d.data.key;
+                    tooltip.style("display", "inline-block")
+                        .style("background-color", d.data[ylabel] === 'Others' ? (d.data.key === 'iOS' ? "#CCC" : "#ECEDEE") : color(d.data.key))
+                        .style("color", d.data[ylabel] === 'Others' ? "#000" : "#FFF")
+                        .html(`<p class="${pClass}">${(d.data[d.data.key] * 100).toFixed(1)}%</p>`);
+
+                    const tooltipWidth = tooltip.node().getBoundingClientRect().width;
+                    const tooltipHeight = tooltip.node().getBoundingClientRect().height;
+
+                    tooltip.style("left", evt.layerX - tooltipWidth/2)
+                        .style("top", evt.layerY - tooltipHeight - 18);
+                })
+                .on("mouseout", (evt, d) => {
+                    tooltip.style("display", "none");
+                });
     
         g.selectAll(".divider")
             .data(series[1])
@@ -111,7 +139,9 @@ function drawViz1() {
     ]).then((data) => {            
     
         data[0].forEach(d => {
-            d['Percentage UA Spend'] = +d['Percentage UA Spend'];
+            d.Android = +d.Android;
+            d.iOS = +d.iOS;
+            d.Total = +d.Total;
         });
     
         drawBars1(data[0],

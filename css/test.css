@@ -273,10 +273,10 @@ figure p {
     position: relative;
     display: inline-block;
 
-  }
+}
   
   /* Tooltip text */
-  .column-tooltip .column-tooltip-text {
+.column-tooltip .column-tooltip-text {
     visibility: hidden;
     /* width: 120px; */
     background-color: #FFF;
@@ -295,22 +295,43 @@ figure p {
     /* Fade in tooltip */
     opacity: 0;
     transition: opacity 0.3s;
-  }
+}
+
   
-  /* Tooltip arrow */
-  /* .column-tooltip .column-tooltip-text::after {
+.viz-tooltip p {  
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.viz-tooltip p::after {
     content: "";
     position: absolute;
     top: 100%;
     left: 50%;
     margin-left: -5px;
-    border-width: 5px;
+    margin-top: 4px;
+    border-width: 5px 5px;
     border-style: solid;
-    border-color: #ECEDEE black transparent transparent;
-  } */
+}
+
+.viz-tooltip p.Android::after {
+    border-color: #558FC9 transparent transparent transparent;
+}
+.viz-tooltip p.iOS::after {
+    border-color: #040078 transparent transparent transparent;
+}
+.viz-tooltip p.otherAndroid::after {
+    border-color: #ECEDEE transparent transparent transparent;
+}
+.viz-tooltip p.otheriOS::after {
+    border-color: #CCC transparent transparent transparent;
+}
+  
   
   /* Show the tooltip text when you mouse over the tooltip container */
-  .column-tooltip:hover .column-tooltip-text {
+.column-tooltip:hover .column-tooltip-text {
     visibility: visible;
     opacity: 1;
-  }
+}
