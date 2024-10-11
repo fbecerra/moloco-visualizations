@@ -27,8 +27,15 @@ function drawGlobe() {
     
     Promise.all([
         d3.json('https://raw.githubusercontent.com/fbecerra/dataexperiments/master/data/land-110m.json'),
-        d3.csv('https://raw.githubusercontent.com/fbecerra/dataexperiments/refs/heads/master/data/Coordinates_with_Circle_Sizes.csv')
+        d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/coordinates.csv')
     ]).then((world) => {
+        const coords = world[1];
+        coords.forEach(d => {
+            d.lat = +d.lat;
+            d.long = +d.long;
+            d.size = Math.random() * 24;
+        })
+
         svg.append("path")
             .datum(topojson.feature(world[0], world[0].objects.land))
             .attr("class", "land")
@@ -61,19 +68,19 @@ function drawGlobe() {
     
         function drawMarkers() {
             const markers = markerGroup.selectAll('circle')
-                .data(world[1]);
+                .data(coords);
             markers
                 .enter()
                 .append('circle')
                 .merge(markers)
-                .attr('cx', d => projection([d.Longitude, d.Latitude])[0])
-                .attr('cy', d => projection([d.Longitude, d.Latitude])[1])
+                .attr('cx', d => projection([d.long, d.lat])[0])
+                .attr('cy', d => projection([d.long, d.lat])[1])
                 .attr('fill', d => {
-                    const coordinate = [d.Longitude, d.Latitude];
+                    const coordinate = [d.long, d.lat];
                     gdistance = d3.geoDistance(coordinate, projection.invert(center));
                     return gdistance > 1.57 ? 'none' : '#3599FC';
                 })
-                .attr('r', d => d['Circle Size'] * 6)
+                .attr('r', d => d.size)
                 .attr("opacity", 0.2);
     
             markerGroup.each(function () {
