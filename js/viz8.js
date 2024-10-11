@@ -97,11 +97,11 @@ function drawViz7() {
                 .append("div")
                 .attr("class", 'grid-wrapper')
 
-        const moreInfoIcon = '<svg width="16" height="16" style="vertical-align: text-top;" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 8V6M6 4H6.005M11 6C11 8.76142 8.76142 11 6 11C3.23858 11 1 8.76142 1 6C1 3.23858 3.23858 1 6 1C8.76142 1 11 3.23858 11 6Z" stroke="#808080" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+        const moreInfoIcon = '<svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 8V6M6 4H6.005M11 6C11 8.76142 8.76142 11 6 11C3.23858 11 1 8.76142 1 6C1 3.23858 3.23858 1 6 1C8.76142 1 11 3.23858 11 6Z" stroke="#808080" stroke-linecap="round" stroke-linejoin="round"/></svg>';
         const columnLabels = ['', 'Geography', 
-            `CPP <div id="cpp-tooltip" class="column-tooltip">${moreInfoIcon}<span class="column-tooltip-text">CPP text</span></div>`,
-            `ARPPU <div id="cpp-tooltip" class="column-tooltip">${moreInfoIcon}<span class="column-tooltip-text">ARPPU text</span></div>`, 
-            `IAP revenue <div id="cpp-tooltip" class="column-tooltip">${moreInfoIcon}<span class="column-tooltip-text">IAP revenue text</span></div>`];
+            `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">CPP text</span></div>`,
+            `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">ARPPU text</span></div>`, 
+            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">IAP revenue text</span></div>`];
 
 
         nameGrid.selectAll(".column-name")
