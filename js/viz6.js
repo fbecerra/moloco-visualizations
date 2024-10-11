@@ -274,7 +274,7 @@ function drawViz6() {
                 .style("width", (x(maxARPPU) - x(minARPPU)) + '%');
             d3.select("#arppu-legend").html(minMaxLabel);
             d3.select("#selected-tier-name").html(selectedGroup);
-            d3.select("#selected-tier-info").html('<p style="font-family: Montserrat; color: #000; letter-spacing: 0px; font-size: 14px">Lowest barrier to entry for non-native developers.</p><p style="font-family: Montserrat; color: #000: font-size: 14px; letter-spacing: 0px;">Of these markets the US is the obvious outlier in terms of total opportunity, but broadly these markets see similar levels of average user value ($x to $x) and share low barriers of entry to most app developers</p>');
+            d3.select("#selected-tier-info").html('<p style="font-family: Montserrat; color: #000; letter-spacing: 0px; font-size: 14px">Lowest barrier to entry for non-native developers.</p><p style="font-family: Montserrat; color: #000; font-size: 14px; letter-spacing: 0px;">Of these markets the US is the obvious outlier in terms of total opportunity, but broadly these markets see similar levels of average user value ($x to $x) and share low barriers of entry to most app developers</p>');
         }
 
         function updatePlot() {
