@@ -12,7 +12,6 @@ function drawViz7() {
         .style("max-width", "80%")
         .style("margin", "auto");
 
-    
     const scrolly = main.append("section")
             .attr("id", "scrolly");
 
@@ -22,7 +21,8 @@ function drawViz7() {
     addTitle("#figure", "Top payers drive the majority of total IAP revenue");
     addSubtitle("#figure", "Top payers drive the majority of total IAP revenue/ Let’s take a look at total (D7 IAP) revenue for the RPG genre in a selection of global markets.")
 
-    const article = scrolly.append("article");
+    const article = scrolly.append("article")
+        .style("pointer-events", "none");
 
     const paragraphs = ['', '<p>The top 2% of paying users generate roughly 35% to 45% of total in-app purchase revenue, a trend that broadly holds across different market sizes and genres.</p>',
         '<p>The top 10% of paying users account for 70% to 85% of total IAP revenue.</p>'
@@ -36,7 +36,8 @@ function drawViz7() {
             .html(d)
     })
 
-    var step = article.selectAll(".step");
+    var step = article.selectAll(".step")
+        .style("pointer-events", "none");
 
     const scroller = scrollama();
 
@@ -67,7 +68,7 @@ function drawViz7() {
         const svg = figure.append("svg")
             .attr("width", width)
             .attr("height", height)
-            .attr("viewBox", `0 80 ${width} ${height + 80}`)
+            .attr("viewBox", `0 60 ${width} ${height + 80}`)
             .style("display", "block")
             .style("margin", "0 -14px");
 
@@ -107,7 +108,8 @@ function drawViz7() {
             } else {
                 filteredData = countries.filter(d => d['Payers group'] === 'top 2%')
             }
-            updatePlot();
+            tooltip.style("display", "none");
+            updatePlot(response.index);
         }
 
         function init() {
@@ -129,7 +131,31 @@ function drawViz7() {
 
         init();
 
-        function updatePlot() {
+        const node = svg.append("g")
+            .selectAll("circle");
+
+        const label = svg.append("g")
+            .selectAll(".label")
+
+        const tooltip = svg.append("g");
+
+        const rect = tooltip.append("rect")
+            .attr("height", '32px')
+            .attr("width", '80px')
+            .attr("fill", "#0280FB");
+
+        const triangle = tooltip.append("path")
+            .attr("d", "M30 30 L50 30 L40 40 z")
+            .attr("fill", "#0280FB")
+
+        const text = tooltip.append('text')
+            .attr("fill", "#FFF")
+            .attr("y", 22)
+            .attr("x", 40)
+            .attr("text-anchor", "middle");
+
+        function updatePlot(index) {
+            console.log(index)
             const circleData = {
                 'name': '',
                 'children': filteredData.map(d => {
@@ -149,20 +175,33 @@ function drawViz7() {
 
             const root = pack(circleData);
 
-            const node = svg.append("g")
-                .selectAll("circle")
-                .data(root.descendants().slice(1))
+            node.data(root.descendants().slice(1))
                 .join("circle")
                     .attr("cx", d => d.x)
                     .attr("cy", d => d.y)
                     .attr("r", d => d.r)
                     .attr("fill", colorFunction)
-                    .attr("stroke", d => d.children ? darkerGray : "none");
+                    .attr("stroke", d => d.children ? darkerGray : "none")
+                    .style("pointer-events", d => d.children ? 'all' : 'none')
+                    .on("mousemove", (evt, d) => {
+                        if (d.hasOwnProperty('children') & index !== 0) {
+                            const thisCountry = filteredData.filter(fd => fd.Market === d.data.name)[0];
 
-            const label = svg.append("g")
-                .selectAll("text")
-                .data(root.descendants())
+                            tooltip.attr("transform", `translate(${d.x-40},${d.y - d.r - 10 - 32})`)
+                                .style("display", "block")
+
+                            text.text(`$${thisCountry['Median ARRPU'].toFixed(1)}`);
+                        }
+                    })
+                    .on("mouseout", (evt, d) => {
+                        if (d.hasOwnProperty('children') & index !== 0) {
+                            tooltip.style("display", "none");
+                        }
+                    });
+
+            label.data(root.descendants())
                 .join("text")
+                .attr("class", "label")
                 .attr("x", d => {
                     if (d.data.name === 'U.S.') {
                         return d.x - 0.8 * d.r

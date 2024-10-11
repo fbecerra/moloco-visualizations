@@ -58,6 +58,7 @@ function drawViz6() {
             .style("background-color", "white")
             .style("border", "0.5px solid #000")
             .style("z-index", 2)
+            .style("display", "none")
             .html('');
 
         addTitle("#geo-viz6", "Mapping global opportunities ");
