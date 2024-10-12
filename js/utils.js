@@ -123,7 +123,7 @@ function clearDiv(divId) {
         .style('display', 'none');
     d3.select(divId)
         .style('display', 'block')
-        // .style("max-width", "100%")
+        .style("max-width", "700px")
         .style("margin", "auto")
         .style("background", "#FFF");
 }
