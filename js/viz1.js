@@ -1,11 +1,14 @@
 function drawViz1() {
     const drawBars1 = (spend, divId, xlabels, ylabel, colors, title, subtitle, sources) => {
+        const graphWidth = Math.min(screen.width - 40, 740);
+
         clearDiv(divId);
         const textPadding = 7;
     
         const margin = {top: 10, right: 50, bottom: 10, left: 90},
-            width = 460 - margin.left - margin.right,
-            height = 400 - margin.top - margin.bottom;
+            width = graphWidth - margin.left - margin.right,
+            height = 460 - margin.top - margin.bottom;
+        console.log("here")
     
         addTitle(divId, title);
         addSubtitle(divId, subtitle);
@@ -149,9 +152,9 @@ function drawViz1() {
             xlabels = ['iOS', 'Android'],
             ylabel = 'Market full name',
             colors = ["#040078", "#558FC9"],
-            title = "Three-quarters of user acquisition spend for mobile</br>gaming is concentrated in ten countries",
+            title = "Three-quarters of user acquisition spend for mobile gaming is concentrated in ten countries",
             subtitle = "Estimated user acquisition spend concentration by country",
-            sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition </br>spend (2025). Spend in mainland China is excluded from this </br>analysis, but spend by mobile gaming apps based in China in </br>non-domestic markets is included."
+            sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included."
         )
         
     })
