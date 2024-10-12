@@ -64,8 +64,11 @@ function drawViz7() {
         const width = Math.min(windowWidth, 1000);
             height = width / 1000 * 600;
 
+        const size = smallScreen ? [width, height] : [width - 180, height + 200];
+        const viewBox = smallScreen ? `0 0 ${width} ${height}` : `0 60 ${width} ${height + 80}`;
+
         const pack = data => d3.pack()
-            .size([width - 180, height + 200])
+            .size(size)
             .padding(3)
             (d3.hierarchy(data)
                 .sum(d => d.value)
@@ -74,13 +77,13 @@ function drawViz7() {
         const svg = figure.append("svg")
             .attr("width", width)
             .attr("height", height)
-            .attr("viewBox", `0 60 ${width} ${height + 80}`)
+            .attr("viewBox", viewBox)
             .style("display", "block")
             .style("margin", "0 -14px");
 
         function handleResize() {
             // 1. update height of step elements
-            var stepH = Math.floor(window.innerHeight * 1);
+            var stepH = smallScreen ? Math.floor(window.innerHeight * 0.7) : Math.floor(window.innerHeight * 1);
             step.style("height", stepH + "px");
     
             var figureHeight = height / 2;
@@ -164,7 +167,6 @@ function drawViz7() {
             .style("font-weight", 700);
 
         function updatePlot(index) {
-            console.log(index)
             const circleData = {
                 'name': '',
                 'children': filteredData.map(d => {
@@ -208,7 +210,7 @@ function drawViz7() {
                         }
                     });
 
-            label.data(root.descendants())
+            label.data(root.descendants().filter(d => d.children))
                 .join("text")
                 .attr("class", "label")
                 .attr("x", d => {
