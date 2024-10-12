@@ -1,4 +1,7 @@
 function drawViz3() {
+
+    const windowWidth = screen.width;
+
     clearDiv("#geo-viz3");
     addTitle("#geo-viz3", "Some marketers stick to their local regions, </br>while others are quicker to expand globally");
     addSubtitle("#geo-viz3", "Estimated user acquisition spend by country, filtered by app developer HQ location");
@@ -15,10 +18,13 @@ function drawViz3() {
     const countryNamePadding = 20;
     const topText = countryNamePadding + 2 * squareSize + squarePadding;
     const leftText = 7 * squareSize + 6 * squarePadding; 
+    const wideEnough = windowWidth > 4 * (waffleSize + waffleHPadding);
 
     const margin = {top: 0, right: 0, bottom: 0, left: 1},
-        width = 4 * waffleSize + 3 * waffleHPadding - margin.left - margin.right,
-        height = (waffleSize + waffleVPadding) - margin.top - margin.bottom;
+        width = wideEnough ? 4 * waffleSize + 3 * waffleHPadding - margin.left - margin.right
+                : 2 * waffleSize + waffleHPadding - margin.left - margin.right,
+        height = wideEnough ? (waffleSize + waffleVPadding) - margin.top - margin.bottom
+            : 2 * waffleSize + waffleHPadding + waffleVPadding - margin.top - margin.bottom;
 
     const svg1 = d3.select("#geo-viz3")
         .append("svg")
@@ -122,7 +128,15 @@ function drawViz3() {
                 .data(d => uniqueDestinations.map(ud => spend.filter(si => ((si[xlabel] === d) && (si.Destination === ud)))))
                 .join("g")
                     .attr("class", "group")
-                    .attr("transform", (d,i) => "translate(" + i * (waffleSize + waffleHPadding) + ",0)");
+                    .attr("transform", (d,i) => {
+                        if (wideEnough) {
+                            return "translate(" + i * (waffleSize + waffleHPadding) + ",0)"
+                        } else {
+                            const row = Math.floor(i / 2);
+                            const col = i % 2;
+                            return "translate(" + (col * (waffleSize + waffleHPadding)) + "," + (row * (waffleSize + waffleHPadding))  + ")"
+                        }
+                    });
 
             groups.selectAll(".square")
                 .data(d => d3.range(0, 100, 1).map(idx => {
