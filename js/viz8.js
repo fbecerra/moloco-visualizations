@@ -256,7 +256,12 @@ function drawViz8() {
                         .html(d => d);
 
             } else {
-                const nameGrid = d3.select("#geo-viz8")
+                const tableWrapper = d3.select("#geo-viz8")
+                    .append("div")
+                    .style("display", 'table')
+                    .style("margin", 'auto');
+
+                const nameGrid = tableWrapper
                         .append("div")
                         .attr("class", 'grid-wrapper')
 
@@ -266,8 +271,7 @@ function drawViz8() {
                         .attr("class", 'column-name')
                         .html(d => d);
                         
-                const dataGrid = d3.select("#geo-viz8")
-                    .selectAll(".data-grid")
+                const dataGrid = tableWrapper.selectAll(".data-grid")
                     .data(groups)
                     .join("div")
                         .attr("class", 'data-grid')
