@@ -1,11 +1,11 @@
 function drawViz1() {
     const drawBars1 = (spend, divId, xlabels, ylabel, colors, title, subtitle, sources) => {
-        const graphWidth = Math.min(screen.width - 40, 740);
+        const graphWidth = Math.min(screen.width, 600);
 
         clearDiv(divId);
         const textPadding = 7;
     
-        const margin = {top: 10, right: 50, bottom: 10, left: 50},
+        const margin = {top: 10, right: 10, bottom: 10, left: 90},
             width = graphWidth - margin.left - margin.right,
             height = 460 - margin.top - margin.bottom;
     
@@ -29,7 +29,7 @@ function drawViz1() {
             .append("svg")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
-                .attr("viewBox", "0 0 460 400");
+                .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`);
     
         const g = svg.append("g")
             .attr("transform",
@@ -110,7 +110,7 @@ function drawViz1() {
             .data(spend)
             .join("text")
                 .attr("class", "country-name")
-                .attr("x", -margin.left )
+                .attr("x", 0 )
                 .attr("y", d => y(d[ylabel]) + y.bandwidth() / 2 + 2)
                 .style("dominant-baseline", "middle")
                 .style("font-family", "Montserrat")

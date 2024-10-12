@@ -1,12 +1,12 @@
 function drawViz4() {
     const drawBars4 = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
-        const graphWidth = Math.min(screen.width - 40, 700);
+        const graphWidth = Math.min(screen.width, 600);
 
         clearDiv(divId);
 
         const textPadding = 7;
     
-        const margin = {top:30, right: 30, bottom: 10, left: 90},
+        const margin = {top:30, right: 10, bottom: 10, left: 90},
             width = graphWidth - margin.left - margin.right,
             height = 400 - margin.top - margin.bottom;
     
@@ -18,21 +18,27 @@ function drawViz4() {
             .append("svg")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
-                .attr("viewBox", "0 0 460, 400");
+                .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`);
     
         const g = svg.append("g")
             .attr("transform",
                 "translate(0," + margin.top + ")");
     
         const x = d3.scaleLinear()
-            .range([margin.left, width / 2 - 20]);
+            .range([margin.left, margin.left + width / 2 - 10]);
+
+        const x2 = d3.scaleLinear()
+            .range([margin.left + width/2 + 10, margin.left + width])
     
         const y = d3.scaleBand()
             .range([0, height])
             .padding(.15);
     
         x.domain([0, d3.max(spend, d => Math.max(d['UA Spend'], d['Revenue']))]);
+        x2.domain([0, d3.max(spend, d => Math.max(d['UA Spend'], d['Revenue']))])
         y.domain(spend.map(d => d[ylabel]));
+
+        console.log(x.domain(), x.range())
     
         g.select('.y-axis').select(".domain").remove();
         g.select('.y-axis').selectAll(".tick line").remove();
@@ -41,7 +47,7 @@ function drawViz4() {
             .data(spend)
             .join("text")
                 .attr("class", "country-name")
-                .attr("x", -margin.left )
+                .attr("x", 0 )
                 .attr("y", d => y(d[ylabel]) + y.bandwidth() / 2 + 2)
                 .style("dominant-baseline", "middle")
                 .style("font-family", "Montserrat")
@@ -67,7 +73,7 @@ function drawViz4() {
                 .attr("class", "bar-spend")
                 .attr("x", x(0) )
                 .attr("y", d => y(d[ylabel]))
-                .attr("width", d => x(d['UA Spend']))
+                .attr("width", d => x(d['UA Spend']) - x(0))
                 .attr("height", y.bandwidth() )
                 .attr("fill", d => d[ylabel] === 'Others' ? "#ECEDEE" : "#D9D9D9");
     
@@ -101,7 +107,7 @@ function drawViz4() {
             .data(['Revenue'])
             .join("text")
                 .attr("class", "title-revenue")
-                .attr("x", width/2 + x(0) )
+                .attr("x", x2(0) )
                 .attr("y", margin.top - 48)
                 .style("dominant-baseline", "middle")
                 .style("font-family", "Montserrat")
@@ -113,9 +119,9 @@ function drawViz4() {
             .data(spend)
             .join("rect")
                 .attr("class", "bar-revenue")
-                .attr("x", width/2 + x(0) )
+                .attr("x", x2(0) )
                 .attr("y", d => y(d[ylabel]))
-                .attr("width", d => x(d['Revenue']))
+                .attr("width", d => x2(d['Revenue']) - x2(0))
                 .attr("height", y.bandwidth() )
                 .attr("fill", d => d[ylabel] === 'Others' ? "#ADD7F4" : "#0280FB");
     
@@ -125,9 +131,9 @@ function drawViz4() {
                 .attr("class", "percentage-revenue")
                 .attr("x", d => {
                     if ((d[ylabel] === 'US') || (d[ylabel] === 'Others')) {
-                        return width/2 + x(d['Revenue']) - textPadding;
+                        return x2(d['Revenue']) - textPadding;
                     } else {
-                        return width/2 + x(d['Revenue']) + textPadding;
+                        return x2(d['Revenue']) + textPadding;
                     }
                 })
                 .attr("y", d => y(d['Market full name']) + y.bandwidth() / 2 + 2)
