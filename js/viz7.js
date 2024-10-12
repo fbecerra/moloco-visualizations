@@ -1,6 +1,7 @@
 function drawViz7() {
 
     const windowWidth = screen.width;
+    const smallScreen = windowWidth < 700;
 
     clearDiv("#geo-viz7");
 
@@ -11,7 +12,7 @@ function drawViz7() {
     const main = d3.select("#geo-viz7")
         .style("font-family", 'Montserrat')
         .style("font-size", '14px')
-        .style("max-width", "80%")
+        .style("max-width", smallScreen ? "95%" : "80%")
         .style("margin", "auto");
 
     const scrolly = main.append("section")
@@ -40,6 +41,9 @@ function drawViz7() {
 
     var step = article.selectAll(".step")
         .style("pointer-events", "none");
+
+    step.selectAll("p")
+        .style("padding", smallScreen ? "10px" : "60px 100px")
 
     const scroller = scrollama();
 
