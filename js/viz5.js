@@ -1,6 +1,6 @@
 function drawViz5() {
     clearDiv("#geo-viz5");
-    addTitle("#geo-viz5", "East Asia sweeps the podium when it comes to </br>average revenue per paying user, although this </br>picture changes by OS and genre")   
+    addTitle("#geo-viz5", "East Asia sweeps the podium when it comes to average revenue per paying user, although this picture changes by OS and genre")   
     addSubtitle("#geo-viz5", "ARPPU for top 15 countries");
 
     const dropdowns = d3.select("#geo-viz5")
@@ -48,7 +48,7 @@ function drawViz5() {
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom);
 
-    addSources("#geo-viz5", "Source: Moloco advertiser median D7 ARPPU (organic and paid </br>all channels), apps with $1000+ revenue, outlier treatment applied. </br>Excluding Mainland China");
+    addSources("#geo-viz5", "Source: Moloco advertiser median D7 ARPPU (organic and paid all channels), apps with $1000+ revenue, outlier treatment applied. Excluding Mainland China");
 
     window.onclick = function(event) {
         if (!event.target.matches('#genre-dropbtn')) {

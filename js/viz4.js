@@ -1,6 +1,6 @@
 function drawViz4() {
     const drawBars4 = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
-        const graphWidth = Math.min(screen.width - 40, 740);
+        const graphWidth = Math.min(screen.width - 40, 700);
 
         clearDiv(divId);
 
@@ -22,10 +22,10 @@ function drawViz4() {
     
         const g = svg.append("g")
             .attr("transform",
-                "translate(" + margin.left + "," + margin.top + ")");
+                "translate(0," + margin.top + ")");
     
         const x = d3.scaleLinear()
-            .range([0, width / 2 - 20]);
+            .range([margin.left, width / 2 - 20]);
     
         const y = d3.scaleBand()
             .range([0, height])
@@ -145,7 +145,7 @@ function drawViz4() {
                 .text(d => (d['Revenue'] * 100).toFixed(1) + '%');
     
         addSources(divId, sources);
-        fixWidth(divId);
+        // fixWidth(divId);
         
     }
     
@@ -162,9 +162,9 @@ function drawViz4() {
             divId = "#geo-viz4",
             xlabel = 'Percentage revenue',
             ylabel = 'Market full name',
-            title = "Marketing spend and total in-app purchase </br>revenue is aligned in most countries",
-            subtitle = "Mobile gaming (IAP) user acquisition compared to mobile </br>gaming (IAP) D7 revenue",
-            sources = "Source: Moloco estimates of mobile gaming (IAP) user </br>acquisition spend (2025) & Moloco advertiser total gaming </br>IAP revenue (organic and paid) by market (Sep 2023 to </br>August 2024). Spend in mainland China is excluded from </br>this analysis, but spend by mobile gaming apps based in </br>China in non-domestic markets is included."
+            title = "Marketing spend and total in-app purchase revenue is aligned in most countries",
+            subtitle = "Mobile gaming (IAP) user acquisition compared to mobile gaming (IAP) D7 revenue",
+            sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Sep 2023 to August 2024). Spend in mainland China is excluded from </br>this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included."
         )
         
     })

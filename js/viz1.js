@@ -5,7 +5,7 @@ function drawViz1() {
         clearDiv(divId);
         const textPadding = 7;
     
-        const margin = {top: 10, right: 50, bottom: 10, left: 90},
+        const margin = {top: 10, right: 50, bottom: 10, left: 50},
             width = graphWidth - margin.left - margin.right,
             height = 460 - margin.top - margin.bottom;
     
@@ -33,7 +33,7 @@ function drawViz1() {
     
         const g = svg.append("g")
             .attr("transform",
-                "translate(" + margin.left + "," + margin.top + ")");
+                "translate(0," + margin.top + ")");
     
         const subgroups = xlabels;
         const groups = spend.map(d => d[ylabel]);
@@ -43,7 +43,7 @@ function drawViz1() {
             (spend)
     
         const x = d3.scaleLinear()
-            .range([ 0, width]);
+            .range([margin.left, width]);
     
         const y = d3.scaleBand()
             .range([ 0, height ])
@@ -131,7 +131,7 @@ function drawViz1() {
                 .text(d => (d['Total'] * 100).toFixed(1) + '%');
     
         addSources(divId, sources);  
-        fixWidth(divId);
+        // fixWidth(divId);
         
     }
     
