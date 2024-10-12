@@ -122,7 +122,7 @@ function clearDiv(divId) {
     d3.select(`${divId} img`)
         .style('display', 'none');
     d3.select(divId)
-        .style('display', 'block')
+        .style('display', 'table')
         .style("max-width", "700px")
         .style("margin", "auto")
         .style("background", "#FFF");
