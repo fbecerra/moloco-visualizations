@@ -61,7 +61,7 @@ function drawViz7() {
         let filteredData = countries.filter(d => d['Payers group'] === 'top 10%');
         let colorFunction = d => d.children ? "white" : gray;
 
-        const width = Math.min(windowWidth, 1000);
+        const width = Math.min(windowWidth - 40, 1000);
             height = width / 1000 * 600;
 
         const size = smallScreen ? [width, height] : [width - 180, height + 200];
