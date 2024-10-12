@@ -1,4 +1,7 @@
-function drawViz7() {
+function drawViz8() {
+
+    const windowWidth = screen.width;
+    const smallScreen = windowWidth < 700;
 
     clearDiv("#geo-viz8");
 
@@ -93,9 +96,7 @@ function drawViz7() {
                     }
                 });
 
-        const nameGrid = d3.select("#geo-viz8")
-                .append("div")
-                .attr("class", 'grid-wrapper')
+        
 
         const moreInfoIcon = '<svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 8V6M6 4H6.005M11 6C11 8.76142 8.76142 11 6 11C3.23858 11 1 8.76142 1 6C1 3.23858 3.23858 1 6 1C8.76142 1 11 3.23858 11 6Z" stroke="#808080" stroke-linecap="round" stroke-linejoin="round"/></svg>';
         const columnLabels = ['', 'Geography', 
@@ -103,12 +104,6 @@ function drawViz7() {
             `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">ARPPU text</span></div>`, 
             `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">IAP revenue text</span></div>`];
 
-
-        nameGrid.selectAll(".column-name")
-            .data(columnLabels)
-            .join("div")
-                .attr("class", 'column-name')
-                .html(d => d);
 
         const groups = ['US and English Language Markets', 'Europe & Middle East (Tier 1)', 
             'LATAM Spanish Speaking', 'East Asia Pacific',
@@ -142,91 +137,197 @@ function drawViz7() {
                 .replace('(', '').replace(')', '').replace("&", '');
           }
 
-        const dataGrid = d3.select("#geo-viz8")
-            .selectAll(".data-grid")
-            .data(groups)
-            .join("div")
-                .attr("class", 'data-grid')
 
         function updatePlot() {
-            const gridRow = dataGrid.selectAll(".grid-row")
-                .data(d => getUniques(markets.filter(market => (market.Tier === d) & (market.genre === selectedGenre)), 'Market full name').map((market, i) => {
-                    return {
-                        'Tier': d,
-                        'Market full name': market,
-                        'data': markets.filter(e => (e.Tier === d) & (e['Market full name'] === market) & (e.genre === selectedGenre)),
-                        'index': i
-                    }
-                }))
-                .join("div")
-                    // .attr("class", (d, i) => groupLabels[d.Tier] === d['Market full name'] ? 'grid-row grid-wrapper row-head' : `grid-row grid-wrapper row-name row-${nameNoSpaces(d.Tier)}`)
-                    .attr("class", (d, i) => i === 0 ? 'grid-row grid-wrapper row-head' : `grid-row grid-wrapper row-item row-${nameNoSpaces(d.Tier)}`)
-                    .on("click", (evt, d) => {
-                        if (d.index === 0) {
-                            let row = gridRow.filter(gr => gr === d);
-                            let clicked = row.classed("clicked");
-                            d3.selectAll(`.row-${nameNoSpaces(d.Tier)}`) 
-                                .style("display", clicked === false ? "grid" : "none");
+            if (smallScreen) {
+                const dataGrid = d3.select("#geo-viz8")
+                    .selectAll(".data-grid")
+                    .data(groups)
+                    .join("div")
+                        .attr("class", 'data-grid')
 
-                            row.classed("clicked", !clicked);
-                    }
+                const gridRow = dataGrid.selectAll(".grid-row")
+                    .data(d => getUniques(markets.filter(market => (market.Tier === d) & (market.genre === selectedGenre)), 'Market full name').map((market, i) => {
+                        return {
+                            'Tier': d,
+                            'Market full name': market,
+                            'data': markets.filter(e => (e.Tier === d) & (e['Market full name'] === market) & (e.genre === selectedGenre)),
+                            'index': i
+                        }
+                    }))
+                    .join("div")
+                        // .attr("class", (d, i) => groupLabels[d.Tier] === d['Market full name'] ? 'grid-row grid-wrapper row-head' : `grid-row grid-wrapper row-name row-${nameNoSpaces(d.Tier)}`)
+                        .attr("class", (d, i) => i === 0 ? 'grid-row row-head' : `grid-row row-item row-${nameNoSpaces(d.Tier)}`)
+                        .on("click", (evt, d) => {
+                            if (d.index === 0) {
+                                let row = gridRow.filter(gr => gr === d);
+                                let clicked = row.classed("clicked");
+                                d3.selectAll(`.row-${nameNoSpaces(d.Tier)}`) 
+                                    .style("display", clicked === false ? "grid" : "none");
+
+                                row.classed("clicked", !clicked);
+                        }
+                        })
+
+                // gridRow.selectAll(".row-opportunity")
+                //     .data(d => [d.data[0].OPPORTUNITY])
+                //     .join("div")
+                //         .attr("class", 'row-opportunity')
+                //         .html(d => d === 'YES' ? legendSvg['Opportunity'] : '');
+
+                gridRow.selectAll(".row-name")
+                    .data(d => [d])
+                    .join("div")
+                        .attr("class", 'row-name')
+                        .style("font-weight", d => d.index === 0 ? 700 : 400)
+                        .html(d => d.data[0].OPPORTUNITY === 'YES' ? d['Market full name'] + legendSvg['Opportunity'] : d['Market full name']);
+
+                const dataWrapper = gridRow.selectAll(".grid-wrapper")
+                        .data(d => [d])
+                        .join("div")
+                            .attr("class", "grid-wrapper")
+                            .style("grid-template-columns", "2fr 2fr 3fr")
+
+                dataWrapper.selectAll(".row-cpp")
+                    .data(d => {
+                        const thisValue = d.data.filter(d => d['type of value'] === '(Paid UA) CPP')[0];
+                        const squaresHtml = d3.range(5).map(e => {
+                            const color = e < thisValue.value ? blue : gray;
+                            return `<div class="square" style="display: inline-block;margin-right:2px;width: 15px;height: 15px; background-color: ${color}"></div>`
+                        }).join("");
+                        const svgHtml = thisValue['good/bad'] === 'good' ? legendSvg['Good']: thisValue['good/bad'] === 'bad' ? legendSvg['Limited'] : legendSvg['Moderate'];
+                        const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
+                        return [squaresHtml + svgHtml + '</br>' + levelHtml]
                     })
+                    .join("div")
+                        .attr("class", 'row-cpp')
+                        .html(d => d)
 
-            gridRow.selectAll(".row-opportunity")
-                .data(d => [d.data[0].OPPORTUNITY])
-                .join("div")
-                    .attr("class", 'row-opportunity')
-                    .html(d => d === 'YES' ? legendSvg['Opportunity'] : '');
+                dataWrapper.selectAll(".row-arppu")
+                    .data(d => {
+                        const thisValue = d.data.filter(d => d['type of value'] === '(Paid UA) D7 ARPPU')[0];
+                        const squaresHtml = d3.range(5).map(e => {
+                            const color = e < thisValue.value ? blue : gray;
+                            return `<div class="square" style="display: inline-block;margin-right:2px; margin-bottom: 4px;width: 15px;height: 15px; background-color: ${color}"></div>`
+                        }).join("");
+                        const svgHtml = thisValue['good/bad'] === 'good' ? legendSvg['Good']: thisValue['good/bad'] === 'bad' ? legendSvg['Limited'] : legendSvg['Moderate'];
+                        const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
+                        return [squaresHtml + svgHtml + '</br>' + levelHtml]
+                    })
+                    .join("div")
+                        .attr("class", 'row-arppu')
+                        .html(d => d)
 
-            gridRow.selectAll(".row-name")
-                .data(d => [d])
-                .join("div")
-                    .attr("class", 'row-name')
-                    .style("font-weight", d => d.index === 0 ? 700 : 400)
-                    .html(d => d['Market full name']);
+                const maxWidthBar = 100;
+                
+                dataWrapper.selectAll(".row-revenue")
+                    .data(d => {
+                        const thisValue = d.data.filter(d => d['type of value'] === 'Revenue Potential')[0];
+                        const rectHtml = `<div class="bar" style="display: inline-block;margin-right:10px;width: ${thisValue.value * maxWidthBar}px;height: 15px; background-color: ${blue}"></div>`;
+                        const numberHtml = `<div class='bar-value' style='font-weight: 700;'>${(thisValue.value * 100).toFixed(0)}%</div>`;
+                        return [rectHtml + '</br>' + numberHtml];
+                    })
+                    .join("div")
+                        .attr("class", 'row-revenue')
+                        .html(d => d);
 
-            gridRow.selectAll(".row-cpp")
-                .data(d => {
-                    const thisValue = d.data.filter(d => d['type of value'] === '(Paid UA) CPP')[0];
-                    const squaresHtml = d3.range(5).map(e => {
-                        const color = e < thisValue.value ? blue : gray;
-                        return `<div class="square" style="display: inline-block;margin-right:2px;width: 15px;height: 15px; background-color: ${color}"></div>`
-                    }).join("");
-                    const svgHtml = thisValue['good/bad'] === 'good' ? legendSvg['Good']: thisValue['good/bad'] === 'bad' ? legendSvg['Limited'] : legendSvg['Moderate'];
-                    const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
-                    return [squaresHtml + svgHtml + '</br>' + levelHtml]
-                })
-                .join("div")
-                    .attr("class", 'row-cpp')
-                    .html(d => d)
+            } else {
+                const nameGrid = d3.select("#geo-viz8")
+                        .append("div")
+                        .attr("class", 'grid-wrapper')
 
-            gridRow.selectAll(".row-arppu")
-                .data(d => {
-                    const thisValue = d.data.filter(d => d['type of value'] === '(Paid UA) D7 ARPPU')[0];
-                    const squaresHtml = d3.range(5).map(e => {
-                        const color = e < thisValue.value ? blue : gray;
-                        return `<div class="square" style="display: inline-block;margin-right:2px;width: 15px;height: 15px; background-color: ${color}"></div>`
-                    }).join("");
-                    const svgHtml = thisValue['good/bad'] === 'good' ? legendSvg['Good']: thisValue['good/bad'] === 'bad' ? legendSvg['Limited'] : legendSvg['Moderate'];
-                    const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
-                    return [squaresHtml + svgHtml + '</br>' + levelHtml]
-                })
-                .join("div")
-                    .attr("class", 'row-arppu')
-                    .html(d => d)
+                nameGrid.selectAll(".column-name")
+                    .data(columnLabels)
+                    .join("div")
+                        .attr("class", 'column-name')
+                        .html(d => d);
+                        
+                const dataGrid = d3.select("#geo-viz8")
+                    .selectAll(".data-grid")
+                    .data(groups)
+                    .join("div")
+                        .attr("class", 'data-grid')
 
-            const maxWidthBar = 100;
+                const gridRow = dataGrid.selectAll(".grid-row")
+                    .data(d => getUniques(markets.filter(market => (market.Tier === d) & (market.genre === selectedGenre)), 'Market full name').map((market, i) => {
+                        return {
+                            'Tier': d,
+                            'Market full name': market,
+                            'data': markets.filter(e => (e.Tier === d) & (e['Market full name'] === market) & (e.genre === selectedGenre)),
+                            'index': i
+                        }
+                    }))
+                    .join("div")
+                        // .attr("class", (d, i) => groupLabels[d.Tier] === d['Market full name'] ? 'grid-row grid-wrapper row-head' : `grid-row grid-wrapper row-name row-${nameNoSpaces(d.Tier)}`)
+                        .attr("class", (d, i) => i === 0 ? 'grid-row grid-wrapper row-head' : `grid-row grid-wrapper row-item row-${nameNoSpaces(d.Tier)}`)
+                        .on("click", (evt, d) => {
+                            if (d.index === 0) {
+                                let row = gridRow.filter(gr => gr === d);
+                                let clicked = row.classed("clicked");
+                                d3.selectAll(`.row-${nameNoSpaces(d.Tier)}`) 
+                                    .style("display", clicked === false ? "grid" : "none");
+
+                                row.classed("clicked", !clicked);
+                        }
+                        })
+
+                gridRow.selectAll(".row-opportunity")
+                    .data(d => [d.data[0].OPPORTUNITY])
+                    .join("div")
+                        .attr("class", 'row-opportunity')
+                        .html(d => d === 'YES' ? legendSvg['Opportunity'] : '');
+
+                gridRow.selectAll(".row-name")
+                    .data(d => [d])
+                    .join("div")
+                        .attr("class", 'row-name')
+                        .style("font-weight", d => d.index === 0 ? 700 : 400)
+                        .html(d => d['Market full name']);
+
+                gridRow.selectAll(".row-cpp")
+                    .data(d => {
+                        const thisValue = d.data.filter(d => d['type of value'] === '(Paid UA) CPP')[0];
+                        const squaresHtml = d3.range(5).map(e => {
+                            const color = e < thisValue.value ? blue : gray;
+                            return `<div class="square" style="display: inline-block;margin-right:2px;width: 15px;height: 15px; background-color: ${color}"></div>`
+                        }).join("");
+                        const svgHtml = thisValue['good/bad'] === 'good' ? legendSvg['Good']: thisValue['good/bad'] === 'bad' ? legendSvg['Limited'] : legendSvg['Moderate'];
+                        const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
+                        return [squaresHtml + svgHtml + '</br>' + levelHtml]
+                    })
+                    .join("div")
+                        .attr("class", 'row-cpp')
+                        .html(d => d)
+
+                gridRow.selectAll(".row-arppu")
+                    .data(d => {
+                        const thisValue = d.data.filter(d => d['type of value'] === '(Paid UA) D7 ARPPU')[0];
+                        const squaresHtml = d3.range(5).map(e => {
+                            const color = e < thisValue.value ? blue : gray;
+                            return `<div class="square" style="display: inline-block;margin-right:2px;width: 15px;height: 15px; background-color: ${color}"></div>`
+                        }).join("");
+                        const svgHtml = thisValue['good/bad'] === 'good' ? legendSvg['Good']: thisValue['good/bad'] === 'bad' ? legendSvg['Limited'] : legendSvg['Moderate'];
+                        const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
+                        return [squaresHtml + svgHtml + '</br>' + levelHtml]
+                    })
+                    .join("div")
+                        .attr("class", 'row-arppu')
+                        .html(d => d)
+
+                const maxWidthBar = 100;
+                
+                gridRow.selectAll(".row-revenue")
+                    .data(d => {
+                        const thisValue = d.data.filter(d => d['type of value'] === 'Revenue Potential')[0];
+                        const rectHtml = `<div class="bar" style="display: inline-block;margin-right:10px;width: ${thisValue.value * maxWidthBar}px;height: 15px; background-color: ${blue}"></div>`;
+                        const numberHtml = `<div class='bar-value'>${(thisValue.value * 100).toFixed(0)}%</div>`;
+                        return [rectHtml + numberHtml];
+                    })
+                    .join("div")
+                        .attr("class", 'row-revenue')
+                        .html(d => d)
+            }
             
-            gridRow.selectAll(".row-revenue")
-                .data(d => {
-                    const thisValue = d.data.filter(d => d['type of value'] === 'Revenue Potential')[0];
-                    const rectHtml = `<div class="bar" style="display: inline-block;margin-right:10px;width: ${thisValue.value * maxWidthBar}px;height: 15px; background-color: ${blue}"></div>`;
-                    const numberHtml = `<div class='bar-value'>${(thisValue.value * 100).toFixed(0)}%</div>`;
-                    return [rectHtml + numberHtml];
-                })
-                .join("div")
-                    .attr("class", 'row-revenue')
-                    .html(d => d)
         }
 
         updatePlot();
@@ -236,4 +337,4 @@ function drawViz7() {
     })
 };
 
-drawViz7();
+drawViz8();
