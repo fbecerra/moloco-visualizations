@@ -19,7 +19,8 @@ function drawViz7() {
             .attr("id", "scrolly");
 
     const figure = scrolly.append("figure")
-        .attr("id", "figure");
+        .attr("id", "figure")
+        .style("margin-bottom", smallScreen ? "50%" : "45%");
 
     addTitle("#figure", "Top payers drive the majority of total IAP revenue");
     addSubtitle("#figure", "Top payers drive the majority of total IAP revenue/ Let’s take a look at total (D7 IAP) revenue for the RPG genre in a selection of global markets.")
