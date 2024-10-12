@@ -12,16 +12,25 @@ function drawViz8() {
         .style('font-family', 'Montserrat')
         .style('font-size', '14px')
     
-    addTitle("#geo-viz8", "Paid user acquisition cost x average revenue highlights markets for potential geo-expansion")
-    addSubtitle("#geo-viz8", "Benchmarked performance for each market by payer acquisition, value and overall revenue potential. Aug 2023-2024")
+    addTitle("#geo-viz8", "Paid user acquisition cost x average revenue highlights markets for potential geo-expansion");
+    addSubtitle("#geo-viz8", "Benchmarked performance for each market by payer acquisition, value and overall revenue potential. Aug 2023-2024");
+
+    d3.select("#geo-viz8 .title")
+        .style("max-width", "700px")
+        .style("margin", "auto");
+
+    d3.select("#geo-viz8 .subtitle")
+        .style("max-width", "700px")
+        .style("margin", "8px auto 24px auto");
 
     const legendWrapper = d3.select("#geo-viz8")
         .append("div")
             .attr("id", "legend-wrapper")
             .style("padding", "12px 24px")
             .style("border", "2px solid #ECEDEE")
-            .style("display", 'inline-block')
-            .style("margin-bottom", '24px');
+            .style("display", 'block')
+            .style("max-width", "700px")
+            .style("margin", "0 auto 24px auto");
 
     addBoldText("#legend-wrapper", "How to read this graphic");
     addSubtitle("#legend-wrapper", "High and low values can have different meanings for each metric. </br>The icons help you interpret them.")
@@ -41,7 +50,7 @@ function drawViz8() {
     }
 
     const legend = d3.select("#legend-wrapper")
-        .append("div")
+        .append("div");
 
     legendItems.forEach(li => {
         const item = legend.append("div")
@@ -60,11 +69,18 @@ function drawViz8() {
             .html(li)
     });
 
-    addBoldText("#geo-viz8", 'Select genre');
-
-    const buttons = d3.select("#geo-viz8")
+    const buttonsWrapper = d3.select("#geo-viz8")
         .append("div")
-            .style("margin-top", '12px');
+            .attr("id", "buttons-container")
+            .style("margin-top", '12px')
+            .style("max-width", "700px")
+            .style("margin", "auto");
+
+    addBoldText("#buttons-container", 'Select genre');
+
+    const buttons = buttonsWrapper.append("div")
+        .style("display", smallScreen ? 'grid' : 'block')
+        .style("grid-template-columns", "1fr 1fr 1fr")
 
     Promise.all([
         d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz8.csv')
