@@ -33,6 +33,12 @@ function drawViz8() {
         'Limited': '<svg style="display: inline-block;vertical-align: bottom;" width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 25.5C19.4036 25.5 25 19.9036 25 13C25 6.09644 19.4036 0.5 12.5 0.5C5.59644 0.5 0 6.09644 0 13C0 19.9036 5.59644 25.5 12.5 25.5ZM19.5946 8.60811L4.72973 8.60811L12.1622 20.0946L19.5946 8.60811Z" fill="black"/></svg>',
         'Opportunity': '<svg style="display: inline-block;vertical-align: bottom;" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM14.7165 5.09622C14.9994 4.8483 15.4222 4.8483 15.7051 5.09622L21.0339 9.76603C21.1964 9.90844 21.2896 10.114 21.2896 10.3301V18.4586L21.2905 18.4591L21.2896 18.4606V19.6697C21.2896 19.8858 21.1964 20.0914 21.0339 20.2338L15.7051 24.9036C15.4222 25.1515 14.9994 25.1515 14.7165 24.9036L9.38768 20.2338C9.22517 20.0914 9.13198 19.8858 9.13198 19.6697V10.3301C9.13198 10.114 9.22517 9.90844 9.38768 9.76603L13.7107 5.97762V5.87999H13.8221L14.7165 5.09622ZM13.7107 7.97209L10.6711 10.6358L11.5896 11.2788C11.5992 11.2673 11.6092 11.256 11.6195 11.245L13.9757 8.73682H13.7107V7.97209ZM15.2107 7.76709V6.65759L15.2108 6.65751L18.7688 9.77553L17.9077 10.2922L15.7578 8.00358C15.616 7.85268 15.4182 7.76709 15.2112 7.76709C15.211 7.76709 15.2108 7.76709 15.2107 7.76709ZM19.7896 10.9124V17.504L19.0062 17.0055V11.7585C19.0062 11.6431 18.9796 11.5302 18.9296 11.4283L19.7896 10.9124ZM10.632 19.1254V12.4394L11.4161 12.9884V18.2413C11.4161 18.3818 11.4556 18.5185 11.5286 18.6363L10.632 19.1254ZM11.69 20.2569L14.991 23.1497V22.1996C14.8675 22.1617 14.7547 22.0922 14.6645 21.9962L12.5764 19.7734L11.69 20.2569ZM19.7896 19.3297L16.491 22.2204V21.2629H16.4467L18.8028 18.7548C18.8225 18.7339 18.8409 18.7119 18.8579 18.6891L19.7896 19.282V19.3297ZM12.9161 17.9443V12.0555L15.2112 9.61248L17.5062 12.0555V17.9443L15.2112 20.3873L12.9161 17.9443Z" fill="#C368F9"/></svg>'
     }
+    const legendSvgSmall = {
+        'Good': '<svg style="display: inline-block;vertical-align: bottom;" width="15" height="16" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0.499999C5.59644 0.499998 1.69631e-06 6.09644 1.09278e-06 13C4.89256e-07 19.9036 5.59644 25.5 12.5 25.5C19.4036 25.5 25 19.9036 25 13C25 6.09644 19.4036 0.5 12.5 0.499999ZM5.40541 17.3919L20.2703 17.3919L12.8378 5.90541L5.40541 17.3919Z" fill="#50B650"/></svg>',
+        'Moderate': '<svg style="display: inline-block;vertical-align: bottom;" width="15" height="16" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 0.5C5.6 0.5 0 6.1 0 13C0 19.9 5.6 25.5 12.5 25.5C19.4 25.5 25 19.9 25 13C25 6.1 19.4 0.5 12.5 0.5ZM18.75 14.25H6.25V11.75H18.75V14.25Z" fill="#AEABAB"/></svg>',
+        'Limited': '<svg style="display: inline-block;vertical-align: bottom;" width="15" height="16" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 25.5C19.4036 25.5 25 19.9036 25 13C25 6.09644 19.4036 0.5 12.5 0.5C5.59644 0.5 0 6.09644 0 13C0 19.9036 5.59644 25.5 12.5 25.5ZM19.5946 8.60811L4.72973 8.60811L12.1622 20.0946L19.5946 8.60811Z" fill="black"/></svg>',
+        'Opportunity': '<svg style="display: inline-block;vertical-align: bottom;" width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM14.7165 5.09622C14.9994 4.8483 15.4222 4.8483 15.7051 5.09622L21.0339 9.76603C21.1964 9.90844 21.2896 10.114 21.2896 10.3301V18.4586L21.2905 18.4591L21.2896 18.4606V19.6697C21.2896 19.8858 21.1964 20.0914 21.0339 20.2338L15.7051 24.9036C15.4222 25.1515 14.9994 25.1515 14.7165 24.9036L9.38768 20.2338C9.22517 20.0914 9.13198 19.8858 9.13198 19.6697V10.3301C9.13198 10.114 9.22517 9.90844 9.38768 9.76603L13.7107 5.97762V5.87999H13.8221L14.7165 5.09622ZM13.7107 7.97209L10.6711 10.6358L11.5896 11.2788C11.5992 11.2673 11.6092 11.256 11.6195 11.245L13.9757 8.73682H13.7107V7.97209ZM15.2107 7.76709V6.65759L15.2108 6.65751L18.7688 9.77553L17.9077 10.2922L15.7578 8.00358C15.616 7.85268 15.4182 7.76709 15.2112 7.76709C15.211 7.76709 15.2108 7.76709 15.2107 7.76709ZM19.7896 10.9124V17.504L19.0062 17.0055V11.7585C19.0062 11.6431 18.9796 11.5302 18.9296 11.4283L19.7896 10.9124ZM10.632 19.1254V12.4394L11.4161 12.9884V18.2413C11.4161 18.3818 11.4556 18.5185 11.5286 18.6363L10.632 19.1254ZM11.69 20.2569L14.991 23.1497V22.1996C14.8675 22.1617 14.7547 22.0922 14.6645 21.9962L12.5764 19.7734L11.69 20.2569ZM19.7896 19.3297L16.491 22.2204V21.2629H16.4467L18.8028 18.7548C18.8225 18.7339 18.8409 18.7119 18.8579 18.6891L19.7896 19.282V19.3297ZM12.9161 17.9443V12.0555L15.2112 9.61248L17.5062 12.0555V17.9443L15.2112 20.3873L12.9161 17.9443Z" fill="#C368F9"/></svg>'
+    }
 
     const legend = d3.select("#legend-wrapper")
         .append("div")
@@ -179,23 +185,25 @@ function drawViz8() {
                     .data(d => [d])
                     .join("div")
                         .attr("class", 'row-name')
-                        .style("font-weight", d => d.index === 0 ? 700 : 400)
-                        .html(d => d.data[0].OPPORTUNITY === 'YES' ? d['Market full name'] + legendSvg['Opportunity'] : d['Market full name']);
+                        .style("font-weight", 700)
+                        .style("padding", "4px")
+                        .html(d => d.data[0].OPPORTUNITY === 'YES' ? d['Market full name'] + legendSvgSmall['Opportunity'] : d['Market full name']);
 
                 const dataWrapper = gridRow.selectAll(".grid-wrapper")
                         .data(d => [d])
                         .join("div")
                             .attr("class", "grid-wrapper")
                             .style("grid-template-columns", "2fr 2fr 3fr")
+                            .style("padding", "4px")
 
                 dataWrapper.selectAll(".row-cpp")
                     .data(d => {
                         const thisValue = d.data.filter(d => d['type of value'] === '(Paid UA) CPP')[0];
                         const squaresHtml = d3.range(5).map(e => {
                             const color = e < thisValue.value ? blue : gray;
-                            return `<div class="square" style="display: inline-block;margin-right:2px;width: 15px;height: 15px; background-color: ${color}"></div>`
+                            return `<div class="square" style="display: inline-block;margin-right:2px;width: 10px;height: 10px; background-color: ${color}"></div>`
                         }).join("");
-                        const svgHtml = thisValue['good/bad'] === 'good' ? legendSvg['Good']: thisValue['good/bad'] === 'bad' ? legendSvg['Limited'] : legendSvg['Moderate'];
+                        const svgHtml = thisValue['good/bad'] === 'good' ? legendSvgSmall['Good']: thisValue['good/bad'] === 'bad' ? legendSvgSmall['Limited'] : legendSvgSmall['Moderate'];
                         const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
                         return [squaresHtml + svgHtml + '</br>' + levelHtml]
                     })
@@ -208,9 +216,9 @@ function drawViz8() {
                         const thisValue = d.data.filter(d => d['type of value'] === '(Paid UA) D7 ARPPU')[0];
                         const squaresHtml = d3.range(5).map(e => {
                             const color = e < thisValue.value ? blue : gray;
-                            return `<div class="square" style="display: inline-block;margin-right:2px; margin-bottom: 4px;width: 15px;height: 15px; background-color: ${color}"></div>`
+                            return `<div class="square" style="display: inline-block;margin-right:2px; margin-bottom: 4px;width: 10px;height: 10px; background-color: ${color}"></div>`
                         }).join("");
-                        const svgHtml = thisValue['good/bad'] === 'good' ? legendSvg['Good']: thisValue['good/bad'] === 'bad' ? legendSvg['Limited'] : legendSvg['Moderate'];
+                        const svgHtml = thisValue['good/bad'] === 'good' ? legendSvgSmall['Good']: thisValue['good/bad'] === 'bad' ? legendSvgSmall['Limited'] : legendSvgSmall['Moderate'];
                         const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
                         return [squaresHtml + svgHtml + '</br>' + levelHtml]
                     })
@@ -223,7 +231,7 @@ function drawViz8() {
                 dataWrapper.selectAll(".row-revenue")
                     .data(d => {
                         const thisValue = d.data.filter(d => d['type of value'] === 'Revenue Potential')[0];
-                        const rectHtml = `<div class="bar" style="display: inline-block;margin-right:10px;width: ${thisValue.value * maxWidthBar}px;height: 15px; background-color: ${blue}"></div>`;
+                        const rectHtml = `<div class="bar" style="display: inline-block;margin-right:10px;margin-top: 2px;margin-bottom:6px;width: ${thisValue.value * maxWidthBar}px;height: 10px; background-color: ${blue}"></div>`;
                         const numberHtml = `<div class='bar-value' style='font-weight: 700;'>${(thisValue.value * 100).toFixed(0)}%</div>`;
                         return [rectHtml + '</br>' + numberHtml];
                     })
