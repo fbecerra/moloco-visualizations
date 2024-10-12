@@ -360,6 +360,10 @@ function drawViz8() {
 
         updatePlot();
         addSources("#geo-viz8", "Source: Moloco campaign outcomes from 1,752 gaming app bundles, August 2023 to August 2024.")
+
+        d3.select("#geo-viz8 .sources")
+            .style("max-width", "700px")
+            .style("margin", "16px auto 0 auto");
         
         
     })
