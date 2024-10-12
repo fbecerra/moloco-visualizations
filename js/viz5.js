@@ -37,9 +37,10 @@ function drawViz5() {
             .attr("id", d+"-content");
     });
 
+    const graphWidth = Math.min(screen.width - 40, 740);
 
     const margin = {top: 10, right: 60, bottom: 10, left: 120},
-        width = 460 - margin.left - margin.right,
+        width = graphWidth - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 
     const svg = d3.select("#geo-viz5")

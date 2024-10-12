@@ -1,11 +1,13 @@
 function drawViz4() {
     const drawBars4 = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
+        const graphWidth = Math.min(screen.width - 40, 740);
+
         clearDiv(divId);
 
         const textPadding = 7;
     
         const margin = {top:30, right: 30, bottom: 10, left: 90},
-            width = 460 - margin.left - margin.right,
+            width = graphWidth - margin.left - margin.right,
             height = 400 - margin.top - margin.bottom;
     
         addTitle(divId, title);

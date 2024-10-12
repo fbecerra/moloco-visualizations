@@ -8,7 +8,6 @@ function drawViz1() {
         const margin = {top: 10, right: 50, bottom: 10, left: 90},
             width = graphWidth - margin.left - margin.right,
             height = 460 - margin.top - margin.bottom;
-        console.log("here")
     
         addTitle(divId, title);
         addSubtitle(divId, subtitle);

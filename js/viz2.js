@@ -1,4 +1,6 @@
 function drawViz2() {
+    const graphWidth = Math.min(screen.width - 40, 740);
+
     clearDiv("#geo-viz2");
     addTitle("#geo-viz2", "RPG games tend to target East Asia, while Match </br>and Casino games focus on English-speaking regions");
     addSubtitle("#geo-viz2", "Estimated user acquisition spend by country within genre");
@@ -28,7 +30,7 @@ function drawViz2() {
     const textPadding = 7;
     
     const margin = {top: 40, right: 60, bottom: 10, left: 90},
-        width = 460 - margin.left - margin.right,
+        width = graphWidth - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
     
     const svg = d3.select("#geo-viz2")
