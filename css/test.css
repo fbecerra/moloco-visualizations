@@ -116,11 +116,6 @@
     grid-row-gap: 0.5rem;
 }
 
-#geo-viz6 .viz-wrapper {
-    margin-top: -30px;
-}
-
-
 #geo-viz8 .grid-wrapper {
     display: grid;
     grid-template-rows: 1fr;

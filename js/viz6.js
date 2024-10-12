@@ -1,5 +1,8 @@
 function drawViz6() {
 
+    const windowWidth = screen.width;
+    const tooSmall = windowWidth < 700;
+
     clearDiv("#geo-viz6");
 
     const gray = '#ECEDEE';
@@ -68,10 +71,12 @@ function drawViz6() {
 
         const gridWrapper = d3.select("#geo-viz6").append("div")
             .attr("class", 'grid-wrapper')
-            .style("margin-top", '12px');
+            .style("margin-top", '12px')
+            .style("display", tooSmall ? "block" : "grid");
 
         const leftPanel = gridWrapper.append("div")
-            .attr("class", "left-panel");
+            .attr("class", "left-panel")
+            .style("display", tooSmall ? "block" : "grid");
 
         const rightPanel = gridWrapper.append("div")
             .attr("class", "right-panel")
@@ -164,33 +169,66 @@ function drawViz6() {
         
         // LEFT PANEL
 
-        const buttonsWrapper = leftPanel.append("div")
-            .attr("class", "button-wrapper-viz")
+        if (tooSmall) {
+            const dropdown = leftPanel.append("div")
+                .attr("class", "dropdown")
+                .attr("id", "select-dropdown-tier")
+                .style("width", '300px');
+            
+            dropdown.append("div")
+                .attr("class", "dropbtn")
+                .attr("id", "select-dropbtn-tier");
+            
+            dropdown.append("div")
+                .attr("class", "dropdown-content")
+                .attr("id", "select-content-tier")
+                .style("width", '208');
 
-        const vizWrapper = leftPanel.append("div")
-            .attr("class", "viz-wrapper")
-            .attr("id", "viz-wrapper")
+            let tierOpts = addOptions("select-content-tier", groups);
 
-        buttonsWrapper.selectAll(".country-button")
-            .data(groups)
-            .join("div")
-                .attr("class", "country-button")
-                .style("background-color", d => d === selectedGroup ? blue : gray)
-                .style("color", d => d === selectedGroup ? "#FFFFFF" : "#000000")
-                .style("font-weight", d => d === selectedGroup ? 700 : 400)
-                .style("cursor", "pointer")
-                .style("padding", "10px")
-                .html(d => groupLabels[d])
-                .on("click", (evt, d) => {
-                    if (selectedGroup !== d) {
-                        selectedGroup = d;
-                        d3.selectAll(".country-button")
-                            .style("background-color", d => d === selectedGroup ? blue : gray)
-                            .style("color", d => d === selectedGroup ? "#FFFFFF" : "#000000")
-                            .style("font-weight", d => d === selectedGroup ? 700 : 400);
-                        updatePlot();
-                    }
+            d3.select("#select-dropdown-tier")
+                .on("click", function(d){
+                    document.getElementById("select-content-tier").classList.toggle("show");
                 });
+            d3.select("#select-dropdown-tier").select(".dropbtn").html(selectedGroup);
+            tierOpts.selectAll("a").on("click", function(event, d){
+                if (d !== selectedGroup) {
+                    selectedGroup = d;
+                    d3.select("#select-dropdown-tier").select(".dropbtn").html(selectedGroup);
+                    updatePlot();
+                }
+            })
+
+        } else {
+            const buttonsWrapper = leftPanel.append("div")
+                .attr("class", "button-wrapper-viz")
+
+            buttonsWrapper.selectAll(".country-button")
+                .data(groups)
+                .join("div")
+                    .attr("class", "country-button")
+                    .style("background-color", d => d === selectedGroup ? blue : gray)
+                    .style("color", d => d === selectedGroup ? "#FFFFFF" : "#000000")
+                    .style("font-weight", d => d === selectedGroup ? 700 : 400)
+                    .style("cursor", "pointer")
+                    .style("padding", "10px")
+                    .html(d => d)
+                    .on("click", (evt, d) => {
+                        if (selectedGroup !== d) {
+                            selectedGroup = d;
+                            d3.selectAll(".country-button")
+                                .style("background-color", d => d === selectedGroup ? blue : gray)
+                                .style("color", d => d === selectedGroup ? "#FFFFFF" : "#000000")
+                                .style("font-weight", d => d === selectedGroup ? 700 : 400);
+                            updatePlot();
+                        }
+                    });
+        }
+        
+        const vizWrapper = leftPanel.append("div")
+                .attr("class", "viz-wrapper")
+                .attr("id", "viz-wrapper")
+                .style("margin-top", tooSmall ? '18px' : '-30px')
 
         addBoldText("#viz-wrapper", "Select genre");
 
@@ -234,9 +272,9 @@ function drawViz6() {
             }
         }
 
-        const width = 828;
+        const width = tooSmall ? windowWidth : 828;
         const marginTop = 46;
-        const height = 450 + marginTop;
+        const height = width / 828 * 450 + marginTop;
 
         const projection = d3.geoMiller()
             .fitExtent([[2, marginTop + 2 -100], [width - 2, height + 150]], {type: "Sphere"})
@@ -322,7 +360,7 @@ function drawViz6() {
                                             <td style="padding-right: ${paddingRows}px">gaming revenue
                                             </td>
                                             <td>D7 ARPPU
-                                            </td>
+                                            </td>   
                                         </tr>
                                     </table>`);
 

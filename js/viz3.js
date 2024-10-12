@@ -24,7 +24,7 @@ function drawViz3() {
         width = wideEnough ? 4 * waffleSize + 3 * waffleHPadding - margin.left - margin.right
                 : 2 * waffleSize + waffleHPadding - margin.left - margin.right,
         height = wideEnough ? (waffleSize + waffleVPadding) - margin.top - margin.bottom
-            : 2 * waffleSize + waffleHPadding + waffleVPadding - margin.top - margin.bottom;
+            : 2 * (waffleSize + waffleVPadding) - margin.top - margin.bottom;
 
     const svg1 = d3.select("#geo-viz3")
         .append("svg")
@@ -134,7 +134,7 @@ function drawViz3() {
                         } else {
                             const row = Math.floor(i / 2);
                             const col = i % 2;
-                            return "translate(" + (col * (waffleSize + waffleHPadding)) + "," + (row * (waffleSize + waffleHPadding))  + ")"
+                            return "translate(" + (col * (waffleSize + waffleHPadding)) + "," + (row * (waffleSize + waffleVPadding))  + ")"
                         }
                     });
 
