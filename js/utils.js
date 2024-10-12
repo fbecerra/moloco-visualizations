@@ -121,6 +121,9 @@ function addLegend(id) {
 function clearDiv(divId) {
     d3.select(`${divId} img`)
         .style('display', 'none');
+}
+
+function centerDiv(divId) {
     d3.select(divId)
         .style('display', 'table')
         .style("max-width", "700px")

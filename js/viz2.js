@@ -2,6 +2,7 @@ function drawViz2() {
     const graphWidth = Math.min(screen.width - 40, 740);
 
     clearDiv("#geo-viz2");
+    centerDiv("#geo-viz2");
     addTitle("#geo-viz2", "RPG games tend to target East Asia, while Match and Casino games focus on English-speaking regions");
     addSubtitle("#geo-viz2", "Estimated user acquisition spend by country within genre");
     

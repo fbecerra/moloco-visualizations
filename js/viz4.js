@@ -3,6 +3,7 @@ function drawViz4() {
         const graphWidth = Math.min(screen.width, 600);
 
         clearDiv(divId);
+        centerDiv(divId);
 
         const textPadding = 7;
     

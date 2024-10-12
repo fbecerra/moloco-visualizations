@@ -4,6 +4,7 @@ function drawViz7() {
     const smallScreen = windowWidth < 700;
 
     clearDiv("#geo-viz7");
+    centerDiv("#geo-viz7");
 
     const gray = '#ECEDEE';
     const blue = '#0280FB';

@@ -3,6 +3,7 @@ function drawViz1() {
         const graphWidth = Math.min(screen.width, 600);
 
         clearDiv(divId);
+        centerDiv(divId);
         const textPadding = 7;
     
         const margin = {top: 10, right: 10, bottom: 10, left: 90},

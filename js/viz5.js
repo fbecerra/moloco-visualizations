@@ -1,5 +1,6 @@
 function drawViz5() {
     clearDiv("#geo-viz5");
+    centerDiv("#geo-viz5");
     addTitle("#geo-viz5", "East Asia sweeps the podium when it comes to average revenue per paying user, although this picture changes by OS and genre")   
     addSubtitle("#geo-viz5", "ARPPU for top 15 countries");
 
