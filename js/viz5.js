@@ -38,7 +38,7 @@ function drawViz5() {
             .attr("id", d+"-content");
     });
 
-    const graphWidth = Math.min(screen.width - 40, 740);
+    const graphWidth = Math.min(screen.width - 40, 660);
 
     const margin = {top: 10, right: 60, bottom: 10, left: 120},
         width = graphWidth - margin.left - margin.right,
