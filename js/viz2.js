@@ -1,5 +1,5 @@
 function drawViz2() {
-    const graphWidth = Math.min(screen.width - 40, 740);
+    const graphWidth = Math.min(screen.width - 40, 660);
 
     clearDiv("#geo-viz2");
     centerDiv("#geo-viz2");
