@@ -26,6 +26,14 @@ function drawViz7() {
     addTitle("#figure", "Top payers drive the majority of total IAP revenue");
     addSubtitle("#figure", "Top payers drive the majority of total IAP revenue/ Let’s take a look at total (D7 IAP) revenue for the RPG genre in a selection of global markets.")
 
+    d3.select("#geo-viz7 .title")
+        .style("max-width", "700px")
+        .style("margin", "auto");
+
+    d3.select("#geo-viz7 .subtitle")
+        .style("max-width", "700px")
+        .style("margin", "8px auto 24px auto")
+
     const article = scrolly.append("article")
         .style("pointer-events", "none");
 
@@ -251,7 +259,11 @@ function drawViz7() {
 
         updatePlot();
 
-        addSources("#geo-viz7", "Source: RPG total gaming IAP revenue by user (organic and paid, 7-day sample period in July 2024)")
+        addSources("#geo-viz7", "Source: RPG total gaming IAP revenue by user (organic and paid, 7-day sample period in July 2024)");
+
+        d3.select("#geo-viz7 .sources")
+            .style("max-width", "700px")
+            .style("margin", "16px auto 0 auto");
         
     })
 }
