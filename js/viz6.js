@@ -48,7 +48,8 @@ function drawViz6() {
 
         d3.select("#geo-viz6")
             .style("font-family", "Montserrat")
-            .style("font-size", '14px');
+            .style("font-size", '14px')
+            .style("display", "block");
 
         const tooltip = d3.select("#geo-viz6")
             .style("position", "relative")
