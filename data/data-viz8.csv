@@ -1,28 +1,28 @@
 Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
-US and English Language Markets,All countries,US and English Language Markets,(Paid UA) CPP,3.000,medium,All genres,
-US and English Language Markets,All countries,US and English Language Markets,(Paid UA) D7 ARPPU,3.000,medium,All genres,
-US and English Language Markets,All countries,US and English Language Markets,Revenue Potential,0.581,,All genres,
-US and English Language Markets,USA,U.S.,(Paid UA) CPP,2.000,good,All genres,YES
-US and English Language Markets,USA,U.S.,(Paid UA) D7 ARPPU,3.000,medium,All genres,YES
-US and English Language Markets,USA,U.S.,Revenue Potential,0.498,,All genres,YES
-US and English Language Markets,GBR,U.K.,(Paid UA) CPP,2.000,good,All genres,
-US and English Language Markets,GBR,U.K.,(Paid UA) D7 ARPPU,2.000,bad,All genres,
-US and English Language Markets,GBR,U.K.,Revenue Potential,0.040,,All genres,
-US and English Language Markets,CAN,Canada,(Paid UA) CPP,4.000,bad,All genres,
-US and English Language Markets,CAN,Canada,(Paid UA) D7 ARPPU,3.000,medium,All genres,
-US and English Language Markets,CAN,Canada,Revenue Potential,0.021,,All genres,
-US and English Language Markets,AUS,Australia,(Paid UA) CPP,3.000,medium,All genres,YES
-US and English Language Markets,AUS,Australia,(Paid UA) D7 ARPPU,4.000,good,All genres,YES
-US and English Language Markets,AUS,Australia,Revenue Potential,0.019,,All genres,YES
-US and English Language Markets,NZL,New Zealand,(Paid UA) CPP,4.000,bad,All genres,
-US and English Language Markets,NZL,New Zealand,(Paid UA) D7 ARPPU,2.000,bad,All genres,
-US and English Language Markets,NZL,New Zealand,Revenue Potential,0.002,,All genres,
-US and English Language Markets,IRL,Ireland,(Paid UA) CPP,4.000,bad,All genres,
-US and English Language Markets,IRL,Ireland,(Paid UA) D7 ARPPU,5.000,good,All genres,
-US and English Language Markets,IRL,Ireland,Revenue Potential,0.001,,All genres,
-East Asia Pacific,All countries,East Asian Pacific Markets,(Paid UA) CPP,4.000,bad,All genres,
-East Asia Pacific,All countries,East Asian Pacific Markets,(Paid UA) D7 ARPPU,5.000,good,All genres,
-East Asia Pacific,All countries,East Asian Pacific Markets,Revenue Potential,0.223,,All genres,
+US and English Language,All countries,US and English Language,(Paid UA) CPP,3.000,medium,All genres,
+US and English Language,All countries,US and English Language,(Paid UA) D7 ARPPU,3.000,medium,All genres,
+US and English Language,All countries,US and English Language,Revenue Potential,0.581,,All genres,
+US and English Language,USA,U.S.,(Paid UA) CPP,2.000,good,All genres,YES
+US and English Language,USA,U.S.,(Paid UA) D7 ARPPU,3.000,medium,All genres,YES
+US and English Language,USA,U.S.,Revenue Potential,0.498,,All genres,YES
+US and English Language,GBR,U.K.,(Paid UA) CPP,2.000,good,All genres,
+US and English Language,GBR,U.K.,(Paid UA) D7 ARPPU,2.000,bad,All genres,
+US and English Language,GBR,U.K.,Revenue Potential,0.040,,All genres,
+US and English Language,CAN,Canada,(Paid UA) CPP,4.000,bad,All genres,
+US and English Language,CAN,Canada,(Paid UA) D7 ARPPU,3.000,medium,All genres,
+US and English Language,CAN,Canada,Revenue Potential,0.021,,All genres,
+US and English Language,AUS,Australia,(Paid UA) CPP,3.000,medium,All genres,YES
+US and English Language,AUS,Australia,(Paid UA) D7 ARPPU,4.000,good,All genres,YES
+US and English Language,AUS,Australia,Revenue Potential,0.019,,All genres,YES
+US and English Language,NZL,New Zealand,(Paid UA) CPP,4.000,bad,All genres,
+US and English Language,NZL,New Zealand,(Paid UA) D7 ARPPU,2.000,bad,All genres,
+US and English Language,NZL,New Zealand,Revenue Potential,0.002,,All genres,
+US and English Language,IRL,Ireland,(Paid UA) CPP,4.000,bad,All genres,
+US and English Language,IRL,Ireland,(Paid UA) D7 ARPPU,5.000,good,All genres,
+US and English Language,IRL,Ireland,Revenue Potential,0.001,,All genres,
+East Asia Pacific,All countries,East Asia Pacific,(Paid UA) CPP,4.000,bad,All genres,
+East Asia Pacific,All countries,East Asia Pacific,(Paid UA) D7 ARPPU,5.000,good,All genres,
+East Asia Pacific,All countries,East Asia Pacific,Revenue Potential,0.223,,All genres,
 East Asia Pacific,JPN,Japan,(Paid UA) CPP,3.000,medium,All genres,YES
 East Asia Pacific,JPN,Japan,(Paid UA) D7 ARPPU,4.000,good,All genres,YES
 East Asia Pacific,JPN,Japan,Revenue Potential,0.077,,All genres,YES
@@ -38,132 +38,129 @@ East Asia Pacific,HKG,Hong Kong,Revenue Potential,0.012,,All genres,YES
 East Asia Pacific,SGP,Singapore,(Paid UA) CPP,5.000,bad,All genres,
 East Asia Pacific,SGP,Singapore,(Paid UA) D7 ARPPU,5.000,good,All genres,
 East Asia Pacific,SGP,Singapore,Revenue Potential,0.003,,All genres,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,(Paid UA) CPP,4.000,bad,All genres,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,(Paid UA) D7 ARPPU,4.000,good,All genres,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,Revenue Potential,0.108,,All genres,
-Europe & Middle East (Tier 1),DEU,Germany,(Paid UA) CPP,2.000,good,All genres,YES
-Europe & Middle East (Tier 1),DEU,Germany,(Paid UA) D7 ARPPU,4.000,good,All genres,YES
-Europe & Middle East (Tier 1),DEU,Germany,Revenue Potential,0.044,,All genres,YES
-Europe & Middle East (Tier 1),FRA,France,(Paid UA) CPP,2.000,good,All genres,YES
-Europe & Middle East (Tier 1),FRA,France,(Paid UA) D7 ARPPU,4.000,good,All genres,YES
-Europe & Middle East (Tier 1),FRA,France,Revenue Potential,0.023,,All genres,YES
-Europe & Middle East (Tier 1),NLD,Netherlands,(Paid UA) CPP,3.000,medium,All genres,YES
-Europe & Middle East (Tier 1),NLD,Netherlands,(Paid UA) D7 ARPPU,4.000,good,All genres,YES
-Europe & Middle East (Tier 1),NLD,Netherlands,Revenue Potential,0.007,,All genres,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,(Paid UA) CPP,5.000,bad,All genres,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,(Paid UA) D7 ARPPU,5.000,good,All genres,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,Revenue Potential,0.005,,All genres,YES
-Europe & Middle East (Tier 1),AUT,Austria,(Paid UA) CPP,4.000,bad,All genres,
-Europe & Middle East (Tier 1),AUT,Austria,(Paid UA) D7 ARPPU,4.000,good,All genres,
-Europe & Middle East (Tier 1),AUT,Austria,Revenue Potential,0.004,,All genres,
-Europe & Middle East (Tier 1),SWE,Sweden,(Paid UA) CPP,4.000,bad,All genres,
-Europe & Middle East (Tier 1),SWE,Sweden,(Paid UA) D7 ARPPU,3.000,medium,All genres,
-Europe & Middle East (Tier 1),SWE,Sweden,Revenue Potential,0.003,,All genres,
-Europe & Middle East (Tier 1),BEL,Belgium,(Paid UA) CPP,4.000,bad,All genres,
-Europe & Middle East (Tier 1),BEL,Belgium,(Paid UA) D7 ARPPU,3.000,medium,All genres,
-Europe & Middle East (Tier 1),BEL,Belgium,Revenue Potential,0.003,,All genres,
-Europe & Middle East (Tier 1),DNK,Denmark,(Paid UA) CPP,4.000,bad,All genres,
-Europe & Middle East (Tier 1),DNK,Denmark,(Paid UA) D7 ARPPU,4.000,good,All genres,
-Europe & Middle East (Tier 1),DNK,Denmark,Revenue Potential,0.002,,All genres,
-Europe & Middle East (Tier 1),NOR,Norway,(Paid UA) CPP,5.000,bad,All genres,
-Europe & Middle East (Tier 1),NOR,Norway,(Paid UA) D7 ARPPU,5.000,good,All genres,
-Europe & Middle East (Tier 1),NOR,Norway,Revenue Potential,0.002,,All genres,
-Europe & Middle East (Tier 1),FIN,Finland,(Paid UA) CPP,4.000,bad,All genres,
-Europe & Middle East (Tier 1),FIN,Finland,(Paid UA) D7 ARPPU,4.000,good,All genres,
-Europe & Middle East (Tier 1),FIN,Finland,Revenue Potential,0.001,,All genres,
-Europe & Middle East (Tier 1),KWT,Kuwait,(Paid UA) CPP,5.000,bad,All genres,
-Europe & Middle East (Tier 1),KWT,Kuwait,(Paid UA) D7 ARPPU,5.000,good,All genres,
-Europe & Middle East (Tier 1),KWT,Kuwait,Revenue Potential,0.001,,All genres,
-Europe & Middle East (Tier 1),EST,Estonia,(Paid UA) CPP,4.000,bad,All genres,YES
-Europe & Middle East (Tier 1),EST,Estonia,(Paid UA) D7 ARPPU,4.000,good,All genres,YES
-Europe & Middle East (Tier 1),EST,Estonia,Revenue Potential,0.000,,All genres,YES
-Europe & Middle East (Tier 1),ISL,Iceland,(Paid UA) CPP,5.000,bad,All genres,YES
-Europe & Middle East (Tier 1),ISL,Iceland,(Paid UA) D7 ARPPU,5.000,good,All genres,YES
-Europe & Middle East (Tier 1),ISL,Iceland,Revenue Potential,0.000,,All genres,YES
-Europe & Middle East (Tier 1),QAT,Qatar,(Paid UA) CPP,5.000,bad,All genres,
-Europe & Middle East (Tier 1),QAT,Qatar,(Paid UA) D7 ARPPU,5.000,good,All genres,
-Europe & Middle East (Tier 1),QAT,Qatar,Revenue Potential,0.000,,All genres,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,(Paid UA) CPP,3.000,medium,All genres,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,(Paid UA) D7 ARPPU,2.000,bad,All genres,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,Revenue Potential,0.033,,All genres,
-Europe & Middle East (Tier 2),ITA,Italy,(Paid UA) CPP,3.000,medium,All genres,YES
-Europe & Middle East (Tier 2),ITA,Italy,(Paid UA) D7 ARPPU,3.000,medium,All genres,YES
-Europe & Middle East (Tier 2),ITA,Italy,Revenue Potential,0.008,,All genres,YES
-Europe & Middle East (Tier 2),ESP,Spain,(Paid UA) CPP,2.000,good,All genres,YES
-Europe & Middle East (Tier 2),ESP,Spain,(Paid UA) D7 ARPPU,3.000,medium,All genres,YES
-Europe & Middle East (Tier 2),ESP,Spain,Revenue Potential,0.005,,All genres,YES
-Europe & Middle East (Tier 2),POL,Poland,(Paid UA) CPP,2.000,good,All genres,YES
-Europe & Middle East (Tier 2),POL,Poland,(Paid UA) D7 ARPPU,3.000,medium,All genres,YES
-Europe & Middle East (Tier 2),POL,Poland,Revenue Potential,0.005,,All genres,YES
-Europe & Middle East (Tier 2),TUR,Turkiye,(Paid UA) CPP,3.000,medium,All genres,
-Europe & Middle East (Tier 2),TUR,Turkiye,(Paid UA) D7 ARPPU,1.000,bad,All genres,
-Europe & Middle East (Tier 2),TUR,Turkiye,Revenue Potential,0.006,,All genres,
-Europe & Middle East (Tier 2),CZE,Czechia,(Paid UA) CPP,2.000,good,All genres,YES
-Europe & Middle East (Tier 2),CZE,Czechia,(Paid UA) D7 ARPPU,2.000,bad,All genres,YES
-Europe & Middle East (Tier 2),CZE,Czechia,Revenue Potential,0.001,,All genres,YES
-Europe & Middle East (Tier 2),RUS,Russia,(Paid UA) CPP,1.000,good,All genres,
-Europe & Middle East (Tier 2),RUS,Russia,(Paid UA) D7 ARPPU,2.000,bad,All genres,
-Europe & Middle East (Tier 2),RUS,Russia,Revenue Potential,0.009,,All genres,
-Europe & Middle East (Tier 2),UKR,Ukraine,(Paid UA) CPP,2.000,good,All genres,
-Europe & Middle East (Tier 2),UKR,Ukraine,(Paid UA) D7 ARPPU,2.000,bad,All genres,
-Europe & Middle East (Tier 2),UKR,Ukraine,Revenue Potential,0.002,,All genres,
-Europe & Middle East (Tier 2),ROU,Romania,(Paid UA) CPP,3.000,medium,All genres,
-Europe & Middle East (Tier 2),ROU,Romania,(Paid UA) D7 ARPPU,2.000,bad,All genres,
-Europe & Middle East (Tier 2),ROU,Romania,Revenue Potential,0.001,,All genres,
-Europe & Middle East (Tier 2),ISR,Israel,(Paid UA) CPP,5.000,bad,All genres,YES
-Europe & Middle East (Tier 2),ISR,Israel,(Paid UA) D7 ARPPU,5.000,good,All genres,YES
-Europe & Middle East (Tier 2),ISR,Israel,Revenue Potential,0.002,,All genres,YES
-Europe & Middle East (Tier 2),HUN,Hungary,(Paid UA) CPP,3.000,medium,All genres,
-Europe & Middle East (Tier 2),HUN,Hungary,(Paid UA) D7 ARPPU,2.000,bad,All genres,
-Europe & Middle East (Tier 2),HUN,Hungary,Revenue Potential,0.001,,All genres,
-Europe & Middle East (Tier 2),PRT,Portugal,(Paid UA) CPP,3.000,medium,All genres,
-Europe & Middle East (Tier 2),PRT,Portugal,(Paid UA) D7 ARPPU,3.000,medium,All genres,
-Europe & Middle East (Tier 2),PRT,Portugal,Revenue Potential,0.001,,All genres,
-Europe & Middle East (Tier 2),GRC,Greece,(Paid UA) CPP,2.000,good,All genres,YES
-Europe & Middle East (Tier 2),GRC,Greece,(Paid UA) D7 ARPPU,5.000,good,All genres,YES
-Europe & Middle East (Tier 2),GRC,Greece,Revenue Potential,0.001,,All genres,YES
-Europe & Middle East (Tier 2),SAU,Saudi Arabia,(Paid UA) CPP,5.000,bad,All genres,
-Europe & Middle East (Tier 2),SAU,Saudi Arabia,(Paid UA) D7 ARPPU,4.000,good,All genres,
-Europe & Middle East (Tier 2),SAU,Saudi Arabia,Revenue Potential,0.002,,All genres,
-Europe & Middle East (Tier 2),ARE,UAE,(Paid UA) CPP,5.000,bad,All genres,YES
-Europe & Middle East (Tier 2),ARE,UAE,(Paid UA) D7 ARPPU,5.000,good,All genres,YES
-Europe & Middle East (Tier 2),ARE,UAE,Revenue Potential,0.001,,All genres,YES
-Europe & Middle East (Tier 2),SVK,Slovakia,(Paid UA) CPP,3.000,medium,All genres,
-Europe & Middle East (Tier 2),SVK,Slovakia,(Paid UA) D7 ARPPU,3.000,medium,All genres,
-Europe & Middle East (Tier 2),SVK,Slovakia,Revenue Potential,0.000,,All genres,
-Europe & Middle East (Tier 2),BGR,Bulgaria,(Paid UA) CPP,3.000,medium,All genres,
-Europe & Middle East (Tier 2),BGR,Bulgaria,(Paid UA) D7 ARPPU,2.000,bad,All genres,
-Europe & Middle East (Tier 2),BGR,Bulgaria,Revenue Potential,0.001,,All genres,
-Europe & Middle East (Tier 2),HRV,Croatia,(Paid UA) CPP,2.000,good,All genres,YES
-Europe & Middle East (Tier 2),HRV,Croatia,(Paid UA) D7 ARPPU,4.000,good,All genres,YES
-Europe & Middle East (Tier 2),HRV,Croatia,Revenue Potential,0.000,bad,All genres,YES
-Europe & Middle East (Tier 2),LTU,Lithuania,(Paid UA) CPP,3.000,medium,All genres,
-Europe & Middle East (Tier 2),LTU,Lithuania,(Paid UA) D7 ARPPU,3.000,medium,All genres,
-Europe & Middle East (Tier 2),LTU,Lithuania,Revenue Potential,0.000,,All genres,
-Europe & Middle East (Tier 2),KAZ,Kazakhstan,(Paid UA) CPP,2.000,good,All genres,
-Europe & Middle East (Tier 2),KAZ,Kazakhstan,(Paid UA) D7 ARPPU,1.000,bad,All genres,
-Europe & Middle East (Tier 2),KAZ,Kazakhstan,Revenue Potential,0.000,,All genres,
-Europe & Middle East (Tier 2),LVA,Latvia,(Paid UA) CPP,3.000,medium,All genres,
-Europe & Middle East (Tier 2),LVA,Latvia,(Paid UA) D7 ARPPU,3.000,medium,All genres,
-Europe & Middle East (Tier 2),LVA,Latvia,Revenue Potential,0.000,,All genres,
-Europe & Middle East (Tier 2),EGY,Egypt,(Paid UA) CPP,5.000,bad,All genres,
-Europe & Middle East (Tier 2),EGY,Egypt,(Paid UA) D7 ARPPU,1.000,bad,All genres,
-Europe & Middle East (Tier 2),EGY,Egypt,Revenue Potential,0.000,,All genres,
-Europe & Middle East (Tier 2),SVN,Slovenia,(Paid UA) CPP,4.000,bad,All genres,
-Europe & Middle East (Tier 2),SVN,Slovenia,(Paid UA) D7 ARPPU,4.000,good,All genres,
-Europe & Middle East (Tier 2),SVN,Slovenia,Revenue Potential,0.000,,All genres,
-Europe & Middle East (Tier 2),SRB,Serbia,(Paid UA) CPP,5.000,bad,All genres,
-Europe & Middle East (Tier 2),SRB,Serbia,(Paid UA) D7 ARPPU,2.000,bad,All genres,
-Europe & Middle East (Tier 2),SRB,Serbia,Revenue Potential,0.001,,All genres,
-Europe & Middle East (Tier 2),CYP,Cyprus,(Paid UA) CPP,4.000,bad,All genres,
-Europe & Middle East (Tier 2),CYP,Cyprus,(Paid UA) D7 ARPPU,4.000,good,All genres,
-Europe & Middle East (Tier 2),CYP,Cyprus,Revenue Potential,0.000,,All genres,
-Europe & Middle East (Tier 2),BLR,Belarus,(Paid UA) CPP,2.000,good,All genres,
-Europe & Middle East (Tier 2),BLR,Belarus,(Paid UA) D7 ARPPU,3.000,medium,All genres,
-Europe & Middle East (Tier 2),BLR,Belarus,Revenue Potential,0.000,bad,All genres,
-Europe & Middle East (Tier 2),IRQ,Iraq,(Paid UA) CPP,5.000,bad,All genres,
-Europe & Middle East (Tier 2),IRQ,Iraq,(Paid UA) D7 ARPPU,2.000,bad,All genres,
-Europe & Middle East (Tier 2),IRQ,Iraq,Revenue Potential,0.000,bad,All genres,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),(Paid UA) CPP,4.000,bad,All genres,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),(Paid UA) D7 ARPPU,4.000,good,All genres,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),Revenue Potential,0.108,,All genres,
+Europe & Middle East (Group 1),DEU,Germany,(Paid UA) CPP,2.000,good,All genres,YES
+Europe & Middle East (Group 1),DEU,Germany,(Paid UA) D7 ARPPU,4.000,good,All genres,YES
+Europe & Middle East (Group 1),DEU,Germany,Revenue Potential,0.044,,All genres,YES
+Europe & Middle East (Group 1),FRA,France,(Paid UA) CPP,2.000,good,All genres,YES
+Europe & Middle East (Group 1),FRA,France,(Paid UA) D7 ARPPU,4.000,good,All genres,YES
+Europe & Middle East (Group 1),FRA,France,Revenue Potential,0.023,,All genres,YES
+Europe & Middle East (Group 1),NLD,Netherlands,(Paid UA) CPP,3.000,medium,All genres,YES
+Europe & Middle East (Group 1),NLD,Netherlands,(Paid UA) D7 ARPPU,4.000,good,All genres,YES
+Europe & Middle East (Group 1),NLD,Netherlands,Revenue Potential,0.007,,All genres,YES
+Europe & Middle East (Group 1),CHE,Switzerland,(Paid UA) CPP,5.000,bad,All genres,YES
+Europe & Middle East (Group 1),CHE,Switzerland,(Paid UA) D7 ARPPU,5.000,good,All genres,YES
+Europe & Middle East (Group 1),CHE,Switzerland,Revenue Potential,0.005,,All genres,YES
+Europe & Middle East (Group 1),AUT,Austria,(Paid UA) CPP,4.000,bad,All genres,
+Europe & Middle East (Group 1),AUT,Austria,(Paid UA) D7 ARPPU,4.000,good,All genres,
+Europe & Middle East (Group 1),AUT,Austria,Revenue Potential,0.004,,All genres,
+Europe & Middle East (Group 1),SWE,Sweden,(Paid UA) CPP,4.000,bad,All genres,
+Europe & Middle East (Group 1),SWE,Sweden,(Paid UA) D7 ARPPU,3.000,medium,All genres,
+Europe & Middle East (Group 1),SWE,Sweden,Revenue Potential,0.003,,All genres,
+Europe & Middle East (Group 1),BEL,Belgium,(Paid UA) CPP,4.000,bad,All genres,
+Europe & Middle East (Group 1),BEL,Belgium,(Paid UA) D7 ARPPU,3.000,medium,All genres,
+Europe & Middle East (Group 1),BEL,Belgium,Revenue Potential,0.003,,All genres,
+Europe & Middle East (Group 1),DNK,Denmark,(Paid UA) CPP,4.000,bad,All genres,
+Europe & Middle East (Group 1),DNK,Denmark,(Paid UA) D7 ARPPU,4.000,good,All genres,
+Europe & Middle East (Group 1),DNK,Denmark,Revenue Potential,0.002,,All genres,
+Europe & Middle East (Group 1),NOR,Norway,(Paid UA) CPP,5.000,bad,All genres,
+Europe & Middle East (Group 1),NOR,Norway,(Paid UA) D7 ARPPU,5.000,good,All genres,
+Europe & Middle East (Group 1),NOR,Norway,Revenue Potential,0.002,,All genres,
+Europe & Middle East (Group 2),FIN,Finland,(Paid UA) CPP,4.000,bad,All genres,
+Europe & Middle East (Group 2),FIN,Finland,(Paid UA) D7 ARPPU,4.000,good,All genres,
+Europe & Middle East (Group 2),FIN,Finland,Revenue Potential,0.001,,All genres,
+Europe & Middle East (Group 1),KWT,Kuwait,(Paid UA) CPP,5.000,bad,All genres,
+Europe & Middle East (Group 1),KWT,Kuwait,(Paid UA) D7 ARPPU,5.000,good,All genres,
+Europe & Middle East (Group 1),KWT,Kuwait,Revenue Potential,0.001,,All genres,
+Europe & Middle East (Group 2),EST,Estonia,(Paid UA) CPP,4.000,bad,All genres,YES
+Europe & Middle East (Group 2),EST,Estonia,(Paid UA) D7 ARPPU,4.000,good,All genres,YES
+Europe & Middle East (Group 2),EST,Estonia,Revenue Potential,0.000,,All genres,YES
+Europe & Middle East (Group 1),ISL,Iceland,(Paid UA) CPP,5.000,bad,All genres,YES
+Europe & Middle East (Group 1),ISL,Iceland,(Paid UA) D7 ARPPU,5.000,good,All genres,YES
+Europe & Middle East (Group 1),ISL,Iceland,Revenue Potential,0.000,,All genres,YES
+Europe & Middle East (Group 1),QAT,Qatar,(Paid UA) CPP,5.000,bad,All genres,
+Europe & Middle East (Group 1),QAT,Qatar,(Paid UA) D7 ARPPU,5.000,good,All genres,
+Europe & Middle East (Group 1),QAT,Qatar,Revenue Potential,0.000,,All genres,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),(Paid UA) CPP,3.000,medium,All genres,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),(Paid UA) D7 ARPPU,2.000,bad,All genres,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),Revenue Potential,0.033,,All genres,
+Europe & Middle East (Group 1),ITA,Italy,(Paid UA) CPP,3.000,medium,All genres,YES
+Europe & Middle East (Group 1),ITA,Italy,(Paid UA) D7 ARPPU,3.000,medium,All genres,YES
+Europe & Middle East (Group 1),ITA,Italy,Revenue Potential,0.008,,All genres,YES
+Europe & Middle East (Group 1),ESP,Spain,(Paid UA) CPP,2.000,good,All genres,YES
+Europe & Middle East (Group 1),ESP,Spain,(Paid UA) D7 ARPPU,3.000,medium,All genres,YES
+Europe & Middle East (Group 1),ESP,Spain,Revenue Potential,0.005,,All genres,YES
+Europe & Middle East (Group 2),POL,Poland,(Paid UA) CPP,2.000,good,All genres,YES
+Europe & Middle East (Group 2),POL,Poland,(Paid UA) D7 ARPPU,3.000,medium,All genres,YES
+Europe & Middle East (Group 2),POL,Poland,Revenue Potential,0.005,,All genres,YES
+Europe & Middle East (Group 2),TUR,Turkiye,(Paid UA) CPP,3.000,medium,All genres,
+Europe & Middle East (Group 2),TUR,Turkiye,(Paid UA) D7 ARPPU,1.000,bad,All genres,
+Europe & Middle East (Group 2),TUR,Turkiye,Revenue Potential,0.006,,All genres,
+Europe & Middle East (Group 2),CZE,Czechia,(Paid UA) CPP,2.000,good,All genres,YES
+Europe & Middle East (Group 2),CZE,Czechia,(Paid UA) D7 ARPPU,2.000,bad,All genres,YES
+Europe & Middle East (Group 2),CZE,Czechia,Revenue Potential,0.001,,All genres,YES
+Europe & Middle East (Group 2),RUS,Russia,(Paid UA) CPP,1.000,good,All genres,
+Europe & Middle East (Group 2),RUS,Russia,(Paid UA) D7 ARPPU,2.000,bad,All genres,
+Europe & Middle East (Group 2),RUS,Russia,Revenue Potential,0.009,,All genres,
+Europe & Middle East (Group 2),UKR,Ukraine,(Paid UA) CPP,2.000,good,All genres,
+Europe & Middle East (Group 2),UKR,Ukraine,(Paid UA) D7 ARPPU,2.000,bad,All genres,
+Europe & Middle East (Group 2),UKR,Ukraine,Revenue Potential,0.002,,All genres,
+Europe & Middle East (Group 2),ROU,Romania,(Paid UA) CPP,3.000,medium,All genres,
+Europe & Middle East (Group 2),ROU,Romania,(Paid UA) D7 ARPPU,2.000,bad,All genres,
+Europe & Middle East (Group 2),ROU,Romania,Revenue Potential,0.001,,All genres,
+Europe & Middle East (Group 1),ISR,Israel,(Paid UA) CPP,5.000,bad,All genres,YES
+Europe & Middle East (Group 1),ISR,Israel,(Paid UA) D7 ARPPU,5.000,good,All genres,YES
+Europe & Middle East (Group 1),ISR,Israel,Revenue Potential,0.002,,All genres,YES
+Europe & Middle East (Group 2),HUN,Hungary,(Paid UA) CPP,3.000,medium,All genres,
+Europe & Middle East (Group 2),HUN,Hungary,(Paid UA) D7 ARPPU,2.000,bad,All genres,
+Europe & Middle East (Group 2),HUN,Hungary,Revenue Potential,0.001,,All genres,
+Europe & Middle East (Group 2),PRT,Portugal,(Paid UA) CPP,3.000,medium,All genres,
+Europe & Middle East (Group 2),PRT,Portugal,(Paid UA) D7 ARPPU,3.000,medium,All genres,
+Europe & Middle East (Group 2),PRT,Portugal,Revenue Potential,0.001,,All genres,
+Europe & Middle East (Group 2),GRC,Greece,(Paid UA) CPP,2.000,good,All genres,YES
+Europe & Middle East (Group 2),GRC,Greece,(Paid UA) D7 ARPPU,5.000,good,All genres,YES
+Europe & Middle East (Group 2),GRC,Greece,Revenue Potential,0.001,,All genres,YES
+Europe & Middle East (Group 2),SAU,Saudi Arabia,(Paid UA) CPP,5.000,bad,All genres,
+Europe & Middle East (Group 2),SAU,Saudi Arabia,(Paid UA) D7 ARPPU,4.000,good,All genres,
+Europe & Middle East (Group 2),SAU,Saudi Arabia,Revenue Potential,0.002,,All genres,
+Europe & Middle East (Group 1),ARE,UAE,(Paid UA) CPP,5.000,bad,All genres,YES
+Europe & Middle East (Group 1),ARE,UAE,(Paid UA) D7 ARPPU,5.000,good,All genres,YES
+Europe & Middle East (Group 1),ARE,UAE,Revenue Potential,0.001,,All genres,YES
+Europe & Middle East (Group 2),SVK,Slovakia,(Paid UA) CPP,3.000,medium,All genres,
+Europe & Middle East (Group 2),SVK,Slovakia,(Paid UA) D7 ARPPU,3.000,medium,All genres,
+Europe & Middle East (Group 2),SVK,Slovakia,Revenue Potential,0.000,,All genres,
+Europe & Middle East (Group 2),BGR,Bulgaria,(Paid UA) CPP,3.000,medium,All genres,
+Europe & Middle East (Group 2),BGR,Bulgaria,(Paid UA) D7 ARPPU,2.000,bad,All genres,
+Europe & Middle East (Group 2),BGR,Bulgaria,Revenue Potential,0.001,,All genres,
+Europe & Middle East (Group 2),HRV,Croatia,(Paid UA) CPP,2.000,good,All genres,YES
+Europe & Middle East (Group 2),HRV,Croatia,(Paid UA) D7 ARPPU,4.000,good,All genres,YES
+Europe & Middle East (Group 2),HRV,Croatia,Revenue Potential,0.000,bad,All genres,YES
+Europe & Middle East (Group 2),LTU,Lithuania,(Paid UA) CPP,3.000,medium,All genres,
+Europe & Middle East (Group 2),LTU,Lithuania,(Paid UA) D7 ARPPU,3.000,medium,All genres,
+Europe & Middle East (Group 2),LTU,Lithuania,Revenue Potential,0.000,,All genres,
+Global Developing Markets,KAZ,Kazakhstan,(Paid UA) CPP,2.000,good,All genres,
+Global Developing Markets,KAZ,Kazakhstan,(Paid UA) D7 ARPPU,1.000,bad,All genres,
+Global Developing Markets,KAZ,Kazakhstan,Revenue Potential,0.000,,All genres,
+Europe & Middle East (Group 2),LVA,Latvia,(Paid UA) CPP,3.000,medium,All genres,
+Europe & Middle East (Group 2),LVA,Latvia,(Paid UA) D7 ARPPU,3.000,medium,All genres,
+Europe & Middle East (Group 2),LVA,Latvia,Revenue Potential,0.000,,All genres,
+Global Developing Markets,EGY,Egypt,(Paid UA) CPP,5.000,bad,All genres,
+Global Developing Markets,EGY,Egypt,(Paid UA) D7 ARPPU,1.000,bad,All genres,
+Global Developing Markets,EGY,Egypt,Revenue Potential,0.000,,All genres,
+Europe & Middle East (Group 2),SVN,Slovenia,(Paid UA) CPP,4.000,bad,All genres,
+Europe & Middle East (Group 2),SVN,Slovenia,(Paid UA) D7 ARPPU,4.000,good,All genres,
+Europe & Middle East (Group 2),SVN,Slovenia,Revenue Potential,0.000,,All genres,
+Europe & Middle East (Group 2),SRB,Serbia,(Paid UA) CPP,5.000,bad,All genres,
+Europe & Middle East (Group 2),SRB,Serbia,(Paid UA) D7 ARPPU,2.000,bad,All genres,
+Europe & Middle East (Group 2),SRB,Serbia,Revenue Potential,0.001,,All genres,
+Europe & Middle East (Group 2),BLR,Belarus,(Paid UA) CPP,2.000,good,All genres,
+Europe & Middle East (Group 2),BLR,Belarus,(Paid UA) D7 ARPPU,3.000,medium,All genres,
+Europe & Middle East (Group 2),BLR,Belarus,Revenue Potential,0.000,bad,All genres,
+Global Developing Markets,IRQ,Iraq,(Paid UA) CPP,5.000,bad,All genres,
+Global Developing Markets,IRQ,Iraq,(Paid UA) D7 ARPPU,2.000,bad,All genres,
+Global Developing Markets,IRQ,Iraq,Revenue Potential,0.000,bad,All genres,
 Global Developing Markets,All countries,Global Developing Markets,(Paid UA) CPP,2.000,good,All genres,
 Global Developing Markets,All countries,Global Developing Markets,(Paid UA) D7 ARPPU,2.000,bad,All genres,
 Global Developing Markets,All countries,Global Developing Markets,Revenue Potential,0.045,,All genres,
@@ -215,30 +212,30 @@ LATAM Spanish Speaking,PER,Peru,Revenue Potential,0.001,,All genres,
 LATAM Spanish Speaking,CRI,Costa Rica,(Paid UA) CPP,1.000,good,All genres,
 LATAM Spanish Speaking,CRI,Costa Rica,(Paid UA) D7 ARPPU,1.000,bad,All genres,
 LATAM Spanish Speaking,CRI,Costa Rica,Revenue Potential,0.000,,All genres,
-US and English Language Markets,All countries,US and English Language Markets,(Paid UA) CPP,3.000,medium,Match,
-US and English Language Markets,All countries,US and English Language Markets,(Paid UA) D7 ARPPU,3.000,medium,Match,
-US and English Language Markets,All countries,US and English Language Markets,Revenue Potential,0.676,,Match,
-US and English Language Markets,USA,U.S.,(Paid UA) CPP,2.000,good,Match,YES
-US and English Language Markets,USA,U.S.,(Paid UA) D7 ARPPU,2.000,bad,Match,YES
-US and English Language Markets,USA,U.S.,Revenue Potential,0.569,,Match,YES
-US and English Language Markets,GBR,U.K.,(Paid UA) CPP,1.000,good,Match,YES
-US and English Language Markets,GBR,U.K.,(Paid UA) D7 ARPPU,2.000,bad,Match,YES
-US and English Language Markets,GBR,U.K.,Revenue Potential,0.059,,Match,YES
-US and English Language Markets,CAN,Canada,(Paid UA) CPP,3.000,medium,Match,
-US and English Language Markets,CAN,Canada,(Paid UA) D7 ARPPU,2.000,bad,Match,
-US and English Language Markets,CAN,Canada,Revenue Potential,0.022,,Match,
-US and English Language Markets,AUS,Australia,(Paid UA) CPP,2.000,good,Match,YES
-US and English Language Markets,AUS,Australia,(Paid UA) D7 ARPPU,3.000,medium,Match,YES
-US and English Language Markets,AUS,Australia,Revenue Potential,0.022,,Match,YES
-US and English Language Markets,NZL,New Zealand,(Paid UA) CPP,4.000,bad,Match,
-US and English Language Markets,NZL,New Zealand,(Paid UA) D7 ARPPU,4.000,good,Match,
-US and English Language Markets,NZL,New Zealand,Revenue Potential,0.003,,Match,
-US and English Language Markets,IRL,Ireland,(Paid UA) CPP,5.000,bad,Match,
-US and English Language Markets,IRL,Ireland,(Paid UA) D7 ARPPU,5.000,good,Match,
-US and English Language Markets,IRL,Ireland,Revenue Potential,0.002,,Match,
-East Asia Pacific,All countries,East Asian Pacific Markets,(Paid UA) CPP,4.000,bad,Match,
-East Asia Pacific,All countries,East Asian Pacific Markets,(Paid UA) D7 ARPPU,4.000,good,Match,
-East Asia Pacific,All countries,East Asian Pacific Markets,Revenue Potential,0.111,,Match,
+US and English Language,All countries,US and English Language,(Paid UA) CPP,3.000,medium,Match,
+US and English Language,All countries,US and English Language,(Paid UA) D7 ARPPU,3.000,medium,Match,
+US and English Language,All countries,US and English Language,Revenue Potential,0.676,,Match,
+US and English Language,USA,U.S.,(Paid UA) CPP,2.000,good,Match,YES
+US and English Language,USA,U.S.,(Paid UA) D7 ARPPU,2.000,bad,Match,YES
+US and English Language,USA,U.S.,Revenue Potential,0.569,,Match,YES
+US and English Language,GBR,U.K.,(Paid UA) CPP,1.000,good,Match,YES
+US and English Language,GBR,U.K.,(Paid UA) D7 ARPPU,2.000,bad,Match,YES
+US and English Language,GBR,U.K.,Revenue Potential,0.059,,Match,YES
+US and English Language,CAN,Canada,(Paid UA) CPP,3.000,medium,Match,
+US and English Language,CAN,Canada,(Paid UA) D7 ARPPU,2.000,bad,Match,
+US and English Language,CAN,Canada,Revenue Potential,0.022,,Match,
+US and English Language,AUS,Australia,(Paid UA) CPP,2.000,good,Match,YES
+US and English Language,AUS,Australia,(Paid UA) D7 ARPPU,3.000,medium,Match,YES
+US and English Language,AUS,Australia,Revenue Potential,0.022,,Match,YES
+US and English Language,NZL,New Zealand,(Paid UA) CPP,4.000,bad,Match,
+US and English Language,NZL,New Zealand,(Paid UA) D7 ARPPU,4.000,good,Match,
+US and English Language,NZL,New Zealand,Revenue Potential,0.003,,Match,
+US and English Language,IRL,Ireland,(Paid UA) CPP,5.000,bad,Match,
+US and English Language,IRL,Ireland,(Paid UA) D7 ARPPU,5.000,good,Match,
+US and English Language,IRL,Ireland,Revenue Potential,0.002,,Match,
+East Asia Pacific,All countries,East Asia Pacific,(Paid UA) CPP,4.000,bad,Match,
+East Asia Pacific,All countries,East Asia Pacific,(Paid UA) D7 ARPPU,4.000,good,Match,
+East Asia Pacific,All countries,East Asia Pacific,Revenue Potential,0.111,,Match,
 East Asia Pacific,JPN,Japan,(Paid UA) CPP,3.000,medium,Match,
 East Asia Pacific,JPN,Japan,(Paid UA) D7 ARPPU,2.000,bad,Match,
 East Asia Pacific,JPN,Japan,Revenue Potential,0.056,,Match,
@@ -254,75 +251,75 @@ East Asia Pacific,HKG,Hong Kong,Revenue Potential,0.002,,Match,YES
 East Asia Pacific,SGP,Singapore,(Paid UA) CPP,5.000,bad,Match,
 East Asia Pacific,SGP,Singapore,(Paid UA) D7 ARPPU,5.000,good,Match,
 East Asia Pacific,SGP,Singapore,Revenue Potential,0.002,,Match,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,(Paid UA) CPP,4.000,bad,Match,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,(Paid UA) D7 ARPPU,3.000,medium,Match,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,Revenue Potential,0.136,,Match,
-Europe & Middle East (Tier 1),DEU,Germany,(Paid UA) CPP,2.000,good,Match,
-Europe & Middle East (Tier 1),DEU,Germany,(Paid UA) D7 ARPPU,2.000,bad,Match,
-Europe & Middle East (Tier 1),DEU,Germany,Revenue Potential,0.052,,Match,
-Europe & Middle East (Tier 1),FRA,France,(Paid UA) CPP,2.000,good,Match,YES
-Europe & Middle East (Tier 1),FRA,France,(Paid UA) D7 ARPPU,2.000,bad,Match,YES
-Europe & Middle East (Tier 1),FRA,France,Revenue Potential,0.022,,Match,YES
-Europe & Middle East (Tier 1),NLD,Netherlands,(Paid UA) CPP,3.000,medium,Match,YES
-Europe & Middle East (Tier 1),NLD,Netherlands,(Paid UA) D7 ARPPU,4.000,good,Match,YES
-Europe & Middle East (Tier 1),NLD,Netherlands,Revenue Potential,0.009,,Match,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,(Paid UA) CPP,5.000,bad,Match,
-Europe & Middle East (Tier 1),CHE,Switzerland,(Paid UA) D7 ARPPU,5.000,good,Match,
-Europe & Middle East (Tier 1),CHE,Switzerland,Revenue Potential,0.008,,Match,
-Europe & Middle East (Tier 1),AUT,Austria,(Paid UA) CPP,4.000,bad,Match,YES
-Europe & Middle East (Tier 1),AUT,Austria,(Paid UA) D7 ARPPU,5.000,good,Match,YES
-Europe & Middle East (Tier 1),AUT,Austria,Revenue Potential,0.005,,Match,YES
-Europe & Middle East (Tier 1),SWE,Sweden,(Paid UA) CPP,4.000,bad,Match,
-Europe & Middle East (Tier 1),SWE,Sweden,(Paid UA) D7 ARPPU,4.000,good,Match,
-Europe & Middle East (Tier 1),SWE,Sweden,Revenue Potential,0.006,,Match,
-Europe & Middle East (Tier 1),BEL,Belgium,(Paid UA) CPP,3.000,medium,Match,YES
-Europe & Middle East (Tier 1),BEL,Belgium,(Paid UA) D7 ARPPU,4.000,good,Match,YES
-Europe & Middle East (Tier 1),BEL,Belgium,Revenue Potential,0.004,,Match,YES
-Europe & Middle East (Tier 1),DNK,Denmark,(Paid UA) CPP,5.000,bad,Match,
-Europe & Middle East (Tier 1),DNK,Denmark,(Paid UA) D7 ARPPU,4.000,good,Match,
-Europe & Middle East (Tier 1),DNK,Denmark,Revenue Potential,0.003,,Match,
-Europe & Middle East (Tier 1),NOR,Norway,(Paid UA) CPP,5.000,bad,Match,YES
-Europe & Middle East (Tier 1),NOR,Norway,(Paid UA) D7 ARPPU,5.000,good,Match,YES
-Europe & Middle East (Tier 1),NOR,Norway,Revenue Potential,0.003,,Match,YES
-Europe & Middle East (Tier 1),FIN,Finland,(Paid UA) CPP,4.000,bad,Match,
-Europe & Middle East (Tier 1),FIN,Finland,(Paid UA) D7 ARPPU,3.000,medium,Match,
-Europe & Middle East (Tier 1),FIN,Finland,Revenue Potential,0.001,,Match,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,(Paid UA) CPP,2.000,good,Match,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,(Paid UA) D7 ARPPU,3.000,medium,Match,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,Revenue Potential,0.029,,Match,
-Europe & Middle East (Tier 2),ITA,Italy,(Paid UA) CPP,2.000,good,Match,
-Europe & Middle East (Tier 2),ITA,Italy,(Paid UA) D7 ARPPU,3.000,medium,Match,
-Europe & Middle East (Tier 2),ITA,Italy,Revenue Potential,0.012,,Match,
-Europe & Middle East (Tier 2),ESP,Spain,(Paid UA) CPP,2.000,good,Match,YES
-Europe & Middle East (Tier 2),ESP,Spain,(Paid UA) D7 ARPPU,4.000,good,Match,YES
-Europe & Middle East (Tier 2),ESP,Spain,Revenue Potential,0.008,,Match,YES
-Europe & Middle East (Tier 2),POL,Poland,(Paid UA) CPP,2.000,good,Match,YES
-Europe & Middle East (Tier 2),POL,Poland,(Paid UA) D7 ARPPU,3.000,medium,Match,YES
-Europe & Middle East (Tier 2),POL,Poland,Revenue Potential,0.006,,Match,YES
-Europe & Middle East (Tier 2),TUR,Turkiye,(Paid UA) CPP,1.000,good,Match,
-Europe & Middle East (Tier 2),TUR,Turkiye,(Paid UA) D7 ARPPU,1.000,bad,Match,
-Europe & Middle East (Tier 2),TUR,Turkiye,Revenue Potential,0.005,,Match,
-Europe & Middle East (Tier 2),CZE,Czechia,(Paid UA) CPP,5.000,bad,Match,
-Europe & Middle East (Tier 2),CZE,Czechia,(Paid UA) D7 ARPPU,4.000,good,Match,
-Europe & Middle East (Tier 2),CZE,Czechia,Revenue Potential,0.002,,Match,
-Europe & Middle East (Tier 2),ROU,Romania,(Paid UA) CPP,1.000,good,Match,
-Europe & Middle East (Tier 2),ROU,Romania,(Paid UA) D7 ARPPU,1.000,bad,Match,
-Europe & Middle East (Tier 2),ROU,Romania,Revenue Potential,0.001,,Match,
-Europe & Middle East (Tier 2),ISR,Israel,(Paid UA) CPP,5.000,bad,Match,YES
-Europe & Middle East (Tier 2),ISR,Israel,(Paid UA) D7 ARPPU,5.000,good,Match,YES
-Europe & Middle East (Tier 2),ISR,Israel,Revenue Potential,0.002,,Match,YES
-Europe & Middle East (Tier 2),HUN,Hungary,(Paid UA) CPP,5.000,bad,Match,
-Europe & Middle East (Tier 2),HUN,Hungary,(Paid UA) D7 ARPPU,3.000,medium,Match,
-Europe & Middle East (Tier 2),HUN,Hungary,Revenue Potential,0.001,,Match,
-Europe & Middle East (Tier 2),PRT,Portugal,(Paid UA) CPP,4.000,bad,Match,
-Europe & Middle East (Tier 2),PRT,Portugal,(Paid UA) D7 ARPPU,3.000,medium,Match,
-Europe & Middle East (Tier 2),PRT,Portugal,Revenue Potential,0.001,,Match,
-Europe & Middle East (Tier 2),GRC,Greece,(Paid UA) CPP,3.000,medium,Match,YES
-Europe & Middle East (Tier 2),GRC,Greece,(Paid UA) D7 ARPPU,5.000,good,Match,YES
-Europe & Middle East (Tier 2),GRC,Greece,Revenue Potential,0.001,,Match,YES
-Europe & Middle East (Tier 2),SAU,Saudi Arabia,(Paid UA) CPP,4.000,bad,Match,
-Europe & Middle East (Tier 2),SAU,Saudi Arabia,(Paid UA) D7 ARPPU,3.000,medium,Match,
-Europe & Middle East (Tier 2),SAU,Saudi Arabia,Revenue Potential,0.003,,Match,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),(Paid UA) CPP,4.000,bad,Match,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),(Paid UA) D7 ARPPU,3.000,medium,Match,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),Revenue Potential,0.136,,Match,
+Europe & Middle East (Group 1),DEU,Germany,(Paid UA) CPP,2.000,good,Match,
+Europe & Middle East (Group 1),DEU,Germany,(Paid UA) D7 ARPPU,2.000,bad,Match,
+Europe & Middle East (Group 1),DEU,Germany,Revenue Potential,0.052,,Match,
+Europe & Middle East (Group 1),FRA,France,(Paid UA) CPP,2.000,good,Match,YES
+Europe & Middle East (Group 1),FRA,France,(Paid UA) D7 ARPPU,2.000,bad,Match,YES
+Europe & Middle East (Group 1),FRA,France,Revenue Potential,0.022,,Match,YES
+Europe & Middle East (Group 1),NLD,Netherlands,(Paid UA) CPP,3.000,medium,Match,YES
+Europe & Middle East (Group 1),NLD,Netherlands,(Paid UA) D7 ARPPU,4.000,good,Match,YES
+Europe & Middle East (Group 1),NLD,Netherlands,Revenue Potential,0.009,,Match,YES
+Europe & Middle East (Group 1),CHE,Switzerland,(Paid UA) CPP,5.000,bad,Match,
+Europe & Middle East (Group 1),CHE,Switzerland,(Paid UA) D7 ARPPU,5.000,good,Match,
+Europe & Middle East (Group 1),CHE,Switzerland,Revenue Potential,0.008,,Match,
+Europe & Middle East (Group 1),AUT,Austria,(Paid UA) CPP,4.000,bad,Match,YES
+Europe & Middle East (Group 1),AUT,Austria,(Paid UA) D7 ARPPU,5.000,good,Match,YES
+Europe & Middle East (Group 1),AUT,Austria,Revenue Potential,0.005,,Match,YES
+Europe & Middle East (Group 1),SWE,Sweden,(Paid UA) CPP,4.000,bad,Match,
+Europe & Middle East (Group 1),SWE,Sweden,(Paid UA) D7 ARPPU,4.000,good,Match,
+Europe & Middle East (Group 1),SWE,Sweden,Revenue Potential,0.006,,Match,
+Europe & Middle East (Group 1),BEL,Belgium,(Paid UA) CPP,3.000,medium,Match,YES
+Europe & Middle East (Group 1),BEL,Belgium,(Paid UA) D7 ARPPU,4.000,good,Match,YES
+Europe & Middle East (Group 1),BEL,Belgium,Revenue Potential,0.004,,Match,YES
+Europe & Middle East (Group 1),DNK,Denmark,(Paid UA) CPP,5.000,bad,Match,
+Europe & Middle East (Group 1),DNK,Denmark,(Paid UA) D7 ARPPU,4.000,good,Match,
+Europe & Middle East (Group 1),DNK,Denmark,Revenue Potential,0.003,,Match,
+Europe & Middle East (Group 1),NOR,Norway,(Paid UA) CPP,5.000,bad,Match,YES
+Europe & Middle East (Group 1),NOR,Norway,(Paid UA) D7 ARPPU,5.000,good,Match,YES
+Europe & Middle East (Group 1),NOR,Norway,Revenue Potential,0.003,,Match,YES
+Europe & Middle East (Group 2),FIN,Finland,(Paid UA) CPP,4.000,bad,Match,
+Europe & Middle East (Group 2),FIN,Finland,(Paid UA) D7 ARPPU,3.000,medium,Match,
+Europe & Middle East (Group 2),FIN,Finland,Revenue Potential,0.001,,Match,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),(Paid UA) CPP,2.000,good,Match,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),(Paid UA) D7 ARPPU,3.000,medium,Match,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),Revenue Potential,0.029,,Match,
+Europe & Middle East (Group 1),ITA,Italy,(Paid UA) CPP,2.000,good,Match,
+Europe & Middle East (Group 1),ITA,Italy,(Paid UA) D7 ARPPU,3.000,medium,Match,
+Europe & Middle East (Group 1),ITA,Italy,Revenue Potential,0.012,,Match,
+Europe & Middle East (Group 1),ESP,Spain,(Paid UA) CPP,2.000,good,Match,YES
+Europe & Middle East (Group 1),ESP,Spain,(Paid UA) D7 ARPPU,4.000,good,Match,YES
+Europe & Middle East (Group 1),ESP,Spain,Revenue Potential,0.008,,Match,YES
+Europe & Middle East (Group 2),POL,Poland,(Paid UA) CPP,2.000,good,Match,YES
+Europe & Middle East (Group 2),POL,Poland,(Paid UA) D7 ARPPU,3.000,medium,Match,YES
+Europe & Middle East (Group 2),POL,Poland,Revenue Potential,0.006,,Match,YES
+Europe & Middle East (Group 2),TUR,Turkiye,(Paid UA) CPP,1.000,good,Match,
+Europe & Middle East (Group 2),TUR,Turkiye,(Paid UA) D7 ARPPU,1.000,bad,Match,
+Europe & Middle East (Group 2),TUR,Turkiye,Revenue Potential,0.005,,Match,
+Europe & Middle East (Group 2),CZE,Czechia,(Paid UA) CPP,5.000,bad,Match,
+Europe & Middle East (Group 2),CZE,Czechia,(Paid UA) D7 ARPPU,4.000,good,Match,
+Europe & Middle East (Group 2),CZE,Czechia,Revenue Potential,0.002,,Match,
+Europe & Middle East (Group 2),ROU,Romania,(Paid UA) CPP,1.000,good,Match,
+Europe & Middle East (Group 2),ROU,Romania,(Paid UA) D7 ARPPU,1.000,bad,Match,
+Europe & Middle East (Group 2),ROU,Romania,Revenue Potential,0.001,,Match,
+Europe & Middle East (Group 1),ISR,Israel,(Paid UA) CPP,5.000,bad,Match,YES
+Europe & Middle East (Group 1),ISR,Israel,(Paid UA) D7 ARPPU,5.000,good,Match,YES
+Europe & Middle East (Group 1),ISR,Israel,Revenue Potential,0.002,,Match,YES
+Europe & Middle East (Group 2),HUN,Hungary,(Paid UA) CPP,5.000,bad,Match,
+Europe & Middle East (Group 2),HUN,Hungary,(Paid UA) D7 ARPPU,3.000,medium,Match,
+Europe & Middle East (Group 2),HUN,Hungary,Revenue Potential,0.001,,Match,
+Europe & Middle East (Group 2),PRT,Portugal,(Paid UA) CPP,4.000,bad,Match,
+Europe & Middle East (Group 2),PRT,Portugal,(Paid UA) D7 ARPPU,3.000,medium,Match,
+Europe & Middle East (Group 2),PRT,Portugal,Revenue Potential,0.001,,Match,
+Europe & Middle East (Group 2),GRC,Greece,(Paid UA) CPP,3.000,medium,Match,YES
+Europe & Middle East (Group 2),GRC,Greece,(Paid UA) D7 ARPPU,5.000,good,Match,YES
+Europe & Middle East (Group 2),GRC,Greece,Revenue Potential,0.001,,Match,YES
+Europe & Middle East (Group 2),SAU,Saudi Arabia,(Paid UA) CPP,4.000,bad,Match,
+Europe & Middle East (Group 2),SAU,Saudi Arabia,(Paid UA) D7 ARPPU,3.000,medium,Match,
+Europe & Middle East (Group 2),SAU,Saudi Arabia,Revenue Potential,0.003,,Match,
 Global Developing Markets,All countries,Global Developing Markets,(Paid UA) CPP,2.000,good,Match,
 Global Developing Markets,All countries,Global Developing Markets,(Paid UA) D7 ARPPU,2.000,bad,Match,
 Global Developing Markets,All countries,Global Developing Markets,Revenue Potential,0.030,,Match,
@@ -359,21 +356,21 @@ LATAM Spanish Speaking,MEX,Mexico,Revenue Potential,0.007,,Match,
 LATAM Spanish Speaking,CHL,Chile,(Paid UA) CPP,2.000,good,Match,
 LATAM Spanish Speaking,CHL,Chile,(Paid UA) D7 ARPPU,2.000,bad,Match,
 LATAM Spanish Speaking,CHL,Chile,Revenue Potential,0.003,,Match,
-US and English Language Markets,All countries,US and English Language Markets,(Paid UA) CPP,3.000,medium,RPG,
-US and English Language Markets,All countries,US and English Language Markets,(Paid UA) D7 ARPPU,4.000,good,RPG,
-US and English Language Markets,All countries,US and English Language Markets,Revenue Potential,0.266,,RPG,
-US and English Language Markets,USA,U.S.,(Paid UA) CPP,4.000,bad,RPG,
-US and English Language Markets,USA,U.S.,(Paid UA) D7 ARPPU,5.000,good,RPG,
-US and English Language Markets,USA,U.S.,Revenue Potential,0.229,,RPG,
-US and English Language Markets,GBR,U.K.,(Paid UA) CPP,3.000,medium,RPG,
-US and English Language Markets,GBR,U.K.,(Paid UA) D7 ARPPU,3.000,medium,RPG,
-US and English Language Markets,GBR,U.K.,Revenue Potential,0.015,,RPG,
-US and English Language Markets,CAN,Canada,(Paid UA) CPP,4.000,bad,RPG,
-US and English Language Markets,CAN,Canada,(Paid UA) D7 ARPPU,5.000,good,RPG,
-US and English Language Markets,CAN,Canada,Revenue Potential,0.013,,RPG,
-US and English Language Markets,AUS,Australia,(Paid UA) CPP,3.000,medium,RPG,
-US and English Language Markets,AUS,Australia,(Paid UA) D7 ARPPU,3.000,medium,RPG,
-US and English Language Markets,AUS,Australia,Revenue Potential,0.009,,RPG,
+US and English Language,All countries,US and English Language,(Paid UA) CPP,3.000,medium,RPG,
+US and English Language,All countries,US and English Language,(Paid UA) D7 ARPPU,4.000,good,RPG,
+US and English Language,All countries,US and English Language,Revenue Potential,0.266,,RPG,
+US and English Language,USA,U.S.,(Paid UA) CPP,4.000,bad,RPG,
+US and English Language,USA,U.S.,(Paid UA) D7 ARPPU,5.000,good,RPG,
+US and English Language,USA,U.S.,Revenue Potential,0.229,,RPG,
+US and English Language,GBR,U.K.,(Paid UA) CPP,3.000,medium,RPG,
+US and English Language,GBR,U.K.,(Paid UA) D7 ARPPU,3.000,medium,RPG,
+US and English Language,GBR,U.K.,Revenue Potential,0.015,,RPG,
+US and English Language,CAN,Canada,(Paid UA) CPP,4.000,bad,RPG,
+US and English Language,CAN,Canada,(Paid UA) D7 ARPPU,5.000,good,RPG,
+US and English Language,CAN,Canada,Revenue Potential,0.013,,RPG,
+US and English Language,AUS,Australia,(Paid UA) CPP,3.000,medium,RPG,
+US and English Language,AUS,Australia,(Paid UA) D7 ARPPU,3.000,medium,RPG,
+US and English Language,AUS,Australia,Revenue Potential,0.009,,RPG,
 East Asia Pacific,All countries,East Asian Pacific Markets,(Paid UA) CPP,5.000,bad,RPG,
 East Asia Pacific,All countries,East Asian Pacific Markets,(Paid UA) D7 ARPPU,4.000,good,RPG,
 East Asia Pacific,All countries,East Asian Pacific Markets,Revenue Potential,0.576,,RPG,
@@ -392,48 +389,48 @@ East Asia Pacific,HKG,Hong Kong,Revenue Potential,0.032,,RPG,YES
 East Asia Pacific,SGP,Singapore,(Paid UA) CPP,5.000,bad,RPG,YES
 East Asia Pacific,SGP,Singapore,(Paid UA) D7 ARPPU,3.000,medium,RPG,YES
 East Asia Pacific,SGP,Singapore,Revenue Potential,0.005,,RPG,YES
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,(Paid UA) CPP,4.000,bad,RPG,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,(Paid UA) D7 ARPPU,3.000,medium,RPG,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,Revenue Potential,0.074,,RPG,
-Europe & Middle East (Tier 1),DEU,Germany,(Paid UA) CPP,4.000,bad,RPG,YES
-Europe & Middle East (Tier 1),DEU,Germany,(Paid UA) D7 ARPPU,3.000,medium,RPG,YES
-Europe & Middle East (Tier 1),DEU,Germany,Revenue Potential,0.030,,RPG,YES
-Europe & Middle East (Tier 1),FRA,France,(Paid UA) CPP,4.000,bad,RPG,YES
-Europe & Middle East (Tier 1),FRA,France,(Paid UA) D7 ARPPU,2.000,bad,RPG,YES
-Europe & Middle East (Tier 1),FRA,France,Revenue Potential,0.028,,RPG,YES
-Europe & Middle East (Tier 1),NLD,Netherlands,(Paid UA) CPP,3.000,medium,RPG,
-Europe & Middle East (Tier 1),NLD,Netherlands,(Paid UA) D7 ARPPU,4.000,good,RPG,
-Europe & Middle East (Tier 1),NLD,Netherlands,Revenue Potential,0.003,,RPG,
-Europe & Middle East (Tier 1),CHE,Switzerland,(Paid UA) CPP,5.000,bad,RPG,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,(Paid UA) D7 ARPPU,5.000,good,RPG,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,Revenue Potential,0.002,,RPG,YES
-Europe & Middle East (Tier 1),AUT,Austria,(Paid UA) CPP,4.000,bad,RPG,
-Europe & Middle East (Tier 1),AUT,Austria,(Paid UA) D7 ARPPU,5.000,good,RPG,
-Europe & Middle East (Tier 1),AUT,Austria,Revenue Potential,0.002,,RPG,
-Europe & Middle East (Tier 1),SWE,Sweden,(Paid UA) CPP,3.000,medium,RPG,
-Europe & Middle East (Tier 1),SWE,Sweden,(Paid UA) D7 ARPPU,5.000,good,RPG,
-Europe & Middle East (Tier 1),SWE,Sweden,Revenue Potential,0.001,,RPG,
-Europe & Middle East (Tier 1),DNK,Denmark,(Paid UA) CPP,3.000,medium,RPG,
-Europe & Middle East (Tier 1),DNK,Denmark,(Paid UA) D7 ARPPU,4.000,good,RPG,
-Europe & Middle East (Tier 1),DNK,Denmark,Revenue Potential,0.001,,RPG,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,(Paid UA) CPP,2.000,good,RPG,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,(Paid UA) D7 ARPPU,2.000,bad,RPG,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,Revenue Potential,0.019,,RPG,
-Europe & Middle East (Tier 2),ITA,Italy,(Paid UA) CPP,2.000,good,RPG,
-Europe & Middle East (Tier 2),ITA,Italy,(Paid UA) D7 ARPPU,2.000,bad,RPG,
-Europe & Middle East (Tier 2),ITA,Italy,Revenue Potential,0.003,,RPG,
-Europe & Middle East (Tier 2),ESP,Spain,(Paid UA) CPP,2.000,good,RPG,
-Europe & Middle East (Tier 2),ESP,Spain,(Paid UA) D7 ARPPU,2.000,bad,RPG,
-Europe & Middle East (Tier 2),ESP,Spain,Revenue Potential,0.002,,RPG,
-Europe & Middle East (Tier 2),POL,Poland,(Paid UA) CPP,2.000,good,RPG,
-Europe & Middle East (Tier 2),POL,Poland,(Paid UA) D7 ARPPU,1.000,bad,RPG,
-Europe & Middle East (Tier 2),POL,Poland,Revenue Potential,0.002,,RPG,
-Europe & Middle East (Tier 2),TUR,Turkiye,(Paid UA) CPP,1.000,good,RPG,
-Europe & Middle East (Tier 2),TUR,Turkiye,(Paid UA) D7 ARPPU,1.000,bad,RPG,
-Europe & Middle East (Tier 2),TUR,Turkiye,Revenue Potential,0.002,,RPG,
-Europe & Middle East (Tier 2),RUS,Russia,(Paid UA) CPP,2.000,good,RPG,
-Europe & Middle East (Tier 2),RUS,Russia,(Paid UA) D7 ARPPU,4.000,good,RPG,
-Europe & Middle East (Tier 2),RUS,Russia,Revenue Potential,0.012,,RPG,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),(Paid UA) CPP,4.000,bad,RPG,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),(Paid UA) D7 ARPPU,3.000,medium,RPG,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),Revenue Potential,0.074,,RPG,
+Europe & Middle East (Group 1),DEU,Germany,(Paid UA) CPP,4.000,bad,RPG,YES
+Europe & Middle East (Group 1),DEU,Germany,(Paid UA) D7 ARPPU,3.000,medium,RPG,YES
+Europe & Middle East (Group 1),DEU,Germany,Revenue Potential,0.030,,RPG,YES
+Europe & Middle East (Group 1),FRA,France,(Paid UA) CPP,4.000,bad,RPG,YES
+Europe & Middle East (Group 1),FRA,France,(Paid UA) D7 ARPPU,2.000,bad,RPG,YES
+Europe & Middle East (Group 1),FRA,France,Revenue Potential,0.028,,RPG,YES
+Europe & Middle East (Group 1),NLD,Netherlands,(Paid UA) CPP,3.000,medium,RPG,
+Europe & Middle East (Group 1),NLD,Netherlands,(Paid UA) D7 ARPPU,4.000,good,RPG,
+Europe & Middle East (Group 1),NLD,Netherlands,Revenue Potential,0.003,,RPG,
+Europe & Middle East (Group 1),CHE,Switzerland,(Paid UA) CPP,5.000,bad,RPG,YES
+Europe & Middle East (Group 1),CHE,Switzerland,(Paid UA) D7 ARPPU,5.000,good,RPG,YES
+Europe & Middle East (Group 1),CHE,Switzerland,Revenue Potential,0.002,,RPG,YES
+Europe & Middle East (Group 1),AUT,Austria,(Paid UA) CPP,4.000,bad,RPG,
+Europe & Middle East (Group 1),AUT,Austria,(Paid UA) D7 ARPPU,5.000,good,RPG,
+Europe & Middle East (Group 1),AUT,Austria,Revenue Potential,0.002,,RPG,
+Europe & Middle East (Group 1),SWE,Sweden,(Paid UA) CPP,3.000,medium,RPG,
+Europe & Middle East (Group 1),SWE,Sweden,(Paid UA) D7 ARPPU,5.000,good,RPG,
+Europe & Middle East (Group 1),SWE,Sweden,Revenue Potential,0.001,,RPG,
+Europe & Middle East (Group 1),DNK,Denmark,(Paid UA) CPP,3.000,medium,RPG,
+Europe & Middle East (Group 1),DNK,Denmark,(Paid UA) D7 ARPPU,4.000,good,RPG,
+Europe & Middle East (Group 1),DNK,Denmark,Revenue Potential,0.001,,RPG,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),(Paid UA) CPP,2.000,good,RPG,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),(Paid UA) D7 ARPPU,2.000,bad,RPG,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),Revenue Potential,0.019,,RPG,
+Europe & Middle East (Group 1),ITA,Italy,(Paid UA) CPP,2.000,good,RPG,
+Europe & Middle East (Group 1),ITA,Italy,(Paid UA) D7 ARPPU,2.000,bad,RPG,
+Europe & Middle East (Group 1),ITA,Italy,Revenue Potential,0.003,,RPG,
+Europe & Middle East (Group 1),ESP,Spain,(Paid UA) CPP,2.000,good,RPG,
+Europe & Middle East (Group 1),ESP,Spain,(Paid UA) D7 ARPPU,2.000,bad,RPG,
+Europe & Middle East (Group 1),ESP,Spain,Revenue Potential,0.002,,RPG,
+Europe & Middle East (Group 2),POL,Poland,(Paid UA) CPP,2.000,good,RPG,
+Europe & Middle East (Group 2),POL,Poland,(Paid UA) D7 ARPPU,1.000,bad,RPG,
+Europe & Middle East (Group 2),POL,Poland,Revenue Potential,0.002,,RPG,
+Europe & Middle East (Group 2),TUR,Turkiye,(Paid UA) CPP,1.000,good,RPG,
+Europe & Middle East (Group 2),TUR,Turkiye,(Paid UA) D7 ARPPU,1.000,bad,RPG,
+Europe & Middle East (Group 2),TUR,Turkiye,Revenue Potential,0.002,,RPG,
+Europe & Middle East (Group 2),RUS,Russia,(Paid UA) CPP,2.000,good,RPG,
+Europe & Middle East (Group 2),RUS,Russia,(Paid UA) D7 ARPPU,4.000,good,RPG,
+Europe & Middle East (Group 2),RUS,Russia,Revenue Potential,0.012,,RPG,
 Global Developing Markets,All countries,Global Developing Markets,(Paid UA) CPP,1.000,good,RPG,
 Global Developing Markets,All countries,Global Developing Markets,(Paid UA) D7 ARPPU,1.000,bad,RPG,
 Global Developing Markets,All countries,Global Developing Markets,Revenue Potential,0.063,,RPG,
@@ -458,27 +455,27 @@ Global Developing Markets,VNM,Vietnam,Revenue Potential,0.006,,RPG,
 LATAM Spanish Speaking,All countries,LATAM Spanish Speaking,(Paid UA) CPP,1.000,good,RPG,
 LATAM Spanish Speaking,All countries,LATAM Spanish Speaking,(Paid UA) D7 ARPPU,1.000,bad,RPG,
 LATAM Spanish Speaking,All countries,LATAM Spanish Speaking,Revenue Potential,0.002,,RPG,
-US and English Language Markets,All countries,US and English Language Markets,(Paid UA) CPP,4.000,bad,Casino,
-US and English Language Markets,All countries,US and English Language Markets,(Paid UA) D7 ARPPU,4.000,good,Casino,
-US and English Language Markets,All countries,US and English Language Markets,Revenue Potential,0.711,,Casino,
-US and English Language Markets,USA,U.S.,(Paid UA) CPP,5.000,bad,Casino,YES
-US and English Language Markets,USA,U.S.,(Paid UA) D7 ARPPU,5.000,good,Casino,YES
-US and English Language Markets,USA,U.S.,Revenue Potential,0.599,,Casino,YES
-US and English Language Markets,GBR,U.K.,(Paid UA) CPP,3.000,medium,Casino,YES
-US and English Language Markets,GBR,U.K.,(Paid UA) D7 ARPPU,3.000,medium,Casino,YES
-US and English Language Markets,GBR,U.K.,Revenue Potential,0.028,,Casino,YES
-US and English Language Markets,CAN,Canada,(Paid UA) CPP,3.000,medium,Casino,
-US and English Language Markets,CAN,Canada,(Paid UA) D7 ARPPU,4.000,good,Casino,
-US and English Language Markets,CAN,Canada,Revenue Potential,0.031,,Casino,
-US and English Language Markets,AUS,Australia,(Paid UA) CPP,5.000,bad,Casino,YES
-US and English Language Markets,AUS,Australia,(Paid UA) D7 ARPPU,4.000,good,Casino,YES
-US and English Language Markets,AUS,Australia,Revenue Potential,0.050,,Casino,YES
-US and English Language Markets,NZL,New Zealand,(Paid UA) CPP,1.000,good,Casino,
-US and English Language Markets,NZL,New Zealand,(Paid UA) D7 ARPPU,3.000,medium,Casino,
-US and English Language Markets,NZL,New Zealand,Revenue Potential,0.003,,Casino,
-East Asia Pacific,All countries,East Asian Pacific Markets,(Paid UA) CPP,5.000,bad,Casino,
-East Asia Pacific,All countries,East Asian Pacific Markets,(Paid UA) D7 ARPPU,5.000,good,Casino,
-East Asia Pacific,All countries,East Asian Pacific Markets,Revenue Potential,0.085,,Casino,
+US and English Language,All countries,US and English Language,(Paid UA) CPP,4.000,bad,Casino,
+US and English Language,All countries,US and English Language,(Paid UA) D7 ARPPU,4.000,good,Casino,
+US and English Language,All countries,US and English Language,Revenue Potential,0.711,,Casino,
+US and English Language,USA,U.S.,(Paid UA) CPP,5.000,bad,Casino,YES
+US and English Language,USA,U.S.,(Paid UA) D7 ARPPU,5.000,good,Casino,YES
+US and English Language,USA,U.S.,Revenue Potential,0.599,,Casino,YES
+US and English Language,GBR,U.K.,(Paid UA) CPP,3.000,medium,Casino,YES
+US and English Language,GBR,U.K.,(Paid UA) D7 ARPPU,3.000,medium,Casino,YES
+US and English Language,GBR,U.K.,Revenue Potential,0.028,,Casino,YES
+US and English Language,CAN,Canada,(Paid UA) CPP,3.000,medium,Casino,
+US and English Language,CAN,Canada,(Paid UA) D7 ARPPU,4.000,good,Casino,
+US and English Language,CAN,Canada,Revenue Potential,0.031,,Casino,
+US and English Language,AUS,Australia,(Paid UA) CPP,5.000,bad,Casino,YES
+US and English Language,AUS,Australia,(Paid UA) D7 ARPPU,4.000,good,Casino,YES
+US and English Language,AUS,Australia,Revenue Potential,0.050,,Casino,YES
+US and English Language,NZL,New Zealand,(Paid UA) CPP,1.000,good,Casino,
+US and English Language,NZL,New Zealand,(Paid UA) D7 ARPPU,3.000,medium,Casino,
+US and English Language,NZL,New Zealand,Revenue Potential,0.003,,Casino,
+East Asia Pacific,All countries,East Asia Pacific,(Paid UA) CPP,5.000,bad,Casino,
+East Asia Pacific,All countries,East Asia Pacific,(Paid UA) D7 ARPPU,5.000,good,Casino,
+East Asia Pacific,All countries,East Asia Pacific,Revenue Potential,0.085,,Casino,
 East Asia Pacific,JPN,Japan,(Paid UA) CPP,4.000,bad,Casino,
 East Asia Pacific,JPN,Japan,(Paid UA) D7 ARPPU,5.000,good,Casino,
 East Asia Pacific,JPN,Japan,Revenue Potential,0.031,,Casino,
@@ -491,57 +488,57 @@ East Asia Pacific,HKG,Hong Kong,Revenue Potential,0.005,,Casino,
 East Asia Pacific,SGP,Singapore,(Paid UA) CPP,5.000,bad,Casino,YES
 East Asia Pacific,SGP,Singapore,(Paid UA) D7 ARPPU,5.000,good,Casino,YES
 East Asia Pacific,SGP,Singapore,Revenue Potential,0.005,,Casino,YES
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,(Paid UA) CPP,4.000,bad,Casino,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,(Paid UA) D7 ARPPU,3.000,medium,Casino,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,Revenue Potential,0.096,,Casino,
-Europe & Middle East (Tier 1),DEU,Germany,(Paid UA) CPP,3.000,medium,Casino,
-Europe & Middle East (Tier 1),DEU,Germany,(Paid UA) D7 ARPPU,4.000,good,Casino,
-Europe & Middle East (Tier 1),DEU,Germany,Revenue Potential,0.039,,Casino,
-Europe & Middle East (Tier 1),FRA,France,(Paid UA) CPP,4.000,bad,Casino,YES
-Europe & Middle East (Tier 1),FRA,France,(Paid UA) D7 ARPPU,3.000,medium,Casino,YES
-Europe & Middle East (Tier 1),FRA,France,Revenue Potential,0.011,,Casino,YES
-Europe & Middle East (Tier 1),NLD,Netherlands,(Paid UA) CPP,4.000,bad,Casino,YES
-Europe & Middle East (Tier 1),NLD,Netherlands,(Paid UA) D7 ARPPU,2.000,bad,Casino,YES
-Europe & Middle East (Tier 1),NLD,Netherlands,Revenue Potential,0.008,,Casino,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,(Paid UA) CPP,5.000,bad,Casino,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,(Paid UA) D7 ARPPU,4.000,good,Casino,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,Revenue Potential,0.004,,Casino,YES
-Europe & Middle East (Tier 1),AUT,Austria,(Paid UA) CPP,5.000,bad,Casino,YES
-Europe & Middle East (Tier 1),AUT,Austria,(Paid UA) D7 ARPPU,3.000,medium,Casino,YES
-Europe & Middle East (Tier 1),AUT,Austria,Revenue Potential,0.003,,Casino,YES
-Europe & Middle East (Tier 1),SWE,Sweden,(Paid UA) CPP,2.000,good,Casino,
-Europe & Middle East (Tier 1),SWE,Sweden,(Paid UA) D7 ARPPU,2.000,bad,Casino,
-Europe & Middle East (Tier 1),SWE,Sweden,Revenue Potential,0.003,,Casino,
-Europe & Middle East (Tier 1),BEL,Belgium,(Paid UA) CPP,2.000,good,Casino,
-Europe & Middle East (Tier 1),BEL,Belgium,(Paid UA) D7 ARPPU,4.000,good,Casino,
-Europe & Middle East (Tier 1),BEL,Belgium,Revenue Potential,0.002,,Casino,
-Europe & Middle East (Tier 1),DNK,Denmark,(Paid UA) CPP,4.000,bad,Casino,
-Europe & Middle East (Tier 1),DNK,Denmark,(Paid UA) D7 ARPPU,4.000,good,Casino,
-Europe & Middle East (Tier 1),DNK,Denmark,Revenue Potential,0.002,,Casino,
-Europe & Middle East (Tier 1),NOR,Norway,(Paid UA) CPP,4.000,bad,Casino,
-Europe & Middle East (Tier 1),NOR,Norway,(Paid UA) D7 ARPPU,5.000,good,Casino,
-Europe & Middle East (Tier 1),NOR,Norway,Revenue Potential,0.002,,Casino,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,(Paid UA) CPP,2.000,good,Casino,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,(Paid UA) D7 ARPPU,1.000,bad,Casino,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,Revenue Potential,0.047,,Casino,
-Europe & Middle East (Tier 2),ITA,Italy,(Paid UA) CPP,3.000,medium,Casino,YES
-Europe & Middle East (Tier 2),ITA,Italy,(Paid UA) D7 ARPPU,3.000,medium,Casino,YES
-Europe & Middle East (Tier 2),ITA,Italy,Revenue Potential,0.011,,Casino,YES
-Europe & Middle East (Tier 2),ESP,Spain,(Paid UA) CPP,2.000,good,Casino,
-Europe & Middle East (Tier 2),ESP,Spain,(Paid UA) D7 ARPPU,2.000,bad,Casino,
-Europe & Middle East (Tier 2),ESP,Spain,Revenue Potential,0.004,,Casino,
-Europe & Middle East (Tier 2),POL,Poland,(Paid UA) CPP,3.000,medium,Casino,YES
-Europe & Middle East (Tier 2),POL,Poland,(Paid UA) D7 ARPPU,1.000,bad,Casino,YES
-Europe & Middle East (Tier 2),POL,Poland,Revenue Potential,0.006,,Casino,YES
-Europe & Middle East (Tier 2),TUR,Turkiye,(Paid UA) CPP,1.000,good,Casino,
-Europe & Middle East (Tier 2),TUR,Turkiye,(Paid UA) D7 ARPPU,2.000,bad,Casino,
-Europe & Middle East (Tier 2),TUR,Turkiye,Revenue Potential,0.017,,Casino,
-Europe & Middle East (Tier 2),CZE,Czechia,(Paid UA) CPP,1.000,good,Casino,
-Europe & Middle East (Tier 2),CZE,Czechia,(Paid UA) D7 ARPPU,1.000,bad,Casino,
-Europe & Middle East (Tier 2),CZE,Czechia,Revenue Potential,0.001,,Casino,
-Europe & Middle East (Tier 2),HUN,Hungary,(Paid UA) CPP,1.000,good,Casino,
-Europe & Middle East (Tier 2),HUN,Hungary,(Paid UA) D7 ARPPU,2.000,bad,Casino,
-Europe & Middle East (Tier 2),HUN,Hungary,Revenue Potential,0.002,,Casino,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),(Paid UA) CPP,4.000,bad,Casino,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),(Paid UA) D7 ARPPU,3.000,medium,Casino,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),Revenue Potential,0.096,,Casino,
+Europe & Middle East (Group 1),DEU,Germany,(Paid UA) CPP,3.000,medium,Casino,
+Europe & Middle East (Group 1),DEU,Germany,(Paid UA) D7 ARPPU,4.000,good,Casino,
+Europe & Middle East (Group 1),DEU,Germany,Revenue Potential,0.039,,Casino,
+Europe & Middle East (Group 1),FRA,France,(Paid UA) CPP,4.000,bad,Casino,YES
+Europe & Middle East (Group 1),FRA,France,(Paid UA) D7 ARPPU,3.000,medium,Casino,YES
+Europe & Middle East (Group 1),FRA,France,Revenue Potential,0.011,,Casino,YES
+Europe & Middle East (Group 1),NLD,Netherlands,(Paid UA) CPP,4.000,bad,Casino,YES
+Europe & Middle East (Group 1),NLD,Netherlands,(Paid UA) D7 ARPPU,2.000,bad,Casino,YES
+Europe & Middle East (Group 1),NLD,Netherlands,Revenue Potential,0.008,,Casino,YES
+Europe & Middle East (Group 1),CHE,Switzerland,(Paid UA) CPP,5.000,bad,Casino,YES
+Europe & Middle East (Group 1),CHE,Switzerland,(Paid UA) D7 ARPPU,4.000,good,Casino,YES
+Europe & Middle East (Group 1),CHE,Switzerland,Revenue Potential,0.004,,Casino,YES
+Europe & Middle East (Group 1),AUT,Austria,(Paid UA) CPP,5.000,bad,Casino,YES
+Europe & Middle East (Group 1),AUT,Austria,(Paid UA) D7 ARPPU,3.000,medium,Casino,YES
+Europe & Middle East (Group 1),AUT,Austria,Revenue Potential,0.003,,Casino,YES
+Europe & Middle East (Group 1),SWE,Sweden,(Paid UA) CPP,2.000,good,Casino,
+Europe & Middle East (Group 1),SWE,Sweden,(Paid UA) D7 ARPPU,2.000,bad,Casino,
+Europe & Middle East (Group 1),SWE,Sweden,Revenue Potential,0.003,,Casino,
+Europe & Middle East (Group 1),BEL,Belgium,(Paid UA) CPP,2.000,good,Casino,
+Europe & Middle East (Group 1),BEL,Belgium,(Paid UA) D7 ARPPU,4.000,good,Casino,
+Europe & Middle East (Group 1),BEL,Belgium,Revenue Potential,0.002,,Casino,
+Europe & Middle East (Group 1),DNK,Denmark,(Paid UA) CPP,4.000,bad,Casino,
+Europe & Middle East (Group 1),DNK,Denmark,(Paid UA) D7 ARPPU,4.000,good,Casino,
+Europe & Middle East (Group 1),DNK,Denmark,Revenue Potential,0.002,,Casino,
+Europe & Middle East (Group 1),NOR,Norway,(Paid UA) CPP,4.000,bad,Casino,
+Europe & Middle East (Group 1),NOR,Norway,(Paid UA) D7 ARPPU,5.000,good,Casino,
+Europe & Middle East (Group 1),NOR,Norway,Revenue Potential,0.002,,Casino,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),(Paid UA) CPP,2.000,good,Casino,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),(Paid UA) D7 ARPPU,1.000,bad,Casino,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),Revenue Potential,0.047,,Casino,
+Europe & Middle East (Group 1),ITA,Italy,(Paid UA) CPP,3.000,medium,Casino,YES
+Europe & Middle East (Group 1),ITA,Italy,(Paid UA) D7 ARPPU,3.000,medium,Casino,YES
+Europe & Middle East (Group 1),ITA,Italy,Revenue Potential,0.011,,Casino,YES
+Europe & Middle East (Group 1),ESP,Spain,(Paid UA) CPP,2.000,good,Casino,
+Europe & Middle East (Group 1),ESP,Spain,(Paid UA) D7 ARPPU,2.000,bad,Casino,
+Europe & Middle East (Group 1),ESP,Spain,Revenue Potential,0.004,,Casino,
+Europe & Middle East (Group 2),POL,Poland,(Paid UA) CPP,3.000,medium,Casino,YES
+Europe & Middle East (Group 2),POL,Poland,(Paid UA) D7 ARPPU,1.000,bad,Casino,YES
+Europe & Middle East (Group 2),POL,Poland,Revenue Potential,0.006,,Casino,YES
+Europe & Middle East (Group 2),TUR,Turkiye,(Paid UA) CPP,1.000,good,Casino,
+Europe & Middle East (Group 2),TUR,Turkiye,(Paid UA) D7 ARPPU,2.000,bad,Casino,
+Europe & Middle East (Group 2),TUR,Turkiye,Revenue Potential,0.017,,Casino,
+Europe & Middle East (Group 2),CZE,Czechia,(Paid UA) CPP,1.000,good,Casino,
+Europe & Middle East (Group 2),CZE,Czechia,(Paid UA) D7 ARPPU,1.000,bad,Casino,
+Europe & Middle East (Group 2),CZE,Czechia,Revenue Potential,0.001,,Casino,
+Europe & Middle East (Group 2),HUN,Hungary,(Paid UA) CPP,1.000,good,Casino,
+Europe & Middle East (Group 2),HUN,Hungary,(Paid UA) D7 ARPPU,2.000,bad,Casino,
+Europe & Middle East (Group 2),HUN,Hungary,Revenue Potential,0.002,,Casino,
 Global Developing Markets,All countries,Global Developing Markets,(Paid UA) CPP,2.000,good,Casino,
 Global Developing Markets,All countries,Global Developing Markets,(Paid UA) D7 ARPPU,1.000,bad,Casino,
 Global Developing Markets,All countries,Global Developing Markets,Revenue Potential,0.052,,Casino,
@@ -569,24 +566,24 @@ LATAM Spanish Speaking,MEX,Mexico,Revenue Potential,0.004,,Casino,YES
 LATAM Spanish Speaking,CHL,Chile,(Paid UA) CPP,2.000,good,Casino,
 LATAM Spanish Speaking,CHL,Chile,(Paid UA) D7 ARPPU,1.000,bad,Casino,
 LATAM Spanish Speaking,CHL,Chile,Revenue Potential,0.001,,Casino,
-US and English Language Markets,All countries,US and English Language Markets,(Paid UA) CPP,3.000,medium,Strategy,
-US and English Language Markets,All countries,US and English Language Markets,(Paid UA) D7 ARPPU,3.000,medium,Strategy,
-US and English Language Markets,All countries,US and English Language Markets,Revenue Potential,0.478,,Strategy,
-US and English Language Markets,USA,U.S.,(Paid UA) CPP,4.000,bad,Strategy,
-US and English Language Markets,USA,U.S.,(Paid UA) D7 ARPPU,5.000,good,Strategy,
-US and English Language Markets,USA,U.S.,Revenue Potential,0.401,,Strategy,
-US and English Language Markets,GBR,U.K.,(Paid UA) CPP,3.000,medium,Strategy,YES
-US and English Language Markets,GBR,U.K.,(Paid UA) D7 ARPPU,2.000,bad,Strategy,YES
-US and English Language Markets,GBR,U.K.,Revenue Potential,0.042,,Strategy,YES
-US and English Language Markets,CAN,Canada,(Paid UA) CPP,3.000,medium,Strategy,YES
-US and English Language Markets,CAN,Canada,(Paid UA) D7 ARPPU,3.000,medium,Strategy,YES
-US and English Language Markets,CAN,Canada,Revenue Potential,0.018,,Strategy,YES
-US and English Language Markets,AUS,Australia,(Paid UA) CPP,3.000,medium,Strategy,
-US and English Language Markets,AUS,Australia,(Paid UA) D7 ARPPU,4.000,good,Strategy,
-US and English Language Markets,AUS,Australia,Revenue Potential,0.015,,Strategy,
-East Asia Pacific,All countries,East Asian Pacific Markets,(Paid UA) CPP,5.000,bad,Strategy,
-East Asia Pacific,All countries,East Asian Pacific Markets,(Paid UA) D7 ARPPU,5.000,good,Strategy,
-East Asia Pacific,All countries,East Asian Pacific Markets,Revenue Potential,0.280,,Strategy,
+US and English Language,All countries,US and English Language,(Paid UA) CPP,3.000,medium,Strategy,
+US and English Language,All countries,US and English Language,(Paid UA) D7 ARPPU,3.000,medium,Strategy,
+US and English Language,All countries,US and English Language,Revenue Potential,0.478,,Strategy,
+US and English Language,USA,U.S.,(Paid UA) CPP,4.000,bad,Strategy,
+US and English Language,USA,U.S.,(Paid UA) D7 ARPPU,5.000,good,Strategy,
+US and English Language,USA,U.S.,Revenue Potential,0.401,,Strategy,
+US and English Language,GBR,U.K.,(Paid UA) CPP,3.000,medium,Strategy,YES
+US and English Language,GBR,U.K.,(Paid UA) D7 ARPPU,2.000,bad,Strategy,YES
+US and English Language,GBR,U.K.,Revenue Potential,0.042,,Strategy,YES
+US and English Language,CAN,Canada,(Paid UA) CPP,3.000,medium,Strategy,YES
+US and English Language,CAN,Canada,(Paid UA) D7 ARPPU,3.000,medium,Strategy,YES
+US and English Language,CAN,Canada,Revenue Potential,0.018,,Strategy,YES
+US and English Language,AUS,Australia,(Paid UA) CPP,3.000,medium,Strategy,
+US and English Language,AUS,Australia,(Paid UA) D7 ARPPU,4.000,good,Strategy,
+US and English Language,AUS,Australia,Revenue Potential,0.015,,Strategy,
+East Asia Pacific,All countries,East Asia Pacific,(Paid UA) CPP,5.000,bad,Strategy,
+East Asia Pacific,All countries,East Asia Pacific,(Paid UA) D7 ARPPU,5.000,good,Strategy,
+East Asia Pacific,All countries,East Asia Pacific,Revenue Potential,0.280,,Strategy,
 East Asia Pacific,JPN,Japan,(Paid UA) CPP,4.000,bad,Strategy,
 East Asia Pacific,JPN,Japan,(Paid UA) D7 ARPPU,5.000,good,Strategy,
 East Asia Pacific,JPN,Japan,Revenue Potential,0.075,,Strategy,
@@ -602,60 +599,60 @@ East Asia Pacific,HKG,Hong Kong,Revenue Potential,0.016,,Strategy,YES
 East Asia Pacific,SGP,Singapore,(Paid UA) CPP,5.000,bad,Strategy,YES
 East Asia Pacific,SGP,Singapore,(Paid UA) D7 ARPPU,5.000,good,Strategy,YES
 East Asia Pacific,SGP,Singapore,Revenue Potential,0.004,,Strategy,YES
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,(Paid UA) CPP,3.000,medium,Strategy,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,(Paid UA) D7 ARPPU,4.000,good,Strategy,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,Revenue Potential,0.132,,Strategy,
-Europe & Middle East (Tier 1),DEU,Germany,(Paid UA) CPP,4.000,bad,Strategy,YES
-Europe & Middle East (Tier 1),DEU,Germany,(Paid UA) D7 ARPPU,4.000,good,Strategy,YES
-Europe & Middle East (Tier 1),DEU,Germany,Revenue Potential,0.062,,Strategy,YES
-Europe & Middle East (Tier 1),FRA,France,(Paid UA) CPP,3.000,medium,Strategy,
-Europe & Middle East (Tier 1),FRA,France,(Paid UA) D7 ARPPU,5.000,good,Strategy,
-Europe & Middle East (Tier 1),FRA,France,Revenue Potential,0.026,,Strategy,
-Europe & Middle East (Tier 1),NLD,Netherlands,(Paid UA) CPP,2.000,good,Strategy,
-Europe & Middle East (Tier 1),NLD,Netherlands,(Paid UA) D7 ARPPU,3.000,medium,Strategy,
-Europe & Middle East (Tier 1),NLD,Netherlands,Revenue Potential,0.008,,Strategy,
-Europe & Middle East (Tier 1),CHE,Switzerland,(Paid UA) CPP,5.000,bad,Strategy,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,(Paid UA) D7 ARPPU,4.000,good,Strategy,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,Revenue Potential,0.006,,Strategy,YES
-Europe & Middle East (Tier 1),AUT,Austria,(Paid UA) CPP,5.000,bad,Strategy,YES
-Europe & Middle East (Tier 1),AUT,Austria,(Paid UA) D7 ARPPU,4.000,good,Strategy,YES
-Europe & Middle East (Tier 1),AUT,Austria,Revenue Potential,0.004,,Strategy,YES
-Europe & Middle East (Tier 1),SWE,Sweden,(Paid UA) CPP,3.000,medium,Strategy,
-Europe & Middle East (Tier 1),SWE,Sweden,(Paid UA) D7 ARPPU,3.000,medium,Strategy,
-Europe & Middle East (Tier 1),SWE,Sweden,Revenue Potential,0.003,,Strategy,
-Europe & Middle East (Tier 1),BEL,Belgium,(Paid UA) CPP,4.000,bad,Strategy,
-Europe & Middle East (Tier 1),BEL,Belgium,(Paid UA) D7 ARPPU,4.000,good,Strategy,
-Europe & Middle East (Tier 1),BEL,Belgium,Revenue Potential,0.003,,Strategy,
-Europe & Middle East (Tier 1),DNK,Denmark,(Paid UA) CPP,3.000,medium,Strategy,YES
-Europe & Middle East (Tier 1),DNK,Denmark,(Paid UA) D7 ARPPU,2.000,bad,Strategy,YES
-Europe & Middle East (Tier 1),DNK,Denmark,Revenue Potential,0.001,,Strategy,YES
-Europe & Middle East (Tier 1),NOR,Norway,(Paid UA) CPP,4.000,bad,Strategy,YES
-Europe & Middle East (Tier 1),NOR,Norway,(Paid UA) D7 ARPPU,4.000,good,Strategy,YES
-Europe & Middle East (Tier 1),NOR,Norway,Revenue Potential,0.002,,Strategy,YES
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,(Paid UA) CPP,2.000,good,Strategy,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,(Paid UA) D7 ARPPU,2.000,bad,Strategy,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,Revenue Potential,0.072,,Strategy,
-Europe & Middle East (Tier 2),ITA,Italy,(Paid UA) CPP,2.000,good,Strategy,YES
-Europe & Middle East (Tier 2),ITA,Italy,(Paid UA) D7 ARPPU,2.000,bad,Strategy,YES
-Europe & Middle East (Tier 2),ITA,Italy,Revenue Potential,0.007,,Strategy,YES
-Europe & Middle East (Tier 2),ESP,Spain,(Paid UA) CPP,2.000,good,Strategy,
-Europe & Middle East (Tier 2),ESP,Spain,(Paid UA) D7 ARPPU,3.000,medium,Strategy,
-Europe & Middle East (Tier 2),ESP,Spain,Revenue Potential,0.005,,Strategy,
-Europe & Middle East (Tier 2),POL,Poland,(Paid UA) CPP,2.000,good,Strategy,YES
-Europe & Middle East (Tier 2),POL,Poland,(Paid UA) D7 ARPPU,1.000,bad,Strategy,YES
-Europe & Middle East (Tier 2),POL,Poland,Revenue Potential,0.007,,Strategy,YES
-Europe & Middle East (Tier 2),TUR,Turkiye,(Paid UA) CPP,2.000,good,Strategy,
-Europe & Middle East (Tier 2),TUR,Turkiye,(Paid UA) D7 ARPPU,2.000,bad,Strategy,
-Europe & Middle East (Tier 2),TUR,Turkiye,Revenue Potential,0.013,,Strategy,
-Europe & Middle East (Tier 2),CZE,Czechia,(Paid UA) CPP,1.000,good,Strategy,
-Europe & Middle East (Tier 2),CZE,Czechia,(Paid UA) D7 ARPPU,3.000,medium,Strategy,
-Europe & Middle East (Tier 2),CZE,Czechia,Revenue Potential,0.001,,Strategy,
-Europe & Middle East (Tier 2),RUS,Russia,(Paid UA) CPP,4.000,bad,Strategy,
-Europe & Middle East (Tier 2),RUS,Russia,(Paid UA) D7 ARPPU,5.000,good,Strategy,
-Europe & Middle East (Tier 2),RUS,Russia,Revenue Potential,0.033,,Strategy,
-Europe & Middle East (Tier 2),UKR,Ukraine,(Paid UA) CPP,2.000,good,Strategy,
-Europe & Middle East (Tier 2),UKR,Ukraine,(Paid UA) D7 ARPPU,2.000,bad,Strategy,
-Europe & Middle East (Tier 2),UKR,Ukraine,Revenue Potential,0.006,,Strategy,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),(Paid UA) CPP,3.000,medium,Strategy,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),(Paid UA) D7 ARPPU,4.000,good,Strategy,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),Revenue Potential,0.132,,Strategy,
+Europe & Middle East (Group 1),DEU,Germany,(Paid UA) CPP,4.000,bad,Strategy,YES
+Europe & Middle East (Group 1),DEU,Germany,(Paid UA) D7 ARPPU,4.000,good,Strategy,YES
+Europe & Middle East (Group 1),DEU,Germany,Revenue Potential,0.062,,Strategy,YES
+Europe & Middle East (Group 1),FRA,France,(Paid UA) CPP,3.000,medium,Strategy,
+Europe & Middle East (Group 1),FRA,France,(Paid UA) D7 ARPPU,5.000,good,Strategy,
+Europe & Middle East (Group 1),FRA,France,Revenue Potential,0.026,,Strategy,
+Europe & Middle East (Group 1),NLD,Netherlands,(Paid UA) CPP,2.000,good,Strategy,
+Europe & Middle East (Group 1),NLD,Netherlands,(Paid UA) D7 ARPPU,3.000,medium,Strategy,
+Europe & Middle East (Group 1),NLD,Netherlands,Revenue Potential,0.008,,Strategy,
+Europe & Middle East (Group 1),CHE,Switzerland,(Paid UA) CPP,5.000,bad,Strategy,YES
+Europe & Middle East (Group 1),CHE,Switzerland,(Paid UA) D7 ARPPU,4.000,good,Strategy,YES
+Europe & Middle East (Group 1),CHE,Switzerland,Revenue Potential,0.006,,Strategy,YES
+Europe & Middle East (Group 1),AUT,Austria,(Paid UA) CPP,5.000,bad,Strategy,YES
+Europe & Middle East (Group 1),AUT,Austria,(Paid UA) D7 ARPPU,4.000,good,Strategy,YES
+Europe & Middle East (Group 1),AUT,Austria,Revenue Potential,0.004,,Strategy,YES
+Europe & Middle East (Group 1),SWE,Sweden,(Paid UA) CPP,3.000,medium,Strategy,
+Europe & Middle East (Group 1),SWE,Sweden,(Paid UA) D7 ARPPU,3.000,medium,Strategy,
+Europe & Middle East (Group 1),SWE,Sweden,Revenue Potential,0.003,,Strategy,
+Europe & Middle East (Group 1),BEL,Belgium,(Paid UA) CPP,4.000,bad,Strategy,
+Europe & Middle East (Group 1),BEL,Belgium,(Paid UA) D7 ARPPU,4.000,good,Strategy,
+Europe & Middle East (Group 1),BEL,Belgium,Revenue Potential,0.003,,Strategy,
+Europe & Middle East (Group 1),DNK,Denmark,(Paid UA) CPP,3.000,medium,Strategy,YES
+Europe & Middle East (Group 1),DNK,Denmark,(Paid UA) D7 ARPPU,2.000,bad,Strategy,YES
+Europe & Middle East (Group 1),DNK,Denmark,Revenue Potential,0.001,,Strategy,YES
+Europe & Middle East (Group 1),NOR,Norway,(Paid UA) CPP,4.000,bad,Strategy,YES
+Europe & Middle East (Group 1),NOR,Norway,(Paid UA) D7 ARPPU,4.000,good,Strategy,YES
+Europe & Middle East (Group 1),NOR,Norway,Revenue Potential,0.002,,Strategy,YES
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),(Paid UA) CPP,2.000,good,Strategy,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),(Paid UA) D7 ARPPU,2.000,bad,Strategy,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),Revenue Potential,0.072,,Strategy,
+Europe & Middle East (Group 1),ITA,Italy,(Paid UA) CPP,2.000,good,Strategy,YES
+Europe & Middle East (Group 1),ITA,Italy,(Paid UA) D7 ARPPU,2.000,bad,Strategy,YES
+Europe & Middle East (Group 1),ITA,Italy,Revenue Potential,0.007,,Strategy,YES
+Europe & Middle East (Group 1),ESP,Spain,(Paid UA) CPP,2.000,good,Strategy,
+Europe & Middle East (Group 1),ESP,Spain,(Paid UA) D7 ARPPU,3.000,medium,Strategy,
+Europe & Middle East (Group 1),ESP,Spain,Revenue Potential,0.005,,Strategy,
+Europe & Middle East (Group 2),POL,Poland,(Paid UA) CPP,2.000,good,Strategy,YES
+Europe & Middle East (Group 2),POL,Poland,(Paid UA) D7 ARPPU,1.000,bad,Strategy,YES
+Europe & Middle East (Group 2),POL,Poland,Revenue Potential,0.007,,Strategy,YES
+Europe & Middle East (Group 2),TUR,Turkiye,(Paid UA) CPP,2.000,good,Strategy,
+Europe & Middle East (Group 2),TUR,Turkiye,(Paid UA) D7 ARPPU,2.000,bad,Strategy,
+Europe & Middle East (Group 2),TUR,Turkiye,Revenue Potential,0.013,,Strategy,
+Europe & Middle East (Group 2),CZE,Czechia,(Paid UA) CPP,1.000,good,Strategy,
+Europe & Middle East (Group 2),CZE,Czechia,(Paid UA) D7 ARPPU,3.000,medium,Strategy,
+Europe & Middle East (Group 2),CZE,Czechia,Revenue Potential,0.001,,Strategy,
+Europe & Middle East (Group 2),RUS,Russia,(Paid UA) CPP,4.000,bad,Strategy,
+Europe & Middle East (Group 2),RUS,Russia,(Paid UA) D7 ARPPU,5.000,good,Strategy,
+Europe & Middle East (Group 2),RUS,Russia,Revenue Potential,0.033,,Strategy,
+Europe & Middle East (Group 2),UKR,Ukraine,(Paid UA) CPP,2.000,good,Strategy,
+Europe & Middle East (Group 2),UKR,Ukraine,(Paid UA) D7 ARPPU,2.000,bad,Strategy,
+Europe & Middle East (Group 2),UKR,Ukraine,Revenue Potential,0.006,,Strategy,
 Global Developing Markets,All countries,Global Developing Markets,(Paid UA) CPP,1.000,good,Strategy,
 Global Developing Markets,All countries,Global Developing Markets,(Paid UA) D7 ARPPU,1.000,bad,Strategy,
 Global Developing Markets,All countries,Global Developing Markets,Revenue Potential,0.034,,Strategy,
@@ -677,27 +674,27 @@ Global Developing Markets,VNM,Vietnam,Revenue Potential,0.004,,Strategy,
 LATAM Spanish Speaking,All countries,LATAM Spanish Speaking,(Paid UA) CPP,1.000,good,Strategy,
 LATAM Spanish Speaking,All countries,LATAM Spanish Speaking,(Paid UA) D7 ARPPU,3.000,medium,Strategy,
 LATAM Spanish Speaking,All countries,LATAM Spanish Speaking,Revenue Potential,0.004,,Strategy,
-US and English Language Markets,All countries,US and English Language Markets,(Paid UA) CPP,3.000,medium,Simulation,
-US and English Language Markets,All countries,US and English Language Markets,(Paid UA) D7 ARPPU,4.000,good,Simulation,
-US and English Language Markets,All countries,US and English Language Markets,Revenue Potential,0.639,,Simulation,
-US and English Language Markets,USA,U.S.,(Paid UA) CPP,3.000,medium,Simulation,
-US and English Language Markets,USA,U.S.,(Paid UA) D7 ARPPU,4.000,good,Simulation,
-US and English Language Markets,USA,U.S.,Revenue Potential,0.533,,Simulation,
-US and English Language Markets,GBR,U.K.,(Paid UA) CPP,2.000,good,Simulation,
-US and English Language Markets,GBR,U.K.,(Paid UA) D7 ARPPU,4.000,good,Simulation,
-US and English Language Markets,GBR,U.K.,Revenue Potential,0.053,,Simulation,
-US and English Language Markets,CAN,Canada,(Paid UA) CPP,3.000,medium,Simulation,
-US and English Language Markets,CAN,Canada,(Paid UA) D7 ARPPU,5.000,good,Simulation,
-US and English Language Markets,CAN,Canada,Revenue Potential,0.028,,Simulation,
-US and English Language Markets,AUS,Australia,(Paid UA) CPP,5.000,bad,Simulation,YES
-US and English Language Markets,AUS,Australia,(Paid UA) D7 ARPPU,4.000,good,Simulation,YES
-US and English Language Markets,AUS,Australia,Revenue Potential,0.022,,Simulation,YES
-US and English Language Markets,NZL,New Zealand,(Paid UA) CPP,4.000,bad,Simulation,YES
-US and English Language Markets,NZL,New Zealand,(Paid UA) D7 ARPPU,2.000,bad,Simulation,YES
-US and English Language Markets,NZL,New Zealand,Revenue Potential,0.003,,Simulation,YES
-East Asia Pacific,All countries,East Asian Pacific Markets,(Paid UA) CPP,4.000,bad,Simulation,
-East Asia Pacific,All countries,East Asian Pacific Markets,(Paid UA) D7 ARPPU,5.000,good,Simulation,
-East Asia Pacific,All countries,East Asian Pacific Markets,Revenue Potential,0.177,,Simulation,
+US and English Language,All countries,US and English Language,(Paid UA) CPP,3.000,medium,Simulation,
+US and English Language,All countries,US and English Language,(Paid UA) D7 ARPPU,4.000,good,Simulation,
+US and English Language,All countries,US and English Language,Revenue Potential,0.639,,Simulation,
+US and English Language,USA,U.S.,(Paid UA) CPP,3.000,medium,Simulation,
+US and English Language,USA,U.S.,(Paid UA) D7 ARPPU,4.000,good,Simulation,
+US and English Language,USA,U.S.,Revenue Potential,0.533,,Simulation,
+US and English Language,GBR,U.K.,(Paid UA) CPP,2.000,good,Simulation,
+US and English Language,GBR,U.K.,(Paid UA) D7 ARPPU,4.000,good,Simulation,
+US and English Language,GBR,U.K.,Revenue Potential,0.053,,Simulation,
+US and English Language,CAN,Canada,(Paid UA) CPP,3.000,medium,Simulation,
+US and English Language,CAN,Canada,(Paid UA) D7 ARPPU,5.000,good,Simulation,
+US and English Language,CAN,Canada,Revenue Potential,0.028,,Simulation,
+US and English Language,AUS,Australia,(Paid UA) CPP,5.000,bad,Simulation,YES
+US and English Language,AUS,Australia,(Paid UA) D7 ARPPU,4.000,good,Simulation,YES
+US and English Language,AUS,Australia,Revenue Potential,0.022,,Simulation,YES
+US and English Language,NZL,New Zealand,(Paid UA) CPP,4.000,bad,Simulation,YES
+US and English Language,NZL,New Zealand,(Paid UA) D7 ARPPU,2.000,bad,Simulation,YES
+US and English Language,NZL,New Zealand,Revenue Potential,0.003,,Simulation,YES
+East Asia Pacific,All countries,East Asia Pacific,(Paid UA) CPP,4.000,bad,Simulation,
+East Asia Pacific,All countries,East Asia Pacific,(Paid UA) D7 ARPPU,5.000,good,Simulation,
+East Asia Pacific,All countries,East Asia Pacific,Revenue Potential,0.177,,Simulation,
 East Asia Pacific,JPN,Japan,(Paid UA) CPP,5.000,bad,Simulation,
 East Asia Pacific,JPN,Japan,(Paid UA) D7 ARPPU,5.000,good,Simulation,
 East Asia Pacific,JPN,Japan,Revenue Potential,0.104,,Simulation,
@@ -710,54 +707,54 @@ East Asia Pacific,TWN,Taiwan,Revenue Potential,0.015,,Simulation,
 East Asia Pacific,HKG,Hong Kong,(Paid UA) CPP,3.000,medium,Simulation,
 East Asia Pacific,HKG,Hong Kong,(Paid UA) D7 ARPPU,5.000,good,Simulation,
 East Asia Pacific,HKG,Hong Kong,Revenue Potential,0.004,,Simulation,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,(Paid UA) CPP,4.000,bad,Simulation,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,(Paid UA) D7 ARPPU,3.000,medium,Simulation,
-Europe & Middle East (Tier 1),All countries,Tier 1 Europe & Middle East,Revenue Potential,0.125,,Simulation,
-Europe & Middle East (Tier 1),DEU,Germany,(Paid UA) CPP,5.000,bad,Simulation,
-Europe & Middle East (Tier 1),DEU,Germany,(Paid UA) D7 ARPPU,5.000,good,Simulation,
-Europe & Middle East (Tier 1),DEU,Germany,Revenue Potential,0.054,,Simulation,
-Europe & Middle East (Tier 1),FRA,France,(Paid UA) CPP,4.000,bad,Simulation,
-Europe & Middle East (Tier 1),FRA,France,(Paid UA) D7 ARPPU,4.000,good,Simulation,
-Europe & Middle East (Tier 1),FRA,France,Revenue Potential,0.026,,Simulation,
-Europe & Middle East (Tier 1),NLD,Netherlands,(Paid UA) CPP,4.000,bad,Simulation,YES
-Europe & Middle East (Tier 1),NLD,Netherlands,(Paid UA) D7 ARPPU,3.000,medium,Simulation,YES
-Europe & Middle East (Tier 1),NLD,Netherlands,Revenue Potential,0.008,,Simulation,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,(Paid UA) CPP,5.000,bad,Simulation,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,(Paid UA) D7 ARPPU,4.000,good,Simulation,YES
-Europe & Middle East (Tier 1),CHE,Switzerland,Revenue Potential,0.006,,Simulation,YES
-Europe & Middle East (Tier 1),AUT,Austria,(Paid UA) CPP,5.000,bad,Simulation,YES
-Europe & Middle East (Tier 1),AUT,Austria,(Paid UA) D7 ARPPU,3.000,medium,Simulation,YES
-Europe & Middle East (Tier 1),AUT,Austria,Revenue Potential,0.005,,Simulation,YES
-Europe & Middle East (Tier 1),SWE,Sweden,(Paid UA) CPP,2.000,good,Simulation,
-Europe & Middle East (Tier 1),SWE,Sweden,(Paid UA) D7 ARPPU,2.000,bad,Simulation,
-Europe & Middle East (Tier 1),SWE,Sweden,Revenue Potential,0.004,,Simulation,
-Europe & Middle East (Tier 1),BEL,Belgium,(Paid UA) CPP,2.000,good,Simulation,
-Europe & Middle East (Tier 1),BEL,Belgium,(Paid UA) D7 ARPPU,4.000,good,Simulation,
-Europe & Middle East (Tier 1),BEL,Belgium,Revenue Potential,0.003,,Simulation,
-Europe & Middle East (Tier 1),DNK,Denmark,(Paid UA) CPP,4.000,bad,Simulation,YES
-Europe & Middle East (Tier 1),DNK,Denmark,(Paid UA) D7 ARPPU,3.000,medium,Simulation,YES
-Europe & Middle East (Tier 1),DNK,Denmark,Revenue Potential,0.003,,Simulation,YES
-Europe & Middle East (Tier 1),NOR,Norway,(Paid UA) CPP,5.000,bad,Simulation,YES
-Europe & Middle East (Tier 1),NOR,Norway,(Paid UA) D7 ARPPU,2.000,bad,Simulation,YES
-Europe & Middle East (Tier 1),NOR,Norway,Revenue Potential,0.003,,Simulation,YES
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,(Paid UA) CPP,1.000,good,Simulation,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,(Paid UA) D7 ARPPU,1.000,bad,Simulation,
-Europe & Middle East (Tier 2),All countries,Tier 2 Europe & Middle East,Revenue Potential,0.023,,Simulation,
-Europe & Middle East (Tier 2),ITA,Italy,(Paid UA) CPP,4.000,bad,Simulation,YES
-Europe & Middle East (Tier 2),ITA,Italy,(Paid UA) D7 ARPPU,3.000,medium,Simulation,YES
-Europe & Middle East (Tier 2),ITA,Italy,Revenue Potential,0.006,,Simulation,YES
-Europe & Middle East (Tier 2),ESP,Spain,(Paid UA) CPP,3.000,medium,Simulation,
-Europe & Middle East (Tier 2),ESP,Spain,(Paid UA) D7 ARPPU,3.000,medium,Simulation,
-Europe & Middle East (Tier 2),ESP,Spain,Revenue Potential,0.005,,Simulation,
-Europe & Middle East (Tier 2),POL,Poland,(Paid UA) CPP,3.000,medium,Simulation,YES
-Europe & Middle East (Tier 2),POL,Poland,(Paid UA) D7 ARPPU,2.000,bad,Simulation,YES
-Europe & Middle East (Tier 2),POL,Poland,Revenue Potential,0.006,,Simulation,YES
-Europe & Middle East (Tier 2),TUR,Turkiye,(Paid UA) CPP,1.000,good,Simulation,
-Europe & Middle East (Tier 2),TUR,Turkiye,(Paid UA) D7 ARPPU,1.000,bad,Simulation,
-Europe & Middle East (Tier 2),TUR,Turkiye,Revenue Potential,0.003,,Simulation,
-Europe & Middle East (Tier 2),CZE,Czechia,(Paid UA) CPP,3.000,medium,Simulation,
-Europe & Middle East (Tier 2),CZE,Czechia,(Paid UA) D7 ARPPU,3.000,medium,Simulation,
-Europe & Middle East (Tier 2),CZE,Czechia,Revenue Potential,0.002,,Simulation,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),(Paid UA) CPP,4.000,bad,Simulation,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),(Paid UA) D7 ARPPU,3.000,medium,Simulation,
+Europe & Middle East (Group 1),All countries,Europe & Middle East (Group 1),Revenue Potential,0.125,,Simulation,
+Europe & Middle East (Group 1),DEU,Germany,(Paid UA) CPP,5.000,bad,Simulation,
+Europe & Middle East (Group 1),DEU,Germany,(Paid UA) D7 ARPPU,5.000,good,Simulation,
+Europe & Middle East (Group 1),DEU,Germany,Revenue Potential,0.054,,Simulation,
+Europe & Middle East (Group 1),FRA,France,(Paid UA) CPP,4.000,bad,Simulation,
+Europe & Middle East (Group 1),FRA,France,(Paid UA) D7 ARPPU,4.000,good,Simulation,
+Europe & Middle East (Group 1),FRA,France,Revenue Potential,0.026,,Simulation,
+Europe & Middle East (Group 1),NLD,Netherlands,(Paid UA) CPP,4.000,bad,Simulation,YES
+Europe & Middle East (Group 1),NLD,Netherlands,(Paid UA) D7 ARPPU,3.000,medium,Simulation,YES
+Europe & Middle East (Group 1),NLD,Netherlands,Revenue Potential,0.008,,Simulation,YES
+Europe & Middle East (Group 1),CHE,Switzerland,(Paid UA) CPP,5.000,bad,Simulation,YES
+Europe & Middle East (Group 1),CHE,Switzerland,(Paid UA) D7 ARPPU,4.000,good,Simulation,YES
+Europe & Middle East (Group 1),CHE,Switzerland,Revenue Potential,0.006,,Simulation,YES
+Europe & Middle East (Group 1),AUT,Austria,(Paid UA) CPP,5.000,bad,Simulation,YES
+Europe & Middle East (Group 1),AUT,Austria,(Paid UA) D7 ARPPU,3.000,medium,Simulation,YES
+Europe & Middle East (Group 1),AUT,Austria,Revenue Potential,0.005,,Simulation,YES
+Europe & Middle East (Group 1),SWE,Sweden,(Paid UA) CPP,2.000,good,Simulation,
+Europe & Middle East (Group 1),SWE,Sweden,(Paid UA) D7 ARPPU,2.000,bad,Simulation,
+Europe & Middle East (Group 1),SWE,Sweden,Revenue Potential,0.004,,Simulation,
+Europe & Middle East (Group 1),BEL,Belgium,(Paid UA) CPP,2.000,good,Simulation,
+Europe & Middle East (Group 1),BEL,Belgium,(Paid UA) D7 ARPPU,4.000,good,Simulation,
+Europe & Middle East (Group 1),BEL,Belgium,Revenue Potential,0.003,,Simulation,
+Europe & Middle East (Group 1),DNK,Denmark,(Paid UA) CPP,4.000,bad,Simulation,YES
+Europe & Middle East (Group 1),DNK,Denmark,(Paid UA) D7 ARPPU,3.000,medium,Simulation,YES
+Europe & Middle East (Group 1),DNK,Denmark,Revenue Potential,0.003,,Simulation,YES
+Europe & Middle East (Group 1),NOR,Norway,(Paid UA) CPP,5.000,bad,Simulation,YES
+Europe & Middle East (Group 1),NOR,Norway,(Paid UA) D7 ARPPU,2.000,bad,Simulation,YES
+Europe & Middle East (Group 1),NOR,Norway,Revenue Potential,0.003,,Simulation,YES
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),(Paid UA) CPP,1.000,good,Simulation,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),(Paid UA) D7 ARPPU,1.000,bad,Simulation,
+Europe & Middle East (Group 2),All countries,Europe & Middle East (Group 2),Revenue Potential,0.023,,Simulation,
+Europe & Middle East (Group 1),ITA,Italy,(Paid UA) CPP,4.000,bad,Simulation,YES
+Europe & Middle East (Group 1),ITA,Italy,(Paid UA) D7 ARPPU,3.000,medium,Simulation,YES
+Europe & Middle East (Group 1),ITA,Italy,Revenue Potential,0.006,,Simulation,YES
+Europe & Middle East (Group 1),ESP,Spain,(Paid UA) CPP,3.000,medium,Simulation,
+Europe & Middle East (Group 1),ESP,Spain,(Paid UA) D7 ARPPU,3.000,medium,Simulation,
+Europe & Middle East (Group 1),ESP,Spain,Revenue Potential,0.005,,Simulation,
+Europe & Middle East (Group 2),POL,Poland,(Paid UA) CPP,3.000,medium,Simulation,YES
+Europe & Middle East (Group 2),POL,Poland,(Paid UA) D7 ARPPU,2.000,bad,Simulation,YES
+Europe & Middle East (Group 2),POL,Poland,Revenue Potential,0.006,,Simulation,YES
+Europe & Middle East (Group 2),TUR,Turkiye,(Paid UA) CPP,1.000,good,Simulation,
+Europe & Middle East (Group 2),TUR,Turkiye,(Paid UA) D7 ARPPU,1.000,bad,Simulation,
+Europe & Middle East (Group 2),TUR,Turkiye,Revenue Potential,0.003,,Simulation,
+Europe & Middle East (Group 2),CZE,Czechia,(Paid UA) CPP,3.000,medium,Simulation,
+Europe & Middle East (Group 2),CZE,Czechia,(Paid UA) D7 ARPPU,3.000,medium,Simulation,
+Europe & Middle East (Group 2),CZE,Czechia,Revenue Potential,0.002,,Simulation,
 Global Developing Markets,All countries,Global Developing Markets,(Paid UA) CPP,1.000,good,Simulation,
 Global Developing Markets,All countries,Global Developing Markets,(Paid UA) D7 ARPPU,1.000,bad,Simulation,
 Global Developing Markets,All countries,Global Developing Markets,Revenue Potential,0.029,,Simulation,
