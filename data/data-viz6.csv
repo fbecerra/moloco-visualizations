@@ -1,10 +1,10 @@
 Tier,Market,Market full name,Revenue,UA Spend,ARPPU,Genre
-US and English Language Markets,USA,U.S.,0.397,0.399,17.20,All genres
-US and English Language Markets,GBR,U.K.,0.041,0.055,13.25,All genres
-US and English Language Markets,CAN,Canada,0.024,0.029,16.22,All genres
-US and English Language Markets,AUS,Australia,0.022,0.019,16.82,All genres
-US and English Language Markets,NZL,New Zealand,0.003,0.003,13.52,All genres
-US and English Language Markets,IRL,Ireland,0.002,0.003,16.31,All genres
+US and English Language,USA,U.S.,0.397,0.399,17.20,All genres
+US and English Language,GBR,U.K.,0.041,0.055,13.25,All genres
+US and English Language,CAN,Canada,0.024,0.029,16.22,All genres
+US and English Language,AUS,Australia,0.022,0.019,16.82,All genres
+US and English Language,NZL,New Zealand,0.003,0.003,13.52,All genres
+US and English Language,IRL,Ireland,0.002,0.003,16.31,All genres
 East Asia Pacific,KOR,South Korea,0.083,0.037,21.67,All genres
 East Asia Pacific,JPN,Japan,0.082,0.040,19.40,All genres
 East Asia Pacific,TWN,Taiwan,0.035,0.013,23.85,All genres
@@ -69,12 +69,12 @@ LATAM Spanish Speaking,PER,Peru,0.001,0.002,6.48,All genres
 LATAM Spanish Speaking,PRI,Puerto Rico,0.001,0.001,14.28,All genres
 LATAM Spanish Speaking,CRI,Costa Rica,0.000,0.001,9.48,All genres
 LATAM Spanish Speaking,ECU,Ecuador,0.000,0.001,5.01,All genres
-US and English Language Markets,USA,U.S.,0.198,0.251,37.90,RPG
-US and English Language Markets,GBR,U.K.,0.017,0.031,24.28,RPG
-US and English Language Markets,CAN,Canada,0.016,0.023,32.83,RPG
-US and English Language Markets,AUS,Australia,0.013,0.014,35.69,RPG
-US and English Language Markets,NZL,New Zealand,0.002,0.003,25.30,RPG
-US and English Language Markets,IRL,Ireland,0.001,0.001,32.20,RPG
+US and English Language,USA,U.S.,0.198,0.251,37.90,RPG
+US and English Language,GBR,U.K.,0.017,0.031,24.28,RPG
+US and English Language,CAN,Canada,0.016,0.023,32.83,RPG
+US and English Language,AUS,Australia,0.013,0.014,35.69,RPG
+US and English Language,NZL,New Zealand,0.002,0.003,25.30,RPG
+US and English Language,IRL,Ireland,0.001,0.001,32.20,RPG
 East Asia Pacific,KOR,South Korea,0.223,0.250,40.23,RPG
 East Asia Pacific,JPN,Japan,0.150,0.098,40.39,RPG
 East Asia Pacific,TWN,Taiwan,0.093,0.061,40.00,RPG
@@ -127,12 +127,12 @@ LATAM Spanish Speaking,COL,Colombia,0.001,0.001,10.20,RPG
 LATAM Spanish Speaking,ARG,Argentina,0.000,0.001,10.29,RPG
 LATAM Spanish Speaking,PER,Peru,0.001,0.001,12.36,RPG
 LATAM Spanish Speaking,PRI,Puerto Rico,0.001,0.000,29.79,RPG
-US and English Language Markets,USA,U.S.,0.514,0.470,11.02,Match
-US and English Language Markets,GBR,U.K.,0.060,0.059,7.80,Match
-US and English Language Markets,CAN,Canada,0.024,0.023,9.19,Match
-US and English Language Markets,AUS,Australia,0.022,0.019,9.88,Match
-US and English Language Markets,NZL,New Zealand,0.003,0.002,10.65,Match
-US and English Language Markets,IRL,Ireland,0.002,0.002,16.17,Match
+US and English Language,USA,U.S.,0.514,0.470,11.02,Match
+US and English Language,GBR,U.K.,0.060,0.059,7.80,Match
+US and English Language,CAN,Canada,0.024,0.023,9.19,Match
+US and English Language,AUS,Australia,0.022,0.019,9.88,Match
+US and English Language,NZL,New Zealand,0.003,0.002,10.65,Match
+US and English Language,IRL,Ireland,0.002,0.002,16.17,Match
 East Asia Pacific,KOR,South Korea,0.043,0.033,7.63,Match
 East Asia Pacific,JPN,Japan,0.057,0.057,8.51,Match
 East Asia Pacific,TWN,Taiwan,0.007,0.007,10.99,Match
@@ -187,12 +187,12 @@ LATAM Spanish Speaking,ARG,Argentina,0.001,0.002,0.29,Match
 LATAM Spanish Speaking,PER,Peru,0.001,0.002,1.51,Match
 LATAM Spanish Speaking,PRI,Puerto Rico,0.001,0.001,11.96,Match
 LATAM Spanish Speaking,CRI,Costa Rica,0.001,0.001,10.18,Match
-US and English Language Markets,USA,U.S.,0.385,0.323,15.11,Simulation
-US and English Language Markets,GBR,U.K.,0.052,0.054,12.29,Simulation
-US and English Language Markets,CAN,Canada,0.028,0.029,14.61,Simulation
-US and English Language Markets,AUS,Australia,0.025,0.019,14.91,Simulation
-US and English Language Markets,NZL,New Zealand,0.004,0.003,12.92,Simulation
-US and English Language Markets,IRL,Ireland,0.002,0.004,13.65,Simulation
+US and English Language,USA,U.S.,0.385,0.323,15.11,Simulation
+US and English Language,GBR,U.K.,0.052,0.054,12.29,Simulation
+US and English Language,CAN,Canada,0.028,0.029,14.61,Simulation
+US and English Language,AUS,Australia,0.025,0.019,14.91,Simulation
+US and English Language,NZL,New Zealand,0.004,0.003,12.92,Simulation
+US and English Language,IRL,Ireland,0.002,0.004,13.65,Simulation
 East Asia Pacific,KOR,South Korea,0.041,0.024,14.88,Simulation
 East Asia Pacific,JPN,Japan,0.163,0.035,16.95,Simulation
 East Asia Pacific,TWN,Taiwan,0.018,0.012,14.00,Simulation
@@ -247,12 +247,12 @@ LATAM Spanish Speaking,ARG,Argentina,0.001,0.004,0.73,Simulation
 LATAM Spanish Speaking,PER,Peru,0.001,0.003,3.60,Simulation
 LATAM Spanish Speaking,PRI,Puerto Rico,0.001,0.001,12.59,Simulation
 LATAM Spanish Speaking,CRI,Costa Rica,0.001,0.001,7.15,Simulation
-US and English Language Markets,USA,U.S.,0.320,0.340,30.97,Strategy
-US and English Language Markets,GBR,U.K.,0.040,0.052,21.52,Strategy
-US and English Language Markets,CAN,Canada,0.023,0.029,27.58,Strategy
-US and English Language Markets,AUS,Australia,0.020,0.019,28.85,Strategy
-US and English Language Markets,NZL,New Zealand,0.003,0.004,21.63,Strategy
-US and English Language Markets,IRL,Ireland,0.002,0.002,27.86,Strategy
+US and English Language,USA,U.S.,0.320,0.340,30.97,Strategy
+US and English Language,GBR,U.K.,0.040,0.052,21.52,Strategy
+US and English Language,CAN,Canada,0.023,0.029,27.58,Strategy
+US and English Language,AUS,Australia,0.020,0.019,28.85,Strategy
+US and English Language,NZL,New Zealand,0.003,0.004,21.63,Strategy
+US and English Language,IRL,Ireland,0.002,0.002,27.86,Strategy
 East Asia Pacific,KOR,South Korea,0.113,0.059,33.08,Strategy
 East Asia Pacific,JPN,Japan,0.072,0.071,31.63,Strategy
 East Asia Pacific,TWN,Taiwan,0.040,0.023,37.98,Strategy
@@ -306,12 +306,12 @@ LATAM Spanish Speaking,COL,Colombia,0.001,0.001,11.46,Strategy
 LATAM Spanish Speaking,ARG,Argentina,0.001,0.002,12.09,Strategy
 LATAM Spanish Speaking,PER,Peru,0.001,0.001,14.16,Strategy
 LATAM Spanish Speaking,PRI,Puerto Rico,0.001,0.000,23.73,Strategy
-US and English Language Markets,USA,U.S.,0.530,0.655,23.57,Casino
-US and English Language Markets,GBR,U.K.,0.032,0.041,17.81,Casino
-US and English Language Markets,CAN,Canada,0.032,0.020,25.97,Casino
-US and English Language Markets,AUS,Australia,0.052,0.031,23.54,Casino
-US and English Language Markets,NZL,New Zealand,0.005,0.004,18.64,Casino
-US and English Language Markets,IRL,Ireland,0.001,0.001,25.46,Casino
+US and English Language,USA,U.S.,0.530,0.655,23.57,Casino
+US and English Language,GBR,U.K.,0.032,0.041,17.81,Casino
+US and English Language,CAN,Canada,0.032,0.020,25.97,Casino
+US and English Language,AUS,Australia,0.052,0.031,23.54,Casino
+US and English Language,NZL,New Zealand,0.005,0.004,18.64,Casino
+US and English Language,IRL,Ireland,0.001,0.001,25.46,Casino
 East Asia Pacific,KOR,South Korea,0.034,0.005,73.78,Casino
 East Asia Pacific,JPN,Japan,0.036,0.025,27.36,Casino
 East Asia Pacific,TWN,Taiwan,0.020,0.022,33.68,Casino
@@ -350,12 +350,12 @@ LATAM Spanish Speaking,MEX,Mexico,0.004,0.002,19.26,Casino
 LATAM Spanish Speaking,CHL,Chile,0.002,0.001,13.33,Casino
 LATAM Spanish Speaking,ARG,Argentina,0.001,0.001,14.14,Casino
 LATAM Spanish Speaking,PRI,Puerto Rico,0.001,0.000,32.17,Casino
-US and English Language Markets,USA,U.S.,0.479,0.232,0.98,Hypercasual
-US and English Language Markets,GBR,U.K.,0.055,0.049,0.58,Hypercasual
-US and English Language Markets,CAN,Canada,0.029,0.021,0.63,Hypercasual
-US and English Language Markets,AUS,Australia,0.022,0.019,0.75,Hypercasual
-US and English Language Markets,NZL,New Zealand,0.003,0.004,0.55,Hypercasual
-US and English Language Markets,IRL,Ireland,0.002,0.003,0.44,Hypercasual
+US and English Language,USA,U.S.,0.479,0.232,0.98,Hypercasual
+US and English Language,GBR,U.K.,0.055,0.049,0.58,Hypercasual
+US and English Language,CAN,Canada,0.029,0.021,0.63,Hypercasual
+US and English Language,AUS,Australia,0.022,0.019,0.75,Hypercasual
+US and English Language,NZL,New Zealand,0.003,0.004,0.55,Hypercasual
+US and English Language,IRL,Ireland,0.002,0.003,0.44,Hypercasual
 East Asia Pacific,KOR,South Korea,0.038,0.019,0.79,Hypercasual
 East Asia Pacific,JPN,Japan,0.051,0.025,0.74,Hypercasual
 East Asia Pacific,TWN,Taiwan,0.015,0.010,0.63,Hypercasual
