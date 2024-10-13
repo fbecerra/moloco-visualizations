@@ -23,16 +23,15 @@ function drawViz7() {
         .attr("id", "figure")
         .style("margin-bottom", smallScreen ? "50%" : "45%");
 
-    addTitle("#figure", "Top payers drive the majority of total IAP revenue");
-    addSubtitle("#figure", "Top payers drive the majority of total IAP revenue/ Let’s take a look at total (D7 IAP) revenue for the RPG genre in a selection of global markets.")
+    figure.append("div")
+        .attr("id", "title-wrapper");
 
-    d3.select("#geo-viz7 .title")
+    addTitle("#title-wrapper", "Top payers drive the majority of total IAP revenue");
+    addSubtitle("#title-wrapper", "Top payers drive the majority of total IAP revenue/ Let’s take a look at total (D7 IAP) revenue for the RPG genre in a selection of global markets.")
+
+    d3.select("#title-wrapper")
         .style("max-width", "700px")
         .style("margin", "auto");
-
-    d3.select("#geo-viz7 .subtitle")
-        .style("max-width", "700px")
-        .style("margin", "8px auto 24px auto")
 
     const article = scrolly.append("article")
         .style("pointer-events", "none");
