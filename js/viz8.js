@@ -11,6 +11,8 @@ function drawViz8() {
     d3.select("#geo-viz8")
         .style('font-family', 'Montserrat')
         .style('font-size', '14px')
+        .style("display", "block")
+        .style("background-color", "none");
     
     addTitle("#geo-viz8", "Paid user acquisition cost x average revenue highlights markets for potential geo-expansion");
     addSubtitle("#geo-viz8", "Benchmarked performance for each market by payer acquisition, value and overall revenue potential. Aug 2023-2024");
