@@ -12,7 +12,7 @@ function drawViz8() {
         .style('font-family', 'Montserrat')
         .style('font-size', '14px')
         .style("display", "block")
-        .style("background", "#FFF");;
+        .style("background", "#FFF");
     
     addTitle("#geo-viz8", "Paid user acquisition cost x average revenue highlights markets for potential geo-expansion");
     addSubtitle("#geo-viz8", "Benchmarked performance for each market by payer acquisition, value and overall revenue potential. Aug 2023-2024");
@@ -279,14 +279,24 @@ function drawViz8() {
                         .attr("class", 'data-grid')
 
                 const gridRow = dataGrid.selectAll(".grid-row")
-                    .data(d => getUniques(markets.filter(market => (market.Tier === d) & (market.genre === selectedGenre)), 'Market full name').map((market, i) => {
-                        return {
-                            'Tier': d,
-                            'Market full name': market,
-                            'data': markets.filter(e => (e.Tier === d) & (e['Market full name'] === market) & (e.genre === selectedGenre)),
-                            'index': i
-                        }
-                    }))
+                    .data(d => {
+                        const filteredMarkets = markets.filter(market => (market.Tier === d) & (market.genre === selectedGenre));
+                        filteredMarkets.forEach((d,i) => {
+                            if (d.Market === 'All countries') {
+                                filteredMarkets.splice(i,1);
+                                filteredMarkets.unshift(d)
+                            }
+                        })
+                        
+                        return getUniques(filteredMarkets, 'Market full name').map((market, i) => {
+                            return {
+                                'Tier': d,
+                                'Market full name': market,
+                                'data': markets.filter(e => (e.Tier === d) & (e['Market full name'] === market) & (e.genre === selectedGenre)),
+                                'index': i
+                            }
+                        })
+                    })
                     .join("div")
                         // .attr("class", (d, i) => groupLabels[d.Tier] === d['Market full name'] ? 'grid-row grid-wrapper row-head' : `grid-row grid-wrapper row-name row-${nameNoSpaces(d.Tier)}`)
                         .attr("class", (d, i) => i === 0 ? 'grid-row grid-wrapper row-head' : `grid-row grid-wrapper row-item row-${nameNoSpaces(d.Tier)}`)
