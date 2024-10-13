@@ -1,13 +1,14 @@
 function drawViz3() {
 
     const windowWidth = screen.width;
+    const labelForUS = 'U.S.'
 
     clearDiv("#geo-viz3");
     centerDiv("#geo-viz3");
     addTitle("#geo-viz3", "Some marketers stick to their local regions, while others are quicker to expand globally");
     addSubtitle("#geo-viz3", "Estimated user acquisition spend by country, filtered by app developer HQ location");
     // addLegend("#geo-viz3");
-    addBoldText("#geo-viz3", "HQ in the US");
+    addBoldText("#geo-viz3", `HQ in the ${labelForUS}`);
 
     const textPadding = 7;
     const squaresPerRow = 5;
@@ -91,7 +92,7 @@ function drawViz3() {
             d['iOS'] = +d['iOS'];
         });
 
-        let country1 = "US";
+        let country1 = labelForUS;
         let country2 = 'China';
         // const uniqueDestinations = getUniquesMenu(spend, 'Destination');
         const uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World'];
@@ -219,7 +220,7 @@ function drawViz3() {
 
         }
 
-        const uniqueCountries = getUniquesMenu(spend, xlabel);
+        const uniqueCountries = getUniquesMenu(spend, xlabel).filter(d => d !== labelForUS);
         let country2Opts = addOptions("country2-content-2", uniqueCountries);
 
         d3.select("#country2-dropdown-2")
@@ -235,7 +236,7 @@ function drawViz3() {
             }
         })
 
-        updatePlot(g1, 'US');
+        updatePlot(g1, labelForUS);
         updatePlot(g2, country2);
     })
 }

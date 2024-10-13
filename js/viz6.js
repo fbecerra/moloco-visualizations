@@ -22,11 +22,12 @@ function drawViz6() {
 
         values.forEach(d => {
             d.Revenue = +d.Revenue;
+            d['UA Spend'] = +d['UA Spend'];
             d.ARPPU = +d.ARPPU;
         })
 
         // const groups = getUniquesMenu(values, 'Tier');
-        const groups = ['US and English Language Markets', 'Europe & Middle East (Tier 1)', 
+        const groups = ['US and English Language', 'Europe & Middle East (Tier 1)', 
             'LATAM Spanish Speaking', 'East Asia Pacific',
             'Europe & Middle East (Tier 2)', 'Global Developing Markets'];
         const groupLabels = {
@@ -37,7 +38,7 @@ function drawViz6() {
             'Europe & Middle East (Tier 2)': "Tier 2 European & Middle East", 
             'Global Developing Markets': "Global Developing Markets"
         }
-        let selectedGroup = 'US and English Language Markets';
+        let selectedGroup = groups[0];
 
         const [min, max] = d3.extent(values, d => d.ARPPU);
 

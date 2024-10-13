@@ -2,6 +2,8 @@ function drawViz4() {
     const drawBars4 = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
         const graphWidth = Math.min(screen.width, 600);
 
+        const labelForUS = 'U.S.';
+
         clearDiv(divId);
         centerDiv(divId);
 
@@ -83,7 +85,7 @@ function drawViz4() {
             .join("text")
                 .attr("class", "percentage-spend")
                 .attr("x", d => {
-                    if ((d[ylabel] === 'US') || (d[ylabel] === 'Others')) {
+                    if ((d[ylabel] === labelForUS) || (d[ylabel] === 'Others')) {
                         return x(d['UA Spend']) - textPadding;
                     } else {
                         return x(d['UA Spend']) + textPadding;
@@ -94,7 +96,7 @@ function drawViz4() {
                 .style("font-family", "Spacegrotesk")
                 .style("font-size", "14px")
                 .style("text-anchor", d => {
-                    if ((d[ylabel] === 'US') || (d[ylabel] === 'Others')) {
+                    if ((d[ylabel] === labelForUS) || (d[ylabel] === 'Others')) {
                         return 'end';
                     } else {
                         return 'start';
@@ -131,7 +133,7 @@ function drawViz4() {
             .join("text")
                 .attr("class", "percentage-revenue")
                 .attr("x", d => {
-                    if ((d[ylabel] === 'US') || (d[ylabel] === 'Others')) {
+                    if ((d[ylabel] === labelForUS) || (d[ylabel] === 'Others')) {
                         return x2(d['Revenue']) - textPadding;
                     } else {
                         return x2(d['Revenue']) + textPadding;
@@ -142,13 +144,13 @@ function drawViz4() {
                 .style("font-family", "Spacegrotesk")
                 .style("font-size", "14px")
                 .style("text-anchor", d => {
-                    if ((d[ylabel] === 'US') || (d[ylabel] === 'Others')) {
+                    if ((d[ylabel] === labelForUS) || (d[ylabel] === 'Others')) {
                         return 'end';
                     } else {
                         return 'start';
                     }
                 })
-                .style("fill", d => d[ylabel] === 'US' ? '#FFFFFF' : '#000000')
+                .style("fill", d => d[ylabel] === labelForUS ? '#FFFFFF' : '#000000')
                 .text(d => (d['Revenue'] * 100).toFixed(1) + '%');
     
         addSources(divId, sources);
