@@ -152,9 +152,9 @@ function drawViz1() {
             xlabels = ['iOS', 'Android'],
             ylabel = 'Market full name',
             colors = ["#040078", "#558FC9"],
-            title = "Three-quarters of user acquisition spend for mobile gaming is concentrated in ten countries",
-            subtitle = "Estimated user acquisition spend concentration by country",
-            sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included."
+            title = "Almost three-quarters of user acquisition spend for mobile gaming is concentrated in ten countries",
+            subtitle = "2025 estimated user acquisition spend concentration by country",
+            sources = "Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included."
         )
         
     })
