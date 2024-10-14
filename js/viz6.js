@@ -77,7 +77,9 @@ function drawViz6() {
 
         d3.select("#geo-viz6 .title")
             .style("max-width", "700px")
-            .style("margin", "auto");
+            .style("text-align", "left") // Ensure left alignment
+            .style("margin", "0")
+            //.style("margin", "auto");
 
         d3.select("#geo-viz6 .subtitle")
             .style("max-width", "700px")
