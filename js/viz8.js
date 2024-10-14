@@ -112,7 +112,7 @@ function drawViz8() {
                 .on("click", (evt, d) => {
                     if (selectedGenre !== d) {
                         selectedGenre = d;
-                        d3.selectAll(".button")
+                        d3.selectAll(".button-viz")
                             .style("background-color", d => d === selectedGenre ? blue : gray)
                             .style("color", d => d === selectedGenre ? "#FFFFFF" : "#000000")
                             .style("font-weight", d => d === selectedGenre ? 700 : 400);
