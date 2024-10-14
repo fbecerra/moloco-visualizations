@@ -77,15 +77,10 @@ function drawViz6() {
 
         d3.select("#geo-viz6 .title")
             .style("max-width", "700px")
-            //.style("text-align", "left") 
-            //.style("margin", "0 auto")
-            .style("margin", "8px 0 0 0") // Similar margin as the subtitle: top, right, bottom, left
-            .style("display", "block") // Ensure the element behaves as a block for margin and width to work properly
-            .style("box-sizing", "border-box"); // Handle padding/margins consistently within the max-width
+            .style("margin", "auto")
 
         d3.select("#geo-viz6 .subtitle")
             .style("max-width", "700px")
-            //.style("text-align", "left") 
             .style("margin", "8px auto 24px auto");
 
         // End of NEW to test
