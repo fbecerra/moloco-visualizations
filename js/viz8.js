@@ -270,14 +270,32 @@ function drawViz8() {
                         .html(d => d);
 
             } else {
+                //const tableWrapper = d3.select("#geo-viz8")
+                //    .append("div")
+                //    .style("display", 'table')
+                //    .style("margin", 'auto');
+
+                //const nameGrid = tableWrapper
+                //        .append("div")
+                //        .attr("class", 'grid-wrapper')
+
+                // New code
+
                 const tableWrapper = d3.select("#geo-viz8")
-                    .append("div")
+                .selectAll(".table-wrapper-8")
+                .data([1])
+                    .join("div")
+                .attr("class", "table-wrapper-8")
                     .style("display", 'table')
                     .style("margin", 'auto');
-
+                
                 const nameGrid = tableWrapper
-                        .append("div")
-                        .attr("class", 'grid-wrapper')
+                .selectAll(".grid-wrapper-8")
+                .data([1])
+                        .join("div")
+                        .attr("class", 'grid-wrapper grid-wrapper-8')
+
+                // end of new code
 
                 nameGrid.selectAll(".column-name")
                     .data(columnLabels)
