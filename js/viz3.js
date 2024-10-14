@@ -199,7 +199,7 @@ function drawViz3() {
                     .attr("x", leftText)
                     .attr("y", topText)
                     .style("font-family", "Spacegrotesk")
-                    .style("font-size", "16px")
+                    .style("font-size", "14px")
                     .style("text-anchor", 'start')
                     .attr("fill", "#000000")
                     .text(d => (d[0][ylabel] * 100).toFixed(1) + '%');
