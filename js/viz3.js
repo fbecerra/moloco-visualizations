@@ -6,7 +6,7 @@ function drawViz3() {
     clearDiv("#geo-viz3");
     centerDiv("#geo-viz3");
     addTitle("#geo-viz3", "Some marketers stick to their local regions, while others are quicker to expand globally");
-    addSubtitle("#geo-viz3", "Estimated user acquisition spend by country, filtered by app developer HQ location");
+    addSubtitle("#geo-viz3", "2025 estimated user acquisition spend by country, filtered by app developer HQ location");
     // addLegend("#geo-viz3");
     addBoldText("#geo-viz3", `HQ in the ${labelForUS}`);
 
