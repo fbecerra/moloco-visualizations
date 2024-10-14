@@ -31,7 +31,7 @@ function drawViz6() {
         //    'LATAM Spanish Speaking', 'East Asia Pacific',
         //    'Europe & Middle East (Tier 2)', 'Global Developing Markets'];
         const groups = getUniquesMenu(values, 'Tier');
-            const groups = ['US and English Language', 'Europe & Middle East (Group 1)', 
+        const groups = ['US and English Language', 'Europe & Middle East (Group 1)', 
             'LATAM Spanish Speaking', 'East Asia Pacific',
             'Europe & Middle East (Group 2)', 'Global Developing Markets'];
         const groupLabels = {
