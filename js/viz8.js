@@ -129,15 +129,25 @@ function drawViz8() {
             `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`];
 
 
-        const groups = ['US and English Language Markets', 'Europe & Middle East (Tier 1)', 
-            'LATAM Spanish Speaking', 'East Asia Pacific',
+        //const groups = ['US and English Language Markets', 'Europe & Middle East (Tier 1)', 
+        //    'LATAM Spanish Speaking', 'East Asia Pacific',
             'Europe & Middle East (Tier 2)', 'Global Developing Markets'];
+        //const groupLabels = {
+        //    'US and English Language Markets': "US and English Language", 
+        //    'Europe & Middle East (Tier 1)': "Tier 1 European & Middle East", 
+        //    'LATAM Spanish Speaking': "LATAM Spanish Language", 
+        //    'East Asia Pacific': "East Asia Pacific",
+        //    'Europe & Middle East (Tier 2)': "Tier 2 European & Middle East", 
+        //    'Global Developing Markets': "Global Developing Markets"
+        }
+
+        const groups = getUniquesMenu(values, 'Tier');
         const groupLabels = {
-            'US and English Language Markets': "US and English Language", 
-            'Europe & Middle East (Tier 1)': "Tier 1 European & Middle East", 
-            'LATAM Spanish Speaking': "LATAM Spanish Language", 
+            'US and English Language': "US and English Language", 
+            'Europe & Middle East (Group 1)': "Europe & Middle East (Group 1)", 
+            'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
             'East Asia Pacific': "East Asia Pacific",
-            'Europe & Middle East (Tier 2)': "Tier 2 European & Middle East", 
+            'Europe & Middle East (Group 2)': "Europe & Middle East (Group 2)", 
             'Global Developing Markets': "Global Developing Markets"
         }
 
