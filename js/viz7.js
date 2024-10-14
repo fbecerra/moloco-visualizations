@@ -27,7 +27,7 @@ function drawViz7() {
         .attr("id", "title-wrapper");
 
     addTitle("#title-wrapper", "Top payers drive the majority of total IAP revenue");
-    addSubtitle("#title-wrapper", "Top payers drive the majority of total IAP revenue/ Let’s take a look at total (D7 IAP) revenue for the RPG genre in a selection of global markets.")
+    addSubtitle("#title-wrapper", "To illustrate why effective targeting is so important, let’s take a look at total D7 IAP revenue for the RPG genre in a selection of global markets.")
 
     d3.select("#title-wrapper")
         .style("max-width", "700px")
