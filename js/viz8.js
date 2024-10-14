@@ -141,7 +141,7 @@ function drawViz8() {
         //    'Global Developing Markets': "Global Developing Markets"
         //}
 
-        const groups = ['US and English Language Markets', 'Europe & Middle East (Group 1)', 
+        const groups = ['US and English Language', 'Europe & Middle East (Group 1)', 
             'LATAM Spanish Speaking', 'East Asia Pacific',
             'Europe & Middle East (Group 2)', 'Global Developing Markets'];
         const groupLabels = {
