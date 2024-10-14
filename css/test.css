@@ -120,15 +120,15 @@
 
 #geo-viz6 .right-panel {
     background-color: #ECEDEE; /* Keep the grey background for the right panel */
-    padding: 8px 10px;
+    /* padding: 8px 10px; */
 }
 
 #geo-viz6 .button-wrapper-viz .country-button {
     background-color: #ECEDEE; /* Apply grey background to the buttons */
-    color: black;
-    padding: 10px;
-    cursor: pointer;
-    font-weight: 400;
+    /* color: black; */
+    /* padding: 10px; */
+    /* cursor: pointer;
+    /* font-weight: 400; */
 }
 
 #geo-viz6 .button-wrapper-viz .country-button.selected {
