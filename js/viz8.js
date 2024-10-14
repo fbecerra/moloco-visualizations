@@ -131,7 +131,7 @@ function drawViz8() {
 
         //const groups = ['US and English Language Markets', 'Europe & Middle East (Tier 1)', 
         //    'LATAM Spanish Speaking', 'East Asia Pacific',
-            'Europe & Middle East (Tier 2)', 'Global Developing Markets'];
+        //    'Europe & Middle East (Tier 2)', 'Global Developing Markets'];
         //const groupLabels = {
         //    'US and English Language Markets': "US and English Language", 
         //    'Europe & Middle East (Tier 1)': "Tier 1 European & Middle East", 
@@ -139,7 +139,7 @@ function drawViz8() {
         //    'East Asia Pacific': "East Asia Pacific",
         //    'Europe & Middle East (Tier 2)': "Tier 2 European & Middle East", 
         //    'Global Developing Markets': "Global Developing Markets"
-        }
+        //}
 
         const groups = getUniquesMenu(values, 'Tier');
         const groupLabels = {
