@@ -36,7 +36,7 @@ function drawViz7() {
     const article = scrolly.append("article")
         .style("pointer-events", "none");
 
-    const paragraphs = ['', '<p>The top 2% of paying users generate roughly 35% to 45% of total in-app purchase revenue, a trend that broadly holds across different market sizes and genres.<br>Hover over market to see D7 ARPPU for top 2% of payers.</p>',
+    const paragraphs = ['', '<p>The top 2% of paying users generate roughly 35% to 45% of total in-app purchase revenue, a trend that broadly holds across different market sizes and genres.<br><br>Hover over market to see D7 ARPPU for top 2% of payers.</p>',
         '<p>The top 10% of paying users account for 70% to 85% of total IAP revenue.</p>'
     ]
 
