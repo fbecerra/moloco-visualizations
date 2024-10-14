@@ -9,6 +9,18 @@ function drawViz6() {
     const blue = '#0280FB';
     const darkerGray = "#D9D9D9";
 
+    // NEW to test
+
+    d3.select("#geo-viz6 .title")
+        .style("max-width", "700px")
+        .style("margin", "auto");
+
+    d3.select("#geo-viz6 .subtitle")
+        .style("max-width", "700px")
+        .style("margin", "8px auto 24px auto");
+
+    // End of NEW to test
+
     Promise.all([
         d3.json('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/world-110m-2024.json'),
         d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz6.csv')
