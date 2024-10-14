@@ -14,8 +14,8 @@ function drawViz8() {
         .style("display", "block")
         .style("background", "#FFF");
     
-    addTitle("#geo-viz8", "Paid user acquisition cost x average revenue highlights markets for potential geo-expansion");
-    addSubtitle("#geo-viz8", "Benchmarked performance for each market by payer acquisition, value and overall revenue potential. Aug 2023-2024");
+    addTitle("#geo-viz8", "Paid user acquisition campaign outcomes showcase markets of opportunity");
+    addSubtitle("#geo-viz8", "Benchmarked performance for each market by payer acquisition, value, and overall revenue potential, August 2023-2024");
 
     d3.select("#geo-viz8 .title")
         .style("max-width", "700px")
@@ -124,9 +124,9 @@ function drawViz8() {
 
         const moreInfoIcon = '<svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 8V6M6 4H6.005M11 6C11 8.76142 8.76142 11 6 11C3.23858 11 1 8.76142 1 6C1 3.23858 3.23858 1 6 1C8.76142 1 11 3.23858 11 6Z" stroke="#808080" stroke-linecap="round" stroke-linejoin="round"/></svg>';
         const columnLabels = ['', 'Geography', 
-            `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">CPP text</span></div>`,
-            `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">ARPPU text</span></div>`, 
-            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">IAP revenue text</span></div>`];
+            `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Cost Per Payer</span></div>`,
+            `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Gaming App D7 Average Revenue Per Paying User</span></div>`, 
+            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`];
 
 
         const groups = ['US and English Language Markets', 'Europe & Middle East (Tier 1)', 
