@@ -114,7 +114,7 @@ function drawViz5() {
                     .attr("y", d => y(d[ylabel]))
                     .attr("width", d => x(d[xlabel]))
                     .attr("height", y.bandwidth() )
-                    .attr("fill", "#C368F9");
+                    .attr("fill", "#0280FB");
 
             xAxis.call(d3.axisBottom(x).ticks(14));
             xAxis.select(".domain").remove();
