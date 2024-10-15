@@ -180,7 +180,7 @@ function drawViz6() {
         }
 
         addBar("budget", "paid UA budget");
-        addBar("revenue", "gaming revenue");
+        addBar("revenue", "gaming IAP revenue");
         addBar("arppu", "D7 ARPPU");
 
         // addBoldText("#right-panel", "US ")
