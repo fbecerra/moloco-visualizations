@@ -26,7 +26,7 @@ function drawViz6() {
             d.ARPPU = +d.ARPPU;
         })
 
-        const groups = getUniquesMenu(values, 'Tier');
+        //const groups = getUniquesMenu(values, 'Tier');
         //const groups = ['US and English Language', 'Europe & Middle East (Tier 1)', 
         //   'LATAM Spanish Speaking', 'East Asia Pacific',
         //   'Europe & Middle East (Tier 2)', 'Global Developing Markets'];
@@ -34,12 +34,24 @@ function drawViz6() {
         //const groups = ['US and English Language', 'Europe & Middle East (Group 1)', 
         //    'LATAM Spanish Speaking', 'East Asia Pacific',
         //    'Europe & Middle East (Group 2)', 'Global Developing Markets'];
+        //const groupLabels = {
+        //    'US and English Language': "US and English Language", 
+        //    'Europe & Middle East (Group 1)': "Europe & Middle East (Group 1)", 
+        //    'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
+        //    'East Asia Pacific': "East Asia Pacific",
+        //    'Europe & Middle East (Group 2)': "Europe & Middle East (Group 2)", 
+        //    'Global Developing Markets': "Global Developing Markets"
+
+
+        const groups = ['US and English Language', 'East Asia Pacific',
+            'Europe & Middle East (Group 1)', 'Europe & Middle East (Group 2)',
+            'LATAM Spanish Speaking', 'Global Developing Markets'];
         const groupLabels = {
             'US and English Language': "US and English Language", 
-            'Europe & Middle East (Group 1)': "Europe & Middle East (Group 1)", 
-            'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
             'East Asia Pacific': "East Asia Pacific",
+            'Europe & Middle East (Group 1)': "Europe & Middle East (Group 1)", 
             'Europe & Middle East (Group 2)': "Europe & Middle East (Group 2)", 
+            'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
             'Global Developing Markets': "Global Developing Markets"
         }
         let selectedGroup = groups[0];
