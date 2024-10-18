@@ -387,7 +387,7 @@ function drawViz6() {
                                         <tr>
                                             <td style="padding-right: ${paddingRows}px">paid UA budget
                                             </td>
-                                            <td style="padding-right: ${paddingRows}px">gaming revenue
+                                            <td style="padding-right: ${paddingRows}px">gaming IAP revenue
                                             </td>
                                             <td>D7 ARPPU
                                             </td>   
