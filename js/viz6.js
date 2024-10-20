@@ -423,7 +423,7 @@ function drawViz6() {
 
         updatePlot();
 
-        addSources("#geo-viz6", "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Sep 2023 to August 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included.")
+        addSources("#geo-viz6", "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included.")
 
         d3.select("#geo-viz6 .sources")
             .style("max-width", "700px")
