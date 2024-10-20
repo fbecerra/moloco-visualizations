@@ -171,9 +171,9 @@ function drawViz4() {
             divId = "#geo-viz4",
             xlabel = 'Percentage revenue',
             ylabel = 'Market full name',
-            title = "Marketing spend and total in-app purchase revenue is aligned in most countries",
+            title = "Marketing spend and total in-app purchase revenue are aligned in most countries",
             subtitle = "Mobile gaming (IAP) user acquisition spend compared to mobile gaming (IAP) D7 revenue (Moloco customers)",
-            sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Sep 2023 to August 2024). Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included."
+            sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (September 2023 to September 2024). Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included."
         )
         
     })
