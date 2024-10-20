@@ -27,7 +27,7 @@ function drawViz7() {
         .attr("id", "title-wrapper");
 
     addTitle("#title-wrapper", "Top payers drive the majority of total IAP revenue");
-    addSubtitle("#title-wrapper", "High-value users aren’t confined to well-known markets — they can be found in every corner of the globe. In most markets, the top-paying users account for a disproportionate share of total IAP revenue. To illustrate this, let’s take a closer look at D7 IAP revenue for the RPG genre across a selection of global markets.")
+    addSubtitle("#title-wrapper", "High-value users aren’t confined to well-known markets — they can be found in every corner of the globe. In most markets, the top-paying users account for a disproportionate share of total IAP revenue. To illustrate this, let’s take a closer look at D7 IAP revenue for the RPG genre across a selection of global markets.<br><br>Hover over market to see D7 ARPPU.")
 
     d3.select("#title-wrapper")
         .style("max-width", "700px")
