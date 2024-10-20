@@ -401,7 +401,7 @@ function drawViz8() {
         }
 
         updatePlot();
-        addSources("#geo-viz8", "Source: Moloco campaign outcomes from 1,752 gaming app bundles, August 2023 to August 2024.")
+        addSources("#geo-viz8", "Source: Moloco campaign outcomes from September 2023 to September 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU).")
 
         d3.select("#geo-viz8 .sources")
             .style("max-width", "700px")
