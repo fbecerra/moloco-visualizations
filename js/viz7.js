@@ -71,10 +71,10 @@ function drawViz7() {
         let colorFunction = d => d.children ? "white" : gray;
 
         const width = Math.min(windowWidth - 40, 1000);
-            height = smallScreen ? width / 3 * 5 : width / 1000 * 600;
+            height = smallScreen ? width / 3 * 4 : width / 1000 * 600;
 
         const size = smallScreen ? [width, height] : [width - 180, height + 200];
-        const viewBox = smallScreen ? `0 0 ${width} ${height}` : `0 60 ${width} ${height + 80}`;
+        const viewBox = smallScreen ? `0 0 ${width + 40} ${height}` : `0 60 ${width} ${height + 80}`;
 
         const pack = data => d3.pack()
             .size(size)
@@ -96,7 +96,7 @@ function drawViz7() {
             step.style("height", stepH + "px");
     
             var figureHeight = height / 2;
-            var figureMarginTop = 156; //(window.innerHeight - figureHeight) / 2;
+            var figureMarginTop = smallScreen ? 76 : 156; //(window.innerHeight - figureHeight) / 2;
     
             figure
                 .style("height", figureHeight + "px")
@@ -150,9 +150,11 @@ function drawViz7() {
         init();
 
         const node = svg.append("g")
+            .attr("transform", "translate(20,0)")
             .selectAll("circle");
 
         const label = svg.append("g")
+            .attr("transform", "translate(20,0)")
             .selectAll(".label")
 
         const tooltip = svg.append("g");
