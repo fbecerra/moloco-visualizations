@@ -21,7 +21,7 @@ function drawViz7() {
 
     const figure = scrolly.append("figure")
         .attr("id", "figure")
-        .style("margin-bottom", smallScreen ? "50%" : "45%");
+        .style("margin-bottom", smallScreen ? "120%" : "45%");
 
     figure.append("div")
         .attr("id", "title-wrapper");
@@ -71,7 +71,7 @@ function drawViz7() {
         let colorFunction = d => d.children ? "white" : gray;
 
         const width = Math.min(windowWidth - 40, 1000);
-            height = width / 1000 * 600;
+            height = smallScreen ? width / 3 * 5 : width / 1000 * 600;
 
         const size = smallScreen ? [width, height] : [width - 180, height + 200];
         const viewBox = smallScreen ? `0 0 ${width} ${height}` : `0 60 ${width} ${height + 80}`;
@@ -224,32 +224,32 @@ function drawViz7() {
                 .attr("class", "label")
                 .attr("x", d => {
                     if (d.data.name === 'U.S.') {
-                        return d.x - 0.8 * d.r
+                        return smallScreen ? d.x - 0.8 * d.r : d.x - 0.8 * d.r
                     } else if (d.data.name === 'Mexico') {
-                        return d.x + 0.7 * d.r
+                        return smallScreen ? d.x - 2 * d.r : d.x + 0.7 * d.r
                     } else if (d.data.name === 'Japan') {
-                        return d.x + 0.75 * d.r
+                        return smallScreen ? d.x + 0.25 * d.r : d.x + 0.75 * d.r
                     } else if (d.data.name === 'Italy') {
-                        return d.x - 1.1 * d.r
+                        return smallScreen ? d.x - 1.2 * d.r : d.x - 1.1 * d.r
                     } else if (d.data.name === 'Indonesia') {
-                        return d.x - 0.5 * d.r
+                        return smallScreen ? d.x - 0.5 * d.r : d.x - 0.5 * d.r
                     } else if (d.data.name === 'Germany') {
-                        return d.x + 0.8 * d.r
+                        return smallScreen ? d.x + 0.2 * d.r : d.x + 0.8 * d.r
                     }
                 })
                 .attr("y", d => {
                     if (d.data.name === 'U.S.') {
-                        return d.y - 0.8 * d.r
+                        return smallScreen ? d.y - d.r : d.y - 0.8 * d.r
                     } else if (d.data.name === 'Mexico') {
-                        return d.y - d.r
+                        return smallScreen ? d.y + 1.6 * d.r : d.y - d.r
                     } else if (d.data.name === 'Japan') {
-                        return d.y - 0.75 * d.r
+                        return smallScreen ? d.y - 1.1 * d.r : d.y - 0.75 * d.r
                     } else if (d.data.name === 'Italy') {
-                        return d.y - d.r
+                        return smallScreen ? d.y - 1.2 * d.r : d.y - d.r
                     } else if (d.data.name === 'Indonesia') {
-                        return d.y - 1.1 * d.r 
+                        return smallScreen ? d.y - 1.2 * d.r : d.y - 1.1 * d.r 
                     } else if (d.data.name === 'Germany') {
-                        return d.y + 0.8 * d.r
+                        return smallScreen ? d.y + 1.4 * d.r : d.y + 0.8 * d.r
                     }
                 })
                 .attr("fill", darkerGray)
