@@ -26,11 +26,15 @@ function addOptions(id, values) {
 }
 
 function addTitle(id, text) {
+
+    const windowWidth = screen.width;
+    const tooSmall = windowWidth < 700;
+
     d3.select(id)
         .append("div")
         .attr("class", "title")
         .style("font-family", "Montserrat")
-        .style("font-size", "18px")
+        .style("font-size", tooSmall ? "14px" : "18px")
         .style("font-weight", 700)
         .style("display", "table")
         .html(text);
@@ -48,11 +52,15 @@ function addSubtitle(id, text) {
 }
 
 function addSources(id, text) {
+
+    const windowWidth = screen.width;
+    const tooSmall = windowWidth < 700;
+
     d3.select(id)
         .append("div")
         .attr("class", "sources")
         .style("font-family", "Montserrat")
-        .style("font-size", "14px")
+        .style("font-size", tooSmall ? "12px" : "14px")
         .style("font-weight", 400)
         .style("color", "#808080")
         .style("display", "table")
