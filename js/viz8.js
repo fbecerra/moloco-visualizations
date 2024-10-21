@@ -274,8 +274,8 @@ function drawViz8() {
                 dataWrapper.selectAll(".row-revenue")
                     .data(d => {
                         const thisValue = d.data.filter(d => d['type of value'] === 'Revenue Potential')[0];
-                        const rectHtml = `<div class="bar" style="display: inline-block;margin-right:10px;margin-top: 2px;margin-bottom:6px;width: ${thisValue.value * maxWidthBar}px;height: 10px; background-color: ${blue}"></div>`;
-                        const numberHtml = `<div class='bar-value' style='font-weight: 700;'>${(thisValue.value * 100).toFixed(0)}%</div>`;
+                        const rectHtml = `<div class="bar" style="display: inline-block;line-height: 24px;margin-right:10px;margin-top: 2px;margin-bottom:6px;width: ${thisValue.value * maxWidthBar}px;height: 10px; background-color: ${blue}"></div>`;
+                        const numberHtml = `<div class='bar-value' style='font-weight: 700;line-height: 24px;vertical-align: bottom;'>${(thisValue.value * 100).toFixed(0)}%</div>`;
                         return [rectHtml + '</br>' + numberHtml];
                     })
                     .join("div")
