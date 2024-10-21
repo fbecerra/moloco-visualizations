@@ -342,14 +342,16 @@ function drawViz6() {
         let countriesLabel;
         let paidBudgetLabel;
         let revenueLabel;
+        let paidBudgetWidth;
+        let revenueWidth;
         let minARPPU, maxARPPU;
         let minMaxLabel;
 
         function updateRightPanel() {
             countriesString.html(countriesLabel);
-            d3.select("#budget-bar").style("width", paidBudgetLabel);
+            d3.select("#budget-bar").style("width", paidBudgetWidth);
             d3.select("#budget-legend").html(paidBudgetLabel);
-            d3.select("#revenue-bar").style("width", revenueLabel);
+            d3.select("#revenue-bar").style("width", revenueWidth);
             d3.select("#revenue-legend").html(revenueLabel);
             d3.select("#arppu-bar")
                 .style("left", x(minARPPU) + '%')
@@ -362,11 +364,15 @@ function drawViz6() {
         function updatePlot() {
             const groupCountries = values.filter(value => (value.Tier === selectedGroup) & (value.Genre === selectedGenre));
             countriesLabel = groupCountries.map(d => d['Market full name']).join(', ');
-            paidBudgetLabel = (groupCountries.reduce((a,b) => a + b['UA Spend'], 0) * 100).toFixed(0) + '%';
-            revenueLabel = (groupCountries.reduce((a,b) => a + b['Revenue'], 0) * 100).toFixed(0) + '%';
+            const paidBudget = (groupCountries.reduce((a,b) => a + b['UA Spend'], 0) * 100).toFixed(0);
+            paidBudgetWidth = paidBudget + '%';
+            paidBudgetLabel = paidBudget < 1 ? '<1%' : paidBudget + '%';
+            const revenueTotal = (groupCountries.reduce((a,b) => a + b['Revenue'], 0) * 100).toFixed(0);
+            revenueWidth = revenueTotal + '%';
+            revenueLabel = revenueTotal < 1 ? '<1%' : revenueTotal + '%';
             [minARPPU, maxARPPU] = d3.extent(groupCountries, d => d.ARPPU);
             minMaxLabel = `$${minARPPU.toFixed(1)}-$${maxARPPU.toFixed(1)}`;
-
+\
             updateRightPanel();
 
             const abbvCountries = groupCountries.map(d => d.Market);

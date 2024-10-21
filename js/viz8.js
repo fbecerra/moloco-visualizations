@@ -389,8 +389,9 @@ function drawViz8() {
                 gridRow.selectAll(".row-revenue")
                     .data(d => {
                         const thisValue = d.data.filter(d => d['type of value'] === 'Revenue Potential')[0];
+                        const value = (thisValue.value * 100).toFixed(0);
                         const rectHtml = `<div class="bar" style="display: inline-block;margin-right:10px;width: ${thisValue.value * maxWidthBar}px;height: 15px; background-color: ${blue}"></div>`;
-                        const numberHtml = `<div class='bar-value'>${(thisValue.value * 100).toFixed(0)}%</div>`;
+                        const numberHtml = value < 1 ? `<div class='bar-value'><1%</div>` : `<div class='bar-value'>${(thisValue.value * 100).toFixed(0)}%</div>`;
                         return [rectHtml + numberHtml];
                     })
                     .join("div")
