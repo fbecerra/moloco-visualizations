@@ -391,7 +391,7 @@ function drawViz6() {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="padding-right: ${paddingRows}px;font-family: 'Spacegrotesk';font-size: 14px;font-weight: 500;padding-bottom: 6px">${(thisCountry['UA spend'] * 100).toFixed(1)}%
+                                            <td style="padding-right: ${paddingRows}px;font-family: 'Spacegrotesk';font-size: 14px;font-weight: 500;padding-bottom: 6px">${(thisCountry['UA Spend'] * 100).toFixed(1)}%
                                             </td>
                                             <td style="padding-right: ${paddingRows}px;font-family: 'Spacegrotesk';font-size: 14px;font-weight: 500;padding-bottom: 6px">${(thisCountry.Revenue * 100).toFixed(1)}%
                                             </td>
