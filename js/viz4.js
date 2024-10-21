@@ -40,8 +40,6 @@ function drawViz4() {
         x.domain([0, d3.max(spend, d => Math.max(d['UA Spend'], d['Revenue']))]);
         x2.domain([0, d3.max(spend, d => Math.max(d['UA Spend'], d['Revenue']))])
         y.domain(spend.map(d => d[ylabel]));
-
-        console.log(x.domain(), x.range())
     
         g.select('.y-axis').select(".domain").remove();
         g.select('.y-axis').selectAll(".tick line").remove();
