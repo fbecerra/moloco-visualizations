@@ -81,21 +81,27 @@ function drawViz6() {
             .style("z-index", 2)
             .style("display", "none")
             .html('');
-
-        addTitle("#geo-viz6", "Mapping global opportunities ");
-        addSubtitle("#geo-viz6", "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics for markets of interest")
-
-        // NEW to test
-
-        d3.select("#geo-viz6 .title")
+        
+        d3.select("#geo-viz6").append("div")
+            .attr("id", "title-wrapper")
             .style("max-width", "700px")
-            .style("margin", "auto")
+            .style("margin", "auto");;
 
-        d3.select("#geo-viz6 .subtitle")
-            .style("max-width", "700px")
-            .style("margin", "8px auto 24px auto");
+        addTitle("#title-wrapper", "Mapping global opportunities ");
+        addSubtitle("#title-wrapper", "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics for markets of interest")
+            
 
-        // End of NEW to test
+        // // NEW to test
+
+        // d3.select("#geo-viz6 .title")
+        //     .style("max-width", "700px")
+        //     .style("margin", "auto")
+
+        // d3.select("#geo-viz6 .subtitle")
+        //     .style("max-width", "700px")
+        //     .style("margin", "8px auto 24px auto");
+
+        // // End of NEW to test
 
         addBoldText("#geo-viz6", "Select country group")
 
