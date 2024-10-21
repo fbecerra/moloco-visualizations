@@ -54,6 +54,14 @@ function drawViz6() {
             'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
             'Global Developing Markets': "Global Developing Markets"
         }
+        const groupInfo = {
+            'US and English Language': "The U.S. and many English-language countries are the largest overall mobile gaming market, representing the majority of UA spend and revenue. While the U.S. dominates in total IAP revenue, opportunities exist across these markets, representing similar barriers to entry and consistent user value across genres.", 
+            'East Asia Pacific': "East Asia Pacific markets have the highest average user value across most genres. Potentially a higher barrier to entry for non-domestic marketers due to localization and cultural differences. Midcore (RPG, Strategy, Simulation) sees relative strength in this region for user value and total IAP revenue.",
+            'Europe & Middle East (Group 1)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 1 represents some of the largest markets of opportunity within the region with higher user value and IAP revenue. Moreover, a significant percentage of English speakers among the population potentially lowering the barrier of entry for many apps.", 
+            'Europe & Middle East (Group 2)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 2 represents diverse markets with a lower share of the total IAP revenue and high variance in user value. Due to their size, these markets can perhaps be more challenging to enter, but may represent a significant opportunity by grouping key markets to maximize reach.", 
+            'LATAM Spanish Speaking': "Latin America (LATAM) markets have relatively low user value and overall IAP revenue contribution. However, localization can be streamlined due to the population being largely Spanish speaking. For marketers, grouping these countries can help with UA viability.", 
+            'Global Developing Markets': "Consisting of a wide range of developing countries, these markets have the largest variability of user value with significant differences across genres. However, there are pockets of opportunity for marketers to capture high-value users at a potentially cost efficient price."
+        }
         let selectedGroup = groups[0];
 
         const [min, max] = d3.extent(values, d => d.ARPPU);
@@ -348,7 +356,7 @@ function drawViz6() {
                 .style("width", (x(maxARPPU) - x(minARPPU)) + '%');
             d3.select("#arppu-legend").html(minMaxLabel);
             d3.select("#selected-tier-name").html(selectedGroup);
-            d3.select("#selected-tier-info").html('<p style="font-family: Montserrat; color: #000; letter-spacing: 0px; font-size: 14px">Lowest barrier to entry for non-native developers.</p><p style="font-family: Montserrat; color: #000; font-size: 14px; letter-spacing: 0px;">Of these markets the US is the obvious outlier in terms of total opportunity, but broadly these markets see similar levels of average user value ($x to $x) and share low barriers of entry to most app developers</p>');
+            d3.select("#selected-tier-info").html(`<p style="font-family: Montserrat; color: #000; letter-spacing: 0px; font-size: 14px">${groupInfo[selectedGroup]}</p>`);
         }
 
         function updatePlot() {
