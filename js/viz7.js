@@ -27,7 +27,7 @@ function drawViz7() {
         .attr("id", "title-wrapper");
 
     addTitle("#title-wrapper", "Top payers drive the majority of total IAP revenue");
-    addSubtitle("#title-wrapper", "Top payers drive the majority of total IAP revenue/ Let’s take a look at total (D7 IAP) revenue for the RPG genre in a selection of global markets.")
+    addSubtitle("#title-wrapper", "High-value users aren’t confined to well-known markets — they can be found in every corner of the globe. In most markets, the top-paying users account for a disproportionate share of total IAP revenue. To illustrate this, let’s take a closer look at D7 IAP revenue for the RPG genre across a selection of global markets.<br><br>Hover over market to see D7 ARPPU.")
 
     d3.select("#title-wrapper")
         .style("max-width", "700px")
@@ -36,7 +36,7 @@ function drawViz7() {
     const article = scrolly.append("article")
         .style("pointer-events", "none");
 
-    const paragraphs = ['', '<p>The top 2% of paying users generate roughly 35% to 45% of total in-app purchase revenue, a trend that broadly holds across different market sizes and genres.</p>',
+    const paragraphs = ['', '<p>The top 2% of paying users generate roughly 35% to 45% of total IAP revenue, a trend that broadly holds across different market sizes and genres.</p>',
         '<p>The top 10% of paying users account for 70% to 85% of total IAP revenue.</p>'
     ]
 
@@ -258,7 +258,7 @@ function drawViz7() {
 
         updatePlot();
 
-        addSources("#geo-viz7", "Source: RPG total gaming IAP revenue by user (organic and paid, 7-day sample period in July 2024)");
+        addSources("#geo-viz7", "Source: RPG total gaming IAP revenue by user (organic and paid, 7-day sample period in July 2024).");
 
         d3.select("#geo-viz7 .sources")
             .style("max-width", "700px")

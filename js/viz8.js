@@ -14,8 +14,8 @@ function drawViz8() {
         .style("display", "block")
         .style("background", "#FFF");
     
-    addTitle("#geo-viz8", "Paid user acquisition cost x average revenue highlights markets for potential geo-expansion");
-    addSubtitle("#geo-viz8", "Benchmarked performance for each market by payer acquisition, value and overall revenue potential. Aug 2023-2024");
+    addTitle("#geo-viz8", "Paid user acquisition campaign outcomes showcase markets of opportunity");
+    addSubtitle("#geo-viz8", "Benchmarked performance for each market by payer acquisition, value, and overall revenue potential, August 2023-2024");
 
     d3.select("#geo-viz8 .title")
         .style("max-width", "700px")
@@ -112,7 +112,7 @@ function drawViz8() {
                 .on("click", (evt, d) => {
                     if (selectedGenre !== d) {
                         selectedGenre = d;
-                        d3.selectAll(".button")
+                        d3.selectAll(".button-viz")
                             .style("background-color", d => d === selectedGenre ? blue : gray)
                             .style("color", d => d === selectedGenre ? "#FFFFFF" : "#000000")
                             .style("font-weight", d => d === selectedGenre ? 700 : 400);
@@ -124,20 +124,32 @@ function drawViz8() {
 
         const moreInfoIcon = '<svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 8V6M6 4H6.005M11 6C11 8.76142 8.76142 11 6 11C3.23858 11 1 8.76142 1 6C1 3.23858 3.23858 1 6 1C8.76142 1 11 3.23858 11 6Z" stroke="#808080" stroke-linecap="round" stroke-linejoin="round"/></svg>';
         const columnLabels = ['', 'Geography', 
-            `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">CPP text</span></div>`,
-            `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">ARPPU text</span></div>`, 
-            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">IAP revenue text</span></div>`];
+            `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Cost Per Payer</span></div>`,
+            `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Gaming App D7 Average Revenue Per Paying User</span></div>`, 
+            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`];
 
 
-        const groups = ['US and English Language Markets', 'Europe & Middle East (Tier 1)', 
-            'LATAM Spanish Speaking', 'East Asia Pacific',
-            'Europe & Middle East (Tier 2)', 'Global Developing Markets'];
+        //const groups = ['US and English Language Markets', 'Europe & Middle East (Tier 1)', 
+        //    'LATAM Spanish Speaking', 'East Asia Pacific',
+        //    'Europe & Middle East (Tier 2)', 'Global Developing Markets'];
+        //const groupLabels = {
+        //    'US and English Language Markets': "US and English Language", 
+        //    'Europe & Middle East (Tier 1)': "Tier 1 European & Middle East", 
+        //    'LATAM Spanish Speaking': "LATAM Spanish Language", 
+        //    'East Asia Pacific': "East Asia Pacific",
+        //    'Europe & Middle East (Tier 2)': "Tier 2 European & Middle East", 
+        //    'Global Developing Markets': "Global Developing Markets"
+        //}
+
+        const groups = ['US and English Language', 'East Asia Pacific',
+            'Europe & Middle East (Group 1)', 'Europe & Middle East (Group 2)',
+            'LATAM Spanish Speaking', 'Global Developing Markets'];
         const groupLabels = {
-            'US and English Language Markets': "US and English Language", 
-            'Europe & Middle East (Tier 1)': "Tier 1 European & Middle East", 
-            'LATAM Spanish Speaking': "LATAM Spanish Language", 
+            'US and English Language': "US and English Language", 
             'East Asia Pacific': "East Asia Pacific",
-            'Europe & Middle East (Tier 2)': "Tier 2 European & Middle East", 
+            'Europe & Middle East (Group 1)': "Europe & Middle East (Group 1)", 
+            'Europe & Middle East (Group 2)': "Europe & Middle East (Group 2)", 
+            'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
             'Global Developing Markets': "Global Developing Markets"
         }
 
@@ -258,14 +270,32 @@ function drawViz8() {
                         .html(d => d);
 
             } else {
+                //const tableWrapper = d3.select("#geo-viz8")
+                //    .append("div")
+                //    .style("display", 'table')
+                //    .style("margin", 'auto');
+
+                //const nameGrid = tableWrapper
+                //        .append("div")
+                //        .attr("class", 'grid-wrapper')
+
+                // New code
+
                 const tableWrapper = d3.select("#geo-viz8")
-                    .append("div")
+                .selectAll(".table-wrapper-8")
+                .data([1])
+                    .join("div")
+                .attr("class", "table-wrapper-8")
                     .style("display", 'table')
                     .style("margin", 'auto');
-
+                
                 const nameGrid = tableWrapper
-                        .append("div")
-                        .attr("class", 'grid-wrapper')
+                .selectAll(".grid-wrapper-8")
+                .data([1])
+                        .join("div")
+                        .attr("class", 'grid-wrapper grid-wrapper-8')
+
+                // end of new code
 
                 nameGrid.selectAll(".column-name")
                     .data(columnLabels)
@@ -371,7 +401,7 @@ function drawViz8() {
         }
 
         updatePlot();
-        addSources("#geo-viz8", "Source: Moloco campaign outcomes from 1,752 gaming app bundles, August 2023 to August 2024.")
+        addSources("#geo-viz8", "Source: Moloco campaign outcomes from August 2023 to August 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU).")
 
         d3.select("#geo-viz8 .sources")
             .style("max-width", "700px")

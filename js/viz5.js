@@ -1,8 +1,8 @@
 function drawViz5() {
     clearDiv("#geo-viz5");
     centerDiv("#geo-viz5");
-    addTitle("#geo-viz5", "East Asia sweeps the podium when it comes to average revenue per paying user, although this picture changes by OS and genre")   
-    addSubtitle("#geo-viz5", "ARPPU for top 15 countries");
+    addTitle("#geo-viz5", "East Asia Pacific leads when it comes to average revenue per paying user, although this picture changes by OS and genre")   
+    addSubtitle("#geo-viz5", "D7 ARPPU ($ USD) for top 15 countries");
 
     const dropdowns = d3.select("#geo-viz5")
         .append("div")
@@ -49,7 +49,7 @@ function drawViz5() {
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom);
 
-    addSources("#geo-viz5", "Source: Moloco advertiser median D7 ARPPU (organic and paid all channels), apps with $1000+ revenue, outlier treatment applied. Excluding Mainland China");
+    addSources("#geo-viz5", "Source: Moloco advertiser median D7 ARPPU across all organic and paid channels (August 2023 to August 2024). Only apps with more than $1000 (USD) D7 IAP revenue are included. Excluding Mainland China.");
 
     window.onclick = function(event) {
         if (!event.target.matches('#genre-dropbtn')) {
@@ -114,7 +114,7 @@ function drawViz5() {
                     .attr("y", d => y(d[ylabel]))
                     .attr("width", d => x(d[xlabel]))
                     .attr("height", y.bandwidth() )
-                    .attr("fill", "#C368F9");
+                    .attr("fill", "#0280FB");
 
             xAxis.call(d3.axisBottom(x).ticks(14));
             xAxis.select(".domain").remove();

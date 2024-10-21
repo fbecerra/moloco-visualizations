@@ -26,16 +26,32 @@ function drawViz6() {
             d.ARPPU = +d.ARPPU;
         })
 
-        // const groups = getUniquesMenu(values, 'Tier');
-        const groups = ['US and English Language', 'Europe & Middle East (Tier 1)', 
-            'LATAM Spanish Speaking', 'East Asia Pacific',
-            'Europe & Middle East (Tier 2)', 'Global Developing Markets'];
+        //const groups = getUniquesMenu(values, 'Tier');
+        //const groups = ['US and English Language', 'Europe & Middle East (Tier 1)', 
+        //   'LATAM Spanish Speaking', 'East Asia Pacific',
+        //   'Europe & Middle East (Tier 2)', 'Global Developing Markets'];
+        //const groups = getUniquesMenu(values, 'Tier');
+        //const groups = ['US and English Language', 'Europe & Middle East (Group 1)', 
+        //    'LATAM Spanish Speaking', 'East Asia Pacific',
+        //    'Europe & Middle East (Group 2)', 'Global Developing Markets'];
+        //const groupLabels = {
+        //    'US and English Language': "US and English Language", 
+        //    'Europe & Middle East (Group 1)': "Europe & Middle East (Group 1)", 
+        //    'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
+        //    'East Asia Pacific': "East Asia Pacific",
+        //    'Europe & Middle East (Group 2)': "Europe & Middle East (Group 2)", 
+        //    'Global Developing Markets': "Global Developing Markets"
+
+
+        const groups = ['US and English Language', 'East Asia Pacific',
+            'Europe & Middle East (Group 1)', 'Europe & Middle East (Group 2)',
+            'LATAM Spanish Speaking', 'Global Developing Markets'];
         const groupLabels = {
-            'US and English Language Markets': "US and English Language", 
-            'Europe & Middle East (Tier 1)': "Tier 1 European & Middle East", 
-            'LATAM Spanish Speaking': "LATAM Spanish Language", 
+            'US and English Language': "US and English Language", 
             'East Asia Pacific': "East Asia Pacific",
-            'Europe & Middle East (Tier 2)': "Tier 2 European & Middle East", 
+            'Europe & Middle East (Group 1)': "Europe & Middle East (Group 1)", 
+            'Europe & Middle East (Group 2)': "Europe & Middle East (Group 2)", 
+            'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
             'Global Developing Markets': "Global Developing Markets"
         }
         let selectedGroup = groups[0];
@@ -68,6 +84,18 @@ function drawViz6() {
 
         addTitle("#geo-viz6", "Mapping global opportunities ");
         addSubtitle("#geo-viz6", "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics for markets of interest")
+
+        // NEW to test
+
+        d3.select("#geo-viz6 .title")
+            .style("max-width", "700px")
+            .style("margin", "auto")
+
+        d3.select("#geo-viz6 .subtitle")
+            .style("max-width", "700px")
+            .style("margin", "8px auto 24px auto");
+
+        // End of NEW to test
 
         addBoldText("#geo-viz6", "Select country group")
 
@@ -164,7 +192,7 @@ function drawViz6() {
         }
 
         addBar("budget", "paid UA budget");
-        addBar("revenue", "gaming revenue");
+        addBar("revenue", "gaming IAP revenue");
         addBar("arppu", "D7 ARPPU");
 
         // addBoldText("#right-panel", "US ")
@@ -359,7 +387,7 @@ function drawViz6() {
                                         <tr>
                                             <td style="padding-right: ${paddingRows}px">paid UA budget
                                             </td>
-                                            <td style="padding-right: ${paddingRows}px">gaming revenue
+                                            <td style="padding-right: ${paddingRows}px">gaming IAP revenue
                                             </td>
                                             <td>D7 ARPPU
                                             </td>   
@@ -395,8 +423,11 @@ function drawViz6() {
 
         updatePlot();
 
-        addSources("#geo-viz6", "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Sep 2023 to August 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included.")
+        addSources("#geo-viz6", "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included.")
 
+        d3.select("#geo-viz6 .sources")
+            .style("max-width", "700px")
+            .style("margin", "16px auto 0 auto");
         
     })
 

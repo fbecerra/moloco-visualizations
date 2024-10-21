@@ -3,8 +3,8 @@ function drawViz2() {
 
     clearDiv("#geo-viz2");
     centerDiv("#geo-viz2");
-    addTitle("#geo-viz2", "RPG games tend to target East Asia, while Match and Casino games focus on English-speaking regions");
-    addSubtitle("#geo-viz2", "Estimated user acquisition spend by country within genre");
+    addTitle("#geo-viz2", "RPG is popular in East Asia, while Match and Casino thrive in English-speaking regions");
+    addSubtitle("#geo-viz2", "2025 estimated user acquisition spend by country within genre");
     
     d3.select("#geo-viz2")
         .append("div")
@@ -61,7 +61,7 @@ function drawViz2() {
         .range([0, height])
         .padding(.15);
 
-    addSources("#geo-viz2", "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.")
+    addSources("#geo-viz2", "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.")
     
     
     Promise.all([

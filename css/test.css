@@ -86,6 +86,14 @@
     margin-top: 8px;
 }
 
+/* NEW - to remove if issue */
+
+#geo-viz6 {
+    background-color: white; /* Ensure the main container has a white background */
+}
+
+/* END OF NEW - to remove if issue */
+
 #geo-viz6 .grid-wrapper {
     display: grid;
     grid-template-rows: 1fr;
@@ -94,6 +102,7 @@
     grid-auto-columns: 1fr;
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
+    background-color: white; /* Ensure the grid wrapper (main chart area) is white */
 }
 
 #geo-viz6 .left-panel {
@@ -104,7 +113,31 @@
     grid-auto-columns: 1fr;
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
+    background-color: white; /* Ensure the left panel has a white background */
 }
+
+/* NEW - to remove if issue */
+
+#geo-viz6 .right-panel {
+    background-color: #ECEDEE; /* Keep the grey background for the right panel */
+    /* padding: 8px 10px; */
+}
+
+#geo-viz6 .button-wrapper-viz .country-button {
+    background-color: #ECEDEE; /* Apply grey background to the buttons */
+    /* color: black; */
+    /* padding: 10px; */
+    /* cursor: pointer;
+    /* font-weight: 400; */
+}
+
+#geo-viz6 .button-wrapper-viz .country-button.selected {
+    background-color: #0280FB; /* Apply blue background to selected buttons */
+    color: white;
+    font-weight: 700;
+}
+
+/* END OF NEW - to remove if issue */
 
 #geo-viz6 .button-wrapper-viz {
     display: grid;
