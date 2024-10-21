@@ -272,7 +272,7 @@ figure p {
 }
 
 .step.is-active p {
-    background-color: #F3F3F3;
+    background-color: #ecf6fc;
     border: 0.5px solid #000000;
     color: #000000;
 }
@@ -281,7 +281,7 @@ figure p {
     opacity: 1;
     text-align: center;
     font-size: 16px;
-    background-color: #F3F3F3;
+    background-color: #ecf6fc;
     border: 0.5px solid #000000;
 }
 
