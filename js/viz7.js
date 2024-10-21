@@ -159,17 +159,17 @@ function drawViz7() {
 
         const rect = tooltip.append("rect")
             .attr("height", '32px')
-            .attr("width", '80px')
+            .attr("width", '120px')
             .attr("fill", "#0280FB");
 
         const triangle = tooltip.append("path")
-            .attr("d", "M30 30 L50 30 L40 40 z")
+            .attr("d", "M50 30 L70 30 L60 40 z")
             .attr("fill", "#0280FB")
 
         const text = tooltip.append('text')
             .attr("fill", "#FFF")
             .attr("y", 22)
-            .attr("x", 40)
+            .attr("x", 60)
             .attr("text-anchor", "middle")
             .style("font-family", 'Spacegrotesk')
             .style("font-size", "16px")
@@ -207,10 +207,10 @@ function drawViz7() {
                         if (d.hasOwnProperty('children') & index !== 0) {
                             const thisCountry = filteredData.filter(fd => fd.Market === d.data.name)[0];
 
-                            tooltip.attr("transform", `translate(${d.x-40},${d.y - d.r - 10 - 32})`)
+                            tooltip.attr("transform", `translate(${d.x-60},${d.y - d.r - 10 - 32})`)
                                 .style("display", "block")
 
-                            text.text(`$${thisCountry['Median ARRPU'].toFixed(1)}`);
+                            text.text(`ARPPU: $${thisCountry['Median ARRPU'].toFixed(1)}`);
                         }
                     })
                     .on("mouseout", (evt, d) => {
