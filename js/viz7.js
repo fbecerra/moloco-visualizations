@@ -13,7 +13,7 @@ function drawViz7() {
     const main = d3.select("#geo-viz7")
         .style("font-family", 'Montserrat')
         .style("font-size", '14px')
-        .style("max-width", smallScreen ? "95%" : "80%")
+        .style("max-width", smallScreen ? "100%" : "80%")
         .style("margin", "auto");
 
     const scrolly = main.append("section")
