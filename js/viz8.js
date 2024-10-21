@@ -374,7 +374,7 @@ function drawViz8() {
                             const color = e < thisValue.value ? blue : gray;
                             return `<div class="square" style="display: inline-block;margin-right:2px;width: 15px;height: 15px; background-color: ${color}"></div>`
                         }).join("");
-                        const svgHtml = thisValue['good/bad'] === 'good' ? legendSvgBselie['Good']: thisValue['good/bad'] === 'bad' ? legendSvgBselie['Limited'] : legendSvgBselie['Moderate'];
+                        const svgHtml = thisValue['good/bad'] === 'good' ? legendSvgBaseline['Good']: thisValue['good/bad'] === 'bad' ? legendSvgBaseline['Limited'] : legendSvgBaseline['Moderate'];
                         const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
                         return [squaresHtml + svgHtml + '</br>' + levelHtml]
                     })
@@ -389,7 +389,7 @@ function drawViz8() {
                             const color = e < thisValue.value ? blue : gray;
                             return `<div class="square" style="display: inline-block;margin-right:2px;width: 15px;height: 15px; background-color: ${color}"></div>`
                         }).join("");
-                        const svgHtml = thisValue['good/bad'] === 'good' ? legendSvgBselie['Good']: thisValue['good/bad'] === 'bad' ? legendSvgBselie['Limited'] : legendSvgBselie['Moderate'];
+                        const svgHtml = thisValue['good/bad'] === 'good' ? legendSvgBaseline['Good']: thisValue['good/bad'] === 'bad' ? legendSvgBaseline['Limited'] : legendSvgBaseline['Moderate'];
                         const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
                         return [squaresHtml + svgHtml + '</br>' + levelHtml]
                     })
