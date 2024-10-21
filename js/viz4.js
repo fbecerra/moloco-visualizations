@@ -105,7 +105,7 @@ function drawViz4() {
     
         // REVENUE
         g.selectAll(".title-revenue")
-            .data(['Revenue'])
+            .data(['IAP revenue'])
             .join("text")
                 .attr("class", "title-revenue")
                 .attr("x", x2(0) )
