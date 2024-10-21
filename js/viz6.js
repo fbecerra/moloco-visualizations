@@ -372,7 +372,7 @@ function drawViz6() {
             revenueLabel = revenueTotal < 1 ? '<1%' : revenueTotal + '%';
             [minARPPU, maxARPPU] = d3.extent(groupCountries, d => d.ARPPU);
             minMaxLabel = `$${minARPPU.toFixed(1)}-$${maxARPPU.toFixed(1)}`;
-\
+
             updateRightPanel();
 
             const abbvCountries = groupCountries.map(d => d.Market);
