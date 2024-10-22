@@ -33,7 +33,7 @@ function drawGlobe() {
         coords.forEach(d => {
             d.lat = +d.lat;
             d.long = +d.long;
-            d.size = Math.random() * 24;
+            d.size = Math.random() * 20;
         })
 
         svg.append("path")
