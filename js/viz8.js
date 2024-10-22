@@ -329,20 +329,23 @@ function drawViz8() {
                                 filteredMarkets.splice(i,1);
                                 filteredMarkets.unshift(d)
                             }
-                        })
+                        });
+
+                        const uniqueMarkets = getUniques(filteredMarkets, 'Market full name');
                         
-                        return getUniques(filteredMarkets, 'Market full name').map((market, i) => {
+                        return uniqueMarkets.map((market, i) => {
                             return {
                                 'Tier': d,
                                 'Market full name': market,
                                 'data': markets.filter(e => (e.Tier === d) & (e['Market full name'] === market) & (e.genre === selectedGenre)),
-                                'index': i
+                                'index': i,
+                                'noDropdown': uniqueMarkets.length <= 1
                             }
                         })
                     })
                     .join("div")
                         // .attr("class", (d, i) => groupLabels[d.Tier] === d['Market full name'] ? 'grid-row grid-wrapper row-head' : `grid-row grid-wrapper row-name row-${nameNoSpaces(d.Tier)}`)
-                        .attr("class", (d, i) => i === 0 ? 'grid-row grid-wrapper row-head' : `grid-row grid-wrapper row-item row-${nameNoSpaces(d.Tier)}`)
+                        .attr("class", (d, i) => i === 0 ? d.noDropdown ? 'grid-row grid-wrapper row-head no-dropdown' : 'grid-row grid-wrapper row-head' : `grid-row grid-wrapper row-item row-${nameNoSpaces(d.Tier)}`)
                         .on("click", (evt, d) => {
                             if (d.index === 0) {
                                 let row = gridRow.filter(gr => gr === d);
