@@ -97,7 +97,7 @@ function drawViz6() {
             .style("margin", "auto");;
 
         addTitle("#title-wrapper", "Mapping global opportunities ");
-        addSubtitle("#title-wrapper", "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics for markets of interest")
+        addSubtitle("#title-wrapper", "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics by region. Hover over individual countries for a market-level overview.")
             
 
         // // NEW to test

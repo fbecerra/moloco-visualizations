@@ -2,7 +2,7 @@ function drawViz5() {
     clearDiv("#geo-viz5");
     centerDiv("#geo-viz5");
     addTitle("#geo-viz5", "East Asia Pacific leads when it comes to average revenue per paying user, although this picture changes by OS and genre")   
-    addSubtitle("#geo-viz5", "D7 ARPPU ($ USD) for top 15 countries");
+    addSubtitle("#geo-viz5", "D7 ARPPU ($USD) for top 15 countries");
 
     const dropdowns = d3.select("#geo-viz5")
         .append("div")
