@@ -63,6 +63,7 @@ function drawViz6() {
             'Global Developing Markets': "Consisting of a wide range of developing countries, these markets have the largest variability of user value with significant differences across genres. However, there are pockets of opportunity for marketers to capture high-value users at a potentially cost efficient price."
         }
         let selectedGroup = groups[0];
+        let selectedGenre ='All genres';
 
         const [min, max] = d3.extent(values, d => d.ARPPU);
 
@@ -290,7 +291,6 @@ function drawViz6() {
             .attr("class", "dropdown-content")
             .attr("id", "select-content");
 
-        let selectedGenre ='All genres';
         const genre = getUniquesMenu(values, 'Genre');;
         let genreOpts = addOptions("select-content", genre);
 
@@ -386,7 +386,7 @@ function drawViz6() {
                     .attr("d", path)
                     .on("mousemove", (evt, d) => {
                         if (abbvCountries.indexOf(d.properties.a3) >= 0){
-                            const thisCountry = values.filter(v => v.Market === d.properties.a3)[0];
+                            const thisCountry = values.filter(v => (v.Market === d.properties.a3) & (v.Genre === selectedGenre))[0];
                             d3.select(evt.target).attr("fill", "#C368F9");
 
                             tooltip.style("display", "inline-block")
