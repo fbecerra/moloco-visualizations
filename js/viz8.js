@@ -35,7 +35,7 @@ function drawViz8() {
             .style("margin", "0 auto 24px auto");
 
     addBoldText("#legend-wrapper", "How to read this graphic");
-    addSubtitle("#legend-wrapper", "High and low values can have different meanings for each metric. </br>The icons help you interpret them.")
+    addSubtitle("#legend-wrapper", "High and low values can have different meanings for each metric. </br>The icons help you interpret them.<br>Countries that do not meet minimum thresholds are not shown.")
 
     const legendItems = ['Good', 'Moderate', 'Limited', 'Opportunity'];
     const legendSvg = {
