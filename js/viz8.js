@@ -35,7 +35,7 @@ function drawViz8() {
             .style("margin", "0 auto 24px auto");
 
     addBoldText("#legend-wrapper", "How to read this graphic");
-    addSubtitle("#legend-wrapper", "High and low values can have different meanings for each metric. </br>The icons help you interpret them.<br>Countries that do not meet minimum thresholds are not shown.")
+    addSubtitle("#legend-wrapper", "High and low values can have different meanings for each metric. </br>The icons help you interpret them.")
 
     const legendItems = ['Good', 'Moderate', 'Limited', 'Opportunity'];
     const legendSvg = {
@@ -418,7 +418,7 @@ function drawViz8() {
         }
 
         updatePlot();
-        addSources("#geo-viz8", "Source: Moloco campaign outcomes from August 2023 to August 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU).")
+        addSources("#geo-viz8", "Source: Moloco campaign outcomes from August 2023 to August 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU). Countries that do not meet minimum thresholds are not shown.")
 
         d3.select("#geo-viz8 .sources")
             .style("max-width", "700px")
