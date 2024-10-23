@@ -15,7 +15,7 @@ GBR,U.K.,Simulation,2.80%,2.59%,5.39%
 BRA,Brazil,Simulation,3.00%,0.65%,3.66%
 JPN,Japan,Simulation,2.10%,1.39%,3.50%
 FRA,France,Simulation,2.14%,1.06%,3.20%
-TUR,Turkiye,Simulation,2.49%,0.51%,3.00%
+TUR,Turkey,Simulation,2.49%,0.51%,3.00%
 RUS,Russia,Simulation,1.98%,0.95%,2.93%
 CAN,Canada,Simulation,1.37%,1.52%,2.89%
 KOR,South Korea,Simulation,1.96%,0.46%,2.42%
@@ -67,7 +67,7 @@ JPN,Japan,Casino,0.60%,1.93%,2.54%
 VNM,Vietnam,Casino,1.62%,0.77%,2.38%
 TWN,Taiwan,Casino,0.72%,1.48%,2.20%
 CAN,Canada,Casino,0.53%,1.47%,2.00%
-TUR,Turkiye,Casino,0.95%,0.68%,1.64%
+TUR,Turkey,Casino,0.95%,0.68%,1.64%
 FRA,France,Casino,0.42%,1.11%,1.53%
 USA,U.S.,Action,14.97%,15.22%,30.19%
 DEU,Germany,Action,3.95%,1.50%,5.45%
@@ -75,7 +75,7 @@ RUS,Russia,Action,2.82%,1.14%,3.96%
 FRA,France,Action,2.52%,1.27%,3.79%
 BRA,Brazil,Action,3.28%,0.50%,3.78%
 GBR,U.K.,Action,2.28%,1.48%,3.76%
-TUR,Turkiye,Action,2.54%,1.01%,3.55%
+TUR,Turkey,Action,2.54%,1.01%,3.55%
 KOR,South Korea,Action,2.05%,0.54%,2.59%
 JPN,Japan,Action,1.40%,1.16%,2.55%
 IDN,Indonesia,Action,2.16%,0.38%,2.54%
@@ -88,7 +88,7 @@ RUS,Russia,Hypercasual,1.66%,2.37%,4.03%
 FRA,France,Hypercasual,1.98%,1.58%,3.56%
 JPN,Japan,Hypercasual,1.12%,1.37%,2.49%
 MEX,Mexico,Hypercasual,1.76%,0.62%,2.39%
-TUR,Turkiye,Hypercasual,1.48%,0.89%,2.37%
+TUR,Turkey,Hypercasual,1.48%,0.89%,2.37%
 USA,U.S.,Party,28.40%,32.78%,61.18%
 GBR,U.K.,Party,3.02%,2.32%,5.33%
 DEU,Germany,Party,2.14%,2.09%,4.23%
