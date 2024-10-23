@@ -27,7 +27,7 @@ Global Developing Markets,IRQ,Iraq,0.001,0.002,4.81,All genres
 Global Developing Markets,PAK,Pakistan,0.000,0.001,0.21,All genres
 Global Developing Markets,NGA,Nigeria,0.000,0.001,5.55,All genres
 Europe & Middle East (Group 2),RUS,Russia,0.013,0.020,4.85,All genres
-Europe & Middle East (Group 2),TUR,Turkey ,0.010,0.019,9.03,All genres
+Europe & Middle East (Group 2),TUR,Turkey,0.010,0.019,9.03,All genres
 Europe & Middle East (Group 2),POL,Poland,0.008,0.010,11.86,All genres
 Europe & Middle East (Group 2),SAU,Saudi Arabia,0.004,0.010,12.72,All genres
 Europe & Middle East (Group 2),UKR,Ukraine,0.004,0.005,11.18,All genres
@@ -87,7 +87,7 @@ Global Developing Markets,IND,India,0.008,0.004,27.81,Casino
 Global Developing Markets,MYS,Malaysia,0.008,0.003,17.86,Casino
 Global Developing Markets,ZAF,South Africa,0.002,0.004,18.42,Casino
 Europe & Middle East (Group 2),RUS,Russia,0.001,0.002,26.62,Casino
-Europe & Middle East (Group 2),TUR,Turkey ,0.020,0.016,19.05,Casino
+Europe & Middle East (Group 2),TUR,Turkey,0.020,0.016,19.05,Casino
 Europe & Middle East (Group 2),POL,Poland,0.006,0.004,18.14,Casino
 Europe & Middle East (Group 2),UKR,Ukraine,0.001,0.003,16.52,Casino
 Europe & Middle East (Group 2),ROU,Romania,0.003,0.002,16.86,Casino
@@ -136,7 +136,7 @@ Global Developing Markets,ZAF,South Africa,0.004,0.005,11.12,Match
 Global Developing Markets,KAZ,Kazakhstan,0.001,0.002,6.43,Match
 Global Developing Markets,EGY,Egypt,0.001,0.002,1.09,Match
 Europe & Middle East (Group 2),RUS,Russia,0.007,0.007,0.29,Match
-Europe & Middle East (Group 2),TUR,Turkey ,0.008,0.016,5.79,Match
+Europe & Middle East (Group 2),TUR,Turkey,0.008,0.016,5.79,Match
 Europe & Middle East (Group 2),POL,Poland,0.007,0.009,6.74,Match
 Europe & Middle East (Group 2),SAU,Saudi Arabia,0.004,0.006,5.19,Match
 Europe & Middle East (Group 2),UKR,Ukraine,0.003,0.003,6.21,Match
@@ -194,7 +194,7 @@ Global Developing Markets,MYS,Malaysia,0.006,0.006,17.91,RPG
 Global Developing Markets,ZAF,South Africa,0.001,0.001,15.27,RPG
 Global Developing Markets,KAZ,Kazakhstan,0.001,0.001,14.38,RPG
 Europe & Middle East (Group 2),RUS,Russia,0.012,0.019,22.59,RPG
-Europe & Middle East (Group 2),TUR,Turkey ,0.005,0.004,16.86,RPG
+Europe & Middle East (Group 2),TUR,Turkey,0.005,0.004,16.86,RPG
 Europe & Middle East (Group 2),POL,Poland,0.004,0.008,17.09,RPG
 Europe & Middle East (Group 2),SAU,Saudi Arabia,0.002,0.003,33.87,RPG
 Europe & Middle East (Group 2),UKR,Ukraine,0.004,0.004,16.25,RPG
@@ -254,7 +254,7 @@ Global Developing Markets,KAZ,Kazakhstan,0.002,0.004,5.04,Simulation
 Global Developing Markets,EGY,Egypt,0.001,0.003,0.47,Simulation
 Global Developing Markets,IRQ,Iraq,0.000,0.002,1.90,Simulation
 Europe & Middle East (Group 2),RUS,Russia,0.012,0.029,0.86,Simulation
-Europe & Middle East (Group 2),TUR,Turkey ,0.009,0.030,6.26,Simulation
+Europe & Middle East (Group 2),TUR,Turkey,0.009,0.030,6.26,Simulation
 Europe & Middle East (Group 2),POL,Poland,0.007,0.014,9.98,Simulation
 Europe & Middle East (Group 2),SAU,Saudi Arabia,0.004,0.014,9.25,Simulation
 Europe & Middle East (Group 2),UKR,Ukraine,0.004,0.006,7.11,Simulation
@@ -312,7 +312,7 @@ Global Developing Markets,ZAF,South Africa,0.001,0.002,16.52,Strategy
 Global Developing Markets,KAZ,Kazakhstan,0.002,0.002,20.03,Strategy
 Global Developing Markets,EGY,Egypt,0.001,0.002,28.81,Strategy
 Europe & Middle East (Group 2),RUS,Russia,0.027,0.024,25.62,Strategy
-Europe & Middle East (Group 2),TUR,Turkey ,0.015,0.018,19.03,Strategy
+Europe & Middle East (Group 2),TUR,Turkey,0.015,0.018,19.03,Strategy
 Europe & Middle East (Group 2),POL,Poland,0.009,0.012,17.03,Strategy
 Europe & Middle East (Group 2),SAU,Saudi Arabia,0.012,0.027,40.30,Strategy
 Europe & Middle East (Group 2),UKR,Ukraine,0.007,0.005,17.71,Strategy
