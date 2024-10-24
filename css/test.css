@@ -272,6 +272,7 @@ figure p {
 
 .step {
     margin: 0 auto 10px auto;
+    z-index: 10;
 }
 
 
