@@ -196,17 +196,29 @@ function drawViz8() {
                         .attr("class", 'data-grid')
 
                 const gridRow = dataGrid.selectAll(".grid-row")
-                    .data(d => getUniques(markets.filter(market => (market.Tier === d) & (market.genre === selectedGenre)), 'Market full name').map((market, i) => {
-                        return {
-                            'Tier': d,
-                            'Market full name': market,
-                            'data': markets.filter(e => (e.Tier === d) & (e['Market full name'] === market) & (e.genre === selectedGenre)),
-                            'index': i
-                        }
-                    }))
+                    .data(d => {
+                        const filteredMarkets = markets.filter(market => (market.Tier === d) & (market.genre === selectedGenre));
+                        filteredMarkets.forEach((d,i) => {
+                            if (d.Market === 'All countries') {
+                                filteredMarkets.splice(i,1);
+                                filteredMarkets.unshift(d)
+                            }
+                        });
+
+                        const uniqueMarkets = getUniques(filteredMarkets, 'Market full name');
+                        
+                        return uniqueMarkets.map((market, i) => {
+                            return {
+                                'Tier': d,
+                                'Market full name': market,
+                                'data': markets.filter(e => (e.Tier === d) & (e['Market full name'] === market) & (e.genre === selectedGenre)),
+                                'index': i,
+                                'noDropdown': uniqueMarkets.length <= 1
+                            }
+                        })
+                    })
                     .join("div")
-                        // .attr("class", (d, i) => groupLabels[d.Tier] === d['Market full name'] ? 'grid-row grid-wrapper row-head' : `grid-row grid-wrapper row-name row-${nameNoSpaces(d.Tier)}`)
-                        .attr("class", (d, i) => i === 0 ? 'grid-row row-head' : `grid-row row-item row-${nameNoSpaces(d.Tier)}`)
+                        .attr("class", (d, i) => i === 0 ? d.noDropdown ? 'grid-row row-head no-dropdown' : 'grid-row row-head' : `grid-row row-item row-${nameNoSpaces(d.Tier)}`)
                         .on("click", (evt, d) => {
                             if (d.index === 0) {
                                 let row = gridRow.filter(gr => gr === d);
@@ -217,12 +229,6 @@ function drawViz8() {
                                 row.classed("clicked", !clicked);
                         }
                         })
-
-                // gridRow.selectAll(".row-opportunity")
-                //     .data(d => [d.data[0].OPPORTUNITY])
-                //     .join("div")
-                //         .attr("class", 'row-opportunity')
-                //         .html(d => d === 'YES' ? legendSvg['Opportunity'] : '');
 
                 gridRow.selectAll(".row-name")
                     .data(d => [d])
@@ -274,8 +280,9 @@ function drawViz8() {
                 dataWrapper.selectAll(".row-revenue")
                     .data(d => {
                         const thisValue = d.data.filter(d => d['type of value'] === 'Revenue Potential')[0];
+                        const value = (thisValue.value * 100).toFixed(0);
                         const rectHtml = `<div class="bar" style="display: inline-block;margin-right:10px;margin-top: 2px;margin-bottom:6px;width: ${thisValue.value * maxWidthBar}px;height: 10px; background-color: ${blue}"></div>`;
-                        const numberHtml = `<div class='bar-value' style='font-weight: 700;'>${(thisValue.value * 100).toFixed(0)}%</div>`;
+                        const numberHtml = value < 1 ? `<div class='bar-value' style="font-weight: 700;"><1%</div>` : `<div class='bar-value' style="font-weight: 700;">${value}%</div>`;
                         return [rectHtml + '</br>' + numberHtml];
                     })
                     .join("div")
@@ -407,7 +414,7 @@ function drawViz8() {
                         const thisValue = d.data.filter(d => d['type of value'] === 'Revenue Potential')[0];
                         const value = (thisValue.value * 100).toFixed(0);
                         const rectHtml = `<div class="bar" style="display: inline-block;line-height: 24px;margin-right:10px;width: ${thisValue.value * maxWidthBar}px;height: 15px; background-color: ${blue}"></div>`;
-                        const numberHtml = value < 1 ? `<div class='bar-value' style="line-height: 24px; vertical-align: bottom;"><1%</div>` : `<div class='bar-value' style="line-height: 24px; vertical-align: bottom;">${(thisValue.value * 100).toFixed(0)}%</div>`;
+                        const numberHtml = value < 1 ? `<div class='bar-value' style="line-height: 24px; vertical-align: bottom;"><1%</div>` : `<div class='bar-value' style="line-height: 24px; vertical-align: bottom;">${value}%</div>`;
                         return [rectHtml + numberHtml];
                     })
                     .join("div")
