@@ -392,5 +392,6 @@ figure p {
     font-size: 26px;
     line-height: 26px;
     background-color: #FFFFFF;
-
+    color: black;
+    border-radius: 0px;
 }
