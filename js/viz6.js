@@ -329,13 +329,21 @@ function drawViz6() {
         //     .center([0, 0])
         //     .translate([width/2, height/2])
         //     .scale(width / (2 * Math.PI))
-        const path = d3.geoPath(projection);
+        let path = d3.geoPath(projection);
+
 
         const svg = vizWrapper.append("svg")
             .attr("width", width)
             .attr("height", height)
             .attr("viewBox", [0, 0, width, height])
             .attr("style", "max-width: 100%; height: auto;");
+
+        vizWrapper.append("div")
+            .attr("class", "buttons")
+            .html('<div class="row"><div class="button" id="zoom-in">+</div></div><div class="row"><div class="button" id="zoom-out">-</div></div>' + 
+                '<div class="row"><div class="button" id="zoom-reset"><svg width="26" height="26" viewBox="-5 -5 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                '<path d="M8.67071 8.95948C7.10583 10.8527 4.28501 11.0208 2.36518 9.29474C0.445358 7.56869 0.202351 4.64596 1.76723 2.75279C3.33211 0.859615 6.16609 0.703294 8.05961 2.4057L9.47976 3.68251L6.42735 3.82578L6.46843 4.27523L10.2631 4.06592L9.89161 0.133917L9.45931 0.157762L9.7623 3.34068L8.34216 2.06388C6.26454 0.19596 3.14237 0.368178 1.42535 2.44541C-0.291677 4.52264 0.00501632 7.76864 2.08263 9.63656C4.16025 11.5045 7.29329 11.3191 8.99945 9.25504L8.67071 8.95948Z" fill="#000000" />' +
+                '</svg></div></div>');
         
         const g = svg.append("g");
 
@@ -346,6 +354,37 @@ function drawViz6() {
         let revenueWidth;
         let minARPPU, maxARPPU;
         let minMaxLabel;
+
+        const maxZoom = 8;
+        const minZoom = 1;
+
+        const zoom = d3.zoom()
+            .extent([[0, 0], [width, height]])
+            .scaleExtent([minZoom, maxZoom])
+            .on("zoom", zoomed)
+
+        function zoomed({transform}) {
+            g.attr("transform", transform);
+            g.selectAll(".country-edge")    
+                .attr("stroke-width", 1 / transform.k)
+        }
+
+        svg.call(zoom);
+
+        d3.select("#zoom-in")
+            .on("click", ({ transform }) => {
+                svg.transition().call(zoom.scaleBy, 2);
+            });
+
+        d3.select("#zoom-out")
+            .on("click", ({ transform }) => {
+                svg.transition().call(zoom.scaleBy, 0.5);
+            });
+
+        d3.select("#zoom-reset")
+            .on("click", () => {
+                svg.call(zoom.transform, d3.zoomIdentity);
+            });
 
         function updateRightPanel() {
             countriesString.html(countriesLabel);
@@ -378,9 +417,10 @@ function drawViz6() {
             const abbvCountries = groupCountries.map(d => d.Market);
             const paddingRows = 36;
 
-            g.selectAll("path")
+            g.selectAll(".country-path")
                 .data(countries.features)
                 .join("path")
+                    .attr("class", "country-path")
                     // .attr("fill", d => color(valuemap.get(d.properties.name)))
                     .attr("fill", d => abbvCountries.indexOf(d.properties.a3) >= 0 ? blue : gray)
                     .attr("d", path)
@@ -434,8 +474,9 @@ function drawViz6() {
                     })
         
         
-            svg.append("path")
+            g.append("path")
                 .datum(countrymesh)
+                .attr("class", 'country-edge')
                 .attr("fill", "none")
                 .attr("stroke", "white")
                 .attr("d", path);

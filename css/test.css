@@ -373,3 +373,24 @@ figure p {
     visibility: visible;
     opacity: 1;
 }
+
+.buttons {
+    margin-top: -120px;
+    margin-left: 20px;
+}
+
+.button {
+    border: 1px solid black;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 0;
+    text-align: center;
+    font-size: 26px;
+    line-height: 26px;
+    background-color: #FFFFFF;
+
+}
