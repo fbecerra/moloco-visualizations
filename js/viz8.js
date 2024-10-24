@@ -236,7 +236,7 @@ function drawViz8() {
                         .attr("class", 'row-name')
                         .style("font-weight", 700)
                         .style("padding", "4px")
-                        .html(d => d.data[0].OPPORTUNITY === 'YES' ? d['Market full name'] + legendSvgSmall['Opportunity'] : d['Market full name']);
+                        .html(d => d.data[0].OPPORTUNITY === 'YES' ? d['Market full name'] + legendSvgSmallBaseline['Opportunity'] : d['Market full name']);
 
                 const dataWrapper = gridRow.selectAll(".grid-wrapper")
                         .data(d => [d])
