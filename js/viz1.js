@@ -1,6 +1,6 @@
 function drawViz1() {
     const drawBars1 = (spend, divId, xlabels, ylabel, colors, title, subtitle, sources) => {
-        const graphWidth = Math.min(screen.width, 600);
+        const graphWidth = Math.min(screen.width - 40, 600);
 
         clearDiv(divId);
         centerDiv(divId);
