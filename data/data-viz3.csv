@@ -2,7 +2,7 @@ HQ country,HQ country full name,Destination,Total
 CHN,China,North America,0.358
 USA,U.S.,North America,0.598
 CYP,Cyprus,North America,0.309
-TUR,Turkiye,North America,0.447
+TUR,Turkey,North America,0.447
 VNM,Vietnam,North America,0.253
 GBR,U.K.,North America,0.375
 KOR,South Korea,North America,0.278
@@ -16,7 +16,7 @@ IND,India,North America,0.348
 CHN,China,Europe,0.251
 USA,U.S.,Europe,0.218
 CYP,Cyprus,Europe,0.323
-TUR,Turkiye,Europe,0.281
+TUR,Turkey,Europe,0.281
 VNM,Vietnam,Europe,0.301
 GBR,U.K.,Europe,0.302
 KOR,South Korea,Europe,0.216
@@ -30,7 +30,7 @@ IND,India,Europe,0.330
 CHN,China,Asia Pacific,0.269
 USA,U.S.,Asia Pacific,0.099
 CYP,Cyprus,Asia Pacific,0.179
-TUR,Turkiye,Asia Pacific,0.167
+TUR,Turkey,Asia Pacific,0.167
 VNM,Vietnam,Asia Pacific,0.239
 GBR,U.K.,Asia Pacific,0.155
 KOR,South Korea,Asia Pacific,0.407
@@ -44,7 +44,7 @@ IND,India,Asia Pacific,0.158
 CHN,China,Rest of World,0.122
 USA,U.S.,Rest of World,0.084
 CYP,Cyprus,Rest of World,0.189
-TUR,Turkiye,Rest of World,0.105
+TUR,Turkey,Rest of World,0.105
 VNM,Vietnam,Rest of World,0.208
 GBR,U.K.,Rest of World,0.168
 KOR,South Korea,Rest of World,0.100

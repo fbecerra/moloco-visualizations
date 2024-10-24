@@ -101,7 +101,7 @@ function drawViz5() {
             const xlabel = selectedOS === 'All systems' ? 'Total' : selectedOS,
                 ylabel = 'Market full name';
             const dataToPlot = revenue.filter(d => d.Genre === selectedGenre)
-                .sort((a,b) => b[xlabel] - a[xlabel]);
+                .sort((a,b) => b[xlabel] - a[xlabel]).slice(0,15);
 
             x.domain([0, Math.max(d3.max(revenue, d => d[xlabel]), 20)]);
             y.domain(dataToPlot.map(d => d[ylabel]));
