@@ -440,8 +440,8 @@ function drawViz6() {
                             const thisCountrySpend = (thisCountry['UA Spend'] * 100).toFixed(1);
                             const thisCountryRevenue = (thisCountry.Revenue * 100).toFixed(1);
 
-                            const spendLabel = thisCountrySpend < 0.1 ? '<0.1' : '' + thisCountrySpend; 
-                            const revenueLabel = thisCountryRevenue < 0.1 ? '<0.1' : '' + thisCountryRevenue; 
+                            const spendLabel = d.properties.a3 === 'HKG' ? 'N/A' : thisCountrySpend < 0.1 ? '<0.1%' : thisCountrySpend + '%'; 
+                            const revenueLabel = thisCountryRevenue < 0.1 ? '<0.1%' : thisCountryRevenue + '%'; 
 
                             tooltip.style("display", "inline-block")
                                 .html(`
@@ -451,9 +451,9 @@ function drawViz6() {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="padding-right: ${paddingRows}px;font-family: 'Spacegrotesk';font-size: 14px;font-weight: 500;padding-bottom: 6px">${spendLabel}%
+                                            <td style="padding-right: ${paddingRows}px;font-family: 'Spacegrotesk';font-size: 14px;font-weight: 500;padding-bottom: 6px">${spendLabel}
                                             </td>
-                                            <td style="padding-right: ${paddingRows}px;font-family: 'Spacegrotesk';font-size: 14px;font-weight: 500;padding-bottom: 6px">${revenueLabel}%
+                                            <td style="padding-right: ${paddingRows}px;font-family: 'Spacegrotesk';font-size: 14px;font-weight: 500;padding-bottom: 6px">${revenueLabel}
                                             </td>
                                             <td style="font-family: 'Spacegrotesk';font-size: 14px;font-weight: 500;padding-bottom: 6px">$${thisCountry.ARPPU}
                                             </td>
