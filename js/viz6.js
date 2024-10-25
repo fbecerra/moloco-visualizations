@@ -227,7 +227,7 @@ function drawViz6() {
             dropdown.append("div")
                 .attr("class", "dropdown-content")
                 .attr("id", "select-content-tier")
-                .style("width", '208');
+                //.style("width", '208');
 
             let tierOpts = addOptions("select-content-tier", groups);
 
