@@ -218,7 +218,8 @@ function drawViz6() {
             const dropdown = leftPanel.append("div")
                 .attr("class", "dropdown")
                 .attr("id", "select-dropdown-tier")
-                .style("width", '300px');
+                .style("width", '100%')  // Changed from 300px to 100%
+                .style("max-width", "100%"); // NEW
             
             dropdown.append("div")
                 .attr("class", "dropbtn")
