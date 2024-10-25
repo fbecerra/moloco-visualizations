@@ -224,11 +224,13 @@ function drawViz6() {
             dropdown.append("div")
                 .attr("class", "dropbtn")
                 .attr("id", "select-dropbtn-tier");
+                .style("width", "100%");  // Make button span full width
             
             dropdown.append("div")
                 .attr("class", "dropdown-content")
                 .attr("id", "select-content-tier")
-                .style("width", '208');
+                //.style("width", '208');
+                .style("width", "100%");  // Make button span full width
 
             let tierOpts = addOptions("select-content-tier", groups);
 
