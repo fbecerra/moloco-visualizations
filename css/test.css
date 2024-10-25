@@ -396,3 +396,11 @@ figure p {
     color: black;
     border-radius: 0px;
 }
+
+#select-dropbtn-tier {
+    width: 236px;
+}
+
+#select-content-tier {
+    width: 260px;
+}
