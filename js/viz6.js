@@ -10,7 +10,7 @@ function drawViz6() {
     const darkerGray = "#D9D9D9";
 
     Promise.all([
-        d3.json('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/world-110m-2024.json'),
+        d3.json('https://cdn.jsdelivr.net/npm/visionscarto-world-atlas@1/world/50m.json'),
         d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz6.csv')
     ]).then((data) => {
 
@@ -363,7 +363,7 @@ function drawViz6() {
         let minARPPU, maxARPPU;
         let minMaxLabel;
 
-        const maxZoom = 8;
+        const maxZoom = 16;
         const minZoom = 1;
 
         const zoom = d3.zoom()
