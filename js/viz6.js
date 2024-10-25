@@ -338,11 +338,19 @@ function drawViz6() {
             .attr("viewBox", [0, 0, width, height])
             .attr("style", "max-width: 100%; height: auto;");
 
+        //vizWrapper.append("div")
+        //    .attr("class", "buttons")
+        //    .html('<div class="row"><div class="button" id="zoom-in">+</div></div><div class="row"><div class="button" id="zoom-out">-</div></div>' + 
+        //        '<div class="row"><div class="button" id="zoom-reset"><svg width="26" height="26" viewBox="-5 -5 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+        //        '<path d="M8.67071 8.95948C7.10583 10.8527 4.28501 11.0208 2.36518 9.29474C0.445358 7.56869 0.202351 4.64596 1.76723 2.75279C3.33211 0.859615 6.16609 0.703294 8.05961 2.4057L9.47976 3.68251L6.42735 3.82578L6.46843 4.27523L10.2631 4.06592L9.89161 0.133917L9.45931 0.157762L9.7623 3.34068L8.34216 2.06388C6.26454 0.19596 3.14237 0.368178 1.42535 2.44541C-0.291677 4.52264 0.00501632 7.76864 2.08263 9.63656C4.16025 11.5045 7.29329 11.3191 8.99945 9.25504L8.67071 8.95948Z" fill="#000000" />' +
+        //        '</svg></div></div>');
+
+        // Update the buttons HTML string with a thicker reset icon
         vizWrapper.append("div")
             .attr("class", "buttons")
             .html('<div class="row"><div class="button" id="zoom-in">+</div></div><div class="row"><div class="button" id="zoom-out">-</div></div>' + 
-                '<div class="row"><div class="button" id="zoom-reset"><svg width="26" height="26" viewBox="-5 -5 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">' +
-                '<path d="M8.67071 8.95948C7.10583 10.8527 4.28501 11.0208 2.36518 9.29474C0.445358 7.56869 0.202351 4.64596 1.76723 2.75279C3.33211 0.859615 6.16609 0.703294 8.05961 2.4057L9.47976 3.68251L6.42735 3.82578L6.46843 4.27523L10.2631 4.06592L9.89161 0.133917L9.45931 0.157762L9.7623 3.34068L8.34216 2.06388C6.26454 0.19596 3.14237 0.368178 1.42535 2.44541C-0.291677 4.52264 0.00501632 7.76864 2.08263 9.63656C4.16025 11.5045 7.29329 11.3191 8.99945 9.25504L8.67071 8.95948Z" fill="#000000" />' +
+                '<div class="row"><div class="button" id="zoom-reset"><svg width="26" height="26" viewBox="-3 -3 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                '<path d="M8.67071 8.95948C7.10583 10.8527 4.28501 11.0208 2.36518 9.29474C0.445358 7.56869 0.202351 4.64596 1.76723 2.75279C3.33211 0.859615 6.16609 0.703294 8.05961 2.4057L9.47976 3.68251L6.42735 3.82578L6.46843 4.27523L10.2631 4.06592L9.89161 0.133917L9.45931 0.157762L9.7623 3.34068L8.34216 2.06388C6.26454 0.19596 3.14237 0.368178 1.42535 2.44541C-0.291677 4.52264 0.00501632 7.76864 2.08263 9.63656C4.16025 11.5045 7.29329 11.3191 8.99945 9.25504L8.67071 8.95948Z" fill="#000000" stroke="#000000" stroke-width="1.5"/>' +
                 '</svg></div></div>');
         
         const g = svg.append("g");
