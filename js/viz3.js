@@ -1,6 +1,6 @@
 function drawViz3() {
 
-    const windowWidth = screen.width;
+    const windowWidth = Math.min(window.innerWidth, screen.width);
     const labelForUS = 'U.S.'
 
     clearDiv("#geo-viz3");
@@ -20,7 +20,7 @@ function drawViz3() {
     const countryNamePadding = 20;
     const topText = countryNamePadding + 2 * squareSize + squarePadding;
     const leftText = 7 * squareSize + 6 * squarePadding; 
-    const wideEnough = windowWidth > 4 * (waffleSize + waffleHPadding);
+    const wideEnough = windowWidth > 4 * (waffleSize + waffleHPadding) + 40;
 
     const margin = {top: 0, right: 0, bottom: 0, left: 1},
         width = wideEnough ? 4 * waffleSize + 3 * waffleHPadding - margin.left - margin.right

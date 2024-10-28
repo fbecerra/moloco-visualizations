@@ -1,6 +1,6 @@
 function drawViz6() {
 
-    const windowWidth = screen.width;
+    const windowWidth = Math.min(window.innerWidth, screen.width);
     const tooSmall = windowWidth < 700;
 
     clearDiv("#geo-viz6");

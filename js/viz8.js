@@ -1,7 +1,7 @@
 function drawViz8() {
 
-    const windowWidth = screen.width;
-    const smallScreen = windowWidth < 700;
+    const windowWidth = Math.min(window.innerWidth, screen.width);
+    const smallScreen = windowWidth < 840;
 
     clearDiv("#geo-viz8");
 

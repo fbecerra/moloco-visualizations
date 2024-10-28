@@ -1,6 +1,6 @@
 function drawViz7() {
 
-    const windowWidth = screen.width;
+    const windowWidth = Math.min(window.innerWidth, screen.width);
     const smallScreen = windowWidth < 700;
 
     clearDiv("#geo-viz7");

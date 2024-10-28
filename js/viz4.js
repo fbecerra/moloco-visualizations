@@ -1,6 +1,6 @@
 function drawViz4() {
     const drawBars4 = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
-        const graphWidth = Math.min(screen.width - 40, 600);
+        const graphWidth = Math.min(Math.min(window.innerWidth, screen.width) - 40, 600);
 
         const labelForUS = 'U.S.';
 
