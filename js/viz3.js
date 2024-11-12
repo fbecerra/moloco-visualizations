@@ -67,7 +67,7 @@ function drawViz3() {
     // const xAxis = g.append("g")
     //     .attr("transform", "translate(0," + height + ")");
 
-    addSources("#geo-viz3", "Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.")
+    addSources("#geo-viz3", "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.")
 
     window.onclick = function(event) {
         if (!event.target.matches('#country2-dropbtn-2')) {
