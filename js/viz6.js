@@ -116,11 +116,11 @@ function drawViz6() {
 
         const gridWrapper = d3.select("#geo-viz6").append("div")
             .attr("class", 'grid-wrapper')
-            .style("margin-top", '12px')
             .style("display", tooSmall ? "block" : "grid");
 
         const leftPanel = gridWrapper.append("div")
             .attr("class", "left-panel")
+            .style("margin-top", '12px')
             .style("display", tooSmall ? "block" : "grid");
 
         const rightPanel = gridWrapper.append("div")
@@ -128,6 +128,7 @@ function drawViz6() {
             .attr("id", "right-panel")
             .style("background-color", gray)
             .style("padding", "8px 10px")
+            .style("margin-top", tooSmall === true ? '36px' : '12px')
 
         // RIGHT PANEL
 
