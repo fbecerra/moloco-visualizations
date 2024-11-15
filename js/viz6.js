@@ -112,7 +112,7 @@ function drawViz6() {
 
         // // End of NEW to test
 
-        addBoldText("#geo-viz6", "Select country group")
+        addBoldText("#geo-viz6", "Select country/region group")
 
         const gridWrapper = d3.select("#geo-viz6").append("div")
             .attr("class", 'grid-wrapper')
@@ -132,7 +132,7 @@ function drawViz6() {
 
         // RIGHT PANEL
 
-        addBoldText('#right-panel', "Countries");
+        addBoldText('#right-panel', "Countries and regions");
 
         const countriesString = rightPanel.append("div")
             .style("height", '100px');
