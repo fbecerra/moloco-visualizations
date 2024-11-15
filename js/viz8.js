@@ -425,7 +425,7 @@ function drawViz8() {
         }
 
         updatePlot();
-        addSources("#geo-viz8", "Source: Moloco campaign outcomes from August 2023 to August 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU). Countries that do not meet minimum thresholds are not shown.")
+        addSources("#geo-viz8", "Source: Moloco campaign outcomes from August 2023 to August 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU). Countries and regions that do not meet minimum thresholds are not shown.")
 
         d3.select("#geo-viz8 .sources")
             .style("max-width", "700px")

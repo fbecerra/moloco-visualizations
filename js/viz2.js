@@ -4,7 +4,7 @@ function drawViz2() {
     clearDiv("#geo-viz2");
     centerDiv("#geo-viz2");
     addTitle("#geo-viz2", "RPG is popular in East Asia, while Match and Casino thrive in English-speaking regions");
-    addSubtitle("#geo-viz2", "2025 estimated user acquisition spend by country and genre");
+    addSubtitle("#geo-viz2", "2025 estimated user acquisition spend by country/region and genre");
     
     d3.select("#geo-viz2")
         .append("div")
