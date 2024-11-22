@@ -260,8 +260,8 @@ function drawViz2(dataSource, divId, title, subtitle, sources, initialGenre,
         updatePlot();
     })
 };
-const urlPath = window.location.pathname;
-if (urlPath.includes('/ja/')) {
+const urlPath2 = window.location.pathname;
+if (urlPath2.includes('/ja/')) {
     drawViz2(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz2-ja.csv', 
         divId = "#geo-viz2", 
@@ -273,7 +273,7 @@ if (urlPath.includes('/ja/')) {
         androidColumnTItle = 'Android',
         totalColumnTitle = 'Total'
     );
-} else if (urlPath.includes('/zh/')) {
+} else if (urlPath2.includes('/zh/')) {
     drawViz2(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz2-zh.csv', 
         divId = "#geo-viz2", 
@@ -285,7 +285,7 @@ if (urlPath.includes('/ja/')) {
         androidColumnTItle = 'Android',
         totalColumnTitle = 'Total'
     );
-} else if (urlPath.includes('/ko/')) {
+} else if (urlPath2.includes('/ko/')) {
     drawViz2(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz2-ko.csv', 
         divId = "#geo-viz2", 

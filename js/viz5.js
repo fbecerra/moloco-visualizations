@@ -186,8 +186,8 @@ function drawViz5(dataSource, divId, title, subtitle, selectLabels, sources,
     })
 }
 
-const urlPath = window.location.pathname;
-if (urlPath.includes('/ja/')) {
+const urlPath5 = window.location.pathname;
+if (urlPath5.includes('/ja/')) {
     drawViz5(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz5-ja.csv',
         divId = "#geo-viz5",
@@ -203,7 +203,7 @@ if (urlPath.includes('/ja/')) {
         allSystems = 'All systems',
         systems = ['All systems', 'Android', 'iOS']
     );
-} else if (urlPath.includes('/zh/')) {
+} else if (urlPath5.includes('/zh/')) {
     drawViz5(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz5-zh.csv',
         divId = "#geo-viz5",
@@ -219,7 +219,7 @@ if (urlPath.includes('/ja/')) {
         allSystems = 'All systems',
         systems = ['All systems', 'Android', 'iOS']
     );
-} else if (urlPath.includes('/ko/')) {
+} else if (urlPath5.includes('/ko/')) {
     drawViz5(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz5-ko.csv',
         divId = "#geo-viz5",

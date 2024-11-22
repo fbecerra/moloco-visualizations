@@ -429,8 +429,8 @@ function drawViz8(dataSource, divId, title, subtitle, howToRead, explainHowToRea
 
 const moreInfoIcon = '<svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 8V6M6 4H6.005M11 6C11 8.76142 8.76142 11 6 11C3.23858 11 1 8.76142 1 6C1 3.23858 3.23858 1 6 1C8.76142 1 11 3.23858 11 6Z" stroke="#808080" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
-const urlPath = window.location.pathname;
-if (urlPath.includes('/ja/')) {
+const urlPath8 = window.location.pathname;
+if (urlPath8.includes('/ja/')) {
     drawViz8(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz8-ja.csv',
         divId = "#geo-viz8",
@@ -467,7 +467,7 @@ if (urlPath.includes('/ja/')) {
         arppuLabel = '(Paid UA) D7 ARPPU',
         revenuePotentialLabel = 'Revenue Potential'
     );
-} else if (urlPath.includes('/zh/')) {
+} else if (urlPath8.includes('/zh/')) {
     drawViz8(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz8-zh.csv',
         divId = "#geo-viz8",
@@ -504,7 +504,7 @@ if (urlPath.includes('/ja/')) {
         arppuLabel = '(Paid UA) D7 ARPPU',
         revenuePotentialLabel = 'Revenue Potential'
     );
-} else if (urlPath.includes('/ko/')) {
+} else if (urlPath8.includes('/ko/')) {
     drawViz8(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz8-ko.csv',
         divId = "#geo-viz8",

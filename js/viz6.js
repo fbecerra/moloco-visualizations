@@ -495,8 +495,8 @@ function drawViz6(dataSource, divId, title, subtitle, selectCountry, countriesAn
 
 }
 
-const urlPath = window.location.pathname;
-if (urlPath.includes('/ja/')) {
+const urlPath6 = window.location.pathname;
+if (urlPath6.includes('/ja/')) {
     drawViz6(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz6-ja.csv',
         divId = "#geo-viz6",
@@ -526,7 +526,7 @@ if (urlPath.includes('/ja/')) {
         selectGenre = "Select genre",
         sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
     );
-} else if (urlPath.includes('/zh/')) {
+} else if (urlPath6.includes('/zh/')) {
     drawViz6(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz6-zh.csv',
         divId = "#geo-viz6",
@@ -556,7 +556,7 @@ if (urlPath.includes('/ja/')) {
         selectGenre = "Select genre",
         sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
     );
-} else if (urlPath.includes('/ko/')) {
+} else if (urlPath6.includes('/ko/')) {
     drawViz6(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz6-ko.csv',
         divId = "#geo-viz6",

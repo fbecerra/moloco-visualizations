@@ -219,8 +219,8 @@ function drawViz3(dataSource, divId, title, subtitle, titleFirstRow, titleSecond
     })
 }
 
-const urlPath = window.location.pathname;
-if (urlPath.includes('/ja/')) {
+const urlPath3 = window.location.pathname;
+if (urlPath3.includes('/ja/')) {
     drawViz3(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz3-ja.csv',
         divId = "#geo-viz3",
@@ -234,7 +234,7 @@ if (urlPath.includes('/ja/')) {
         country2 = 'China',
         uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World']
     );
-} else if (urlPath.includes('/zh/')) {
+} else if (urlPath3.includes('/zh/')) {
     drawViz3(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz3-zh.csv',
         divId = "#geo-viz3",
@@ -248,7 +248,7 @@ if (urlPath.includes('/ja/')) {
         country2 = 'China',
         uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World']
     );
-} else if (urlPath.includes('/ko/')) {
+} else if (urlPath3.includes('/ko/')) {
     drawViz3(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz3-ko.csv',
         divId = "#geo-viz3",

@@ -265,8 +265,8 @@ function drawViz7(dataSource, divId, title, subtitle, sources, paragraphs, arppu
     })
 }
 
-const urlPath = window.location.pathname;
-if (urlPath.includes('/ja/')) {
+const urlPath7 = window.location.pathname;
+if (urlPath7.includes('/ja/')) {
     drawViz7(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz7-ja.csv',
         divId = "#geo-viz7",
@@ -288,7 +288,7 @@ if (urlPath.includes('/ja/')) {
             'Germany': 'Germany'
         }
     );
-} else if (urlPath.includes('/zh/')) {
+} else if (urlPath7.includes('/zh/')) {
     drawViz7(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz7-zh.csv',
         divId = "#geo-viz7",
@@ -310,7 +310,7 @@ if (urlPath.includes('/ja/')) {
             'Germany': 'Germany'
         }
     );
-} else if (urlPath.includes('/ko/')) {
+} else if (urlPath7.includes('/ko/')) {
     drawViz7(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz7-ko.csv',
         divId = "#geo-viz7",
