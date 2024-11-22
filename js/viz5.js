@@ -1,10 +1,12 @@
-function drawViz5() {
-    clearDiv("#geo-viz5");
-    centerDiv("#geo-viz5");
-    addTitle("#geo-viz5", "East Asia Pacific leads when it comes to average revenue per paying user, although this picture changes by OS and genre")   
-    addSubtitle("#geo-viz5", "D7 ARPPU ($USD) for top 15 countries and regions");
+function drawViz5(dataSource, divId, title, subtitle, selectLabels, sources,
+    selectedGenre, selectedOS, allSystems, systems
+) {
+    clearDiv(divId);
+    centerDiv(divId);
+    addTitle(divId, title)   
+    addSubtitle(divId, subtitle);
 
-    const dropdowns = d3.select("#geo-viz5")
+    const dropdowns = d3.select(divId)
         .append("div")
         .attr("class", "dropdowns")
         .style("display", "table");
@@ -23,7 +25,7 @@ function drawViz5() {
             .style("font-family", "Montserrat")
             .style("font-size", "14px")
             .style("font-weight", 700)
-            .html(`Select ${d}`);
+            .html(selectLabels[d]);
             
         const dropdown = dropdownWrapper.append("div")
             .attr("class", "dropdown inline")
@@ -44,12 +46,12 @@ function drawViz5() {
         width = graphWidth - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 
-    const svg = d3.select("#geo-viz5")
+    const svg = d3.select(divId)
         .append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom);
 
-    addSources("#geo-viz5", "Source: Moloco advertiser median D7 ARPPU across all organic and paid channels (August 2023 to August 2024). Only apps with more than $1000 (USD) D7 IAP revenue are included. Excluding Mainland China.");
+    addSources(divId, sources);
 
     window.onclick = function(event) {
         if (!event.target.matches('#genre-dropbtn')) {
@@ -84,12 +86,9 @@ function drawViz5() {
         .attr("transform", "translate(0," + height + ")")
 
     Promise.all([
-        d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz5.csv')
+        d3.csv(dataSource)
     ]).then((data) => {
         const revenue = data[0];
-
-        let selectedGenre = "All genres";
-        let selectedOS = 'All systems';
 
         revenue.forEach(d => {
             d['Android'] = +d['Android'];
@@ -98,7 +97,7 @@ function drawViz5() {
         });
 
         const updatePlot = () => {
-            const xlabel = selectedOS === 'All systems' ? 'Total' : selectedOS,
+            const xlabel = selectedOS === allSystems ? 'Total' : selectedOS,
                 ylabel = 'Market full name';
             const dataToPlot = revenue.filter(d => d.Genre === selectedGenre)
                 .sort((a,b) => b[xlabel] - a[xlabel]).slice(0,15);
@@ -148,7 +147,7 @@ function drawViz5() {
 
             g.selectAll(".percentage").raise();
 
-            fixWidth("#geo-viz5");
+            fixWidth(divId);
 
         }
 
@@ -168,7 +167,6 @@ function drawViz5() {
             }
         })
 
-        const systems = ['All systems', 'Android', 'iOS'];
         let systemOpts = addOptions("OS-content", systems);
 
         d3.select("#OS-dropdown")
@@ -188,4 +186,69 @@ function drawViz5() {
     })
 }
 
-drawViz5();
+const urlPath = window.location.pathname;
+if (urlPath.includes('/ja/')) {
+    drawViz5(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz5-ja.csv',
+        divId = "#geo-viz5",
+        title = "East Asia Pacific leads when it comes to average revenue per paying user, although this picture changes by OS and genre",
+        subtitle = "D7 ARPPU ($USD) for top 15 countries and regions",
+        selectLabels = {
+            'genre': 'Select genre',
+            'OS': 'Select OS'
+        },
+        sources = "Source: Moloco advertiser median D7 ARPPU across all organic and paid channels (August 2023 to August 2024). Only apps with more than $1000 (USD) D7 IAP revenue are included. Excluding Mainland China.",
+        selectedGenre = "All genres",
+        selectedOS = 'All systems',
+        allSystems = 'All systems',
+        systems = ['All systems', 'Android', 'iOS']
+    );
+} else if (urlPath.includes('/zh/')) {
+    drawViz5(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz5-zh.csv',
+        divId = "#geo-viz5",
+        title = "East Asia Pacific leads when it comes to average revenue per paying user, although this picture changes by OS and genre",
+        subtitle = "D7 ARPPU ($USD) for top 15 countries and regions",
+        selectLabels = {
+            'genre': 'Select genre',
+            'OS': 'Select OS'
+        },
+        sources = "Source: Moloco advertiser median D7 ARPPU across all organic and paid channels (August 2023 to August 2024). Only apps with more than $1000 (USD) D7 IAP revenue are included. Excluding Mainland China.",
+        selectedGenre = "All genres",
+        selectedOS = 'All systems',
+        allSystems = 'All systems',
+        systems = ['All systems', 'Android', 'iOS']
+    );
+} else if (urlPath.includes('/ko/')) {
+    drawViz5(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz5-ko.csv',
+        divId = "#geo-viz5",
+        title = "East Asia Pacific leads when it comes to average revenue per paying user, although this picture changes by OS and genre",
+        subtitle = "D7 ARPPU ($USD) for top 15 countries and regions",
+        selectLabels = {
+            'genre': 'Select genre',
+            'OS': 'Select OS'
+        },
+        sources = "Source: Moloco advertiser median D7 ARPPU across all organic and paid channels (August 2023 to August 2024). Only apps with more than $1000 (USD) D7 IAP revenue are included. Excluding Mainland China.",
+        selectedGenre = "All genres",
+        selectedOS = 'All systems',
+        allSystems = 'All systems',
+        systems = ['All systems', 'Android', 'iOS']
+    );
+} else {
+    drawViz5(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz5.csv',
+        divId = "#geo-viz5",
+        title = "East Asia Pacific leads when it comes to average revenue per paying user, although this picture changes by OS and genre",
+        subtitle = "D7 ARPPU ($USD) for top 15 countries and regions",
+        selectLabels = {
+            'genre': 'Select genre',
+            'OS': 'Select OS'
+        },
+        sources = "Source: Moloco advertiser median D7 ARPPU across all organic and paid channels (August 2023 to August 2024). Only apps with more than $1000 (USD) D7 IAP revenue are included. Excluding Mainland China.",
+        selectedGenre = "All genres",
+        selectedOS = 'All systems',
+        allSystems = 'All systems',
+        systems = ['All systems', 'Android', 'iOS']
+    );
+}
