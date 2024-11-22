@@ -1,14 +1,15 @@
-function drawViz3() {
+function drawViz3(dataSource, divId, title, subtitle, titleFirstRow, titleSecondRow, sources,
+    labelForUS, spendIn, country2, uniqueDestinations
+) {
 
     const windowWidth = Math.min(window.innerWidth, screen.width);
-    const labelForUS = 'U.S.'
 
-    clearDiv("#geo-viz3");
-    centerDiv("#geo-viz3");
-    addTitle("#geo-viz3", "Some marketers focus on their local regions, while others take a more global approach to user acquisition");
-    addSubtitle("#geo-viz3", "2025 estimated user acquisition spend by country, filtered by app developer HQ location");
+    clearDiv(divId);
+    centerDiv(divId);
+    addTitle(divId, title);
+    addSubtitle(divId, );
     // addLegend("#geo-viz3");
-    addBoldText("#geo-viz3", `HQ in the ${labelForUS}`);
+    addBoldText(divId, titleFirstRow);
 
     const textPadding = 7;
     const squaresPerRow = 5;
@@ -28,7 +29,7 @@ function drawViz3() {
         height = wideEnough ? (waffleSize + waffleVPadding) - margin.top - margin.bottom
             : 2 * (waffleSize + waffleVPadding) - margin.top - margin.bottom;
 
-    const svg1 = d3.select("#geo-viz3")
+    const svg1 = d3.select(divId)
         .append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom);
@@ -37,18 +38,18 @@ function drawViz3() {
         .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.select("#geo-viz3")
+    d3.select(divId)
         .append("div")
         .attr("class", "separator")
         .style("border-bottom", '1px dotted #808080');
 
-    addBoldText("#geo-viz3", "Select HQ to compare");
-    const dropdowns = d3.select("#geo-viz3")
+    addBoldText(divId, titleSecondRow);
+    const dropdowns = d3.select(divId)
         .append("div")
         .attr("class", "dropdowns")
         .style("display", "table");
 
-    const svg2 = d3.select("#geo-viz3")
+    const svg2 = d3.select(divId)
         .append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom);
@@ -67,7 +68,7 @@ function drawViz3() {
     // const xAxis = g.append("g")
     //     .attr("transform", "translate(0," + height + ")");
 
-    addSources("#geo-viz3", "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.")
+    addSources(divId, sources)
 
     window.onclick = function(event) {
         if (!event.target.matches('#country2-dropbtn-2')) {
@@ -82,7 +83,7 @@ function drawViz3() {
         ylabel = 'Total';
 
     Promise.all([
-        d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz3.csv')
+        d3.csv(dataSource)
     ]).then((data) => {
         const spend = data[0];
 
@@ -91,11 +92,6 @@ function drawViz3() {
             d['Android'] = +d['Android'];
             d['iOS'] = +d['iOS'];
         });
-
-        let country1 = labelForUS;
-        let country2 = 'China';
-        // const uniqueDestinations = getUniquesMenu(spend, 'Destination');
-        const uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World'];
 
         let countries = ["country2"];
         countries.forEach(d => {
@@ -174,24 +170,6 @@ function drawViz3() {
                     .attr("height", d => d.height)
                     .attr("fill", "#0280FB");
 
-            // groups.selectAll(".fractional-square-ios")
-            //     .data(d => {
-            //         const remainder = (d[0].Total * 1000) % 10 / 10;
-            //         const idx = Math.floor(100 - d[0].Total * 100);
-            //         return [{
-            //             x: waffleSize - (idx % 10 + 1) * (squareSize + squarePadding),
-            //             y: countryNamePadding + Math.floor(idx / 10) * (squareSize + squarePadding),
-            //             height: y(remainder)
-            //         }]
-            //     })
-            //     .join("rect")
-            //         .attr("class", "fractional-square-ios")
-            //         .attr("x", d => d.x)
-            //         .attr("y", d => d.y + (squareSize - d.height))
-            //         .attr("width", squareSize)
-            //         .attr("height", d => d.height)
-            //         .attr("fill", "#040078");
-
             groups.selectAll(".percentage")
                 .data(d => [d])
                 .join("text")
@@ -214,9 +192,9 @@ function drawViz3() {
                     .style("font-size", "14px")
                     .style("text-anchor", 'start')
                     .attr("fill", "#000000")
-                    .text(d => 'Spend in ' + d[0]['Destination'])
+                    .text(d => spendIn + d[0]['Destination'])
 
-            fixWidth("#geo-viz3");
+            fixWidth(divId);
 
         }
 
@@ -241,4 +219,61 @@ function drawViz3() {
     })
 }
 
-drawViz3();
+const urlPath = window.location.pathname;
+if (urlPath.includes('/ja/')) {
+    drawViz3(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz3-ja.csv',
+        divId = "#geo-viz3",
+        title = "Some marketers focus on their local regions, while others take a more global approach to user acquisition",
+        subtitle = "2025 estimated user acquisition spend by country, filtered by app developer HQ location",
+        titleFirstRow = "HQ in the U.S.",
+        titleSecondRow = "Select HQ to compare",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        labelForUS = 'U.S.',
+        spendIn = 'Spend in ',
+        country2 = 'China',
+        uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World']
+    );
+} else if (urlPath.includes('/zh/')) {
+    drawViz3(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz3-zh.csv',
+        divId = "#geo-viz3",
+        title = "Some marketers focus on their local regions, while others take a more global approach to user acquisition",
+        subtitle = "2025 estimated user acquisition spend by country, filtered by app developer HQ location",
+        titleFirstRow = "HQ in the U.S.",
+        titleSecondRow = "Select HQ to compare",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        labelForUS = 'U.S.',
+        spendIn = 'Spend in ',
+        country2 = 'China',
+        uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World']
+    );
+} else if (urlPath.includes('/ko/')) {
+    drawViz3(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz3-ko.csv',
+        divId = "#geo-viz3",
+        title = "Some marketers focus on their local regions, while others take a more global approach to user acquisition",
+        subtitle = "2025 estimated user acquisition spend by country, filtered by app developer HQ location",
+        titleFirstRow = "HQ in the U.S.",
+        titleSecondRow = "Select HQ to compare",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        labelForUS = 'U.S.',
+        spendIn = 'Spend in ',
+        country2 = 'China',
+        uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World']
+    );
+} else {
+    drawViz3(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz3.csv',
+        divId = "#geo-viz3",
+        title = "Some marketers focus on their local regions, while others take a more global approach to user acquisition",
+        subtitle = "2025 estimated user acquisition spend by country, filtered by app developer HQ location",
+        titleFirstRow = "HQ in the U.S.",
+        titleSecondRow = "Select HQ to compare",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        labelForUS = 'U.S.',
+        spendIn = 'Spend in ',
+        country2 = 'China',
+        uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World']
+    );
+}
