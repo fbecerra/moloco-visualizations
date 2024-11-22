@@ -1,8 +1,10 @@
-function drawViz4() {
-    const drawBars4 = (spend, divId, xlabel, ylabel, title, subtitle, sources) => {
+function drawViz4(dataSource, divId, xlabel, ylabel, title, subtitle, sources,
+    labelForUS, spendLabel, revenueLabel, othersLabel
+) {
+    const drawBars4 = (spend, divId, xlabel, ylabel, title, subtitle, sources, 
+        labelForUS, spendLabel, revenueLabel, othersLabel
+    ) => {
         const graphWidth = Math.min(Math.min(window.innerWidth, screen.width) - 40, 600);
-
-        const labelForUS = 'U.S.';
 
         clearDiv(divId);
         centerDiv(divId);
@@ -15,7 +17,6 @@ function drawViz4() {
     
         addTitle(divId, title);
         addSubtitle(divId, subtitle);
-        
     
         const svg = d3.select(divId)
             .append("svg")
@@ -57,7 +58,7 @@ function drawViz4() {
     
         // SPEND
         g.selectAll(".title-spend")
-            .data(['Spend'])
+            .data([spendLabel])
             .join("text")
                 .attr("class", "title-spend")
                 .attr("x", x(0) )
@@ -76,7 +77,7 @@ function drawViz4() {
                 .attr("y", d => y(d[ylabel]))
                 .attr("width", d => x(d['UA Spend']) - x(0))
                 .attr("height", y.bandwidth() )
-                .attr("fill", d => d[ylabel] === 'Others' ? "#ECEDEE" : "#D9D9D9");
+                .attr("fill", d => d[ylabel] === othersLabel ? "#ECEDEE" : "#D9D9D9");
     
         g.selectAll(".percentage-spend")
             .data(spend)
@@ -105,7 +106,7 @@ function drawViz4() {
     
         // REVENUE
         g.selectAll(".title-revenue")
-            .data(['IAP revenue'])
+            .data([revenueLabel])
             .join("text")
                 .attr("class", "title-revenue")
                 .attr("x", x2(0) )
@@ -131,7 +132,7 @@ function drawViz4() {
             .join("text")
                 .attr("class", "percentage-revenue")
                 .attr("x", d => {
-                    if ((d[ylabel] === labelForUS) || (d[ylabel] === 'Others')) {
+                    if ((d[ylabel] === labelForUS) || (d[ylabel] === othersLabel)) {
                         return x2(d['Revenue']) - textPadding;
                     } else {
                         return x2(d['Revenue']) + textPadding;
@@ -142,7 +143,7 @@ function drawViz4() {
                 .style("font-family", "Spacegrotesk")
                 .style("font-size", "14px")
                 .style("text-anchor", d => {
-                    if ((d[ylabel] === labelForUS) || (d[ylabel] === 'Others')) {
+                    if ((d[ylabel] === labelForUS) || (d[ylabel] === othersLabel)) {
                         return 'end';
                     } else {
                         return 'start';
@@ -158,23 +159,76 @@ function drawViz4() {
     
     
     Promise.all([
-        d3.csv("https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz4.csv")
+        d3.csv(dataSource)
     ]).then((data) => {            
     
         data[0].forEach(d => {
             d['Percentage revenue'] = +d['Percentage revenue'];
         });
     
-        drawBars4(data[0],
-            divId = "#geo-viz4",
-            xlabel = 'Percentage revenue',
-            ylabel = 'Market full name',
-            title = "Marketing spend and total in-app purchase revenue are aligned in most countries and regions",
-            subtitle = "Mobile gaming (IAP) user acquisition spend compared to mobile gaming (IAP) D7 revenue",
-            sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (September 2023 to September 2024). Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included."
-        )
+        drawBars4(data[0],divId, xlabel, ylabel, title, subtitle, sources,
+            labelForUS, spendLabel, revenueLabel, othersLabel)
         
     })
 }
 
-drawViz4();
+const urlPath4 = window.location.pathname;
+if (urlPath4.includes('/ja/')) {
+    drawViz4(
+        dataSource = "https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz4-ja.csv",
+        divId = "#geo-viz4",
+        xlabel = 'Percentage revenue',
+        ylabel = 'Market full name',
+        title = "Marketing spend and total in-app purchase revenue are aligned in most countries and regions",
+        subtitle = "Mobile gaming (IAP) user acquisition spend compared to mobile gaming (IAP) D7 revenue",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (September 2023 to September 2024). Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        labelForUS = 'U.S.',
+        spendLabel = 'Spend',
+        revenueLabel = 'IAP revenue',
+        othersLabel = 'Others',
+    );
+} else if (urlPath4.includes('/zh/')) {
+    drawViz4(
+        dataSource = "https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz4-zh.csv",
+        divId = "#geo-viz4",
+        xlabel = 'Percentage revenue',
+        ylabel = 'Market full name',
+        title = "Marketing spend and total in-app purchase revenue are aligned in most countries and regions",
+        subtitle = "Mobile gaming (IAP) user acquisition spend compared to mobile gaming (IAP) D7 revenue",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (September 2023 to September 2024). Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        labelForUS = 'U.S.',
+        spendLabel = 'Spend',
+        revenueLabel = 'IAP revenue',
+        othersLabel = 'Others',
+    );
+} else if (urlPath4.includes('/ko/')) {
+    drawViz4(
+        dataSource = "https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz4-ko.csv",
+        divId = "#geo-viz4",
+        xlabel = 'Percentage revenue',
+        ylabel = 'Market full name',
+        title = "Marketing spend and total in-app purchase revenue are aligned in most countries and regions",
+        subtitle = "Mobile gaming (IAP) user acquisition spend compared to mobile gaming (IAP) D7 revenue",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (September 2023 to September 2024). Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        labelForUS = 'U.S.',
+        spendLabel = 'Spend',
+        revenueLabel = 'IAP revenue',
+        othersLabel = 'Others',
+    );
+} else {
+    drawViz4(
+        dataSource = "https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz4.csv",
+        divId = "#geo-viz4",
+        xlabel = 'Percentage revenue',
+        ylabel = 'Market full name',
+        title = "Marketing spend and total in-app purchase revenue are aligned in most countries and regions",
+        subtitle = "Mobile gaming (IAP) user acquisition spend compared to mobile gaming (IAP) D7 revenue",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (September 2023 to September 2024). Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        labelForUS = 'U.S.',
+        spendLabel = 'Spend',
+        revenueLabel = 'IAP revenue',
+        othersLabel = 'Others',
+    );
+}
+
+
