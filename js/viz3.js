@@ -7,7 +7,7 @@ function drawViz3(dataSource, divId, title, subtitle, titleFirstRow, titleSecond
     clearDiv(divId);
     centerDiv(divId);
     addTitle(divId, title);
-    addSubtitle(divId, );
+    addSubtitle(divId, subtitle);
     // addLegend("#geo-viz3");
     addBoldText(divId, titleFirstRow);
 
