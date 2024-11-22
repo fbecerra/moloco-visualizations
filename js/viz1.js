@@ -1,5 +1,5 @@
-function drawViz1() {
-    const drawBars1 = (spend, divId, xlabels, ylabel, colors, title, subtitle, sources) => {
+function drawViz1(dataSource, divId, xlabels, ylabel, colors, title, subtitle, sources, othersLabel) {
+    const drawBars1 = (spend, divId, xlabels, ylabel, colors, title, subtitle, sources, othersLabel) => {
         const graphWidth = Math.min(Math.min(window.innerWidth, screen.width) - 40, 600);
 
         clearDiv(divId);
@@ -78,11 +78,11 @@ function drawViz1() {
                 .attr("y", d => y(d.data[ylabel]))
                 .attr("height", y.bandwidth())
                 .attr("width", d => x(d[1]) - x(d[0]))
-                .attr("fill", d => d.data[ylabel] === 'Others' ? (d.data.key === 'iOS' ? "#CCC" : "#ECEDEE") : "")
+                .attr("fill", d => d.data[ylabel] === othersLabel ? (d.data.key === 'iOS' ? "#CCC" : "#ECEDEE") : "")
                 .on("mousemove", (evt, d) => {
-                    const pClass = d.data[ylabel] === 'Others' ? (d.data.key === 'iOS' ? "otheriOS" : "otherAndroid") : d.data.key;
+                    const pClass = d.data[ylabel] === othersLabel ? (d.data.key === 'iOS' ? "otheriOS" : "otherAndroid") : d.data.key;
                     tooltip.style("display", "inline-block")
-                        .style("background-color", d.data[ylabel] === 'Others' ? (d.data.key === 'iOS' ? "#CCC" : "#ECEDEE") : color(d.data.key))
+                        .style("background-color", d.data[ylabel] === othersLabel ? (d.data.key === 'iOS' ? "#CCC" : "#ECEDEE") : color(d.data.key))
                         .style("color", d.data[ylabel] === 'Others' ? "#000" : "#FFF")
                         .html(`<span class="${pClass}" style="font-family: 'Spacegrotesk';font-size: 14px;font-weight: 400;">${d.data.key}: ${(d.data[d.data.key] * 100).toFixed(1)}%</span>`);
 
@@ -132,13 +132,11 @@ function drawViz1() {
                 .text(d => (d['Total'] * 100).toFixed(1) + '%');
     
         addSources(divId, sources);  
-        // fixWidth(divId);
         
     }
     
-    
     Promise.all([
-        d3.csv("https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz1.csv"),
+        d3.csv(dataSource),
     ]).then((data) => {            
     
         data[0].forEach(d => {
@@ -147,57 +145,61 @@ function drawViz1() {
             d.Total = +d.Total;
         });
     
-        const urlPath = window.location.pathname;
-
-        if (urlPath.includes('/ja/')) {
-            console.log('ja');
-            drawBars1(data[0],
-                divId = "#geo-viz1",
-                xlabels = ['iOS', 'Android'],
-                ylabel = 'Market full name',
-                colors = ["#040078", "#558FC9"],
-                title = "Almost three-quarters of user acquisition spend for mobile gaming is concentrated in ten countries",
-                subtitle = "2025 estimated user acquisition spend concentration by country",
-                sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included."
-            )
-        } else if (urlPath.includes('/zh/')) {
-            console.log('zh');
-            drawBars1(data[0],
-                divId = "#geo-viz1",
-                xlabels = ['iOS', 'Android'],
-                ylabel = 'Market full name',
-                colors = ["#040078", "#558FC9"],
-                title = "Almost three-quarters of user acquisition spend for mobile gaming is concentrated in ten countries",
-                subtitle = "2025 estimated user acquisition spend concentration by country",
-                sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included."
-            )
-        } else if (urlPath.includes('/ko/')) {
-            console.log('ko');
-            drawBars1(data[0],
-                divId = "#geo-viz1",
-                xlabels = ['iOS', 'Android'],
-                ylabel = 'Market full name',
-                colors = ["#040078", "#558FC9"],
-                title = "Almost three-quarters of user acquisition spend for mobile gaming is concentrated in ten countries",
-                subtitle = "2025 estimated user acquisition spend concentration by country",
-                sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included."
-            )
-        } else {
-            console.log('en');
-            drawBars1(data[0],
-                divId = "#geo-viz1",
-                xlabels = ['iOS', 'Android'],
-                ylabel = 'Market full name',
-                colors = ["#040078", "#558FC9"],
-                title = "Almost three-quarters of user acquisition spend for mobile gaming is concentrated in ten countries",
-                subtitle = "2025 estimated user acquisition spend concentration by country",
-                sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included."
-            )
-        }
-          
-
-        
+        drawBars1(data[0], divId, xlabels, ylabel, colors, title, subtitle, sources, othersLabel)
     })
 }
 
-drawViz1();
+const urlPath = window.location.pathname;
+if (urlPath.includes('/ja/')) {
+    console.log('ja');
+    drawViz1(
+        dataSource = "https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz1-ja.csv",
+        divId = "#geo-viz1",
+        xlabels = ['iOS', 'Android'], // Column names
+        ylabel = 'Market full name', // Column name
+        colors = ["#040078", "#558FC9"],
+        title = "Almost three-quarters of user acquisition spend for mobile gaming is concentrated in ten countries",
+        subtitle = "2025 estimated user acquisition spend concentration by country",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        othersLabel = 'Others' // Market full name label for 'Others'
+    );
+} else if (urlPath.includes('/zh/')) {
+    console.log('zh');
+    drawViz1(
+        dataSource = "https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz1-zh.csv",
+        divId = "#geo-viz1",
+        xlabels = ['iOS', 'Android'],
+        ylabel = 'Market full name',
+        colors = ["#040078", "#558FC9"],
+        title = "Almost three-quarters of user acquisition spend for mobile gaming is concentrated in ten countries",
+        subtitle = "2025 estimated user acquisition spend concentration by country",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        othersLabel = 'Others'
+    );
+} else if (urlPath.includes('/ko/')) {
+    console.log('ko');
+    drawViz1(
+        dataSource = "https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz1-ko.csv",
+        divId = "#geo-viz1",
+        xlabels = ['iOS', 'Android'],
+        ylabel = 'Market full name',
+        colors = ["#040078", "#558FC9"],
+        title = "Almost three-quarters of user acquisition spend for mobile gaming is concentrated in ten countries",
+        subtitle = "2025 estimated user acquisition spend concentration by country",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        othersLabel = 'Others'
+    );
+} else {
+    console.log('en');
+    drawViz1(
+        dataSource = "https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz1.csv",
+        divId = "#geo-viz1",
+        xlabels = ['iOS', 'Android'],
+        ylabel = 'Market full name',
+        colors = ["#040078", "#558FC9"],
+        title = "Almost three-quarters of user acquisition spend for mobile gaming is concentrated in ten countries",
+        subtitle = "2025 estimated user acquisition spend concentration by country",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        othersLabel = 'Others'
+    );
+}
