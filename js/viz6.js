@@ -1,9 +1,11 @@
-function drawViz6() {
+function drawViz6(dataSource, divId, title, subtitle, selectCountry, countriesAndRegions,
+    uaText, revenueText, arppuText, groupLabels, groupInfo, selectGenre, sources
+) {
 
     const windowWidth = Math.min(window.innerWidth, screen.width);
     const tooSmall = windowWidth < 700;
 
-    clearDiv("#geo-viz6");
+    clearDiv(divId);
 
     const gray = '#ECEDEE';
     const blue = '#0280FB';
@@ -11,7 +13,7 @@ function drawViz6() {
 
     Promise.all([
         d3.json('https://cdn.jsdelivr.net/npm/visionscarto-world-atlas@1/world/50m.json'),
-        d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz6.csv')
+        d3.csv(dataSource)
     ]).then((data) => {
 
         const world = data[0];
@@ -46,22 +48,6 @@ function drawViz6() {
         const groups = ['US and English Language', 'East Asia Pacific',
             'Europe & Middle East (Group 1)', 'Europe & Middle East (Group 2)',
             'LATAM Spanish Speaking', 'Global Developing Markets'];
-        const groupLabels = {
-            'US and English Language': "US and English Language", 
-            'East Asia Pacific': "East Asia Pacific",
-            'Europe & Middle East (Group 1)': "Europe & Middle East (Group 1)", 
-            'Europe & Middle East (Group 2)': "Europe & Middle East (Group 2)", 
-            'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
-            'Global Developing Markets': "Global Developing Markets"
-        }
-        const groupInfo = {
-            'US and English Language': "The U.S. and many English-language countries are the largest overall mobile gaming market, representing the majority of UA spend and revenue. While the U.S. dominates in total IAP revenue, opportunities exist across these markets, representing similar barriers to entry and consistent user value across genres.", 
-            'East Asia Pacific': "East Asia Pacific markets have the highest average user value across most genres. Potentially a higher barrier to entry for non-domestic marketers due to localization and cultural differences. Midcore (RPG, Strategy, Simulation) sees relative strength in this region for user value and total IAP revenue.",
-            'Europe & Middle East (Group 1)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 1 represents some of the largest markets of opportunity within the region with higher user value and IAP revenue. Moreover, a significant percentage of English speakers among the population potentially lowering the barrier of entry for many apps.", 
-            'Europe & Middle East (Group 2)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 2 represents diverse markets with a lower share of the total IAP revenue and high variance in user value. Due to their size, these markets can perhaps be more challenging to enter, but may represent a significant opportunity by grouping key markets to maximize reach.", 
-            'LATAM Spanish Speaking': "Latin America (LATAM) markets have relatively low user value and overall IAP revenue contribution. However, localization can be streamlined due to the population being largely Spanish speaking. For marketers, grouping these countries can help with UA viability.", 
-            'Global Developing Markets': "Consisting of a wide range of developing countries, these markets have the largest variability of user value with significant differences across genres. However, there are pockets of opportunity for marketers to capture high-value users at a potentially cost efficient price."
-        }
         let selectedGroup = groups[0];
         let selectedGenre ='All genres';
 
@@ -71,12 +57,12 @@ function drawViz6() {
             .domain([0, max])
             .range([0, 100]);
 
-        d3.select("#geo-viz6")
+        d3.select(divId)
             .style("font-family", "Montserrat")
             .style("font-size", '14px')
             .style("display", "block");
 
-        const tooltip = d3.select("#geo-viz6")
+        const tooltip = d3.select(divId)
             .style("position", "relative")
             .append("div")
             .attr("class", "viz-tooltip")
@@ -91,13 +77,13 @@ function drawViz6() {
             .style("display", "none")
             .html('');
         
-        d3.select("#geo-viz6").append("div")
+        d3.select(divId).append("div")
             .attr("id", "title-wrapper")
             .style("max-width", "700px")
             .style("margin", "auto");;
 
-        addTitle("#title-wrapper", "Mapping global opportunities ");
-        addSubtitle("#title-wrapper", "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics by region. Hover over individual countries or regions for a market-level overview.")
+        addTitle("#title-wrapper", title);
+        addSubtitle("#title-wrapper", subtitle)
             
 
         // // NEW to test
@@ -112,9 +98,9 @@ function drawViz6() {
 
         // // End of NEW to test
 
-        addBoldText("#geo-viz6", "Select country/region group")
+        addBoldText(divId, selectCountry)
 
-        const gridWrapper = d3.select("#geo-viz6").append("div")
+        const gridWrapper = d3.select(divId).append("div")
             .attr("class", 'grid-wrapper')
             .style("display", tooSmall ? "block" : "grid");
 
@@ -132,7 +118,7 @@ function drawViz6() {
 
         // RIGHT PANEL
 
-        addBoldText('#right-panel', "Countries and regions");
+        addBoldText('#right-panel', countriesAndRegions);
 
         const countriesString = rightPanel.append("div")
             .style("height", '100px');
@@ -155,39 +141,39 @@ function drawViz6() {
         rightPanel.append("div")
             .attr("id", 'selected-tier-info');
 
-        function addBar(divId, legendText) {
-            const bar = d3.select("#" + divId).append('div')
+        function addBar(divID, legendText) {
+            const bar = d3.select("#" + divID).append('div')
                 .attr('class', 'bar')
                 .style("position", "relative")
                 .style("width", '100%')
                 .style("margin-top", '24px')
-                .style("height", divId === 'arppu' ? '17px' : '11px')
+                .style("height", divID === 'arppu' ? '17px' : '11px')
 
             bar.append("div")
                 .style("width", "100%")
                 .style("background-color", darkerGray)
                 .style("height", '11px')
                 .style("position", 'absolute')
-                .style("top", divId === 'arppu' ? '3px' : 0)
+                .style("top", divID === 'arppu' ? '3px' : 0)
                 .style("left", 0)
 
             bar.append("div")
-                .attr("id", divId + '-bar')
+                .attr("id", divID + '-bar')
                 .style("width", "20%")
                 .style("background-color", blue)
-                .style("height", divId === 'arppu' ? '17px' : '11px' )
+                .style("height", divID === 'arppu' ? '17px' : '11px' )
                 .style("position", 'absolute')
                 .style("top", 0)
                 .style("left", 0);
 
-            const legend = d3.select("#" + divId).append("div")
+            const legend = d3.select("#" + divID).append("div")
                 .attr("class", 'legend')
                 .style('position', 'relative')
                 .style("width", '100%')
                 .style("margin-top", '8px');
 
             legend.append("div")
-                .attr("id", divId + '-legend')
+                .attr("id", divID + '-legend')
                 .style("width", "40%")
                 .style("position", 'absolute')
                 .style("font-size", "32px")
@@ -207,9 +193,9 @@ function drawViz6() {
                 .html(legendText)
         }
 
-        addBar("budget", "paid UA budget");
-        addBar("revenue", "gaming IAP revenue");
-        addBar("arppu", "D7 ARPPU");
+        addBar("budget", uaText);
+        addBar("revenue", revenueText);
+        addBar("arppu", arppuText);
 
         // addBoldText("#right-panel", "US ")
         
@@ -236,11 +222,11 @@ function drawViz6() {
                 .on("click", function(d){
                     document.getElementById("select-content-tier").classList.toggle("show");
                 });
-            d3.select("#select-dropdown-tier").select(".dropbtn").html(selectedGroup);
+            d3.select("#select-dropdown-tier").select(".dropbtn").html(groupLabels[selectedGroup]);
             tierOpts.selectAll("a").on("click", function(event, d){
                 if (d !== selectedGroup) {
                     selectedGroup = d;
-                    d3.select("#select-dropdown-tier").select(".dropbtn").html(selectedGroup);
+                    d3.select("#select-dropdown-tier").select(".dropbtn").html(groupLabels[selectedGroup]);
                     updatePlot();
                 }
             })
@@ -258,7 +244,7 @@ function drawViz6() {
                     .style("font-weight", d => d === selectedGroup ? 700 : 400)
                     .style("cursor", "pointer")
                     .style("padding", "10px")
-                    .html(d => d)
+                    .html(d => groupLabels[d])
                     .on("click", (evt, d) => {
                         if (selectedGroup !== d) {
                             selectedGroup = d;
@@ -276,7 +262,7 @@ function drawViz6() {
                 .attr("id", "viz-wrapper")
                 .style("margin-top", tooSmall ? '18px' : '-30px')
 
-        addBoldText("#viz-wrapper", "Select genre");
+        addBoldText("#viz-wrapper", selectGenre);
 
         const dropdown = d3.select("#viz-wrapper")
             .append("div")
@@ -499,9 +485,9 @@ function drawViz6() {
 
         updatePlot();
 
-        addSources("#geo-viz6", "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included.")
+        addSources(divId, sources)
 
-        d3.select("#geo-viz6 .sources")
+        d3.select(`${divId} .sources`)
             .style("max-width", "700px")
             .style("margin", "16px auto 0 auto");
         
@@ -509,4 +495,127 @@ function drawViz6() {
 
 }
 
-drawViz6();
+const urlPath = window.location.pathname;
+if (urlPath.includes('/ja/')) {
+    drawViz6(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz6-ja.csv',
+        divId = "#geo-viz6",
+        title = "Mapping global opportunities",
+        subtitle = "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics by region. Hover over individual countries or regions for a market-level overview.",
+        selectCountry = "Select country/region group",
+        countriesAndRegions = "Countries and regions",
+        uaText = "paid UA budget",
+        revenueText = "gaming IAP revenue",
+        arppuText = "D7 ARPPU",
+        groupLabels = { // No need to change Tier names in data
+            'US and English Language': "US and English Language", 
+            'East Asia Pacific': "East Asia Pacific",
+            'Europe & Middle East (Group 1)': "Europe & Middle East (Group 1)", 
+            'Europe & Middle East (Group 2)': "Europe & Middle East (Group 2)", 
+            'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
+            'Global Developing Markets': "Global Developing Markets"
+        },
+        groupInfo = {
+            'US and English Language': "The U.S. and many English-language countries are the largest overall mobile gaming market, representing the majority of UA spend and revenue. While the U.S. dominates in total IAP revenue, opportunities exist across these markets, representing similar barriers to entry and consistent user value across genres.", 
+            'East Asia Pacific': "East Asia Pacific markets have the highest average user value across most genres. Potentially a higher barrier to entry for non-domestic marketers due to localization and cultural differences. Midcore (RPG, Strategy, Simulation) sees relative strength in this region for user value and total IAP revenue.",
+            'Europe & Middle East (Group 1)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 1 represents some of the largest markets of opportunity within the region with higher user value and IAP revenue. Moreover, a significant percentage of English speakers among the population potentially lowering the barrier of entry for many apps.", 
+            'Europe & Middle East (Group 2)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 2 represents diverse markets with a lower share of the total IAP revenue and high variance in user value. Due to their size, these markets can perhaps be more challenging to enter, but may represent a significant opportunity by grouping key markets to maximize reach.", 
+            'LATAM Spanish Speaking': "Latin America (LATAM) markets have relatively low user value and overall IAP revenue contribution. However, localization can be streamlined due to the population being largely Spanish speaking. For marketers, grouping these countries can help with UA viability.", 
+            'Global Developing Markets': "Consisting of a wide range of developing countries, these markets have the largest variability of user value with significant differences across genres. However, there are pockets of opportunity for marketers to capture high-value users at a potentially cost efficient price."
+        },
+        selectGenre = "Select genre",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
+    );
+} else if (urlPath.includes('/zh/')) {
+    drawViz6(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz6-zh.csv',
+        divId = "#geo-viz6",
+        title = "Mapping global opportunities",
+        subtitle = "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics by region. Hover over individual countries or regions for a market-level overview.",
+        selectCountry = "Select country/region group",
+        countriesAndRegions = "Countries and regions",
+        uaText = "paid UA budget",
+        revenueText = "gaming IAP revenue",
+        arppuText = "D7 ARPPU",
+        groupLabels = { // No need to change Tier names in data
+            'US and English Language': "US and English Language", 
+            'East Asia Pacific': "East Asia Pacific",
+            'Europe & Middle East (Group 1)': "Europe & Middle East (Group 1)", 
+            'Europe & Middle East (Group 2)': "Europe & Middle East (Group 2)", 
+            'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
+            'Global Developing Markets': "Global Developing Markets"
+        },
+        groupInfo = {
+            'US and English Language': "The U.S. and many English-language countries are the largest overall mobile gaming market, representing the majority of UA spend and revenue. While the U.S. dominates in total IAP revenue, opportunities exist across these markets, representing similar barriers to entry and consistent user value across genres.", 
+            'East Asia Pacific': "East Asia Pacific markets have the highest average user value across most genres. Potentially a higher barrier to entry for non-domestic marketers due to localization and cultural differences. Midcore (RPG, Strategy, Simulation) sees relative strength in this region for user value and total IAP revenue.",
+            'Europe & Middle East (Group 1)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 1 represents some of the largest markets of opportunity within the region with higher user value and IAP revenue. Moreover, a significant percentage of English speakers among the population potentially lowering the barrier of entry for many apps.", 
+            'Europe & Middle East (Group 2)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 2 represents diverse markets with a lower share of the total IAP revenue and high variance in user value. Due to their size, these markets can perhaps be more challenging to enter, but may represent a significant opportunity by grouping key markets to maximize reach.", 
+            'LATAM Spanish Speaking': "Latin America (LATAM) markets have relatively low user value and overall IAP revenue contribution. However, localization can be streamlined due to the population being largely Spanish speaking. For marketers, grouping these countries can help with UA viability.", 
+            'Global Developing Markets': "Consisting of a wide range of developing countries, these markets have the largest variability of user value with significant differences across genres. However, there are pockets of opportunity for marketers to capture high-value users at a potentially cost efficient price."
+        },
+        selectGenre = "Select genre",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
+    );
+} else if (urlPath.includes('/ko/')) {
+    drawViz6(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz6-ko.csv',
+        divId = "#geo-viz6",
+        title = "Mapping global opportunities",
+        subtitle = "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics by region. Hover over individual countries or regions for a market-level overview.",
+        selectCountry = "Select country/region group",
+        countriesAndRegions = "Countries and regions",
+        uaText = "paid UA budget",
+        revenueText = "gaming IAP revenue",
+        arppuText = "D7 ARPPU",
+        groupLabels = { // No need to change Tier names in data
+            'US and English Language': "US and English Language", 
+            'East Asia Pacific': "East Asia Pacific",
+            'Europe & Middle East (Group 1)': "Europe & Middle East (Group 1)", 
+            'Europe & Middle East (Group 2)': "Europe & Middle East (Group 2)", 
+            'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
+            'Global Developing Markets': "Global Developing Markets"
+        },
+        groupInfo = {
+            'US and English Language': "The U.S. and many English-language countries are the largest overall mobile gaming market, representing the majority of UA spend and revenue. While the U.S. dominates in total IAP revenue, opportunities exist across these markets, representing similar barriers to entry and consistent user value across genres.", 
+            'East Asia Pacific': "East Asia Pacific markets have the highest average user value across most genres. Potentially a higher barrier to entry for non-domestic marketers due to localization and cultural differences. Midcore (RPG, Strategy, Simulation) sees relative strength in this region for user value and total IAP revenue.",
+            'Europe & Middle East (Group 1)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 1 represents some of the largest markets of opportunity within the region with higher user value and IAP revenue. Moreover, a significant percentage of English speakers among the population potentially lowering the barrier of entry for many apps.", 
+            'Europe & Middle East (Group 2)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 2 represents diverse markets with a lower share of the total IAP revenue and high variance in user value. Due to their size, these markets can perhaps be more challenging to enter, but may represent a significant opportunity by grouping key markets to maximize reach.", 
+            'LATAM Spanish Speaking': "Latin America (LATAM) markets have relatively low user value and overall IAP revenue contribution. However, localization can be streamlined due to the population being largely Spanish speaking. For marketers, grouping these countries can help with UA viability.", 
+            'Global Developing Markets': "Consisting of a wide range of developing countries, these markets have the largest variability of user value with significant differences across genres. However, there are pockets of opportunity for marketers to capture high-value users at a potentially cost efficient price."
+        },
+        selectGenre = "Select genre",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
+    );
+} else {
+    drawViz6(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz6.csv',
+        divId = "#geo-viz6",
+        title = "Mapping global opportunities",
+        subtitle = "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics by region. Hover over individual countries or regions for a market-level overview.",
+        selectCountry = "Select country/region group",
+        countriesAndRegions = "Countries and regions",
+        uaText = "paid UA budget",
+        revenueText = "gaming IAP revenue",
+        arppuText = "D7 ARPPU",
+        groupLabels = { // No need to change Tier names in data
+            'US and English Language': "US and English Language", 
+            'East Asia Pacific': "East Asia Pacific",
+            'Europe & Middle East (Group 1)': "Europe & Middle East (Group 1)", 
+            'Europe & Middle East (Group 2)': "Europe & Middle East (Group 2)", 
+            'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
+            'Global Developing Markets': "Global Developing Markets"
+        },
+        groupInfo = {
+            'US and English Language': "The U.S. and many English-language countries are the largest overall mobile gaming market, representing the majority of UA spend and revenue. While the U.S. dominates in total IAP revenue, opportunities exist across these markets, representing similar barriers to entry and consistent user value across genres.", 
+            'East Asia Pacific': "East Asia Pacific markets have the highest average user value across most genres. Potentially a higher barrier to entry for non-domestic marketers due to localization and cultural differences. Midcore (RPG, Strategy, Simulation) sees relative strength in this region for user value and total IAP revenue.",
+            'Europe & Middle East (Group 1)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 1 represents some of the largest markets of opportunity within the region with higher user value and IAP revenue. Moreover, a significant percentage of English speakers among the population potentially lowering the barrier of entry for many apps.", 
+            'Europe & Middle East (Group 2)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 2 represents diverse markets with a lower share of the total IAP revenue and high variance in user value. Due to their size, these markets can perhaps be more challenging to enter, but may represent a significant opportunity by grouping key markets to maximize reach.", 
+            'LATAM Spanish Speaking': "Latin America (LATAM) markets have relatively low user value and overall IAP revenue contribution. However, localization can be streamlined due to the population being largely Spanish speaking. For marketers, grouping these countries can help with UA viability.", 
+            'Global Developing Markets': "Consisting of a wide range of developing countries, these markets have the largest variability of user value with significant differences across genres. However, there are pockets of opportunity for marketers to capture high-value users at a potentially cost efficient price."
+        },
+        selectGenre = "Select genre",
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
+    );
+}
+
+
