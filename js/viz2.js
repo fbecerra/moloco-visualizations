@@ -1,12 +1,13 @@
-function drawViz2() {
+function drawViz2(dataSource, divId, title, subtitle, sources, initialGenre,
+                iOSColumnTitle, androidColumnTItle, totalColumnTitle) {
     const graphWidth = Math.min(Math.min(window.innerWidth, screen.width) - 40, 660);
 
-    clearDiv("#geo-viz2");
-    centerDiv("#geo-viz2");
-    addTitle("#geo-viz2", "RPG is popular in East Asia, while Match and Casino thrive in English-speaking regions");
-    addSubtitle("#geo-viz2", "2025 estimated user acquisition spend by country/region and genre");
+    clearDiv(divId);
+    centerDiv(divId);
+    addTitle(divId, title);
+    addSubtitle(divId, subtitle);
     
-    d3.select("#geo-viz2")
+    d3.select(divId)
         .append("div")
         .attr("class", "select-label")
         .style("font-family", "Montserrat")
@@ -15,7 +16,7 @@ function drawViz2() {
         .style("display", "table")
         .html("Select genre");
     
-    const dropdown = d3.select("#geo-viz2")
+    const dropdown = d3.select(divId)
         .append("div")
         .attr("class", "dropdown")
         .attr("id", "select-dropdown-2");
@@ -34,7 +35,7 @@ function drawViz2() {
         width = graphWidth - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
     
-    const svg = d3.select("#geo-viz2")
+    const svg = d3.select(divId)
         .append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom);
@@ -48,7 +49,6 @@ function drawViz2() {
         }
     }
     
-    
     const g = svg.append("g")
         .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
@@ -61,15 +61,14 @@ function drawViz2() {
         .range([0, height])
         .padding(.15);
 
-    addSources("#geo-viz2", "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.")
-    
+    addSources(divId, sources)
     
     Promise.all([
-        d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz2.csv')
+        d3.csv(dataSource)
     ]).then((data) => {
         const spend = data[0];
     
-        let selectedGenre = "RPG";
+        let selectedGenre = initialGenre;
     
         spend.forEach(d => {
             d['Android'] = +d['Android'].slice(0,-1);
@@ -97,7 +96,7 @@ function drawViz2() {
     
             // iOS
             g.selectAll(".title-iOS")
-                .data(['iOS'])
+                .data([iOSColumnTitle])
                 .join("text")
                     .attr("class", "title-iOS")
                     .attr("x", x(0) )
@@ -155,7 +154,7 @@ function drawViz2() {
     
             // ANDROID
             g.selectAll(".title-android")
-                .data(['Android'])
+                .data([androidColumnTItle])
                 .join("text")
                     .attr("class", "title-android")
                     .attr("x", width/2 + x(0) )
@@ -213,7 +212,7 @@ function drawViz2() {
     
             // Total
             g.selectAll(".title-total")
-                .data(['Total'])
+                .data([totalColumnTitle])
                 .join("text")
                     .attr("class", "title-total")
                     .attr("x", width)
@@ -238,7 +237,7 @@ function drawViz2() {
                     .style("fill",'#000000')
                     .text(d => d['Total'].toFixed(1) + '%');
 
-            fixWidth("#geo-viz2");
+            fixWidth(divId);
     
         }
     
@@ -261,6 +260,54 @@ function drawViz2() {
         updatePlot();
     })
 };
-
-drawViz2();
+const urlPath = window.location.pathname;
+if (urlPath.includes('/ja/')) {
+    drawViz2(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz2-ja.csv', 
+        divId = "#geo-viz2", 
+        title = "RPG is popular in East Asia, while Match and Casino thrive in English-speaking regions", 
+        subtitle = "2025 estimated user acquisition spend by country/region and genre", 
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        initialGenre = "RPG", // Translation for "RPG"
+        iOSColumnTitle = 'iOS',
+        androidColumnTItle = 'Android',
+        totalColumnTitle = 'Total'
+    );
+} else if (urlPath.includes('/zh/')) {
+    drawViz2(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz2-zh.csv', 
+        divId = "#geo-viz2", 
+        title = "RPG is popular in East Asia, while Match and Casino thrive in English-speaking regions", 
+        subtitle = "2025 estimated user acquisition spend by country/region and genre", 
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        initialGenre = "RPG", // Translation for "RPG"
+        iOSColumnTitle = 'iOS',
+        androidColumnTItle = 'Android',
+        totalColumnTitle = 'Total'
+    );
+} else if (urlPath.includes('/ko/')) {
+    drawViz2(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz2-ko.csv', 
+        divId = "#geo-viz2", 
+        title = "RPG is popular in East Asia, while Match and Casino thrive in English-speaking regions", 
+        subtitle = "2025 estimated user acquisition spend by country/region and genre", 
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        initialGenre = "RPG", // Translation for "RPG"
+        iOSColumnTitle = 'iOS',
+        androidColumnTItle = 'Android',
+        totalColumnTitle = 'Total'
+    );
+} else {
+    drawViz2(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz2.csv', 
+        divId = "#geo-viz2", 
+        title = "RPG is popular in East Asia, while Match and Casino thrive in English-speaking regions", 
+        subtitle = "2025 estimated user acquisition spend by country/region and genre", 
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
+        initialGenre = "RPG", // Translation for "RPG"
+        iOSColumnTitle = 'iOS',
+        androidColumnTItle = 'Android',
+        totalColumnTitle = 'Total'
+    );
+}
 
