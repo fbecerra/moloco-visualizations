@@ -1,0 +1,144 @@
+Market,Market full name,Genre,Android,iOS,Total
+HKG,Hong Kong,RPG,66.0,71.0,67.9
+KWT,Kuwait,RPG,65.9,59.3,63.8
+ARE,UAE,RPG,50.1,51.0,50.2
+CHE,Switzerland,RPG,47.1,52.6,49.0
+SGP,Singapore,RPG,46.0,53.8,50.0
+ISR,Israel,RPG,41.9,41.1,41.5
+NOR,Norway,RPG,41.7,31.6,35.2
+KOR,South Korea,RPG,41.2,38.3,40.2
+TWN,Taiwan,RPG,38.6,42.5,40.0
+JPN,Japan,RPG,37.0,42.3,40.4
+AUT,Austria,RPG,35.2,33.5,34.6
+USA,U.S.,RPG,34.4,41.5,37.9
+AUS,Australia,RPG,33.5,37.9,35.9
+NLD,Netherlands,RPG,32.5,31.4,31.9
+BEL,Belgium,RPG,31.5,30.7,31.4
+SAU,Saudi Arabia,RPG,,36.4,33.9
+CAN,Canada,RPG,31.4,36.2,32.8
+QAT,Qatar,RPG,,,65.7
+CHE,Switzerland,Match,16.8,22.5,20.7
+ISR,Israel,Match,14.8,19.3,18.6
+IRL,Ireland,Match,13.2,20.2,17.1
+HKG,Hong Kong,Match,12.7,22.2,20.5
+HRV,Croatia,Match,12.2,,14.5
+NOR,Norway,Match,12.0,17.3,15.6
+AUT,Austria,Match,11.3,18.8,13.9
+AUS,Australia,Match,8.2,14.3,10.3
+SVK,Slovakia,Match,8.1,,13.3
+SGP,Singapore,Match,7.5,22.1,16.1
+NZL,New Zealand,Match,7.5,16.1,10.9
+USA,U.S.,Match,7.4,15.0,11.0
+SWE,Sweden,Match,7.3,14.1,12.5
+CAN,Canada,Match,6.8,14.1,10.3
+BEL,Belgium,Match,6.6,16.0,13.4
+KWT,Kuwait,Match,,22.0,21.4
+GRC,Greece,Match,2.5,22.0,15.5
+ARE,UAE,Match,1.9,21.0,14.8
+FIN,Finland,Match,6.1,17.9,15.7
+ZAF,South Africa,Match,2.7,16.3,11.0
+PRT,Portugal,Match,1.4,15.3,11.5
+QAT,Qatar,Match,,,25.2
+SRB,Serbia,Match,0.7,,14.9
+CHE,Switzerland,Simulation,23.9,21.4,22.7
+HKG,Hong Kong,Simulation,20.3,24.5,22.4
+AUT,Austria,Simulation,19.6,17.0,18.1
+NOR,Norway,Simulation,18.5,15.3,16.3
+SGP,Singapore,Simulation,16.8,16.9,16.8
+JPN,Japan,Simulation,16.6,17.5,17.0
+ISR,Israel,Simulation,16.2,19.3,17.9
+KOR,South Korea,Simulation,15.1,14.8,14.9
+BEL,Belgium,Simulation,15.1,14.8,15.0
+USA,U.S.,Simulation,15.0,16.1,15.1
+SWE,Sweden,Simulation,14.8,13.1,14.3
+DEU,Germany,Simulation,14.3,15.8,14.7
+TWN,Taiwan,Simulation,14.3,12.4,13.8
+IRL,Ireland,Simulation,14.3,13.1,13.7
+AUS,Australia,Simulation,14.3,15.5,15.0
+QAT,Qatar,Simulation,,26.8,25.9
+KWT,Kuwait,Simulation,,22.2,22.0
+GRC,Greece,Simulation,12.2,16.2,14.5
+ARE,UAE,Simulation,7.6,15.6,13.8
+CAN,Canada,Simulation,14.2,14.9,14.6
+HKG,Hong Kong,Strategy,62.1,66.2,63.5
+ARE,UAE,Strategy,51.0,56.0,54.3
+SGP,Singapore,Strategy,41.4,46.2,45.5
+CHE,Switzerland,Strategy,39.9,42.6,41.3
+SAU,Saudi Arabia,Strategy,39.1,42.7,40.3
+TWN,Taiwan,Strategy,37.8,38.4,38.0
+NOR,Norway,Strategy,33.9,26.5,29.4
+KOR,South Korea,Strategy,33.9,32.4,33.1
+AUT,Austria,Strategy,32.7,31.2,31.8
+ISR,Israel,Strategy,31.6,31.1,31.5
+RUS,Russia,Strategy,31.2,22.5,25.6
+JPN,Japan,Strategy,30.2,34.4,31.6
+BEL,Belgium,Strategy,29.0,28.6,28.8
+IRL,Ireland,Strategy,28.5,,27.9
+USA,U.S.,Strategy,28.4,32.8,31.0
+KWT,Kuwait,Strategy,,56.9,57.1
+VNM,Vietnam,Strategy,19.5,41.5,30.1
+GRC,Greece,Strategy,26.2,33.8,29.1
+CAN,Canada,Strategy,25.5,29.7,27.6
+QAT,Qatar,Strategy,,,76.4
+HKG,Hong Kong,Casino,61.5,75.1,65.4
+ISR,Israel,Casino,59.0,,56.0
+NOR,Norway,Casino,38.2,,30.9
+CHE,Switzerland,Casino,33.3,40.8,37.1
+SGP,Singapore,Casino,32.8,47.8,43.0
+TWN,Taiwan,Casino,30.7,35.1,33.7
+JPN,Japan,Casino,28.7,26.7,28.0
+AUT,Austria,Casino,26.3,22.1,24.1
+BEL,Belgium,Casino,25.0,32.0,25.5
+NLD,Netherlands,Casino,23.4,24.4,23.8
+FRA,France,Casino,23.3,27.3,24.0
+CAN,Canada,Casino,22.6,29.4,26.1
+AUS,Australia,Casino,22.1,27.6,23.8
+SWE,Sweden,Casino,19.8,19.7,19.8
+ITA,Italy,Casino,19.3,21.0,19.5
+VNM,Vietnam,Casino,,43.1,30.8
+MEX,Mexico,Casino,13.4,39.4,19.7
+MYS,Malaysia,Casino,16.3,33.2,18.1
+BRA,Brazil,Casino,11.4,31.4,14.2
+USA,U.S.,Casino,19.2,30.8,23.6
+PHL,Philippines,Casino,9.5,28.6,15.7
+KOR,South Korea,Casino,,,73.8
+PRI,Puerto Rico,Casino,,,32.2
+IND,India,Casino,18.3,,27.9
+RUS,Russia,Casino,,,26.6
+IRL,Ireland,Casino,,,26.3
+USA,U.S.,Hypercasual,1.0,1.1,1.0
+CHE,Switzerland,Hypercasual,0.8,1.0,0.9
+JPN,Japan,Hypercasual,0.8,0.7,0.7
+AUS,Australia,Hypercasual,0.8,0.6,0.8
+KOR,South Korea,Hypercasual,0.7,0.9,0.8
+NOR,Norway,Hypercasual,0.7,0.5,0.6
+CAN,Canada,Hypercasual,0.6,0.6,0.6
+GBR,U.K.,Hypercasual,0.6,0.6,0.6
+NZL,New Zealand,Hypercasual,0.6,0.6,0.6
+AUT,Austria,Hypercasual,0.5,0.7,0.6
+HKG,Hong Kong,Hypercasual,0.5,0.8,0.6
+TWN,Taiwan,Hypercasual,0.5,0.8,0.6
+DEU,Germany,Hypercasual,0.5,0.5,0.5
+IRL,Ireland,Hypercasual,0.4,0.5,0.4
+SGP,Singapore,Hypercasual,0.4,0.6,0.5
+QAT,Qatar,Hypercasual,,0.6,0.4
+HKG,Hong Kong,All genres,34.9,40.9,37.5
+ISL,Iceland,All genres,31.8,25.4,27.4
+KWT,Kuwait,All genres,26.4,26.1,26.4
+CHE,Switzerland,All genres,25.0,25.7,25.4
+SGP,Singapore,All genres,23.9,29.7,26.5
+TWN,Taiwan,All genres,22.7,25.0,23.9
+NOR,Norway,All genres,21.6,18.0,19.8
+QAT,Qatar,All genres,21.5,35.2,28.0
+KOR,South Korea,All genres,21.2,22.6,21.7
+ISR,Israel,All genres,21.0,21.2,21.1
+AUT,Austria,All genres,20.5,20.0,20.2
+EST,Estonia,All genres,18.2,16.4,17.2
+JPN,Japan,All genres,18.1,20.9,19.4
+SVN,Slovenia,All genres,17.7,18.8,17.9
+NLD,Netherlands,All genres,17.3,16.8,17.0
+ARE,UAE,All genres,15.0,24.9,22.1
+USA,U.S.,All genres,15.5,20.1,17.2
+GRC,Greece,All genres,14.5,19.2,15.9
+AUS,Australia,All genres,15.4,18.8,16.8
+ALB,Albania,All genres,,17.2,17.6

@@ -1,0 +1,57 @@
+HQ country,HQ country full name,Destination,Total
+CHN,China,North America,0.358
+USA,U.S.,North America,0.598
+CYP,Cyprus,North America,0.309
+TUR,Turkey,North America,0.447
+VNM,Vietnam,North America,0.253
+GBR,U.K.,North America,0.375
+KOR,South Korea,North America,0.278
+ISR,Israel,North America,0.472
+FRA,France,North America,0.358
+JPN,Japan,North America,0.313
+IRL,Ireland,North America,0.513
+DEU,Germany,North America,0.398
+BRA,Brazil,North America,0.352
+IND,India,North America,0.348
+CHN,China,Europe,0.251
+USA,U.S.,Europe,0.218
+CYP,Cyprus,Europe,0.323
+TUR,Turkey,Europe,0.281
+VNM,Vietnam,Europe,0.301
+GBR,U.K.,Europe,0.302
+KOR,South Korea,Europe,0.216
+ISR,Israel,Europe,0.295
+FRA,France,Europe,0.312
+JPN,Japan,Europe,0.199
+IRL,Ireland,Europe,0.236
+DEU,Germany,Europe,0.365
+BRA,Brazil,Europe,0.314
+IND,India,Europe,0.330
+CHN,China,Asia Pacific,0.269
+USA,U.S.,Asia Pacific,0.099
+CYP,Cyprus,Asia Pacific,0.179
+TUR,Turkey,Asia Pacific,0.167
+VNM,Vietnam,Asia Pacific,0.239
+GBR,U.K.,Asia Pacific,0.155
+KOR,South Korea,Asia Pacific,0.407
+ISR,Israel,Asia Pacific,0.122
+FRA,France,Asia Pacific,0.171
+JPN,Japan,Asia Pacific,0.346
+IRL,Ireland,Asia Pacific,0.183
+DEU,Germany,Asia Pacific,0.121
+BRA,Brazil,Asia Pacific,0.120
+IND,India,Asia Pacific,0.158
+CHN,China,Rest of World,0.122
+USA,U.S.,Rest of World,0.084
+CYP,Cyprus,Rest of World,0.189
+TUR,Turkey,Rest of World,0.105
+VNM,Vietnam,Rest of World,0.208
+GBR,U.K.,Rest of World,0.168
+KOR,South Korea,Rest of World,0.100
+ISR,Israel,Rest of World,0.111
+FRA,France,Rest of World,0.159
+JPN,Japan,Rest of World,0.141
+IRL,Ireland,Rest of World,0.068
+DEU,Germany,Rest of World,0.115
+BRA,Brazil,Rest of World,0.214
+IND,India,Rest of World,0.164
