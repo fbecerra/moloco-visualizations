@@ -1,31 +1,34 @@
-function drawViz8() {
+function drawViz8(dataSource, divId, title, subtitle, howToRead, explainHowToRead, sources,
+    legendLabels, selectGenre, initialGenre, columnLabels, groups, allCountries, 
+    cppLabel, arppuLabel, revenuePotentialLabel
+) {
 
     const windowWidth = Math.min(window.innerWidth, screen.width);
     const smallScreen = windowWidth < 840;
 
-    clearDiv("#geo-viz8");
+    clearDiv(divId);
 
     const gray = '#ECEDEE';
     const blue = '#0280FB';
 
-    d3.select("#geo-viz8")
+    d3.select(divId)
         .style('font-family', 'Montserrat')
         .style('font-size', '14px')
         .style("display", "block")
         .style("background", "#FFF");
     
-    addTitle("#geo-viz8", "Paid user acquisition campaign outcomes showcase markets of opportunity");
-    addSubtitle("#geo-viz8", "Benchmarked performance for each market by payer acquisition, value, and overall revenue potential, August 2023-2024");
+    addTitle(divId, title);
+    addSubtitle(divId, subtitle);
 
-    d3.select("#geo-viz8 .title")
+    d3.select(`${divId} .title`)
         .style("max-width", "700px")
         .style("margin", "auto");
 
-    d3.select("#geo-viz8 .subtitle")
+    d3.select(`${divId} .subtitle`)
         .style("max-width", "700px")
         .style("margin", "8px auto 24px auto");
 
-    const legendWrapper = d3.select("#geo-viz8")
+    const legendWrapper = d3.select(divId)
         .append("div")
             .attr("id", "legend-wrapper")
             .style("padding", "12px 24px")
@@ -34,8 +37,8 @@ function drawViz8() {
             .style("max-width", "700px")
             .style("margin", "0 auto 24px auto");
 
-    addBoldText("#legend-wrapper", "How to read this graphic");
-    addSubtitle("#legend-wrapper", "High and low values can have different meanings for each metric. </br>The icons help you interpret them.")
+    addBoldText("#legend-wrapper", howToRead);
+    addSubtitle("#legend-wrapper", explainHowToRead)
 
     const legendItems = ['Good', 'Moderate', 'Limited', 'Opportunity'];
     const legendSvg = {
@@ -81,24 +84,24 @@ function drawViz8() {
 
         item.append("span")
             .style("display", 'inline-block')
-            .html(li)
+            .html(legendLabels[li])
     });
 
-    const buttonsWrapper = d3.select("#geo-viz8")
+    const buttonsWrapper = d3.select(divId)
         .append("div")
             .attr("id", "buttons-container")
             .style("margin-top", '12px')
             .style("max-width", "700px")
             .style("margin", "auto");
 
-    addBoldText("#buttons-container", 'Select genre');
+    addBoldText("#buttons-container", selectGenre);
 
     const buttons = buttonsWrapper.append("div")
         .style("display", smallScreen ? 'grid' : 'block')
         .style("grid-template-columns", "1fr 1fr 1fr")
 
     Promise.all([
-        d3.csv('https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz8.csv')
+        d3.csv(dataSource)
     ]).then((data) => {
         const markets = data[0];
 
@@ -106,7 +109,7 @@ function drawViz8() {
             market.value = +market.value
         })
 
-        let selectedGenre = 'All genres';
+        let selectedGenre = initialGenre;
         const genres = getUniquesMenu(markets, 'genre');
 
         buttons.selectAll(".button-viz")
@@ -133,14 +136,6 @@ function drawViz8() {
                     }
                 });
 
-        
-
-        const moreInfoIcon = '<svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 8V6M6 4H6.005M11 6C11 8.76142 8.76142 11 6 11C3.23858 11 1 8.76142 1 6C1 3.23858 3.23858 1 6 1C8.76142 1 11 3.23858 11 6Z" stroke="#808080" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-        const columnLabels = ['', 'Geography', 
-            `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Cost Per Payer</span></div>`,
-            `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Gaming App D7 Average Revenue Per Paying User</span></div>`, 
-            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`];
-
 
         //const groups = ['US and English Language Markets', 'Europe & Middle East (Tier 1)', 
         //    'LATAM Spanish Speaking', 'East Asia Pacific',
@@ -154,9 +149,6 @@ function drawViz8() {
         //    'Global Developing Markets': "Global Developing Markets"
         //}
 
-        const groups = ['US and English Language', 'East Asia Pacific',
-            'Europe & Middle East (Group 1)', 'Europe & Middle East (Group 2)',
-            'LATAM Spanish Speaking', 'Global Developing Markets'];
         const groupLabels = {
             'US and English Language': "US and English Language", 
             'East Asia Pacific': "East Asia Pacific",
@@ -189,7 +181,7 @@ function drawViz8() {
 
         function updatePlot() {
             if (smallScreen) {
-                const dataGrid = d3.select("#geo-viz8")
+                const dataGrid = d3.select(divId)
                     .selectAll(".data-grid")
                     .data(groups)
                     .join("div")
@@ -199,7 +191,7 @@ function drawViz8() {
                     .data(d => {
                         const filteredMarkets = markets.filter(market => (market.Tier === d) & (market.genre === selectedGenre));
                         filteredMarkets.forEach((d,i) => {
-                            if (d.Market === 'All countries') {
+                            if (d.Market === allCountries) {
                                 filteredMarkets.splice(i,1);
                                 filteredMarkets.unshift(d)
                             }
@@ -247,7 +239,7 @@ function drawViz8() {
 
                 dataWrapper.selectAll(".row-cpp")
                     .data(d => {
-                        const thisValue = d.data.filter(d => d['type of value'] === '(Paid UA) CPP')[0];
+                        const thisValue = d.data.filter(d => d['type of value'] === cppLabel)[0];
                         const squaresHtml = d3.range(5).map(e => {
                             const color = e < thisValue.value ? blue : gray;
                             return `<div class="square" style="display: inline-block;margin-right:2px;width: 10px;height: 10px; background-color: ${color}"></div>`
@@ -262,7 +254,7 @@ function drawViz8() {
 
                 dataWrapper.selectAll(".row-arppu")
                     .data(d => {
-                        const thisValue = d.data.filter(d => d['type of value'] === '(Paid UA) D7 ARPPU')[0];
+                        const thisValue = d.data.filter(d => d['type of value'] === arppuLabel)[0];
                         const squaresHtml = d3.range(5).map(e => {
                             const color = e < thisValue.value ? blue : gray;
                             return `<div class="square" style="display: inline-block;margin-right:2px;width: 10px;height: 10px; background-color: ${color}"></div>`
@@ -279,7 +271,7 @@ function drawViz8() {
                 
                 dataWrapper.selectAll(".row-revenue")
                     .data(d => {
-                        const thisValue = d.data.filter(d => d['type of value'] === 'Revenue Potential')[0];
+                        const thisValue = d.data.filter(d => d['type of value'] === revenuePotentialLabel)[0];
                         const value = (thisValue.value * 100).toFixed(0);
                         const rectHtml = `<div class="bar" style="display: inline-block;margin-right:10px;margin-top: 2px;margin-bottom:6px;width: ${thisValue.value * maxWidthBar}px;height: 10px; background-color: ${blue}"></div>`;
                         const numberHtml = value < 1 ? `<div class='bar-value' style="font-weight: 700;"><1%</div>` : `<div class='bar-value' style="font-weight: 700;">${value}%</div>`;
@@ -332,7 +324,7 @@ function drawViz8() {
                     .data(d => {
                         const filteredMarkets = markets.filter(market => (market.Tier === d) & (market.genre === selectedGenre));
                         filteredMarkets.forEach((d,i) => {
-                            if (d.Market === 'All countries') {
+                            if (d.Market === allCountries) {
                                 filteredMarkets.splice(i,1);
                                 filteredMarkets.unshift(d)
                             }
@@ -379,7 +371,7 @@ function drawViz8() {
 
                 gridRow.selectAll(".row-cpp")
                     .data(d => {
-                        const thisValue = d.data.filter(d => d['type of value'] === '(Paid UA) CPP')[0];
+                        const thisValue = d.data.filter(d => d['type of value'] === cppLabel)[0];
                         const squaresHtml = d3.range(5).map(e => {
                             const color = e < thisValue.value ? blue : gray;
                             return `<div class="square" style="display: inline-block;margin-right:2px;width: 15px;height: 15px; background-color: ${color}"></div>`
@@ -394,7 +386,7 @@ function drawViz8() {
 
                 gridRow.selectAll(".row-arppu")
                     .data(d => {
-                        const thisValue = d.data.filter(d => d['type of value'] === '(Paid UA) D7 ARPPU')[0];
+                        const thisValue = d.data.filter(d => d['type of value'] === arppuLabel)[0];
                         const squaresHtml = d3.range(5).map(e => {
                             const color = e < thisValue.value ? blue : gray;
                             return `<div class="square" style="display: inline-block;margin-right:2px;width: 15px;height: 15px; background-color: ${color}"></div>`
@@ -411,7 +403,7 @@ function drawViz8() {
                 
                 gridRow.selectAll(".row-revenue")
                     .data(d => {
-                        const thisValue = d.data.filter(d => d['type of value'] === 'Revenue Potential')[0];
+                        const thisValue = d.data.filter(d => d['type of value'] === revenuePotentialLabel)[0];
                         const value = (thisValue.value * 100).toFixed(0);
                         const rectHtml = `<div class="bar" style="display: inline-block;line-height: 24px;margin-right:10px;width: ${thisValue.value * maxWidthBar}px;height: 15px; background-color: ${blue}"></div>`;
                         const numberHtml = value < 1 ? `<div class='bar-value' style="line-height: 24px; vertical-align: bottom;"><1%</div>` : `<div class='bar-value' style="line-height: 24px; vertical-align: bottom;">${value}%</div>`;
@@ -425,9 +417,9 @@ function drawViz8() {
         }
 
         updatePlot();
-        addSources("#geo-viz8", "Source: Moloco campaign outcomes from August 2023 to August 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU). Countries and regions that do not meet minimum thresholds are not shown.")
+        addSources(divId, sources)
 
-        d3.select("#geo-viz8 .sources")
+        d3.select(`${divId} .sources`)
             .style("max-width", "700px")
             .style("margin", "16px auto 0 auto");
         
@@ -435,4 +427,156 @@ function drawViz8() {
     })
 };
 
-drawViz8();
+const moreInfoIcon = '<svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 8V6M6 4H6.005M11 6C11 8.76142 8.76142 11 6 11C3.23858 11 1 8.76142 1 6C1 3.23858 3.23858 1 6 1C8.76142 1 11 3.23858 11 6Z" stroke="#808080" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+const urlPath = window.location.pathname;
+if (urlPath.includes('/ja/')) {
+    drawViz8(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz8-ja.csv',
+        divId = "#geo-viz8",
+        title = "Paid user acquisition campaign outcomes showcase markets of opportunity",
+        subtitle = "Benchmarked performance for each market by payer acquisition, value, and overall revenue potential, August 2023-2024",
+        howToRead = "How to read this graphic",
+        explainHowToRead = "High and low values can have different meanings for each metric. </br>The icons help you interpret them.",
+        sources = "Source: Moloco campaign outcomes from August 2023 to August 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU). Countries and regions that do not meet minimum thresholds are not shown.",
+        legendLabels = {
+            'Good': 'Good',
+            'Moderate': 'Moderate',
+            'Limited': 'Limited',
+            'Opportunity': 'Opportunity'
+        },
+        selectGenre = 'Select genre',
+        initialGenre = 'All genres',
+        columnLabels = [
+            '', 
+            'Geography', 
+            `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Cost Per Payer</span></div>`,
+            `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Gaming App D7 Average Revenue Per Paying User</span></div>`, 
+            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`
+        ],
+        groups = [
+            'US and English Language',
+            'East Asia Pacific',
+            'Europe & Middle East (Group 1)', 
+            'Europe & Middle East (Group 2)',
+            'LATAM Spanish Speaking', 
+            'Global Developing Markets'
+        ],
+        allCountries = 'All countries',
+        cppLabel = '(Paid UA) CPP',
+        arppuLabel = '(Paid UA) D7 ARPPU',
+        revenuePotentialLabel = 'Revenue Potential'
+    );
+} else if (urlPath.includes('/zh/')) {
+    drawViz8(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz8-zh.csv',
+        divId = "#geo-viz8",
+        title = "Paid user acquisition campaign outcomes showcase markets of opportunity",
+        subtitle = "Benchmarked performance for each market by payer acquisition, value, and overall revenue potential, August 2023-2024",
+        howToRead = "How to read this graphic",
+        explainHowToRead = "High and low values can have different meanings for each metric. </br>The icons help you interpret them.",
+        sources = "Source: Moloco campaign outcomes from August 2023 to August 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU). Countries and regions that do not meet minimum thresholds are not shown.",
+        legendLabels = {
+            'Good': 'Good',
+            'Moderate': 'Moderate',
+            'Limited': 'Limited',
+            'Opportunity': 'Opportunity'
+        },
+        selectGenre = 'Select genre',
+        initialGenre = 'All genres',
+        columnLabels = [
+            '', 
+            'Geography', 
+            `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Cost Per Payer</span></div>`,
+            `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Gaming App D7 Average Revenue Per Paying User</span></div>`, 
+            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`
+        ],
+        groups = [
+            'US and English Language',
+            'East Asia Pacific',
+            'Europe & Middle East (Group 1)', 
+            'Europe & Middle East (Group 2)',
+            'LATAM Spanish Speaking', 
+            'Global Developing Markets'
+        ],
+        allCountries = 'All countries',
+        cppLabel = '(Paid UA) CPP',
+        arppuLabel = '(Paid UA) D7 ARPPU',
+        revenuePotentialLabel = 'Revenue Potential'
+    );
+} else if (urlPath.includes('/ko/')) {
+    drawViz8(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz8-ko.csv',
+        divId = "#geo-viz8",
+        title = "Paid user acquisition campaign outcomes showcase markets of opportunity",
+        subtitle = "Benchmarked performance for each market by payer acquisition, value, and overall revenue potential, August 2023-2024",
+        howToRead = "How to read this graphic",
+        explainHowToRead = "High and low values can have different meanings for each metric. </br>The icons help you interpret them.",
+        sources = "Source: Moloco campaign outcomes from August 2023 to August 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU). Countries and regions that do not meet minimum thresholds are not shown.",
+        legendLabels = {
+            'Good': 'Good',
+            'Moderate': 'Moderate',
+            'Limited': 'Limited',
+            'Opportunity': 'Opportunity'
+        },
+        selectGenre = 'Select genre',
+        initialGenre = 'All genres',
+        columnLabels = [
+            '', 
+            'Geography', 
+            `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Cost Per Payer</span></div>`,
+            `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Gaming App D7 Average Revenue Per Paying User</span></div>`, 
+            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`
+        ],
+        groups = [
+            'US and English Language',
+            'East Asia Pacific',
+            'Europe & Middle East (Group 1)', 
+            'Europe & Middle East (Group 2)',
+            'LATAM Spanish Speaking', 
+            'Global Developing Markets'
+        ],
+        allCountries = 'All countries',
+        cppLabel = '(Paid UA) CPP',
+        arppuLabel = '(Paid UA) D7 ARPPU',
+        revenuePotentialLabel = 'Revenue Potential'
+    );
+} else {
+    drawViz8(
+        dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz8.csv',
+        divId = "#geo-viz8",
+        title = "Paid user acquisition campaign outcomes showcase markets of opportunity",
+        subtitle = "Benchmarked performance for each market by payer acquisition, value, and overall revenue potential, August 2023-2024",
+        howToRead = "How to read this graphic",
+        explainHowToRead = "High and low values can have different meanings for each metric. </br>The icons help you interpret them.",
+        sources = "Source: Moloco campaign outcomes from August 2023 to August 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU). Countries and regions that do not meet minimum thresholds are not shown.",
+        legendLabels = {
+            'Good': 'Good',
+            'Moderate': 'Moderate',
+            'Limited': 'Limited',
+            'Opportunity': 'Opportunity'
+        },
+        selectGenre = 'Select genre',
+        initialGenre = 'All genres',
+        columnLabels = [
+            '', 
+            'Geography', 
+            `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Cost Per Payer</span></div>`,
+            `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Gaming App D7 Average Revenue Per Paying User</span></div>`, 
+            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`
+        ],
+        groups = [
+            'US and English Language',
+            'East Asia Pacific',
+            'Europe & Middle East (Group 1)', 
+            'Europe & Middle East (Group 2)',
+            'LATAM Spanish Speaking', 
+            'Global Developing Markets'
+        ],
+        allCountries = 'All countries',
+        cppLabel = '(Paid UA) CPP',
+        arppuLabel = '(Paid UA) D7 ARPPU',
+        revenuePotentialLabel = 'Revenue Potential'
+    );
+}
+
