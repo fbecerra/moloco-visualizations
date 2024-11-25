@@ -1,6 +1,5 @@
 function drawViz8(dataSource, divId, title, subtitle, howToRead, explainHowToRead, sources,
-    legendLabels, selectGenre, initialGenre, columnLabels, groups, allCountries, 
-    cppLabel, arppuLabel, revenuePotentialLabel
+    legendLabels, selectGenre, initialGenre, columnLabels, groups
 ) {
 
     const windowWidth = Math.min(window.innerWidth, screen.width);
@@ -10,6 +9,11 @@ function drawViz8(dataSource, divId, title, subtitle, howToRead, explainHowToRea
 
     const gray = '#ECEDEE';
     const blue = '#0280FB';
+
+    const allCountries = 'All countries';
+    const cppLabel = '(Paid UA) CPP';
+    const arppuLabel = '(Paid UA) D7 ARPPU';
+    const revenuePotentialLabel = 'Revenue Potential';
 
     d3.select(divId)
         .style('font-family', 'Montserrat')
@@ -461,11 +465,7 @@ if (urlPath8.includes('/ja/')) {
             'Europe & Middle East (Group 2)',
             'LATAM Spanish Speaking', 
             'Global Developing Markets'
-        ],
-        allCountries = 'All countries',
-        cppLabel = '(Paid UA) CPP',
-        arppuLabel = '(Paid UA) D7 ARPPU',
-        revenuePotentialLabel = 'Revenue Potential'
+        ]
     );
 } else if (urlPath8.includes('/zh/')) {
     drawViz8(
@@ -498,11 +498,7 @@ if (urlPath8.includes('/ja/')) {
             'Europe & Middle East (Group 2)',
             'LATAM Spanish Speaking', 
             'Global Developing Markets'
-        ],
-        allCountries = 'All countries',
-        cppLabel = '(Paid UA) CPP',
-        arppuLabel = '(Paid UA) D7 ARPPU',
-        revenuePotentialLabel = 'Revenue Potential'
+        ]
     );
 } else if (urlPath8.includes('/ko/')) {
     drawViz8(
@@ -529,17 +525,13 @@ if (urlPath8.includes('/ja/')) {
             `IAP 매출 <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`
         ],
         groups = [
-            'US and English Language',
-            'East Asia Pacific',
-            'Europe & Middle East (Group 1)', 
-            'Europe & Middle East (Group 2)',
-            'LATAM Spanish Speaking', 
-            'Global Developing Markets'
-        ],
-        allCountries = 'All countries',
-        cppLabel = '(Paid UA) CPP',
-        arppuLabel = '(Paid UA) D7 ARPPU',
-        revenuePotentialLabel = 'Revenue Potential'
+            '미국 및 영어권 시장',
+            '동아시아 태평양',
+            '유럽 및 중동 (그룹 1)', 
+            '유럽 및 중동 (그룹 2)',
+            '라틴아메리카 스페인어 사용 국가', 
+            '글로벌 개발도상국 시장'
+        ]
     );
 } else {
     drawViz8(
@@ -572,11 +564,7 @@ if (urlPath8.includes('/ja/')) {
             'Europe & Middle East (Group 2)',
             'LATAM Spanish Speaking', 
             'Global Developing Markets'
-        ],
-        allCountries = 'All countries',
-        cppLabel = '(Paid UA) CPP',
-        arppuLabel = '(Paid UA) D7 ARPPU',
-        revenuePotentialLabel = 'Revenue Potential'
+        ]
     );
 }
 
