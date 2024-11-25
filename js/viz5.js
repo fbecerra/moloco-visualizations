@@ -1,5 +1,5 @@
 function drawViz5(dataSource, divId, title, subtitle, selectLabels, sources,
-    selectedGenre, selectedOS, allSystems, systems
+    selectedGenre, selectedOS, allSystems, android, iOS
 ) {
     clearDiv(divId);
     centerDiv(divId);
@@ -97,7 +97,7 @@ function drawViz5(dataSource, divId, title, subtitle, selectLabels, sources,
         });
 
         const updatePlot = () => {
-            const xlabel = selectedOS === allSystems ? 'Total' : selectedOS,
+            const xlabel = selectedOS === allSystems ? 'Total' : (selectedOS === android ? 'Android' : 'iOS'),
                 ylabel = 'Market full name';
             const dataToPlot = revenue.filter(d => d.Genre === selectedGenre)
                 .sort((a,b) => b[xlabel] - a[xlabel]).slice(0,15);
@@ -167,6 +167,7 @@ function drawViz5(dataSource, divId, title, subtitle, selectLabels, sources,
             }
         })
 
+        const systems = [allSystems, android, iOS]
         let systemOpts = addOptions("OS-content", systems);
 
         d3.select("#OS-dropdown")
@@ -201,7 +202,8 @@ if (urlPath5.includes('/ja/')) {
         selectedGenre = "All genres",
         selectedOS = 'All systems',
         allSystems = 'All systems',
-        systems = ['All systems', 'Android', 'iOS']
+        android = 'Android',
+        iOS = 'iOS'
     );
 } else if (urlPath5.includes('/zh/')) {
     drawViz5(
@@ -217,7 +219,8 @@ if (urlPath5.includes('/ja/')) {
         selectedGenre = "All genres",
         selectedOS = 'All systems',
         allSystems = 'All systems',
-        systems = ['All systems', 'Android', 'iOS']
+        android = 'Android',
+        iOS = 'iOS'
     );
 } else if (urlPath5.includes('/ko/')) {
     drawViz5(
@@ -233,7 +236,8 @@ if (urlPath5.includes('/ja/')) {
         selectedGenre = "모든 장르",
         selectedOS = '전체',
         allSystems = '전체',
-        systems = ['전체', '안드로이드', 'iOS']
+        android = '안드로이드',
+        iOS = 'iOS'
     );
 } else {
     drawViz5(
@@ -249,6 +253,7 @@ if (urlPath5.includes('/ja/')) {
         selectedGenre = "All genres",
         selectedOS = 'All systems',
         allSystems = 'All systems',
-        systems = ['All systems', 'Android', 'iOS']
+        android = 'Android',
+        iOS = 'iOS'
     );
 }
