@@ -258,7 +258,7 @@ if (urlPath3.includes('/ja/')) {
         titleSecondRow = "비교할 본사 선택",
         sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
         labelForUS = '미국',
-        spendIn = 'Spend in ',
+        spendIn = '지출',
         country2 = '중국',
         uniqueDestinations = ['북미', '유럽', '아시아 태평양', '그 외 지역']
     );
