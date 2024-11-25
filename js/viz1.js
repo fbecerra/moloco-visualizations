@@ -198,9 +198,9 @@ if (urlPath.includes('/ja/')) {
         subtitle = "2025 estimated user acquisition spend concentration by country",
         sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
         othersLabel = 'Others',
-        operatingSystem = 'Operating System',
+        operatingSystem = '운영체제(OS)',
         iOS = 'iOS',
-        android = 'Android'
+        android = '안드로이드'
     );
 } else {
     console.log('en');
