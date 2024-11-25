@@ -519,7 +519,7 @@ if (urlPath8.includes('/ja/')) {
             'Good': '우수',
             'Moderate': '보통',
             'Limited': '제한적',
-            'Opportunity': 'Opportunity'
+            'Opportunity': '기회'
         },
         selectGenre = '장르 선택',
         initialGenre = '모든 장르',
