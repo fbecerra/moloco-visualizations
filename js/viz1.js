@@ -149,7 +149,7 @@ function drawViz1(dataSource, divId, xlabels, ylabel, colors, title, subtitle, s
             d.Total = +d.Total;
         });
     
-        drawBars1(data[0], divId, xlabels, ylabel, colors, title, subtitle, sources, othersLabel)
+        drawBars1(data[0], divId, xlabels, ylabel, colors, title, subtitle, sources, othersLabel, operatingSystem, iOS, android)
     })
 }
 
