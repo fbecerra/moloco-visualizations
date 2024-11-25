@@ -80,10 +80,10 @@ function addBoldText(id, text) {
         .html(text);
 }
 
-function addLegend(id) {
+function addLegend(id, operatingSystem, iOS, android) {
     const rectWidth = 20;
 
-    addBoldText(id, "Operating System");
+    addBoldText(id, operatingSystem);
 
     const legendItem = d3.select(id)
         .append("div")
@@ -91,7 +91,7 @@ function addLegend(id) {
         .style("margin-top", "8px")
         .style("display", "table")
         .selectAll(".legend-item")
-        .data(["iOS", "Android"])
+        .data([iOS, android])
         .join("span")
             .attr("class", "legend-item")
             .style("display", 'inline-block')
@@ -109,7 +109,7 @@ function addLegend(id) {
             .attr("y", 0)
             .attr("width", rectWidth)
             .attr("height", rectWidth)
-            .attr("fill", d => d === 'iOS' ? "#040078" : "#558FC9");
+            .attr("fill", d => d === iOS ? "#040078" : "#558FC9");
 
     legendItem.selectAll(".item-text")
         .data(d => [d])
