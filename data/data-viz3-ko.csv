@@ -1,57 +1,57 @@
 HQ country,HQ country full name,Destination,Total
-CHN,China,North America,0.358
-USA,U.S.,North America,0.598
-CYP,Cyprus,North America,0.309
-TUR,Turkey,North America,0.447
-VNM,Vietnam,North America,0.253
-GBR,U.K.,North America,0.375
-KOR,South Korea,North America,0.278
-ISR,Israel,North America,0.472
-FRA,France,North America,0.358
-JPN,Japan,North America,0.313
-IRL,Ireland,North America,0.513
-DEU,Germany,North America,0.398
-BRA,Brazil,North America,0.352
-IND,India,North America,0.348
-CHN,China,Europe,0.251
-USA,U.S.,Europe,0.218
-CYP,Cyprus,Europe,0.323
-TUR,Turkey,Europe,0.281
-VNM,Vietnam,Europe,0.301
-GBR,U.K.,Europe,0.302
-KOR,South Korea,Europe,0.216
-ISR,Israel,Europe,0.295
-FRA,France,Europe,0.312
-JPN,Japan,Europe,0.199
-IRL,Ireland,Europe,0.236
-DEU,Germany,Europe,0.365
-BRA,Brazil,Europe,0.314
-IND,India,Europe,0.330
-CHN,China,Asia Pacific,0.269
-USA,U.S.,Asia Pacific,0.099
-CYP,Cyprus,Asia Pacific,0.179
-TUR,Turkey,Asia Pacific,0.167
-VNM,Vietnam,Asia Pacific,0.239
-GBR,U.K.,Asia Pacific,0.155
-KOR,South Korea,Asia Pacific,0.407
-ISR,Israel,Asia Pacific,0.122
-FRA,France,Asia Pacific,0.171
-JPN,Japan,Asia Pacific,0.346
-IRL,Ireland,Asia Pacific,0.183
-DEU,Germany,Asia Pacific,0.121
-BRA,Brazil,Asia Pacific,0.120
-IND,India,Asia Pacific,0.158
-CHN,China,Rest of World,0.122
-USA,U.S.,Rest of World,0.084
-CYP,Cyprus,Rest of World,0.189
-TUR,Turkey,Rest of World,0.105
-VNM,Vietnam,Rest of World,0.208
-GBR,U.K.,Rest of World,0.168
-KOR,South Korea,Rest of World,0.100
-ISR,Israel,Rest of World,0.111
-FRA,France,Rest of World,0.159
-JPN,Japan,Rest of World,0.141
-IRL,Ireland,Rest of World,0.068
-DEU,Germany,Rest of World,0.115
-BRA,Brazil,Rest of World,0.214
-IND,India,Rest of World,0.164
+CHN,중국,북미,0.358
+USA,미국,북미,0.598
+CYP,키프로스,북미,0.309
+TUR,터키,북미,0.447
+VNM,베트남,북미,0.253
+GBR,영국,북미,0.375
+KOR,한국,북미,0.278
+ISR,이스라엘,북미,0.472
+FRA,프랑스,북미,0.358
+JPN,일본,북미,0.313
+IRL,아일랜드,북미,0.513
+DEU,독일,북미,0.398
+BRA,브라질,북미,0.352
+IND,인도,북미,0.348
+CHN,중국,유럽,0.251
+USA,미국,유럽,0.218
+CYP,키프로스,유럽,0.323
+TUR,터키,유럽,0.281
+VNM,베트남,유럽,0.301
+GBR,영국,유럽,0.302
+KOR,한국,유럽,0.216
+ISR,이스라엘,유럽,0.295
+FRA,프랑스,유럽,0.312
+JPN,일본,유럽,0.199
+IRL,아일랜드,유럽,0.236
+DEU,독일,유럽,0.365
+BRA,브라질,유럽,0.314
+IND,인도,유럽,0.330
+CHN,중국,아시아 태평양,0.269
+USA,미국,아시아 태평양,0.099
+CYP,키프로스,아시아 태평양,0.179
+TUR,터키,아시아 태평양,0.167
+VNM,베트남,아시아 태평양,0.239
+GBR,영국,아시아 태평양,0.155
+KOR,한국,아시아 태평양,0.407
+ISR,이스라엘,아시아 태평양,0.122
+FRA,프랑스,아시아 태평양,0.171
+JPN,일본,아시아 태평양,0.346
+IRL,아일랜드,아시아 태평양,0.183
+DEU,독일,아시아 태평양,0.121
+BRA,브라질,아시아 태평양,0.120
+IND,인도,아시아 태평양,0.158
+CHN,중국,그 외 지역,0.122
+USA,미국,그 외 지역,0.084
+CYP,키프로스,그 외 지역,0.189
+TUR,터키,그 외 지역,0.105
+VNM,베트남,그 외 지역,0.208
+GBR,영국,그 외 지역,0.168
+KOR,한국,그 외 지역,0.100
+ISR,이스라엘,그 외 지역,0.111
+FRA,프랑스,그 외 지역,0.159
+JPN,일본,그 외 지역,0.141
+IRL,아일랜드,그 외 지역,0.068
+DEU,독일,그 외 지역,0.115
+BRA,브라질,그 외 지역,0.214
+IND,인도,그 외 지역,0.164
