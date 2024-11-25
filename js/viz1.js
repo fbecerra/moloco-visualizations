@@ -155,7 +155,7 @@ if (urlPath.includes('/ja/')) {
     drawViz1(
         dataSource = "https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz1-ja.csv",
         divId = "#geo-viz1",
-        xlabels = ['iOS', 'Android'], // Column names
+        xlabels = ['iOS', '안드로이드'], // Column names
         ylabel = 'Market full name', // Column name
         colors = ["#040078", "#558FC9"],
         title = "Almost three-quarters of user acquisition spend for mobile gaming is concentrated in ten countries",
