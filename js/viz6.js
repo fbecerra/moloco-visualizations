@@ -215,7 +215,7 @@ function drawViz6(dataSource, divId, title, subtitle, selectCountry, countriesAn
                 .attr("id", "select-content-tier")
                 //.style("width", '208');
 
-            let tierOpts = addOptions("select-content-tier", groups);
+            let tierOpts = addOptionsWithLabels("select-content-tier", groups, groupLabels);
 
             d3.select("#select-dropdown-tier")
                 .on("click", function(d){

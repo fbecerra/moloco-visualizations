@@ -25,6 +25,18 @@ function addOptions(id, values) {
     return element;
 }
 
+function addOptionsWithLabels(id, values, labels) {
+    var element = d3.select("#"+id);
+    var options = element.selectAll("option").data(values);
+
+    options.enter().append("a")
+        .html(d => labels[d]);
+
+    options.exit().remove();
+
+    return element;
+}
+
 function addTitle(id, text) {
 
     const windowWidth = screen.width;
