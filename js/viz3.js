@@ -1,5 +1,5 @@
 function drawViz3(dataSource, divId, title, subtitle, titleFirstRow, titleSecondRow, sources,
-    labelForUS, spendIn, country2, uniqueDestinations
+    labelForUS, spendIn, leftToRight, country2, uniqueDestinations
 ) {
 
     const windowWidth = Math.min(window.innerWidth, screen.width);
@@ -192,7 +192,7 @@ function drawViz3(dataSource, divId, title, subtitle, titleFirstRow, titleSecond
                     .style("font-size", "14px")
                     .style("text-anchor", 'start')
                     .attr("fill", "#000000")
-                    .text(d => spendIn + d[0]['Destination'])
+                    .text(d => leftToRight === true ? spendIn + d[0]['Destination'] : d[0]['Destination'] + spendIn)
 
             fixWidth(divId);
 
@@ -231,6 +231,7 @@ if (urlPath3.includes('/ja/')) {
         sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
         labelForUS = 'U.S.',
         spendIn = 'Spend in ',
+        leftToRight = true,
         country2 = 'China',
         uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World']
     );
@@ -245,6 +246,7 @@ if (urlPath3.includes('/ja/')) {
         sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
         labelForUS = 'U.S.',
         spendIn = 'Spend in ',
+        leftToRight = true,
         country2 = 'China',
         uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World']
     );
@@ -259,6 +261,7 @@ if (urlPath3.includes('/ja/')) {
         sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
         labelForUS = '미국',
         spendIn = '지출',
+        leftToRight = false,
         country2 = '중국',
         uniqueDestinations = ['북미', '유럽', '아시아 태평양', '그 외 지역']
     );
@@ -273,6 +276,7 @@ if (urlPath3.includes('/ja/')) {
         sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
         labelForUS = 'U.S.',
         spendIn = 'Spend in ',
+        leftToRight = true,
         country2 = 'China',
         uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World']
     );
