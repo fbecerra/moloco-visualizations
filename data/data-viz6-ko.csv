@@ -1,350 +1,350 @@
 Tier,Market,Market full name,Revenue,UA Spend,ARPPU,Genre
-US and English Language,USA,U.S.,0.397,0.399,17.20,All genres
-US and English Language,GBR,U.K.,0.041,0.055,13.25,All genres
-US and English Language,CAN,Canada,0.024,0.029,16.22,All genres
-US and English Language,AUS,Australia,0.022,0.019,16.82,All genres
-US and English Language,NZL,New Zealand,0.003,0.003,13.52,All genres
-US and English Language,IRL,Ireland,0.002,0.003,16.31,All genres
-LATAM Spanish Speaking,MEX,Mexico,0.009,0.015,7.34,All genres
-LATAM Spanish Speaking,CHL,Chile,0.003,0.004,6.95,All genres
-LATAM Spanish Speaking,COL,Colombia,0.001,0.003,3.80,All genres
-LATAM Spanish Speaking,ARG,Argentina,0.001,0.003,4.03,All genres
-LATAM Spanish Speaking,PER,Peru,0.001,0.002,6.48,All genres
-LATAM Spanish Speaking,PRI,Puerto Rico,0.001,0.001,14.28,All genres
-LATAM Spanish Speaking,CRI,Costa Rica,0.000,0.001,9.48,All genres
-LATAM Spanish Speaking,ECU,Ecuador,0.000,0.001,5.01,All genres
-Global Developing Markets,BRA,Brazil,0.020,0.025,6.72,All genres
-Global Developing Markets,THA,Thailand,0.013,0.011,8.84,All genres
-Global Developing Markets,IDN,Indonesia,0.008,0.013,7.75,All genres
-Global Developing Markets,VNM,Vietnam,0.007,0.011,12.78,All genres
-Global Developing Markets,PHL,Philippines,0.006,0.009,8.38,All genres
-Global Developing Markets,IND,India,0.005,0.008,5.44,All genres
-Global Developing Markets,MYS,Malaysia,0.005,0.006,10.23,All genres
-Global Developing Markets,ZAF,South Africa,0.003,0.005,9.59,All genres
-Global Developing Markets,KAZ,Kazakhstan,0.001,0.003,7.59,All genres
-Global Developing Markets,EGY,Egypt,0.001,0.002,0.79,All genres
-Global Developing Markets,IRQ,Iraq,0.001,0.002,4.81,All genres
-Global Developing Markets,PAK,Pakistan,0.000,0.001,0.21,All genres
-Global Developing Markets,NGA,Nigeria,0.000,0.001,5.55,All genres
-Europe & Middle East (Group 2),RUS,Russia,0.013,0.020,4.85,All genres
-Europe & Middle East (Group 2),TUR,Turkey,0.010,0.019,9.03,All genres
-Europe & Middle East (Group 2),POL,Poland,0.008,0.010,11.86,All genres
-Europe & Middle East (Group 2),SAU,Saudi Arabia,0.004,0.010,12.72,All genres
-Europe & Middle East (Group 2),UKR,Ukraine,0.004,0.005,11.18,All genres
-Europe & Middle East (Group 2),ROU,Romania,0.003,0.004,11.32,All genres
-Europe & Middle East (Group 2),CZE,Czechia,0.002,0.003,13.32,All genres
-Europe & Middle East (Group 2),GRC,Greece,0.002,0.003,15.89,All genres
-Europe & Middle East (Group 2),PRT,Portugal,0.002,0.003,13.75,All genres
-Europe & Middle East (Group 2),HUN,Hungary,0.001,0.002,11.63,All genres
-Europe & Middle East (Group 2),FIN,Finland,0.001,0.003,15.93,All genres
-Europe & Middle East (Group 2),BGR,Bulgaria,0.001,0.001,12.51,All genres
-Europe & Middle East (Group 2),SVK,Slovakia,0.001,0.001,13.61,All genres
-Europe & Middle East (Group 2),HRV,Croatia,0.001,0.001,14.90,All genres
-Europe & Middle East (Group 2),SRB,Serbia,0.001,0.001,14.43,All genres
-Europe & Middle East (Group 2),BLR,Belarus,0.001,0.001,10.32,All genres
-Europe & Middle East (Group 2),LTU,Lithuania,0.000,0.001,14.06,All genres
-Europe & Middle East (Group 2),ALB,Albania,0.000,0.000,17.59,All genres
-Europe & Middle East (Group 2),EST,Estonia,0.000,0.000,17.16,All genres
-Europe & Middle East (Group 2),SVN,Slovenia,0.000,0.000,17.92,All genres
-Europe & Middle East (Group 2),LVA,Latvia,0.000,0.001,13.04,All genres
-Europe & Middle East (Group 1),DEU,Germany,0.049,0.054,15.94,All genres
-Europe & Middle East (Group 1),FRA,France,0.028,0.032,16.77,All genres
-Europe & Middle East (Group 1),ITA,Italy,0.013,0.015,13.73,All genres
-Europe & Middle East (Group 1),ESP,Spain,0.009,0.010,13.76,All genres
-Europe & Middle East (Group 1),NLD,Netherlands,0.008,0.010,17.02,All genres
-Europe & Middle East (Group 1),CHE,Switzerland,0.006,0.006,25.39,All genres
-Europe & Middle East (Group 1),AUT,Austria,0.005,0.006,20.24,All genres
-Europe & Middle East (Group 1),BEL,Belgium,0.004,0.007,17.00,All genres
-Europe & Middle East (Group 1),SWE,Sweden,0.004,0.005,15.39,All genres
-Europe & Middle East (Group 1),ISR,Israel,0.003,0.003,21.07,All genres
-Europe & Middle East (Group 1),NOR,Norway,0.003,0.004,19.84,All genres
-Europe & Middle East (Group 1),ARE,UAE,0.003,0.005,22.09,All genres
-Europe & Middle East (Group 1),DNK,Denmark,0.003,0.004,16.35,All genres
-Europe & Middle East (Group 1),KWT,Kuwait,0.002,0.001,26.39,All genres
-Europe & Middle East (Group 1),QAT,Qatar,0.001,0.001,27.99,All genres
-Europe & Middle East (Group 1),ISL,Iceland,0.000,0.000,27.37,All genres
-East Asia Pacific,KOR,South Korea,0.083,0.037,21.67,All genres
-East Asia Pacific,JPN,Japan,0.082,0.040,19.40,All genres
-East Asia Pacific,TWN,Taiwan,0.035,0.013,23.85,All genres
-East Asia Pacific,HKG,Hong Kong,0.017,,37.48,All genres
-East Asia Pacific,SGP,Singapore,0.005,0.003,26.50,All genres
-US and English Language,USA,U.S.,0.530,0.655,23.57,Casino
-US and English Language,GBR,U.K.,0.032,0.041,17.81,Casino
-US and English Language,CAN,Canada,0.032,0.020,25.97,Casino
-US and English Language,AUS,Australia,0.052,0.031,23.54,Casino
-US and English Language,NZL,New Zealand,0.005,0.004,18.64,Casino
-US and English Language,IRL,Ireland,0.001,0.001,25.46,Casino
-LATAM Spanish Speaking,MEX,Mexico,0.004,0.002,19.26,Casino
-LATAM Spanish Speaking,CHL,Chile,0.002,0.001,13.33,Casino
-LATAM Spanish Speaking,ARG,Argentina,0.001,0.001,14.14,Casino
-LATAM Spanish Speaking,PRI,Puerto Rico,0.001,0.000,32.17,Casino
-Global Developing Markets,BRA,Brazil,0.026,0.006,14.16,Casino
-Global Developing Markets,THA,Thailand,0.003,0.003,19.68,Casino
-Global Developing Markets,IDN,Indonesia,0.003,0.004,15.85,Casino
-Global Developing Markets,VNM,Vietnam,0.004,0.024,30.98,Casino
-Global Developing Markets,PHL,Philippines,0.004,0.003,15.71,Casino
-Global Developing Markets,IND,India,0.008,0.004,27.81,Casino
-Global Developing Markets,MYS,Malaysia,0.008,0.003,17.86,Casino
-Global Developing Markets,ZAF,South Africa,0.002,0.004,18.42,Casino
-Europe & Middle East (Group 2),RUS,Russia,0.001,0.002,26.62,Casino
-Europe & Middle East (Group 2),TUR,Turkey,0.020,0.016,19.05,Casino
-Europe & Middle East (Group 2),POL,Poland,0.006,0.004,18.14,Casino
-Europe & Middle East (Group 2),UKR,Ukraine,0.001,0.003,16.52,Casino
-Europe & Middle East (Group 2),ROU,Romania,0.003,0.002,16.86,Casino
-Europe & Middle East (Group 2),CZE,Czechia,0.002,0.001,17.23,Casino
-Europe & Middle East (Group 2),GRC,Greece,0.003,0.001,22.14,Casino
-Europe & Middle East (Group 2),PRT,Portugal,0.001,0.001,19.67,Casino
-Europe & Middle East (Group 2),HUN,Hungary,0.002,0.001,15.54,Casino
-Europe & Middle East (Group 1),DEU,Germany,0.036,0.039,20.35,Casino
-Europe & Middle East (Group 1),FRA,France,0.012,0.015,23.88,Casino
-Europe & Middle East (Group 1),ITA,Italy,0.010,0.006,19.48,Casino
-Europe & Middle East (Group 1),ESP,Spain,0.005,0.005,19.99,Casino
-Europe & Middle East (Group 1),NLD,Netherlands,0.009,0.005,23.97,Casino
-Europe & Middle East (Group 1),CHE,Switzerland,0.005,0.003,37.51,Casino
-Europe & Middle East (Group 1),AUT,Austria,0.003,0.003,24.11,Casino
-Europe & Middle East (Group 1),BEL,Belgium,0.002,0.002,25.46,Casino
-Europe & Middle East (Group 1),SWE,Sweden,0.003,0.002,19.52,Casino
-Europe & Middle East (Group 1),ISR,Israel,0.008,0.001,54.04,Casino
-Europe & Middle East (Group 1),NOR,Norway,0.002,0.002,30.84,Casino
-Europe & Middle East (Group 1),DNK,Denmark,0.002,0.002,25.39,Casino
-East Asia Pacific,KOR,South Korea,0.034,0.005,73.78,Casino
-East Asia Pacific,JPN,Japan,0.036,0.025,27.36,Casino
-East Asia Pacific,TWN,Taiwan,0.020,0.022,33.68,Casino
-East Asia Pacific,HKG,Hong Kong,0.008,0.000,64.60,Casino
-East Asia Pacific,SGP,Singapore,0.006,0.002,43.01,Casino
-US and English Language,USA,U.S.,0.514,0.470,11.02,Match
-US and English Language,GBR,U.K.,0.060,0.059,7.80,Match
-US and English Language,CAN,Canada,0.024,0.023,9.19,Match
-US and English Language,AUS,Australia,0.022,0.019,9.88,Match
-US and English Language,NZL,New Zealand,0.003,0.002,10.65,Match
-US and English Language,IRL,Ireland,0.002,0.002,16.17,Match
-LATAM Spanish Speaking,MEX,Mexico,0.010,0.014,2.52,Match
-LATAM Spanish Speaking,CHL,Chile,0.003,0.004,7.21,Match
-LATAM Spanish Speaking,COL,Colombia,0.001,0.002,1.31,Match
-LATAM Spanish Speaking,ARG,Argentina,0.001,0.002,0.29,Match
-LATAM Spanish Speaking,PER,Peru,0.001,0.002,1.51,Match
-LATAM Spanish Speaking,PRI,Puerto Rico,0.001,0.001,11.96,Match
-LATAM Spanish Speaking,CRI,Costa Rica,0.001,0.001,10.18,Match
-Global Developing Markets,BRA,Brazil,0.015,0.020,1.82,Match
-Global Developing Markets,THA,Thailand,0.003,0.007,6.06,Match
-Global Developing Markets,IDN,Indonesia,0.005,0.004,5.11,Match
-Global Developing Markets,VNM,Vietnam,0.001,0.003,1.43,Match
-Global Developing Markets,PHL,Philippines,0.003,0.006,5.60,Match
-Global Developing Markets,IND,India,0.005,0.009,2.06,Match
-Global Developing Markets,MYS,Malaysia,0.003,0.005,5.75,Match
-Global Developing Markets,ZAF,South Africa,0.004,0.005,11.12,Match
-Global Developing Markets,KAZ,Kazakhstan,0.001,0.002,6.43,Match
-Global Developing Markets,EGY,Egypt,0.001,0.002,1.09,Match
-Europe & Middle East (Group 2),RUS,Russia,0.007,0.007,0.29,Match
-Europe & Middle East (Group 2),TUR,Turkey,0.008,0.016,5.79,Match
-Europe & Middle East (Group 2),POL,Poland,0.007,0.009,6.74,Match
-Europe & Middle East (Group 2),SAU,Saudi Arabia,0.004,0.006,5.19,Match
-Europe & Middle East (Group 2),UKR,Ukraine,0.003,0.003,6.21,Match
-Europe & Middle East (Group 2),ROU,Romania,0.002,0.004,8.55,Match
-Europe & Middle East (Group 2),CZE,Czechia,0.002,0.003,11.50,Match
-Europe & Middle East (Group 2),GRC,Greece,0.002,0.003,15.42,Match
-Europe & Middle East (Group 2),PRT,Portugal,0.002,0.003,11.01,Match
-Europe & Middle East (Group 2),HUN,Hungary,0.001,0.001,10.33,Match
-Europe & Middle East (Group 2),FIN,Finland,0.002,0.002,15.69,Match
-Europe & Middle East (Group 2),BGR,Bulgaria,0.001,0.001,9.89,Match
-Europe & Middle East (Group 2),SVK,Slovakia,0.001,0.001,13.23,Match
-Europe & Middle East (Group 2),HRV,Croatia,0.001,0.001,14.50,Match
-Europe & Middle East (Group 2),SRB,Serbia,0.001,0.001,14.85,Match
-Europe & Middle East (Group 2),BLR,Belarus,0.000,0.001,6.16,Match
-Europe & Middle East (Group 2),LTU,Lithuania,0.000,0.001,12.04,Match
-Europe & Middle East (Group 1),DEU,Germany,0.057,0.051,8.62,Match
-Europe & Middle East (Group 1),FRA,France,0.025,0.027,5.06,Match
-Europe & Middle East (Group 1),ITA,Italy,0.014,0.018,5.26,Match
-Europe & Middle East (Group 1),ESP,Spain,0.010,0.009,6.95,Match
-Europe & Middle East (Group 1),NLD,Netherlands,0.009,0.010,9.96,Match
-Europe & Middle East (Group 1),CHE,Switzerland,0.008,0.006,20.63,Match
-Europe & Middle East (Group 1),AUT,Austria,0.006,0.005,13.93,Match
-Europe & Middle East (Group 1),BEL,Belgium,0.004,0.006,13.19,Match
-Europe & Middle East (Group 1),SWE,Sweden,0.006,0.006,12.53,Match
-Europe & Middle East (Group 1),ISR,Israel,0.002,0.003,18.09,Match
-Europe & Middle East (Group 1),NOR,Norway,0.004,0.004,15.61,Match
-Europe & Middle East (Group 1),ARE,UAE,0.002,0.003,14.80,Match
-Europe & Middle East (Group 1),DNK,Denmark,0.003,0.004,12.33,Match
-Europe & Middle East (Group 1),KWT,Kuwait,0.001,0.001,21.89,Match
-Europe & Middle East (Group 1),QAT,Qatar,0.001,0.000,25.18,Match
-East Asia Pacific,KOR,South Korea,0.043,0.033,7.63,Match
-East Asia Pacific,JPN,Japan,0.057,0.057,8.51,Match
-East Asia Pacific,TWN,Taiwan,0.007,0.007,10.99,Match
-East Asia Pacific,HKG,Hong Kong,0.003,0.000,20.82,Match
-East Asia Pacific,SGP,Singapore,0.003,0.002,16.59,Match
-US and English Language,USA,U.S.,0.198,0.251,37.90,RPG
-US and English Language,GBR,U.K.,0.017,0.031,24.28,RPG
-US and English Language,CAN,Canada,0.016,0.023,32.83,RPG
-US and English Language,AUS,Australia,0.013,0.014,35.69,RPG
-US and English Language,NZL,New Zealand,0.002,0.003,25.30,RPG
-US and English Language,IRL,Ireland,0.001,0.001,32.20,RPG
-LATAM Spanish Speaking,MEX,Mexico,0.004,0.003,12.97,RPG
-LATAM Spanish Speaking,CHL,Chile,0.002,0.001,11.22,RPG
-LATAM Spanish Speaking,COL,Colombia,0.001,0.001,10.20,RPG
-LATAM Spanish Speaking,ARG,Argentina,0.000,0.001,10.29,RPG
-LATAM Spanish Speaking,PER,Peru,0.001,0.001,12.36,RPG
-LATAM Spanish Speaking,PRI,Puerto Rico,0.001,0.000,29.79,RPG
-Global Developing Markets,BRA,Brazil,0.010,0.007,12.30,RPG
-Global Developing Markets,THA,Thailand,0.039,0.017,15.16,RPG
-Global Developing Markets,IDN,Indonesia,0.014,0.011,15.03,RPG
-Global Developing Markets,VNM,Vietnam,0.011,0.032,22.79,RPG
-Global Developing Markets,PHL,Philippines,0.014,0.006,14.79,RPG
-Global Developing Markets,IND,India,0.001,0.002,15.27,RPG
-Global Developing Markets,MYS,Malaysia,0.006,0.006,17.91,RPG
-Global Developing Markets,ZAF,South Africa,0.001,0.001,15.27,RPG
-Global Developing Markets,KAZ,Kazakhstan,0.001,0.001,14.38,RPG
-Europe & Middle East (Group 2),RUS,Russia,0.012,0.019,22.59,RPG
-Europe & Middle East (Group 2),TUR,Turkey,0.005,0.004,16.86,RPG
-Europe & Middle East (Group 2),POL,Poland,0.004,0.008,17.09,RPG
-Europe & Middle East (Group 2),SAU,Saudi Arabia,0.002,0.003,33.87,RPG
-Europe & Middle East (Group 2),UKR,Ukraine,0.004,0.004,16.25,RPG
-Europe & Middle East (Group 2),ROU,Romania,0.001,0.001,18.86,RPG
-Europe & Middle East (Group 2),CZE,Czechia,0.001,0.002,19.97,RPG
-Europe & Middle East (Group 2),GRC,Greece,0.001,0.001,25.25,RPG
-Europe & Middle East (Group 2),PRT,Portugal,0.001,0.002,24.48,RPG
-Europe & Middle East (Group 2),HUN,Hungary,0.001,0.001,19.36,RPG
-Europe & Middle East (Group 2),FIN,Finland,0.001,0.003,29.71,RPG
-Europe & Middle East (Group 2),BGR,Bulgaria,0.001,0.001,22.66,RPG
-Europe & Middle East (Group 2),SVK,Slovakia,0.000,0.000,22.69,RPG
-Europe & Middle East (Group 2),HRV,Croatia,0.000,0.001,25.94,RPG
-Europe & Middle East (Group 2),BLR,Belarus,0.000,0.001,11.12,RPG
-Europe & Middle East (Group 2),LTU,Lithuania,0.000,0.001,21.29,RPG
-Europe & Middle East (Group 1),DEU,Germany,0.030,0.037,29.54,RPG
-Europe & Middle East (Group 1),FRA,France,0.026,0.030,28.34,RPG
-Europe & Middle East (Group 1),ITA,Italy,0.006,0.009,24.09,RPG
-Europe & Middle East (Group 1),ESP,Spain,0.005,0.006,22.46,RPG
-Europe & Middle East (Group 1),NLD,Netherlands,0.005,0.005,31.76,RPG
-Europe & Middle East (Group 1),CHE,Switzerland,0.004,0.003,48.99,RPG
-Europe & Middle East (Group 1),AUT,Austria,0.003,0.004,34.57,RPG
-Europe & Middle East (Group 1),BEL,Belgium,0.003,0.004,31.35,RPG
-Europe & Middle East (Group 1),SWE,Sweden,0.002,0.003,25.95,RPG
-Europe & Middle East (Group 1),ISR,Israel,0.001,0.001,41.10,RPG
-Europe & Middle East (Group 1),NOR,Norway,0.002,0.002,35.00,RPG
-Europe & Middle East (Group 1),ARE,UAE,0.002,0.002,50.21,RPG
-Europe & Middle East (Group 1),DNK,Denmark,0.002,0.002,26.90,RPG
-Europe & Middle East (Group 1),KWT,Kuwait,0.001,0.000,63.83,RPG
-Europe & Middle East (Group 1),QAT,Qatar,0.000,0.000,65.68,RPG
-East Asia Pacific,KOR,South Korea,0.223,0.250,40.23,RPG
-East Asia Pacific,JPN,Japan,0.150,0.098,40.39,RPG
-East Asia Pacific,TWN,Taiwan,0.093,0.061,40.00,RPG
-East Asia Pacific,HKG,Hong Kong,0.043,0.001,67.65,RPG
-East Asia Pacific,SGP,Singapore,0.010,0.009,49.96,RPG
-US and English Language,USA,U.S.,0.385,0.323,15.11,Simulation
-US and English Language,GBR,U.K.,0.052,0.054,12.29,Simulation
-US and English Language,CAN,Canada,0.028,0.029,14.61,Simulation
-US and English Language,AUS,Australia,0.025,0.019,14.91,Simulation
-US and English Language,NZL,New Zealand,0.004,0.003,12.92,Simulation
-US and English Language,IRL,Ireland,0.002,0.004,13.65,Simulation
-LATAM Spanish Speaking,MEX,Mexico,0.009,0.023,5.98,Simulation
-LATAM Spanish Speaking,CHL,Chile,0.003,0.007,5.26,Simulation
-LATAM Spanish Speaking,COL,Colombia,0.001,0.003,3.57,Simulation
-LATAM Spanish Speaking,ARG,Argentina,0.001,0.004,0.73,Simulation
-LATAM Spanish Speaking,PER,Peru,0.001,0.003,3.60,Simulation
-LATAM Spanish Speaking,PRI,Puerto Rico,0.001,0.001,12.59,Simulation
-LATAM Spanish Speaking,CRI,Costa Rica,0.001,0.001,7.15,Simulation
-Global Developing Markets,BRA,Brazil,0.014,0.037,5.60,Simulation
-Global Developing Markets,THA,Thailand,0.007,0.014,5.05,Simulation
-Global Developing Markets,IDN,Indonesia,0.008,0.014,6.13,Simulation
-Global Developing Markets,VNM,Vietnam,0.005,0.010,3.13,Simulation
-Global Developing Markets,PHL,Philippines,0.006,0.014,5.77,Simulation
-Global Developing Markets,IND,India,0.004,0.005,8.98,Simulation
-Global Developing Markets,MYS,Malaysia,0.005,0.008,7.33,Simulation
-Global Developing Markets,ZAF,South Africa,0.003,0.008,7.96,Simulation
-Global Developing Markets,KAZ,Kazakhstan,0.002,0.004,5.04,Simulation
-Global Developing Markets,EGY,Egypt,0.001,0.003,0.47,Simulation
-Global Developing Markets,IRQ,Iraq,0.000,0.002,1.90,Simulation
-Europe & Middle East (Group 2),RUS,Russia,0.012,0.029,0.86,Simulation
-Europe & Middle East (Group 2),TUR,Turkey,0.009,0.030,6.26,Simulation
-Europe & Middle East (Group 2),POL,Poland,0.007,0.014,9.98,Simulation
-Europe & Middle East (Group 2),SAU,Saudi Arabia,0.004,0.014,9.25,Simulation
-Europe & Middle East (Group 2),UKR,Ukraine,0.004,0.006,7.11,Simulation
-Europe & Middle East (Group 2),ROU,Romania,0.002,0.006,9.17,Simulation
-Europe & Middle East (Group 2),CZE,Czechia,0.003,0.004,11.79,Simulation
-Europe & Middle East (Group 2),GRC,Greece,0.001,0.003,14.61,Simulation
-Europe & Middle East (Group 2),PRT,Portugal,0.002,0.003,12.23,Simulation
-Europe & Middle East (Group 2),HUN,Hungary,0.001,0.003,8.47,Simulation
-Europe & Middle East (Group 2),FIN,Finland,0.002,0.003,14.39,Simulation
-Europe & Middle East (Group 2),BGR,Bulgaria,0.001,0.002,11.68,Simulation
-Europe & Middle East (Group 2),SVK,Slovakia,0.001,0.001,10.05,Simulation
-Europe & Middle East (Group 2),HRV,Croatia,0.001,0.002,13.07,Simulation
-Europe & Middle East (Group 2),BLR,Belarus,0.001,0.002,6.47,Simulation
-Europe & Middle East (Group 2),LTU,Lithuania,0.001,0.002,10.85,Simulation
-Europe & Middle East (Group 1),DEU,Germany,0.053,0.057,14.70,Simulation
-Europe & Middle East (Group 1),FRA,France,0.026,0.032,14.08,Simulation
-Europe & Middle East (Group 1),ITA,Italy,0.009,0.018,11.52,Simulation
-Europe & Middle East (Group 1),ESP,Spain,0.007,0.011,11.96,Simulation
-Europe & Middle East (Group 1),NLD,Netherlands,0.010,0.010,13.62,Simulation
-Europe & Middle East (Group 1),CHE,Switzerland,0.008,0.006,22.73,Simulation
-Europe & Middle East (Group 1),AUT,Austria,0.006,0.007,18.14,Simulation
-Europe & Middle East (Group 1),BEL,Belgium,0.005,0.008,14.96,Simulation
-Europe & Middle East (Group 1),SWE,Sweden,0.005,0.005,14.16,Simulation
-Europe & Middle East (Group 1),ISR,Israel,0.002,0.004,18.74,Simulation
-Europe & Middle East (Group 1),NOR,Norway,0.004,0.005,16.23,Simulation
-Europe & Middle East (Group 1),ARE,UAE,0.002,0.006,14.32,Simulation
-Europe & Middle East (Group 1),DNK,Denmark,0.003,0.004,13.13,Simulation
-Europe & Middle East (Group 1),KWT,Kuwait,0.001,0.001,21.72,Simulation
-Europe & Middle East (Group 1),QAT,Qatar,0.001,0.001,26.77,Simulation
-East Asia Pacific,KOR,South Korea,0.041,0.024,14.88,Simulation
-East Asia Pacific,JPN,Japan,0.163,0.035,16.95,Simulation
-East Asia Pacific,TWN,Taiwan,0.018,0.012,14.00,Simulation
-East Asia Pacific,HKG,Hong Kong,0.009,0.000,22.88,Simulation
-East Asia Pacific,SGP,Singapore,0.004,0.003,16.78,Simulation
-US and English Language,USA,U.S.,0.320,0.340,30.97,Strategy
-US and English Language,GBR,U.K.,0.040,0.052,21.52,Strategy
-US and English Language,CAN,Canada,0.023,0.029,27.58,Strategy
-US and English Language,AUS,Australia,0.020,0.019,28.85,Strategy
-US and English Language,NZL,New Zealand,0.003,0.004,21.63,Strategy
-US and English Language,IRL,Ireland,0.002,0.002,27.86,Strategy
-LATAM Spanish Speaking,MEX,Mexico,0.006,0.005,14.78,Strategy
-LATAM Spanish Speaking,CHL,Chile,0.002,0.001,12.68,Strategy
-LATAM Spanish Speaking,COL,Colombia,0.001,0.001,11.46,Strategy
-LATAM Spanish Speaking,ARG,Argentina,0.001,0.002,12.09,Strategy
-LATAM Spanish Speaking,PER,Peru,0.001,0.001,14.16,Strategy
-LATAM Spanish Speaking,PRI,Puerto Rico,0.001,0.000,23.73,Strategy
-Global Developing Markets,BRA,Brazil,0.012,0.011,13.01,Strategy
-Global Developing Markets,THA,Thailand,0.010,0.012,16.28,Strategy
-Global Developing Markets,IDN,Indonesia,0.009,0.013,13.82,Strategy
-Global Developing Markets,VNM,Vietnam,0.014,0.010,29.33,Strategy
-Global Developing Markets,PHL,Philippines,0.007,0.007,16.00,Strategy
-Global Developing Markets,IND,India,0.005,0.004,17.94,Strategy
-Global Developing Markets,MYS,Malaysia,0.006,0.008,17.52,Strategy
-Global Developing Markets,ZAF,South Africa,0.001,0.002,16.52,Strategy
-Global Developing Markets,KAZ,Kazakhstan,0.002,0.002,20.03,Strategy
-Global Developing Markets,EGY,Egypt,0.001,0.002,28.81,Strategy
-Europe & Middle East (Group 2),RUS,Russia,0.027,0.024,25.62,Strategy
-Europe & Middle East (Group 2),TUR,Turkey,0.015,0.018,19.03,Strategy
-Europe & Middle East (Group 2),POL,Poland,0.009,0.012,17.03,Strategy
-Europe & Middle East (Group 2),SAU,Saudi Arabia,0.012,0.027,40.30,Strategy
-Europe & Middle East (Group 2),UKR,Ukraine,0.007,0.005,17.71,Strategy
-Europe & Middle East (Group 2),ROU,Romania,0.004,0.003,22.38,Strategy
-Europe & Middle East (Group 2),CZE,Czechia,0.003,0.002,19.46,Strategy
-Europe & Middle East (Group 2),GRC,Greece,0.002,0.003,29.13,Strategy
-Europe & Middle East (Group 2),PRT,Portugal,0.002,0.002,23.53,Strategy
-Europe & Middle East (Group 2),HUN,Hungary,0.001,0.001,18.67,Strategy
-Europe & Middle East (Group 2),FIN,Finland,0.001,0.003,25.12,Strategy
-Europe & Middle East (Group 2),BGR,Bulgaria,0.001,0.001,24.81,Strategy
-Europe & Middle East (Group 2),SVK,Slovakia,0.001,0.001,19.54,Strategy
-Europe & Middle East (Group 2),HRV,Croatia,0.001,0.001,24.55,Strategy
-Europe & Middle East (Group 2),SRB,Serbia,0.001,0.001,22.34,Strategy
-Europe & Middle East (Group 2),BLR,Belarus,0.001,0.001,19.39,Strategy
-Europe & Middle East (Group 2),LTU,Lithuania,0.001,0.001,26.44,Strategy
-Europe & Middle East (Group 1),DEU,Germany,0.057,0.062,27.05,Strategy
-Europe & Middle East (Group 1),FRA,France,0.028,0.039,25.88,Strategy
-Europe & Middle East (Group 1),ITA,Italy,0.011,0.014,20.82,Strategy
-Europe & Middle East (Group 1),ESP,Spain,0.007,0.009,19.73,Strategy
-Europe & Middle East (Group 1),NLD,Netherlands,0.010,0.010,26.74,Strategy
-Europe & Middle East (Group 1),CHE,Switzerland,0.009,0.006,41.27,Strategy
-Europe & Middle East (Group 1),AUT,Austria,0.007,0.007,31.76,Strategy
-Europe & Middle East (Group 1),BEL,Belgium,0.005,0.006,28.83,Strategy
-Europe & Middle East (Group 1),SWE,Sweden,0.004,0.005,24.16,Strategy
-Europe & Middle East (Group 1),ISR,Israel,0.003,0.003,31.48,Strategy
-Europe & Middle East (Group 1),NOR,Norway,0.004,0.003,29.44,Strategy
-Europe & Middle East (Group 1),ARE,UAE,0.005,0.012,54.34,Strategy
-Europe & Middle East (Group 1),DNK,Denmark,0.003,0.003,25.61,Strategy
-Europe & Middle East (Group 1),KWT,Kuwait,0.003,0.006,57.12,Strategy
-Europe & Middle East (Group 1),QAT,Qatar,0.002,0.002,76.38,Strategy
-East Asia Pacific,KOR,South Korea,0.113,0.059,33.08,Strategy
-East Asia Pacific,JPN,Japan,0.072,0.071,31.63,Strategy
-East Asia Pacific,TWN,Taiwan,0.040,0.023,37.98,Strategy
-East Asia Pacific,HKG,Hong Kong,0.028,0.001,63.70,Strategy
-East Asia Pacific,SGP,Singapore,0.007,0.005,44.85,Strategy
+미국 및 영어권 시장,USA,미국,0.397,0.399,17.20,모든 장르
+미국 및 영어권 시장,GBR,영국,0.041,0.055,13.25,모든 장르
+미국 및 영어권 시장,CAN,캐나다,0.024,0.029,16.22,모든 장르
+미국 및 영어권 시장,AUS,호주,0.022,0.019,16.82,모든 장르
+미국 및 영어권 시장,NZL,뉴질랜드,0.003,0.003,13.52,모든 장르
+미국 및 영어권 시장,IRL,아일랜드,0.002,0.003,16.31,모든 장르
+라틴아메리카 스페인어 사용 국가,MEX,멕시코,0.009,0.015,7.34,모든 장르
+라틴아메리카 스페인어 사용 국가,CHL,칠레,0.003,0.004,6.95,모든 장르
+라틴아메리카 스페인어 사용 국가,COL,콜롬비아,0.001,0.003,3.80,모든 장르
+라틴아메리카 스페인어 사용 국가,ARG,아르헨티나,0.001,0.003,4.03,모든 장르
+라틴아메리카 스페인어 사용 국가,PER,페루,0.001,0.002,6.48,모든 장르
+라틴아메리카 스페인어 사용 국가,PRI,푸에르토리코,0.001,0.001,14.28,모든 장르
+라틴아메리카 스페인어 사용 국가,CRI,코스타리카,0.000,0.001,9.48,모든 장르
+라틴아메리카 스페인어 사용 국가,ECU,에콰도르,0.000,0.001,5.01,모든 장르
+글로벌 개발도상국 시장,BRA,브라질,0.020,0.025,6.72,모든 장르
+글로벌 개발도상국 시장,THA,태국,0.013,0.011,8.84,모든 장르
+글로벌 개발도상국 시장,IDN,인도네시아,0.008,0.013,7.75,모든 장르
+글로벌 개발도상국 시장,VNM,베트남,0.007,0.011,12.78,모든 장르
+글로벌 개발도상국 시장,PHL,필리핀,0.006,0.009,8.38,모든 장르
+글로벌 개발도상국 시장,IND,인도,0.005,0.008,5.44,모든 장르
+글로벌 개발도상국 시장,MYS,말레이시아,0.005,0.006,10.23,모든 장르
+글로벌 개발도상국 시장,ZAF,남아프리카공화국,0.003,0.005,9.59,모든 장르
+글로벌 개발도상국 시장,KAZ,카자흐스탄,0.001,0.003,7.59,모든 장르
+글로벌 개발도상국 시장,EGY,이집트,0.001,0.002,0.79,모든 장르
+글로벌 개발도상국 시장,IRQ,이라크,0.001,0.002,4.81,모든 장르
+글로벌 개발도상국 시장,PAK,파키스탄,0.000,0.001,0.21,모든 장르
+글로벌 개발도상국 시장,NGA,나이지리아,0.000,0.001,5.55,모든 장르
+유럽 및 중동 (그룹 2),RUS,러시아,0.013,0.020,4.85,모든 장르
+유럽 및 중동 (그룹 2),TUR,터키,0.010,0.019,9.03,모든 장르
+유럽 및 중동 (그룹 2),POL,폴란드,0.008,0.010,11.86,모든 장르
+유럽 및 중동 (그룹 2),SAU,사우디아라비아,0.004,0.010,12.72,모든 장르
+유럽 및 중동 (그룹 2),UKR,우크라이나,0.004,0.005,11.18,모든 장르
+유럽 및 중동 (그룹 2),ROU,루마니아,0.003,0.004,11.32,모든 장르
+유럽 및 중동 (그룹 2),CZE,체코,0.002,0.003,13.32,모든 장르
+유럽 및 중동 (그룹 2),GRC,그리스,0.002,0.003,15.89,모든 장르
+유럽 및 중동 (그룹 2),PRT,포르투갈,0.002,0.003,13.75,모든 장르
+유럽 및 중동 (그룹 2),HUN,헝가리,0.001,0.002,11.63,모든 장르
+유럽 및 중동 (그룹 2),FIN,핀란드,0.001,0.003,15.93,모든 장르
+유럽 및 중동 (그룹 2),BGR,불가리아,0.001,0.001,12.51,모든 장르
+유럽 및 중동 (그룹 2),SVK,슬로바키아,0.001,0.001,13.61,모든 장르
+유럽 및 중동 (그룹 2),HRV,크로아티아,0.001,0.001,14.90,모든 장르
+유럽 및 중동 (그룹 2),SRB,세르비아,0.001,0.001,14.43,모든 장르
+유럽 및 중동 (그룹 2),BLR,벨라루스,0.001,0.001,10.32,모든 장르
+유럽 및 중동 (그룹 2),LTU,리투아니아,0.000,0.001,14.06,모든 장르
+유럽 및 중동 (그룹 2),ALB,알바니아,0.000,0.000,17.59,모든 장르
+유럽 및 중동 (그룹 2),EST,에스토니아,0.000,0.000,17.16,모든 장르
+유럽 및 중동 (그룹 2),SVN,슬로베니아,0.000,0.000,17.92,모든 장르
+유럽 및 중동 (그룹 2),LVA,라트비아,0.000,0.001,13.04,모든 장르
+유럽 및 중동 (그룹 1),DEU,독일,0.049,0.054,15.94,모든 장르
+유럽 및 중동 (그룹 1),FRA,프랑스,0.028,0.032,16.77,모든 장르
+유럽 및 중동 (그룹 1),ITA,이탈리아,0.013,0.015,13.73,모든 장르
+유럽 및 중동 (그룹 1),ESP,스페인,0.009,0.010,13.76,모든 장르
+유럽 및 중동 (그룹 1),NLD,네덜란드,0.008,0.010,17.02,모든 장르
+유럽 및 중동 (그룹 1),CHE,스위스,0.006,0.006,25.39,모든 장르
+유럽 및 중동 (그룹 1),AUT,오스트리아,0.005,0.006,20.24,모든 장르
+유럽 및 중동 (그룹 1),BEL,벨기에,0.004,0.007,17.00,모든 장르
+유럽 및 중동 (그룹 1),SWE,스웨덴,0.004,0.005,15.39,모든 장르
+유럽 및 중동 (그룹 1),ISR,이스라엘,0.003,0.003,21.07,모든 장르
+유럽 및 중동 (그룹 1),NOR,노르웨이,0.003,0.004,19.84,모든 장르
+유럽 및 중동 (그룹 1),ARE,아랍에미리트,0.003,0.005,22.09,모든 장르
+유럽 및 중동 (그룹 1),DNK,덴마크,0.003,0.004,16.35,모든 장르
+유럽 및 중동 (그룹 1),KWT,쿠웨이트,0.002,0.001,26.39,모든 장르
+유럽 및 중동 (그룹 1),QAT,카타르,0.001,0.001,27.99,모든 장르
+유럽 및 중동 (그룹 1),ISL,아이슬란드,0.000,0.000,27.37,모든 장르
+동아시아 태평양,KOR,한국,0.083,0.037,21.67,모든 장르
+동아시아 태평양,JPN,일본,0.082,0.040,19.40,모든 장르
+동아시아 태평양,TWN,대만,0.035,0.013,23.85,모든 장르
+동아시아 태평양,HKG,홍콩,0.017,,37.48,모든 장르
+동아시아 태평양,SGP,싱가포르,0.005,0.003,26.50,모든 장르
+미국 및 영어권 시장,USA,미국,0.530,0.655,23.57,카지노
+미국 및 영어권 시장,GBR,영국,0.032,0.041,17.81,카지노
+미국 및 영어권 시장,CAN,캐나다,0.032,0.020,25.97,카지노
+미국 및 영어권 시장,AUS,호주,0.052,0.031,23.54,카지노
+미국 및 영어권 시장,NZL,뉴질랜드,0.005,0.004,18.64,카지노
+미국 및 영어권 시장,IRL,아일랜드,0.001,0.001,25.46,카지노
+라틴아메리카 스페인어 사용 국가,MEX,멕시코,0.004,0.002,19.26,카지노
+라틴아메리카 스페인어 사용 국가,CHL,칠레,0.002,0.001,13.33,카지노
+라틴아메리카 스페인어 사용 국가,ARG,아르헨티나,0.001,0.001,14.14,카지노
+라틴아메리카 스페인어 사용 국가,PRI,푸에르토리코,0.001,0.000,32.17,카지노
+글로벌 개발도상국 시장,BRA,브라질,0.026,0.006,14.16,카지노
+글로벌 개발도상국 시장,THA,태국,0.003,0.003,19.68,카지노
+글로벌 개발도상국 시장,IDN,인도네시아,0.003,0.004,15.85,카지노
+글로벌 개발도상국 시장,VNM,베트남,0.004,0.024,30.98,카지노
+글로벌 개발도상국 시장,PHL,필리핀,0.004,0.003,15.71,카지노
+글로벌 개발도상국 시장,IND,인도,0.008,0.004,27.81,카지노
+글로벌 개발도상국 시장,MYS,말레이시아,0.008,0.003,17.86,카지노
+글로벌 개발도상국 시장,ZAF,남아프리카공화국,0.002,0.004,18.42,카지노
+유럽 및 중동 (그룹 2),RUS,러시아,0.001,0.002,26.62,카지노
+유럽 및 중동 (그룹 2),TUR,터키,0.020,0.016,19.05,카지노
+유럽 및 중동 (그룹 2),POL,폴란드,0.006,0.004,18.14,카지노
+유럽 및 중동 (그룹 2),UKR,우크라이나,0.001,0.003,16.52,카지노
+유럽 및 중동 (그룹 2),ROU,루마니아,0.003,0.002,16.86,카지노
+유럽 및 중동 (그룹 2),CZE,체코,0.002,0.001,17.23,카지노
+유럽 및 중동 (그룹 2),GRC,그리스,0.003,0.001,22.14,카지노
+유럽 및 중동 (그룹 2),PRT,포르투갈,0.001,0.001,19.67,카지노
+유럽 및 중동 (그룹 2),HUN,헝가리,0.002,0.001,15.54,카지노
+유럽 및 중동 (그룹 1),DEU,독일,0.036,0.039,20.35,카지노
+유럽 및 중동 (그룹 1),FRA,프랑스,0.012,0.015,23.88,카지노
+유럽 및 중동 (그룹 1),ITA,이탈리아,0.010,0.006,19.48,카지노
+유럽 및 중동 (그룹 1),ESP,스페인,0.005,0.005,19.99,카지노
+유럽 및 중동 (그룹 1),NLD,네덜란드,0.009,0.005,23.97,카지노
+유럽 및 중동 (그룹 1),CHE,스위스,0.005,0.003,37.51,카지노
+유럽 및 중동 (그룹 1),AUT,오스트리아,0.003,0.003,24.11,카지노
+유럽 및 중동 (그룹 1),BEL,벨기에,0.002,0.002,25.46,카지노
+유럽 및 중동 (그룹 1),SWE,스웨덴,0.003,0.002,19.52,카지노
+유럽 및 중동 (그룹 1),ISR,이스라엘,0.008,0.001,54.04,카지노
+유럽 및 중동 (그룹 1),NOR,노르웨이,0.002,0.002,30.84,카지노
+유럽 및 중동 (그룹 1),DNK,덴마크,0.002,0.002,25.39,카지노
+동아시아 태평양,KOR,한국,0.034,0.005,73.78,카지노
+동아시아 태평양,JPN,일본,0.036,0.025,27.36,카지노
+동아시아 태평양,TWN,대만,0.020,0.022,33.68,카지노
+동아시아 태평양,HKG,홍콩,0.008,0.000,64.60,카지노
+동아시아 태평양,SGP,싱가포르,0.006,0.002,43.01,카지노
+미국 및 영어권 시장,USA,미국,0.514,0.470,11.02,매치
+미국 및 영어권 시장,GBR,영국,0.060,0.059,7.80,매치
+미국 및 영어권 시장,CAN,캐나다,0.024,0.023,9.19,매치
+미국 및 영어권 시장,AUS,호주,0.022,0.019,9.88,매치
+미국 및 영어권 시장,NZL,뉴질랜드,0.003,0.002,10.65,매치
+미국 및 영어권 시장,IRL,아일랜드,0.002,0.002,16.17,매치
+라틴아메리카 스페인어 사용 국가,MEX,멕시코,0.010,0.014,2.52,매치
+라틴아메리카 스페인어 사용 국가,CHL,칠레,0.003,0.004,7.21,매치
+라틴아메리카 스페인어 사용 국가,COL,콜롬비아,0.001,0.002,1.31,매치
+라틴아메리카 스페인어 사용 국가,ARG,아르헨티나,0.001,0.002,0.29,매치
+라틴아메리카 스페인어 사용 국가,PER,페루,0.001,0.002,1.51,매치
+라틴아메리카 스페인어 사용 국가,PRI,푸에르토리코,0.001,0.001,11.96,매치
+라틴아메리카 스페인어 사용 국가,CRI,코스타리카,0.001,0.001,10.18,매치
+글로벌 개발도상국 시장,BRA,브라질,0.015,0.020,1.82,매치
+글로벌 개발도상국 시장,THA,태국,0.003,0.007,6.06,매치
+글로벌 개발도상국 시장,IDN,인도네시아,0.005,0.004,5.11,매치
+글로벌 개발도상국 시장,VNM,베트남,0.001,0.003,1.43,매치
+글로벌 개발도상국 시장,PHL,필리핀,0.003,0.006,5.60,매치
+글로벌 개발도상국 시장,IND,인도,0.005,0.009,2.06,매치
+글로벌 개발도상국 시장,MYS,말레이시아,0.003,0.005,5.75,매치
+글로벌 개발도상국 시장,ZAF,남아프리카공화국,0.004,0.005,11.12,매치
+글로벌 개발도상국 시장,KAZ,카자흐스탄,0.001,0.002,6.43,매치
+글로벌 개발도상국 시장,EGY,이집트,0.001,0.002,1.09,매치
+유럽 및 중동 (그룹 2),RUS,러시아,0.007,0.007,0.29,매치
+유럽 및 중동 (그룹 2),TUR,터키,0.008,0.016,5.79,매치
+유럽 및 중동 (그룹 2),POL,폴란드,0.007,0.009,6.74,매치
+유럽 및 중동 (그룹 2),SAU,사우디아라비아,0.004,0.006,5.19,매치
+유럽 및 중동 (그룹 2),UKR,우크라이나,0.003,0.003,6.21,매치
+유럽 및 중동 (그룹 2),ROU,루마니아,0.002,0.004,8.55,매치
+유럽 및 중동 (그룹 2),CZE,체코,0.002,0.003,11.50,매치
+유럽 및 중동 (그룹 2),GRC,그리스,0.002,0.003,15.42,매치
+유럽 및 중동 (그룹 2),PRT,포르투갈,0.002,0.003,11.01,매치
+유럽 및 중동 (그룹 2),HUN,헝가리,0.001,0.001,10.33,매치
+유럽 및 중동 (그룹 2),FIN,핀란드,0.002,0.002,15.69,매치
+유럽 및 중동 (그룹 2),BGR,불가리아,0.001,0.001,9.89,매치
+유럽 및 중동 (그룹 2),SVK,슬로바키아,0.001,0.001,13.23,매치
+유럽 및 중동 (그룹 2),HRV,크로아티아,0.001,0.001,14.50,매치
+유럽 및 중동 (그룹 2),SRB,세르비아,0.001,0.001,14.85,매치
+유럽 및 중동 (그룹 2),BLR,벨라루스,0.000,0.001,6.16,매치
+유럽 및 중동 (그룹 2),LTU,리투아니아,0.000,0.001,12.04,매치
+유럽 및 중동 (그룹 1),DEU,독일,0.057,0.051,8.62,매치
+유럽 및 중동 (그룹 1),FRA,프랑스,0.025,0.027,5.06,매치
+유럽 및 중동 (그룹 1),ITA,이탈리아,0.014,0.018,5.26,매치
+유럽 및 중동 (그룹 1),ESP,스페인,0.010,0.009,6.95,매치
+유럽 및 중동 (그룹 1),NLD,네덜란드,0.009,0.010,9.96,매치
+유럽 및 중동 (그룹 1),CHE,스위스,0.008,0.006,20.63,매치
+유럽 및 중동 (그룹 1),AUT,오스트리아,0.006,0.005,13.93,매치
+유럽 및 중동 (그룹 1),BEL,벨기에,0.004,0.006,13.19,매치
+유럽 및 중동 (그룹 1),SWE,스웨덴,0.006,0.006,12.53,매치
+유럽 및 중동 (그룹 1),ISR,이스라엘,0.002,0.003,18.09,매치
+유럽 및 중동 (그룹 1),NOR,노르웨이,0.004,0.004,15.61,매치
+유럽 및 중동 (그룹 1),ARE,아랍에미리트,0.002,0.003,14.80,매치
+유럽 및 중동 (그룹 1),DNK,덴마크,0.003,0.004,12.33,매치
+유럽 및 중동 (그룹 1),KWT,쿠웨이트,0.001,0.001,21.89,매치
+유럽 및 중동 (그룹 1),QAT,카타르,0.001,0.000,25.18,매치
+동아시아 태평양,KOR,한국,0.043,0.033,7.63,매치
+동아시아 태평양,JPN,일본,0.057,0.057,8.51,매치
+동아시아 태평양,TWN,대만,0.007,0.007,10.99,매치
+동아시아 태평양,HKG,홍콩,0.003,0.000,20.82,매치
+동아시아 태평양,SGP,싱가포르,0.003,0.002,16.59,매치
+미국 및 영어권 시장,USA,미국,0.198,0.251,37.90,RPG
+미국 및 영어권 시장,GBR,영국,0.017,0.031,24.28,RPG
+미국 및 영어권 시장,CAN,캐나다,0.016,0.023,32.83,RPG
+미국 및 영어권 시장,AUS,호주,0.013,0.014,35.69,RPG
+미국 및 영어권 시장,NZL,뉴질랜드,0.002,0.003,25.30,RPG
+미국 및 영어권 시장,IRL,아일랜드,0.001,0.001,32.20,RPG
+라틴아메리카 스페인어 사용 국가,MEX,멕시코,0.004,0.003,12.97,RPG
+라틴아메리카 스페인어 사용 국가,CHL,칠레,0.002,0.001,11.22,RPG
+라틴아메리카 스페인어 사용 국가,COL,콜롬비아,0.001,0.001,10.20,RPG
+라틴아메리카 스페인어 사용 국가,ARG,아르헨티나,0.000,0.001,10.29,RPG
+라틴아메리카 스페인어 사용 국가,PER,페루,0.001,0.001,12.36,RPG
+라틴아메리카 스페인어 사용 국가,PRI,푸에르토리코,0.001,0.000,29.79,RPG
+글로벌 개발도상국 시장,BRA,브라질,0.010,0.007,12.30,RPG
+글로벌 개발도상국 시장,THA,태국,0.039,0.017,15.16,RPG
+글로벌 개발도상국 시장,IDN,인도네시아,0.014,0.011,15.03,RPG
+글로벌 개발도상국 시장,VNM,베트남,0.011,0.032,22.79,RPG
+글로벌 개발도상국 시장,PHL,필리핀,0.014,0.006,14.79,RPG
+글로벌 개발도상국 시장,IND,인도,0.001,0.002,15.27,RPG
+글로벌 개발도상국 시장,MYS,말레이시아,0.006,0.006,17.91,RPG
+글로벌 개발도상국 시장,ZAF,남아프리카공화국,0.001,0.001,15.27,RPG
+글로벌 개발도상국 시장,KAZ,카자흐스탄,0.001,0.001,14.38,RPG
+유럽 및 중동 (그룹 2),RUS,러시아,0.012,0.019,22.59,RPG
+유럽 및 중동 (그룹 2),TUR,터키,0.005,0.004,16.86,RPG
+유럽 및 중동 (그룹 2),POL,폴란드,0.004,0.008,17.09,RPG
+유럽 및 중동 (그룹 2),SAU,사우디아라비아,0.002,0.003,33.87,RPG
+유럽 및 중동 (그룹 2),UKR,우크라이나,0.004,0.004,16.25,RPG
+유럽 및 중동 (그룹 2),ROU,루마니아,0.001,0.001,18.86,RPG
+유럽 및 중동 (그룹 2),CZE,체코,0.001,0.002,19.97,RPG
+유럽 및 중동 (그룹 2),GRC,그리스,0.001,0.001,25.25,RPG
+유럽 및 중동 (그룹 2),PRT,포르투갈,0.001,0.002,24.48,RPG
+유럽 및 중동 (그룹 2),HUN,헝가리,0.001,0.001,19.36,RPG
+유럽 및 중동 (그룹 2),FIN,핀란드,0.001,0.003,29.71,RPG
+유럽 및 중동 (그룹 2),BGR,불가리아,0.001,0.001,22.66,RPG
+유럽 및 중동 (그룹 2),SVK,슬로바키아,0.000,0.000,22.69,RPG
+유럽 및 중동 (그룹 2),HRV,크로아티아,0.000,0.001,25.94,RPG
+유럽 및 중동 (그룹 2),BLR,벨라루스,0.000,0.001,11.12,RPG
+유럽 및 중동 (그룹 2),LTU,리투아니아,0.000,0.001,21.29,RPG
+유럽 및 중동 (그룹 1),DEU,독일,0.030,0.037,29.54,RPG
+유럽 및 중동 (그룹 1),FRA,프랑스,0.026,0.030,28.34,RPG
+유럽 및 중동 (그룹 1),ITA,이탈리아,0.006,0.009,24.09,RPG
+유럽 및 중동 (그룹 1),ESP,스페인,0.005,0.006,22.46,RPG
+유럽 및 중동 (그룹 1),NLD,네덜란드,0.005,0.005,31.76,RPG
+유럽 및 중동 (그룹 1),CHE,스위스,0.004,0.003,48.99,RPG
+유럽 및 중동 (그룹 1),AUT,오스트리아,0.003,0.004,34.57,RPG
+유럽 및 중동 (그룹 1),BEL,벨기에,0.003,0.004,31.35,RPG
+유럽 및 중동 (그룹 1),SWE,스웨덴,0.002,0.003,25.95,RPG
+유럽 및 중동 (그룹 1),ISR,이스라엘,0.001,0.001,41.10,RPG
+유럽 및 중동 (그룹 1),NOR,노르웨이,0.002,0.002,35.00,RPG
+유럽 및 중동 (그룹 1),ARE,아랍에미리트,0.002,0.002,50.21,RPG
+유럽 및 중동 (그룹 1),DNK,덴마크,0.002,0.002,26.90,RPG
+유럽 및 중동 (그룹 1),KWT,쿠웨이트,0.001,0.000,63.83,RPG
+유럽 및 중동 (그룹 1),QAT,카타르,0.000,0.000,65.68,RPG
+동아시아 태평양,KOR,한국,0.223,0.250,40.23,RPG
+동아시아 태평양,JPN,일본,0.150,0.098,40.39,RPG
+동아시아 태평양,TWN,대만,0.093,0.061,40.00,RPG
+동아시아 태평양,HKG,홍콩,0.043,0.001,67.65,RPG
+동아시아 태평양,SGP,싱가포르,0.010,0.009,49.96,RPG
+미국 및 영어권 시장,USA,미국,0.385,0.323,15.11,시뮬레이션
+미국 및 영어권 시장,GBR,영국,0.052,0.054,12.29,시뮬레이션
+미국 및 영어권 시장,CAN,캐나다,0.028,0.029,14.61,시뮬레이션
+미국 및 영어권 시장,AUS,호주,0.025,0.019,14.91,시뮬레이션
+미국 및 영어권 시장,NZL,뉴질랜드,0.004,0.003,12.92,시뮬레이션
+미국 및 영어권 시장,IRL,아일랜드,0.002,0.004,13.65,시뮬레이션
+라틴아메리카 스페인어 사용 국가,MEX,멕시코,0.009,0.023,5.98,시뮬레이션
+라틴아메리카 스페인어 사용 국가,CHL,칠레,0.003,0.007,5.26,시뮬레이션
+라틴아메리카 스페인어 사용 국가,COL,콜롬비아,0.001,0.003,3.57,시뮬레이션
+라틴아메리카 스페인어 사용 국가,ARG,아르헨티나,0.001,0.004,0.73,시뮬레이션
+라틴아메리카 스페인어 사용 국가,PER,페루,0.001,0.003,3.60,시뮬레이션
+라틴아메리카 스페인어 사용 국가,PRI,푸에르토리코,0.001,0.001,12.59,시뮬레이션
+라틴아메리카 스페인어 사용 국가,CRI,코스타리카,0.001,0.001,7.15,시뮬레이션
+글로벌 개발도상국 시장,BRA,브라질,0.014,0.037,5.60,시뮬레이션
+글로벌 개발도상국 시장,THA,태국,0.007,0.014,5.05,시뮬레이션
+글로벌 개발도상국 시장,IDN,인도네시아,0.008,0.014,6.13,시뮬레이션
+글로벌 개발도상국 시장,VNM,베트남,0.005,0.010,3.13,시뮬레이션
+글로벌 개발도상국 시장,PHL,필리핀,0.006,0.014,5.77,시뮬레이션
+글로벌 개발도상국 시장,IND,인도,0.004,0.005,8.98,시뮬레이션
+글로벌 개발도상국 시장,MYS,말레이시아,0.005,0.008,7.33,시뮬레이션
+글로벌 개발도상국 시장,ZAF,남아프리카공화국,0.003,0.008,7.96,시뮬레이션
+글로벌 개발도상국 시장,KAZ,카자흐스탄,0.002,0.004,5.04,시뮬레이션
+글로벌 개발도상국 시장,EGY,이집트,0.001,0.003,0.47,시뮬레이션
+글로벌 개발도상국 시장,IRQ,이라크,0.000,0.002,1.90,시뮬레이션
+유럽 및 중동 (그룹 2),RUS,러시아,0.012,0.029,0.86,시뮬레이션
+유럽 및 중동 (그룹 2),TUR,터키,0.009,0.030,6.26,시뮬레이션
+유럽 및 중동 (그룹 2),POL,폴란드,0.007,0.014,9.98,시뮬레이션
+유럽 및 중동 (그룹 2),SAU,사우디아라비아,0.004,0.014,9.25,시뮬레이션
+유럽 및 중동 (그룹 2),UKR,우크라이나,0.004,0.006,7.11,시뮬레이션
+유럽 및 중동 (그룹 2),ROU,루마니아,0.002,0.006,9.17,시뮬레이션
+유럽 및 중동 (그룹 2),CZE,체코,0.003,0.004,11.79,시뮬레이션
+유럽 및 중동 (그룹 2),GRC,그리스,0.001,0.003,14.61,시뮬레이션
+유럽 및 중동 (그룹 2),PRT,포르투갈,0.002,0.003,12.23,시뮬레이션
+유럽 및 중동 (그룹 2),HUN,헝가리,0.001,0.003,8.47,시뮬레이션
+유럽 및 중동 (그룹 2),FIN,핀란드,0.002,0.003,14.39,시뮬레이션
+유럽 및 중동 (그룹 2),BGR,불가리아,0.001,0.002,11.68,시뮬레이션
+유럽 및 중동 (그룹 2),SVK,슬로바키아,0.001,0.001,10.05,시뮬레이션
+유럽 및 중동 (그룹 2),HRV,크로아티아,0.001,0.002,13.07,시뮬레이션
+유럽 및 중동 (그룹 2),BLR,벨라루스,0.001,0.002,6.47,시뮬레이션
+유럽 및 중동 (그룹 2),LTU,리투아니아,0.001,0.002,10.85,시뮬레이션
+유럽 및 중동 (그룹 1),DEU,독일,0.053,0.057,14.70,시뮬레이션
+유럽 및 중동 (그룹 1),FRA,프랑스,0.026,0.032,14.08,시뮬레이션
+유럽 및 중동 (그룹 1),ITA,이탈리아,0.009,0.018,11.52,시뮬레이션
+유럽 및 중동 (그룹 1),ESP,스페인,0.007,0.011,11.96,시뮬레이션
+유럽 및 중동 (그룹 1),NLD,네덜란드,0.010,0.010,13.62,시뮬레이션
+유럽 및 중동 (그룹 1),CHE,스위스,0.008,0.006,22.73,시뮬레이션
+유럽 및 중동 (그룹 1),AUT,오스트리아,0.006,0.007,18.14,시뮬레이션
+유럽 및 중동 (그룹 1),BEL,벨기에,0.005,0.008,14.96,시뮬레이션
+유럽 및 중동 (그룹 1),SWE,스웨덴,0.005,0.005,14.16,시뮬레이션
+유럽 및 중동 (그룹 1),ISR,이스라엘,0.002,0.004,18.74,시뮬레이션
+유럽 및 중동 (그룹 1),NOR,노르웨이,0.004,0.005,16.23,시뮬레이션
+유럽 및 중동 (그룹 1),ARE,아랍에미리트,0.002,0.006,14.32,시뮬레이션
+유럽 및 중동 (그룹 1),DNK,덴마크,0.003,0.004,13.13,시뮬레이션
+유럽 및 중동 (그룹 1),KWT,쿠웨이트,0.001,0.001,21.72,시뮬레이션
+유럽 및 중동 (그룹 1),QAT,카타르,0.001,0.001,26.77,시뮬레이션
+동아시아 태평양,KOR,한국,0.041,0.024,14.88,시뮬레이션
+동아시아 태평양,JPN,일본,0.163,0.035,16.95,시뮬레이션
+동아시아 태평양,TWN,대만,0.018,0.012,14.00,시뮬레이션
+동아시아 태평양,HKG,홍콩,0.009,0.000,22.88,시뮬레이션
+동아시아 태평양,SGP,싱가포르,0.004,0.003,16.78,시뮬레이션
+미국 및 영어권 시장,USA,미국,0.320,0.340,30.97,전략
+미국 및 영어권 시장,GBR,영국,0.040,0.052,21.52,전략
+미국 및 영어권 시장,CAN,캐나다,0.023,0.029,27.58,전략
+미국 및 영어권 시장,AUS,호주,0.020,0.019,28.85,전략
+미국 및 영어권 시장,NZL,뉴질랜드,0.003,0.004,21.63,전략
+미국 및 영어권 시장,IRL,아일랜드,0.002,0.002,27.86,전략
+라틴아메리카 스페인어 사용 국가,MEX,멕시코,0.006,0.005,14.78,전략
+라틴아메리카 스페인어 사용 국가,CHL,칠레,0.002,0.001,12.68,전략
+라틴아메리카 스페인어 사용 국가,COL,콜롬비아,0.001,0.001,11.46,전략
+라틴아메리카 스페인어 사용 국가,ARG,아르헨티나,0.001,0.002,12.09,전략
+라틴아메리카 스페인어 사용 국가,PER,페루,0.001,0.001,14.16,전략
+라틴아메리카 스페인어 사용 국가,PRI,푸에르토리코,0.001,0.000,23.73,전략
+글로벌 개발도상국 시장,BRA,브라질,0.012,0.011,13.01,전략
+글로벌 개발도상국 시장,THA,태국,0.010,0.012,16.28,전략
+글로벌 개발도상국 시장,IDN,인도네시아,0.009,0.013,13.82,전략
+글로벌 개발도상국 시장,VNM,베트남,0.014,0.010,29.33,전략
+글로벌 개발도상국 시장,PHL,필리핀,0.007,0.007,16.00,전략
+글로벌 개발도상국 시장,IND,인도,0.005,0.004,17.94,전략
+글로벌 개발도상국 시장,MYS,말레이시아,0.006,0.008,17.52,전략
+글로벌 개발도상국 시장,ZAF,남아프리카공화국,0.001,0.002,16.52,전략
+글로벌 개발도상국 시장,KAZ,카자흐스탄,0.002,0.002,20.03,전략
+글로벌 개발도상국 시장,EGY,이집트,0.001,0.002,28.81,전략
+유럽 및 중동 (그룹 2),RUS,러시아,0.027,0.024,25.62,전략
+유럽 및 중동 (그룹 2),TUR,터키,0.015,0.018,19.03,전략
+유럽 및 중동 (그룹 2),POL,폴란드,0.009,0.012,17.03,전략
+유럽 및 중동 (그룹 2),SAU,사우디아라비아,0.012,0.027,40.30,전략
+유럽 및 중동 (그룹 2),UKR,우크라이나,0.007,0.005,17.71,전략
+유럽 및 중동 (그룹 2),ROU,루마니아,0.004,0.003,22.38,전략
+유럽 및 중동 (그룹 2),CZE,체코,0.003,0.002,19.46,전략
+유럽 및 중동 (그룹 2),GRC,그리스,0.002,0.003,29.13,전략
+유럽 및 중동 (그룹 2),PRT,포르투갈,0.002,0.002,23.53,전략
+유럽 및 중동 (그룹 2),HUN,헝가리,0.001,0.001,18.67,전략
+유럽 및 중동 (그룹 2),FIN,핀란드,0.001,0.003,25.12,전략
+유럽 및 중동 (그룹 2),BGR,불가리아,0.001,0.001,24.81,전략
+유럽 및 중동 (그룹 2),SVK,슬로바키아,0.001,0.001,19.54,전략
+유럽 및 중동 (그룹 2),HRV,크로아티아,0.001,0.001,24.55,전략
+유럽 및 중동 (그룹 2),SRB,세르비아,0.001,0.001,22.34,전략
+유럽 및 중동 (그룹 2),BLR,벨라루스,0.001,0.001,19.39,전략
+유럽 및 중동 (그룹 2),LTU,리투아니아,0.001,0.001,26.44,전략
+유럽 및 중동 (그룹 1),DEU,독일,0.057,0.062,27.05,전략
+유럽 및 중동 (그룹 1),FRA,프랑스,0.028,0.039,25.88,전략
+유럽 및 중동 (그룹 1),ITA,이탈리아,0.011,0.014,20.82,전략
+유럽 및 중동 (그룹 1),ESP,스페인,0.007,0.009,19.73,전략
+유럽 및 중동 (그룹 1),NLD,네덜란드,0.010,0.010,26.74,전략
+유럽 및 중동 (그룹 1),CHE,스위스,0.009,0.006,41.27,전략
+유럽 및 중동 (그룹 1),AUT,오스트리아,0.007,0.007,31.76,전략
+유럽 및 중동 (그룹 1),BEL,벨기에,0.005,0.006,28.83,전략
+유럽 및 중동 (그룹 1),SWE,스웨덴,0.004,0.005,24.16,전략
+유럽 및 중동 (그룹 1),ISR,이스라엘,0.003,0.003,31.48,전략
+유럽 및 중동 (그룹 1),NOR,노르웨이,0.004,0.003,29.44,전략
+유럽 및 중동 (그룹 1),ARE,아랍에미리트,0.005,0.012,54.34,전략
+유럽 및 중동 (그룹 1),DNK,덴마크,0.003,0.003,25.61,전략
+유럽 및 중동 (그룹 1),KWT,쿠웨이트,0.003,0.006,57.12,전략
+유럽 및 중동 (그룹 1),QAT,카타르,0.002,0.002,76.38,전략
+동아시아 태평양,KOR,한국,0.113,0.059,33.08,전략
+동아시아 태평양,JPN,일본,0.072,0.071,31.63,전략
+동아시아 태평양,TWN,대만,0.040,0.023,37.98,전략
+동아시아 태평양,HKG,홍콩,0.028,0.001,63.70,전략
+동아시아 태평양,SGP,싱가포르,0.007,0.005,44.85,전략
