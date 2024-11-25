@@ -1,5 +1,5 @@
 function drawViz8(dataSource, divId, title, subtitle, howToRead, explainHowToRead, sources,
-    legendLabels, selectGenre, initialGenre, columnLabels, groups
+    legendLabels, selectGenre, initialGenre, columnLabels, groups, low, medium, high
 ) {
 
     const windowWidth = Math.min(window.innerWidth, screen.width);
@@ -249,7 +249,7 @@ function drawViz8(dataSource, divId, title, subtitle, howToRead, explainHowToRea
                             return `<div class="square" style="display: inline-block;margin-right:2px;width: 10px;height: 10px; background-color: ${color}"></div>`
                         }).join("");
                         const svgHtml = thisValue['good/bad'] === 'good' ? legendSvgSmallBaseline['Good']: thisValue['good/bad'] === 'bad' ? legendSvgSmallBaseline['Limited'] : legendSvgSmallBaseline['Moderate'];
-                        const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
+                        const levelHtml = thisValue.value === 3 ? medium : thisValue.value < 3 ? low : high;
                         return [squaresHtml + svgHtml + '</br>' + levelHtml]
                     })
                     .join("div")
@@ -264,7 +264,7 @@ function drawViz8(dataSource, divId, title, subtitle, howToRead, explainHowToRea
                             return `<div class="square" style="display: inline-block;margin-right:2px;width: 10px;height: 10px; background-color: ${color}"></div>`
                         }).join("");
                         const svgHtml = thisValue['good/bad'] === 'good' ? legendSvgSmallBaseline['Good']: thisValue['good/bad'] === 'bad' ? legendSvgSmallBaseline['Limited'] : legendSvgSmallBaseline['Moderate'];
-                        const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
+                        const levelHtml = thisValue.value === 3 ? medium : thisValue.value < 3 ? low : high;
                         return [squaresHtml + svgHtml + '</br>' + levelHtml]
                     })
                     .join("div")
@@ -381,7 +381,7 @@ function drawViz8(dataSource, divId, title, subtitle, howToRead, explainHowToRea
                             return `<div class="square" style="display: inline-block;margin-right:2px;width: 15px;height: 15px; background-color: ${color}"></div>`
                         }).join("");
                         const svgHtml = thisValue['good/bad'] === 'good' ? legendSvgBaseline['Good']: thisValue['good/bad'] === 'bad' ? legendSvgBaseline['Limited'] : legendSvgBaseline['Moderate'];
-                        const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
+                        const levelHtml = thisValue.value === 3 ? medium : thisValue.value < 3 ? low : high;
                         return [squaresHtml + svgHtml + '</br>' + levelHtml]
                     })
                     .join("div")
@@ -396,7 +396,7 @@ function drawViz8(dataSource, divId, title, subtitle, howToRead, explainHowToRea
                             return `<div class="square" style="display: inline-block;margin-right:2px;width: 15px;height: 15px; background-color: ${color}"></div>`
                         }).join("");
                         const svgHtml = thisValue['good/bad'] === 'good' ? legendSvgBaseline['Good']: thisValue['good/bad'] === 'bad' ? legendSvgBaseline['Limited'] : legendSvgBaseline['Moderate'];
-                        const levelHtml = thisValue.value === 3 ? 'medium' : thisValue.value < 3 ? 'low' : 'high';
+                        const levelHtml = thisValue.value === 3 ? medium : thisValue.value < 3 ? low : high;
                         return [squaresHtml + svgHtml + '</br>' + levelHtml]
                     })
                     .join("div")
@@ -465,7 +465,10 @@ if (urlPath8.includes('/ja/')) {
             'Europe & Middle East (Group 2)',
             'LATAM Spanish Speaking', 
             'Global Developing Markets'
-        ]
+        ],
+        low = 'low',
+        medium = 'medium',
+        high = 'high'
     );
 } else if (urlPath8.includes('/zh/')) {
     drawViz8(
@@ -498,7 +501,10 @@ if (urlPath8.includes('/ja/')) {
             'Europe & Middle East (Group 2)',
             'LATAM Spanish Speaking', 
             'Global Developing Markets'
-        ]
+        ],
+        low = 'low',
+        medium = 'medium',
+        high = 'high'
     );
 } else if (urlPath8.includes('/ko/')) {
     drawViz8(
@@ -531,7 +537,10 @@ if (urlPath8.includes('/ja/')) {
             '유럽 및 중동 (그룹 2)',
             '라틴아메리카 스페인어 사용 국가', 
             '글로벌 개발도상국 시장'
-        ]
+        ],
+        low = 'low',
+        medium = 'medium',
+        high = 'high'
     );
 } else {
     drawViz8(
@@ -564,7 +573,10 @@ if (urlPath8.includes('/ja/')) {
             'Europe & Middle East (Group 2)',
             'LATAM Spanish Speaking', 
             'Global Developing Markets'
-        ]
+        ],
+        low = 'low',
+        medium = 'medium',
+        high = 'high'
     );
 }
 
