@@ -324,12 +324,12 @@ if (urlPath7.includes('/ja/')) {
         ],
         arppuLabel = 'ARPPU',
         countryLabels = { // No need to change country names in the data
-            'U.S.': 'U.S.',
-            'Mexico': 'Mexico',
-            'Japan': 'Japan',
-            'Italy': 'Italy',
-            'Indonesia': 'Indonesia',
-            'Germany': 'Germany'
+            'U.S.': '미국',
+            'Mexico': '멕시코',
+            'Japan': '일본',
+            'Italy': '이탈리아',
+            'Indonesia': '인도네시아',
+            'Germany': '독일'
         }
     );
 } else {
