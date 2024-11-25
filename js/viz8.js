@@ -510,23 +510,23 @@ if (urlPath8.includes('/ja/')) {
         divId = "#geo-viz8",
         title = "Paid user acquisition campaign outcomes showcase markets of opportunity",
         subtitle = "Benchmarked performance for each market by payer acquisition, value, and overall revenue potential, August 2023-2024",
-        howToRead = "How to read this graphic",
-        explainHowToRead = "High and low values can have different meanings for each metric. </br>The icons help you interpret them.",
+        howToRead = "자료 해석 방법",
+        explainHowToRead = "높은 값과 낮은 값은 지표에 따라 다른 의미를 가질 수 있습니다.</br>아이콘을 참고하여 해석해 보세요.",
         sources = "Source: Moloco campaign outcomes from August 2023 to August 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU). Countries and regions that do not meet minimum thresholds are not shown.",
         legendLabels = {
-            'Good': 'Good',
-            'Moderate': 'Moderate',
-            'Limited': 'Limited',
+            'Good': '우수',
+            'Moderate': '보통',
+            'Limited': '제한적',
             'Opportunity': 'Opportunity'
         },
-        selectGenre = 'Select genre',
-        initialGenre = 'All genres',
+        selectGenre = '장르 선택',
+        initialGenre = '모든 장르',
         columnLabels = [
             '', 
-            'Geography', 
-            `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Cost Per Payer</span></div>`,
-            `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Gaming App D7 Average Revenue Per Paying User</span></div>`, 
-            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`
+            '지리', 
+            `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">구매 유저당 비용의 중앙값</span></div>`,
+            `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">게임 앱 구매 유저당 D7 평균 매출의 중앙값</span></div>`, 
+            `IAP 매출 <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`
         ],
         groups = [
             'US and English Language',
