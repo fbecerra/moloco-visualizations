@@ -1,5 +1,5 @@
 function drawViz6(dataSource, divId, title, subtitle, selectCountry, countriesAndRegions,
-    uaText, revenueText, arppuText, groupLabels, groupInfo, selectGenre, sources
+    uaText, revenueText, arppuText, groupLabels, groupInfo, selectGenre, selectedGenre, sources
 ) {
 
     const windowWidth = Math.min(window.innerWidth, screen.width);
@@ -49,7 +49,6 @@ function drawViz6(dataSource, divId, title, subtitle, selectCountry, countriesAn
             'Europe & Middle East (Group 1)', 'Europe & Middle East (Group 2)',
             'LATAM Spanish Speaking', 'Global Developing Markets'];
         let selectedGroup = groups[0];
-        let selectedGenre ='All genres';
 
         const [min, max] = d3.extent(values, d => d.ARPPU);
 
@@ -391,7 +390,7 @@ function drawViz6(dataSource, divId, title, subtitle, selectCountry, countriesAn
                 .style("left", x(minARPPU) + '%')
                 .style("width", (x(maxARPPU) - x(minARPPU)) + '%');
             d3.select("#arppu-legend").html(minMaxLabel);
-            d3.select("#selected-tier-name").html(selectedGroup);
+            d3.select("#selected-tier-name").html(groupLabels[selectedGroup]);
             d3.select("#selected-tier-info").html(`<p style="font-family: Montserrat; color: #000; letter-spacing: 0px; font-size: 14px">${groupInfo[selectedGroup]}</p>`);
         }
 
@@ -524,6 +523,7 @@ if (urlPath6.includes('/ja/')) {
             'Global Developing Markets': "Consisting of a wide range of developing countries, these markets have the largest variability of user value with significant differences across genres. However, there are pockets of opportunity for marketers to capture high-value users at a potentially cost efficient price."
         },
         selectGenre = "Select genre",
+        selectedGenre ='All genres',
         sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
     );
 } else if (urlPath6.includes('/zh/')) {
@@ -554,6 +554,7 @@ if (urlPath6.includes('/ja/')) {
             'Global Developing Markets': "Consisting of a wide range of developing countries, these markets have the largest variability of user value with significant differences across genres. However, there are pockets of opportunity for marketers to capture high-value users at a potentially cost efficient price."
         },
         selectGenre = "Select genre",
+        selectedGenre ='All genres',
         sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
     );
 } else if (urlPath6.includes('/ko/')) {
@@ -584,6 +585,7 @@ if (urlPath6.includes('/ja/')) {
             'Global Developing Markets': "광범위한 개발도상국들로 구성된 이 시장은 장르별로 유저 가치 편차가 가장 큽니다. 그럼에도 불구하고, 마케터들은 곳곳에서 비용 효율적인 가격으로 고가치 유저들을 확보할 수 있는 기회를 찾을 수 있습니다."
         },
         selectGenre = "장르 선택",
+        selectedGenre ='모든 장르',
         sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
     );
 } else {
@@ -614,6 +616,7 @@ if (urlPath6.includes('/ja/')) {
             'Global Developing Markets': "Consisting of a wide range of developing countries, these markets have the largest variability of user value with significant differences across genres. However, there are pockets of opportunity for marketers to capture high-value users at a potentially cost efficient price."
         },
         selectGenre = "Select genre",
+        selectedGenre ='All genres',
         sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
     );
 }
