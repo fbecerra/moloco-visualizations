@@ -210,9 +210,9 @@ if (urlPath4.includes('/ja/')) {
         title = "Marketing spend and total in-app purchase revenue are aligned in most countries and regions",
         subtitle = "Mobile gaming (IAP) user acquisition spend compared to mobile gaming (IAP) D7 revenue",
         sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (September 2023 to September 2024). Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
-        labelForUS = 'U.S.',
-        spendLabel = 'Spend',
-        revenueLabel = 'IAP revenue',
+        labelForUS = '미국',
+        spendLabel = 'UA 지출',
+        revenueLabel = 'IAP 매출',
         othersLabel = 'Others',
     );
 } else {
