@@ -224,16 +224,16 @@ if (urlPath3.includes('/ja/')) {
     drawViz3(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz3-ja.csv',
         divId = "#geo-viz3",
-        title = "Some marketers focus on their local regions, while others take a more global approach to user acquisition",
-        subtitle = "2025 estimated user acquisition spend by country, filtered by app developer HQ location",
-        titleFirstRow = "HQ in the U.S.",
-        titleSecondRow = "Select HQ to compare",
-        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
-        labelForUS = 'U.S.',
-        spendIn = 'Spend in ',
+        title = "拠点がある地域に専念するマーケターもいれば、よりグローバルなアプローチでユーザー獲得に取り組むマーケターもいる",
+        subtitle = "2025年の国別ユーザー獲得コスト（推定）の内訳 - アプリ開発企業の本拠地別にフィルタリング可能",
+        titleFirstRow = "本社が米国にあるゲームアプリ企業",
+        titleSecondRow = "本拠地を選択して比較",
+        sources = "データソース：Molocoによる2025年のモバイルゲーム （IAP）におけるユーザー獲得コストの推定。Molocoは、有料ユーザーの獲得コストを推定するためにさまざまなインプットを使用しています。これには、Sensor Towerの一部であるdata.aiからのインストールデータ、有料対オーガニックの推定比率、特定のアプリ市場の実際または推定のCPIが含まれます。中国本土での支出は除外されていますが、中国を拠点とするモバイルゲームアプリによる国外市場での支出は含まれています。",
+        labelForUS = '米国',
+        spendIn = 'での支出',
         leftToRight = true,
-        country2 = 'China',
-        uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World']
+        country2 = '中国',
+        uniqueDestinations = ['北米', 'ヨーロッパ', 'アジア太平洋地域', 'その他の地域']
     );
 } else if (urlPath3.includes('/zh/')) {
     drawViz3(
