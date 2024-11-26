@@ -270,22 +270,22 @@ if (urlPath7.includes('/ja/')) {
     drawViz7(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz7-ja.csv',
         divId = "#geo-viz7",
-        title = "Top payers drive the majority of total IAP revenue",
-        subtitle = "High-value users aren’t confined to well-known markets — they can be found in every corner of the globe. In most markets, the top-paying users account for a disproportionate share of total IAP revenue. To illustrate this, let’s take a closer look at D7 IAP revenue for the RPG genre across a selection of global markets.<br><br>Hover over market to see D7 ARPPU.",
-        sources = "Source: RPG total gaming IAP revenue by user (organic and paid, 7-day sample period in July 2024).",
+        title = "上位の有料ユーザーがIAPによる総収益の大部分を占めている",
+        subtitle = "価値の高いユーザーはメジャーな市場に限られているわけではなく、世界中のいたる所に存在します。ほとんどの市場においてこれらの上位有料ユーザーがIAPによる総収益の大きな部分を占めています。この点について分かりやすく説明するため、世界の一部の市場におけるRPGジャンルのD7（最初の7日間）のIAP収益を詳しく見てみましょう。<br><br>市場にカーソルを合わせるとD7 ARPPU（最初の7日間のARPPU）が表示されます。",
+        sources = "データソース：RPGのゲーマーによるIAP収益の合計（オーガニックおよび有料、2024年7月における7日間のサンプル期間）",
         paragraphs = [
             '', 
-            '<p>The top 2% of paying users generate roughly 35% to 45% of total IAP revenue, a trend that broadly holds across different market sizes and genres.</p>',
-            '<p>The top 10% of paying users account for 70% to 85% of total IAP revenue.</p>'
+            '<p>IAP収益全体の約35～45%が有料ユーザーの上位2%によるものであり、この傾向は市場規模やジャンルが異なってもほぼ共通していました。</p>',
+            '<p>有料ユーザーの上位10%がIAP収益全体の70～85%を占めています。</p>'
         ],
         arppuLabel = 'ARPPU',
         countryLabels = { // No need to change country names in the data
-            'U.S.': 'U.S.',
-            'Mexico': 'Mexico',
-            'Japan': 'Japan',
-            'Italy': 'Italy',
-            'Indonesia': 'Indonesia',
-            'Germany': 'Germany'
+            'U.S.': '米国',
+            'Mexico': 'メキシコ',
+            'Japan': '日本',
+            'Italy': 'イタリア',
+            'Indonesia': 'インドネシア',
+            'Germany': 'ドイツ'
         }
     );
 } else if (urlPath7.includes('/zh/')) {
