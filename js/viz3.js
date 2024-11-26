@@ -231,7 +231,7 @@ if (urlPath3.includes('/ja/')) {
         sources = "データソース：Molocoによる2025年のモバイルゲーム （IAP）におけるユーザー獲得コストの推定。Molocoは、有料ユーザーの獲得コストを推定するためにさまざまなインプットを使用しています。これには、Sensor Towerの一部であるdata.aiからのインストールデータ、有料対オーガニックの推定比率、特定のアプリ市場の実際または推定のCPIが含まれます。中国本土での支出は除外されていますが、中国を拠点とするモバイルゲームアプリによる国外市場での支出は含まれています。",
         labelForUS = '米国',
         spendIn = 'での支出',
-        leftToRight = true,
+        leftToRight = false,
         country2 = '中国',
         uniqueDestinations = ['北米', 'ヨーロッパ', 'アジア太平洋地域', 'その他の地域']
     );
