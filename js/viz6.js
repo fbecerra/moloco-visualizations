@@ -499,32 +499,32 @@ if (urlPath6.includes('/ja/')) {
     drawViz6(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz6-ja.csv',
         divId = "#geo-viz6",
-        title = "Mapping global opportunities",
-        subtitle = "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics by region. Hover over individual countries or regions for a market-level overview.",
-        selectCountry = "Select country/region group",
-        countriesAndRegions = "Countries and regions",
-        uaText = "paid UA budget",
-        revenueText = "gaming IAP revenue",
+        title = "グローバル機会のマッピング",
+        subtitle = "この視覚化ツールを操作して、地域別にユーザー価値、ユーザー獲得、収益のダイナミクスの詳細を把握できます。それぞれの国にカーソルを合わせると、市場レベルの概要が表示されます。",
+        selectCountry = "地域を選択",
+        countriesAndRegions = "対象国",
+        uaText = "有料ユーザー獲得予算",
+        revenueText = "ゲームIAP収益",
         arppuText = "D7 ARPPU",
         groupLabels = { // No need to change Tier names in data
-            'US and English Language': "US and English Language", 
-            'East Asia Pacific': "East Asia Pacific",
-            'Europe & Middle East (Group 1)': "Europe & Middle East (Group 1)", 
-            'Europe & Middle East (Group 2)': "Europe & Middle East (Group 2)", 
-            'LATAM Spanish Speaking': "LATAM Spanish Speaking", 
-            'Global Developing Markets': "Global Developing Markets"
+            'US and English Language': "米国および英語圏", 
+            'East Asia Pacific': "東アジア・太平洋地域",
+            'Europe & Middle East (Group 1)': "欧州・中東（グループ1）", 
+            'Europe & Middle East (Group 2)': "欧州・中東（グループ2）", 
+            'LATAM Spanish Speaking': "中南米スペイン語圏", 
+            'Global Developing Markets': "世界の新興市場"
         },
         groupInfo = {
-            'US and English Language': "The U.S. and many English-language countries are the largest overall mobile gaming market, representing the majority of UA spend and revenue. While the U.S. dominates in total IAP revenue, opportunities exist across these markets, representing similar barriers to entry and consistent user value across genres.", 
-            'East Asia Pacific': "East Asia Pacific markets have the highest average user value across most genres. Potentially a higher barrier to entry for non-domestic marketers due to localization and cultural differences. Midcore (RPG, Strategy, Simulation) sees relative strength in this region for user value and total IAP revenue.",
-            'Europe & Middle East (Group 1)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 1 represents some of the largest markets of opportunity within the region with higher user value and IAP revenue. Moreover, a significant percentage of English speakers among the population potentially lowering the barrier of entry for many apps.", 
-            'Europe & Middle East (Group 2)': "Europe and the Middle East can be grouped into two sets of markets based on user value and total IAP revenue. Group 2 represents diverse markets with a lower share of the total IAP revenue and high variance in user value. Due to their size, these markets can perhaps be more challenging to enter, but may represent a significant opportunity by grouping key markets to maximize reach.", 
-            'LATAM Spanish Speaking': "Latin America (LATAM) markets have relatively low user value and overall IAP revenue contribution. However, localization can be streamlined due to the population being largely Spanish speaking. For marketers, grouping these countries can help with UA viability.", 
-            'Global Developing Markets': "Consisting of a wide range of developing countries, these markets have the largest variability of user value with significant differences across genres. However, there are pockets of opportunity for marketers to capture high-value users at a potentially cost efficient price."
+            'US and English Language': "米国およびその他の多くの英語圏諸国は、モバイルゲーム市場全体における最大の市場であり、ユーザー獲得の予算と収益の大半を占めています。IAP収益の総額は米国が圧倒的ですが、これらの市場全体にユーザー獲得のチャンスが存在し、類似した市場参入への障壁と、ジャンルを問わず一貫したユーザー価値が見られます。", 
+            'East Asia Pacific': "東アジア・太平洋地域市場は、ほとんどのジャンルで最も高い平均ユーザー価値を示しています。 ローカリゼーションの必要性や文化の違いにより、国外のマーケッターにとっては参入障壁が高い可能性があります。 この地域では、ミッドコアゲーム（RPG、戦略ゲーム、シミュレーションゲーム）において、ユーザー価値とIAPの総収益が比較的高い傾向が見られます。",
+            'Europe & Middle East (Group 1)': "欧州・中東地域は、ユーザー価値とIAPの総収益に基づいて2つの市場グループに分けることができます。グループ1は、ユーザー価値とIAP収益が高く、この地域内で最も大きなビジネスチャンスが存在する市場が含まれます。 さらに、人口に占める英語話者の割合が高いため、多くのアプリにとって参入障壁が低くなる可能性があります。", 
+            'Europe & Middle East (Group 2)': "欧州・中東地域は、ユーザー価値とIAPの総収益に基づいて2つの市場グループに分けることができます。グループ2は、IAPの総収益に占めるシェアが小さく、ユーザー価値に大きなばらつき見られる多様な市場で構成されています。 市場規模が大きいため、これらの市場への参入は容易ではないかもしれませんが、主要な市場をグループ化してリーチを最大化することで、大きなチャンスが生まれる可能性があります。", 
+            'LATAM Spanish Speaking': "中南米（LATAM）市場は、ユーザー価値とIAPの収益全体に占める比率が比較的低い傾向が見られます。 一方、人口の大部分がスペイン語を話すため、ローカリゼーションを効率的に行うことができます。 マーケターにとって、これらの国のグループ化は、ユーザー獲得の機会拡大に役立ちます。", 
+            'Global Developing Markets': "さまざまな発展途上国からなるこれらの市場は、ユーザー価値のばらつきが最も大きく、ジャンルによって大きな違いが見られました。 しかしマーケターにとって、潜在的にコスト効率の高い価格で価値の高いユーザーを獲得するチャンスが存在します。"
         },
-        selectGenre = "Select genre",
-        selectedGenre ='All genres',
-        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
+        selectGenre = "ジャンルを選択",
+        selectedGenre ='すべてのジャンル',
+        sources = "データソース：Molocoによる2025年のモバイルゲーム （アプリ内購入）におけるユーザー獲得コストの推定および2023年8月～2024年8月におけるMoloco広告主の市場別ゲームアプリ内購入による総収益（オーガニックおよび有料）。中国本土での支出は分析の対象外ですが、中国を拠点とするモバイルゲームアプリによる国外市場での支出は含まれています。"
     );
 } else if (urlPath6.includes('/zh/')) {
     drawViz6(
