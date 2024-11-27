@@ -1,12 +1,12 @@
 Market,Market full name,UA Spend,Revenue
-USA,U.S.,0.399,0.397
-KOR,South Korea,0.037,0.083
-JPN,Japan,0.040,0.082
-DEU,Germany,0.054,0.049
-GBR,U.K.,0.055,0.041
-TWN,Taiwan,0.013,0.035
-FRA,France,0.032,0.028
-CAN,Canada,0.029,0.024
-AUS,Australia,0.019,0.022
-BRA,Brazil,0.025,0.020
-OTHER,Others,0.298,0.219
+USA,美国,0.399,0.397
+KOR,韩国,0.037,0.083
+JPN,日本,0.040,0.082
+DEU,德国,0.054,0.049
+GBR,英国,0.055,0.041
+TWN,中国台湾,0.013,0.035
+FRA,法国,0.032,0.028
+CAN,加拿大,0.029,0.024
+AUS,澳大利亚,0.019,0.022
+BRA,巴西,0.025,0.020
+OTHER,其他,0.298,0.219
