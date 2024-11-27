@@ -1,5 +1,6 @@
 function drawViz6(dataSource, divId, title, subtitle, selectCountry, countriesAndRegions,
-    uaText, revenueText, arppuText, groupLabels, groupInfo, selectGenre, selectedGenre, sources
+    uaText, revenueText, arppuText, groupLabels, groupInfo, selectGenre, selectedGenre,
+    sources, comma
 ) {
 
     const windowWidth = Math.min(window.innerWidth, screen.width);
@@ -396,7 +397,7 @@ function drawViz6(dataSource, divId, title, subtitle, selectCountry, countriesAn
 
         function updatePlot() {
             const groupCountries = values.filter(value => (value.Tier === selectedGroup) & (value.Genre === selectedGenre));
-            countriesLabel = groupCountries.map(d => d['Market full name']).join(', ');
+            countriesLabel = groupCountries.map(d => d['Market full name']).join(comma);
             const paidBudget = (groupCountries.reduce((a,b) => a + b['UA Spend'], 0) * 100).toFixed(0);
             paidBudgetWidth = paidBudget + '%';
             paidBudgetLabel = paidBudget < 1 ? '<1%' : paidBudget + '%';
@@ -524,7 +525,8 @@ if (urlPath6.includes('/ja/')) {
         },
         selectGenre = "ジャンルを選択",
         selectedGenre ='すべてのジャンル',
-        sources = "データソース：Molocoによる2025年のモバイルゲーム （アプリ内購入）におけるユーザー獲得コストの推定および2023年8月～2024年8月におけるMoloco広告主の市場別ゲームアプリ内購入による総収益（オーガニックおよび有料）。中国本土での支出は分析の対象外ですが、中国を拠点とするモバイルゲームアプリによる国外市場での支出は含まれています。"
+        sources = "データソース：Molocoによる2025年のモバイルゲーム （アプリ内購入）におけるユーザー獲得コストの推定および2023年8月～2024年8月におけるMoloco広告主の市場別ゲームアプリ内購入による総収益（オーガニックおよび有料）。中国本土での支出は分析の対象外ですが、中国を拠点とするモバイルゲームアプリによる国外市場での支出は含まれています。",
+        comma = '、',
     );
 } else if (urlPath6.includes('/zh/')) {
     drawViz6(
@@ -555,7 +557,8 @@ if (urlPath6.includes('/ja/')) {
         },
         selectGenre = "Select genre",
         selectedGenre ='All genres',
-        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included.",
+        comma = ', ',
     );
 } else if (urlPath6.includes('/ko/')) {
     drawViz6(
@@ -586,7 +589,8 @@ if (urlPath6.includes('/ja/')) {
         },
         selectGenre = "장르 선택",
         selectedGenre ='모든 장르',
-        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included.",
+        comma = ', ',
     );
 } else {
     drawViz6(
@@ -617,7 +621,8 @@ if (urlPath6.includes('/ja/')) {
         },
         selectGenre = "Select genre",
         selectedGenre ='All genres',
-        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included."
+        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included.",
+        comma = ', ',
     );
 }
 
