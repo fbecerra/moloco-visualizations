@@ -292,22 +292,22 @@ if (urlPath7.includes('/ja/')) {
     drawViz7(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz7-zh.csv',
         divId = "#geo-viz7",
-        title = "Top payers drive the majority of total IAP revenue",
-        subtitle = "High-value users aren’t confined to well-known markets — they can be found in every corner of the globe. In most markets, the top-paying users account for a disproportionate share of total IAP revenue. To illustrate this, let’s take a closer look at D7 IAP revenue for the RPG genre across a selection of global markets.<br><br>Hover over market to see D7 ARPPU.",
-        sources = "Source: RPG total gaming IAP revenue by user (organic and paid, 7-day sample period in July 2024).",
+        title = "少数高价值用户贡献了大部分应用内购买（IAP）收益",
+        subtitle = "高价值用户并不只存在于大家熟知的市场，而是散落在全球各个角落。在大多数市场里，付费最多的一小部分用户支撑起了总应用内购买（IAP）收益的极大份额。为了更好地展现这点，我们来看看角色扮演游戏（RPG）在不同地区市场里的第七天应用内购买（D7 IAP）收益。<br><br>鼠标悬停在市场上以查看第七天每付费用户平均收益（D7 ARPPU）",
+        sources = "来源：角色扮演游戏（RPG）的每用户总应用内购买（IAP）收益（自然和付费渠道，来自2024 年 7 月的七天样本 ）。",
         paragraphs = [
             '', 
-            '<p>The top 2% of paying users generate roughly 35% to 45% of total IAP revenue, a trend that broadly holds across different market sizes and genres.</p>',
-            '<p>The top 10% of paying users account for 70% to 85% of total IAP revenue.</p>'
+            '<p>前 2% 的付费用户贡献了 35% 到 45% 的总应用内购买（IAP）收益，其他市场和 App 类型也大多呈现这一趋势。<br>美国｜意大利｜印度尼西亚｜墨西哥｜日本｜德国</p>',
+            '<p>前 10% 的付费用户贡献了 70% 至 85% 的总应用内购买（IAP）收益。<br>美国｜意大利｜印度尼西亚｜墨西哥｜日本｜德国</p>'
         ],
-        arppuLabel = 'ARPPU',
+        arppuLabel = '每付费用户平均收益',
         countryLabels = { // No need to change country names in the data
-            'U.S.': 'U.S.',
-            'Mexico': 'Mexico',
-            'Japan': 'Japan',
-            'Italy': 'Italy',
-            'Indonesia': 'Indonesia',
-            'Germany': 'Germany'
+            'U.S.': '美国',
+            'Mexico': '墨西哥',
+            'Japan': '日本',
+            'Italy': '意大利',
+            'Indonesia': '印度尼西亚',
+            'Germany': '德国'
         }
     );
 } else if (urlPath7.includes('/ko/')) {
