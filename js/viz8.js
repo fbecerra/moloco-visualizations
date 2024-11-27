@@ -475,38 +475,38 @@ if (urlPath8.includes('/ja/')) {
     drawViz8(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz8-zh.csv',
         divId = "#geo-viz8",
-        title = "Paid user acquisition campaign outcomes showcase markets of opportunity",
-        subtitle = "Benchmarked performance for each market by payer acquisition, value, and overall revenue potential, August 2023-2024",
-        howToRead = "How to read this graphic",
-        explainHowToRead = "High and low values can have different meanings for each metric. </br>The icons help you interpret them.",
-        sources = "Source: Moloco campaign outcomes from August 2023 to August 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU). Countries and regions that do not meet minimum thresholds are not shown.",
+        title = "付费用户获取 campaign 的结果揭示了潜在的市场机会",
+        subtitle = "按付费用户获取、用户价值及总体收益潜力评估各个市场的基准表现（2023 年 8 月至 2024 年 8 月）。",
+        howToRead = "如何阅读本图表",
+        explainHowToRead = "不同指标的高低含义各不相同，请根据旁边的图标解读</br>良好 中等 受限 机会",
+        sources = "来源：Moloco 从 2023 年 8 月至 2024 年 8 月的 campaign 结果。获取成本（每付费用户成本，CPP）小于用户价值（每付费用户平均收益，ARPPU）的市场被标记为有机会的市场。未达到最低标准的国家和地区将不予显示。",
         legendLabels = {
-            'Good': 'Good',
-            'Moderate': 'Moderate',
-            'Limited': 'Limited',
-            'Opportunity': 'Opportunity'
+            'Good': '良好',
+            'Moderate': '中等',
+            'Limited': '受限',
+            'Opportunity': '机会'
         },
-        selectGenre = 'Select genre',
-        initialGenre = 'All genres',
-        genres = ['All genres', 'Casino', 'Match', 'RPG', 'Simulation', 'Strategy'],
+        selectGenre = '选择类型',
+        initialGenre = '所有类型',
+        genres = ['所有类型', '博彩类', '匹配类', '角色扮演类', '模拟类', '策略类'],
         columnLabels = [
             '', 
-            'Geography', 
-            `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Cost Per Payer</span></div>`,
-            `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Gaming App D7 Average Revenue Per Paying User</span></div>`, 
-            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`
+            '地区', 
+            `每付费用户成本（CPP） <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">每付费用户成本中位数</span></div>`,
+            `每付费用户平均收益（ARPPU） <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">游戏 App 第七天每付费用户平均收益中位数</span></div>`, 
+            `应用内购买（IAP）收益 <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`
         ],
         groups = [
-            'US and English Language',
-            'East Asia Pacific',
-            'Europe & Middle East (Group 1)', 
-            'Europe & Middle East (Group 2)',
-            'LATAM Spanish Speaking', 
-            'Global Developing Markets'
+            '美国及英语国家',
+            '东亚与亚太',
+            '欧洲与中东（第一组）', 
+            '欧洲与中东（第二组）',
+            '拉丁美洲西语国家', 
+            '全球发展中国家市场'
         ],
-        low = 'low',
-        medium = 'medium',
-        high = 'high'
+        low = '低',
+        medium = '中',
+        high = '高'
     );
 } else if (urlPath8.includes('/ko/')) {
     drawViz8(
