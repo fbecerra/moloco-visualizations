@@ -11,7 +11,7 @@ function drawViz4(dataSource, divId, xlabel, ylabel, title, subtitle, sources,
 
         const textPadding = 7;
     
-        const margin = {top:30, right: 10, bottom: 10, left: 90},
+        const margin = {top:30, right: 10, bottom: 10, left: 100},
             width = graphWidth - margin.left - margin.right,
             height = 400 - margin.top - margin.bottom;
     
@@ -84,7 +84,7 @@ function drawViz4(dataSource, divId, xlabel, ylabel, title, subtitle, sources,
             .join("text")
                 .attr("class", "percentage-spend")
                 .attr("x", d => {
-                    if ((d[ylabel] === labelForUS) || (d[ylabel] === 'Others')) {
+                    if ((d[ylabel] === labelForUS) || (d[ylabel] === othersLabel)) {
                         return x(d['UA Spend']) - textPadding;
                     } else {
                         return x(d['UA Spend']) + textPadding;
@@ -95,7 +95,7 @@ function drawViz4(dataSource, divId, xlabel, ylabel, title, subtitle, sources,
                 .style("font-family", "Spacegrotesk")
                 .style("font-size", "14px")
                 .style("text-anchor", d => {
-                    if ((d[ylabel] === labelForUS) || (d[ylabel] === 'Others')) {
+                    if ((d[ylabel] === labelForUS) || (d[ylabel] === othersLabel)) {
                         return 'end';
                     } else {
                         return 'start';
@@ -125,7 +125,7 @@ function drawViz4(dataSource, divId, xlabel, ylabel, title, subtitle, sources,
                 .attr("y", d => y(d[ylabel]))
                 .attr("width", d => x2(d['Revenue']) - x2(0))
                 .attr("height", y.bandwidth() )
-                .attr("fill", d => d[ylabel] === 'Others' ? "#ADD7F4" : "#0280FB");
+                .attr("fill", d => d[ylabel] === othersLabel ? "#ADD7F4" : "#0280FB");
     
         g.selectAll(".percentage-revenue")
             .data(spend)

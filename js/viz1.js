@@ -10,7 +10,7 @@ function drawViz1(dataSource, divId, xlabels, ylabel, colors, title, subtitle, s
         centerDiv(divId);
         const textPadding = 7;
     
-        const margin = {top: 10, right: 10, bottom: 10, left: 90},
+        const margin = {top: 10, right: 10, bottom: 10, left: 100},
             width = graphWidth - margin.left - margin.right,
             height = 460 - margin.top - margin.bottom;
     
@@ -155,7 +155,6 @@ function drawViz1(dataSource, divId, xlabels, ylabel, colors, title, subtitle, s
 
 const urlPath = window.location.pathname;
 if (urlPath.includes('/ja/')) {
-    console.log('ja');
     drawViz1(
         dataSource = "https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz1-ja.csv",
         divId = "#geo-viz1",
@@ -171,7 +170,6 @@ if (urlPath.includes('/ja/')) {
         android = 'Android'
     );
 } else if (urlPath.includes('/zh/')) {
-    console.log('zh');
     drawViz1(
         dataSource = "https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz1-zh.csv",
         divId = "#geo-viz1",
@@ -187,7 +185,6 @@ if (urlPath.includes('/ja/')) {
         android = 'Android'
     );
 } else if (urlPath.includes('/ko/')) {
-    console.log('ko');
     drawViz1(
         dataSource = "https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz1-ko.csv",
         divId = "#geo-viz1",
@@ -203,7 +200,6 @@ if (urlPath.includes('/ja/')) {
         android = '안드로이드'
     );
 } else {
-    console.log('en');
     drawViz1(
         dataSource = "https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz1.csv",
         divId = "#geo-viz1",
