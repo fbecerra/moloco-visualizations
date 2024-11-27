@@ -1,7 +1,7 @@
 Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
-米国および英語圏,All countries,すべての国,(Paid UA) CPP,3.000,medium,すべてのジャンル,
-米国および英語圏,All countries,すべての国,(Paid UA) D7 ARPPU,3.000,medium,すべてのジャンル,
-米国および英語圏,All countries,すべての国,Revenue Potential,0.489,,すべてのジャンル,
+米国および英語圏,All countries,米国および英語圏,(Paid UA) CPP,3.000,medium,すべてのジャンル,
+米国および英語圏,All countries,米国および英語圏,(Paid UA) D7 ARPPU,3.000,medium,すべてのジャンル,
+米国および英語圏,All countries,米国および英語圏,Revenue Potential,0.489,,すべてのジャンル,
 米国および英語圏,USA,米国,(Paid UA) CPP,2.000,good,すべてのジャンル,YES
 米国および英語圏,USA,米国,(Paid UA) D7 ARPPU,3.000,medium,すべてのジャンル,YES
 米国および英語圏,USA,米国,Revenue Potential,0.397,,すべてのジャンル,YES
@@ -20,9 +20,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 米国および英語圏,IRL,アイルランド,(Paid UA) CPP,4.000,bad,すべてのジャンル,
 米国および英語圏,IRL,アイルランド,(Paid UA) D7 ARPPU,5.000,good,すべてのジャンル,
 米国および英語圏,IRL,アイルランド,Revenue Potential,0.002,,すべてのジャンル,
-東アジア・太平洋地域,All countries,すべての国,(Paid UA) CPP,4.000,bad,すべてのジャンル,
-東アジア・太平洋地域,All countries,すべての国,(Paid UA) D7 ARPPU,5.000,good,すべてのジャンル,
-東アジア・太平洋地域,All countries,すべての国,Revenue Potential,0.222,,すべてのジャンル,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,(Paid UA) CPP,4.000,bad,すべてのジャンル,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,(Paid UA) D7 ARPPU,5.000,good,すべてのジャンル,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,Revenue Potential,0.222,,すべてのジャンル,
 東アジア・太平洋地域,KOR,韓国,(Paid UA) CPP,3.000,medium,すべてのジャンル,YES
 東アジア・太平洋地域,KOR,韓国,(Paid UA) D7 ARPPU,5.000,good,すべてのジャンル,YES
 東アジア・太平洋地域,KOR,韓国,Revenue Potential,0.083,,すべてのジャンル,YES
@@ -38,9 +38,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 東アジア・太平洋地域,SGP,シンガポール,(Paid UA) CPP,5.000,bad,すべてのジャンル,
 東アジア・太平洋地域,SGP,シンガポール,(Paid UA) D7 ARPPU,5.000,good,すべてのジャンル,
 東アジア・太平洋地域,SGP,シンガポール,Revenue Potential,0.005,,すべてのジャンル,
-欧州・中東（グループ1）,All countries,すべての国,(Paid UA) CPP,4.000,bad,すべてのジャンル,
-欧州・中東（グループ1）,All countries,すべての国,(Paid UA) D7 ARPPU,4.000,good,すべてのジャンル,
-欧州・中東（グループ1）,All countries,すべての国,Revenue Potential,0.140,,すべてのジャンル,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,(Paid UA) CPP,4.000,bad,すべてのジャンル,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,(Paid UA) D7 ARPPU,4.000,good,すべてのジャンル,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,Revenue Potential,0.140,,すべてのジャンル,
 欧州・中東（グループ1）,DEU,ドイツ,(Paid UA) CPP,2.000,good,すべてのジャンル,YES
 欧州・中東（グループ1）,DEU,ドイツ,(Paid UA) D7 ARPPU,4.000,good,すべてのジャンル,YES
 欧州・中東（グループ1）,DEU,ドイツ,Revenue Potential,0.049,,すべてのジャンル,YES
@@ -89,9 +89,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 欧州・中東（グループ1）,ISL,アイスランド,(Paid UA) CPP,5.000,bad,すべてのジャンル,YES
 欧州・中東（グループ1）,ISL,アイスランド,(Paid UA) D7 ARPPU,5.000,good,すべてのジャンル,YES
 欧州・中東（グループ1）,ISL,アイスランド,Revenue Potential,0.000,,すべてのジャンル,YES
-欧州・中東（グループ2）,All countries,すべての国,(Paid UA) CPP,3.000,medium,すべてのジャンル,
-欧州・中東（グループ2）,All countries,すべての国,(Paid UA) D7 ARPPU,2.000,bad,すべてのジャンル,
-欧州・中東（グループ2）,All countries,すべての国,Revenue Potential,0.056,,すべてのジャンル,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,(Paid UA) CPP,3.000,medium,すべてのジャンル,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,(Paid UA) D7 ARPPU,2.000,bad,すべてのジャンル,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,Revenue Potential,0.056,,すべてのジャンル,
 欧州・中東（グループ2）,RUS,ロシア,(Paid UA) CPP,1.000,good,すべてのジャンル,
 欧州・中東（グループ2）,RUS,ロシア,(Paid UA) D7 ARPPU,2.000,bad,すべてのジャンル,
 欧州・中東（グループ2）,RUS,ロシア,Revenue Potential,0.013,,すべてのジャンル,
@@ -152,9 +152,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 欧州・中東（グループ2）,EST,エストニア,(Paid UA) CPP,4.000,bad,すべてのジャンル,YES
 欧州・中東（グループ2）,EST,エストニア,(Paid UA) D7 ARPPU,4.000,good,すべてのジャンル,YES
 欧州・中東（グループ2）,EST,エストニア,Revenue Potential,0.000,,すべてのジャンル,YES
-世界の新興市場,All countries,すべての国,(Paid UA) CPP,2.000,good,すべてのジャンル,
-世界の新興市場,All countries,すべての国,(Paid UA) D7 ARPPU,2.000,bad,すべてのジャンル,
-世界の新興市場,All countries,すべての国,Revenue Potential,0.070,,すべてのジャンル,
+世界の新興市場,All countries,世界の新興市場,(Paid UA) CPP,2.000,good,すべてのジャンル,
+世界の新興市場,All countries,世界の新興市場,(Paid UA) D7 ARPPU,2.000,bad,すべてのジャンル,
+世界の新興市場,All countries,世界の新興市場,Revenue Potential,0.070,,すべてのジャンル,
 世界の新興市場,BRA,ブラジル,(Paid UA) CPP,1.000,good,すべてのジャンル,
 世界の新興市場,BRA,ブラジル,(Paid UA) D7 ARPPU,1.000,bad,すべてのジャンル,
 世界の新興市場,BRA,ブラジル,Revenue Potential,0.020,,すべてのジャンル,
@@ -188,9 +188,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 世界の新興市場,IRQ,イラク,(Paid UA) CPP,5.000,bad,すべてのジャンル,
 世界の新興市場,IRQ,イラク,(Paid UA) D7 ARPPU,2.000,bad,すべてのジャンル,
 世界の新興市場,IRQ,イラク,Revenue Potential,0.000,,すべてのジャンル,
-中南米スペイン語圏,All countries,すべての国,(Paid UA) CPP,2.000,good,すべてのジャンル,
-中南米スペイン語圏,All countries,すべての国,(Paid UA) D7 ARPPU,2.000,bad,すべてのジャンル,
-中南米スペイン語圏,All countries,すべての国,Revenue Potential,0.016,,すべてのジャンル,
+中南米スペイン語圏,All countries,中南米スペイン語圏,(Paid UA) CPP,2.000,good,すべてのジャンル,
+中南米スペイン語圏,All countries,中南米スペイン語圏,(Paid UA) D7 ARPPU,2.000,bad,すべてのジャンル,
+中南米スペイン語圏,All countries,中南米スペイン語圏,Revenue Potential,0.016,,すべてのジャンル,
 中南米スペイン語圏,MEX,メキシコ,(Paid UA) CPP,1.000,good,すべてのジャンル,
 中南米スペイン語圏,MEX,メキシコ,(Paid UA) D7 ARPPU,1.000,bad,すべてのジャンル,
 中南米スペイン語圏,MEX,メキシコ,Revenue Potential,0.008,,すべてのジャンル,
@@ -212,9 +212,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 中南米スペイン語圏,CRI,コスタリカ,(Paid UA) CPP,1.000,good,すべてのジャンル,
 中南米スペイン語圏,CRI,コスタリカ,(Paid UA) D7 ARPPU,1.000,bad,すべてのジャンル,
 中南米スペイン語圏,CRI,コスタリカ,Revenue Potential,0.000,,すべてのジャンル,
-米国および英語圏,All countries,すべての国,(Paid UA) CPP,3.000,medium,マッチング,
-米国および英語圏,All countries,すべての国,(Paid UA) D7 ARPPU,3.000,medium,マッチング,
-米国および英語圏,All countries,すべての国,Revenue Potential,0.625,,マッチング,
+米国および英語圏,All countries,米国および英語圏,(Paid UA) CPP,3.000,medium,マッチング,
+米国および英語圏,All countries,米国および英語圏,(Paid UA) D7 ARPPU,3.000,medium,マッチング,
+米国および英語圏,All countries,米国および英語圏,Revenue Potential,0.625,,マッチング,
 米国および英語圏,USA,米国,(Paid UA) CPP,2.000,good,マッチング,YES
 米国および英語圏,USA,米国,(Paid UA) D7 ARPPU,2.000,bad,マッチング,YES
 米国および英語圏,USA,米国,Revenue Potential,0.514,,マッチング,YES
@@ -233,9 +233,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 米国および英語圏,IRL,アイルランド,(Paid UA) CPP,5.000,bad,マッチング,
 米国および英語圏,IRL,アイルランド,(Paid UA) D7 ARPPU,5.000,good,マッチング,
 米国および英語圏,IRL,アイルランド,Revenue Potential,0.002,,マッチング,
-東アジア・太平洋地域,All countries,すべての国,(Paid UA) CPP,4.000,bad,マッチング,
-東アジア・太平洋地域,All countries,すべての国,(Paid UA) D7 ARPPU,4.000,good,マッチング,
-東アジア・太平洋地域,All countries,すべての国,Revenue Potential,0.114,,マッチング,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,(Paid UA) CPP,4.000,bad,マッチング,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,(Paid UA) D7 ARPPU,4.000,good,マッチング,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,Revenue Potential,0.114,,マッチング,
 東アジア・太平洋地域,KOR,韓国,(Paid UA) CPP,3.000,medium,マッチング,
 東アジア・太平洋地域,KOR,韓国,(Paid UA) D7 ARPPU,3.000,medium,マッチング,
 東アジア・太平洋地域,KOR,韓国,Revenue Potential,0.043,,マッチング,
@@ -251,9 +251,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 東アジア・太平洋地域,SGP,シンガポール,(Paid UA) CPP,5.000,bad,マッチング,
 東アジア・太平洋地域,SGP,シンガポール,(Paid UA) D7 ARPPU,5.000,good,マッチング,
 東アジア・太平洋地域,SGP,シンガポール,Revenue Potential,0.003,,マッチング,
-欧州・中東（グループ1）,All countries,すべての国,(Paid UA) CPP,3.000,medium,マッチング,
-欧州・中東（グループ1）,All countries,すべての国,(Paid UA) D7 ARPPU,4.000,good,マッチング,
-欧州・中東（グループ1）,All countries,すべての国,Revenue Potential,0.152,,マッチング,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,(Paid UA) CPP,3.000,medium,マッチング,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,(Paid UA) D7 ARPPU,4.000,good,マッチング,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,Revenue Potential,0.152,,マッチング,
 欧州・中東（グループ1）,DEU,ドイツ,(Paid UA) CPP,2.000,good,マッチング,
 欧州・中東（グループ1）,DEU,ドイツ,(Paid UA) D7 ARPPU,2.000,bad,マッチング,
 欧州・中東（グループ1）,DEU,ドイツ,Revenue Potential,0.057,,マッチング,
@@ -290,9 +290,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 欧州・中東（グループ1）,DNK,デンマーク,(Paid UA) CPP,5.000,bad,マッチング,
 欧州・中東（グループ1）,DNK,デンマーク,(Paid UA) D7 ARPPU,4.000,good,マッチング,
 欧州・中東（グループ1）,DNK,デンマーク,Revenue Potential,0.003,,マッチング,
-欧州・中東（グループ2）,All countries,すべての国,(Paid UA) CPP,3.000,medium,マッチング,
-欧州・中東（グループ2）,All countries,すべての国,(Paid UA) D7 ARPPU,2.000,bad,マッチング,
-欧州・中東（グループ2）,All countries,すべての国,Revenue Potential,0.042,,マッチング,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,(Paid UA) CPP,3.000,medium,マッチング,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,(Paid UA) D7 ARPPU,2.000,bad,マッチング,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,Revenue Potential,0.042,,マッチング,
 欧州・中東（グループ2）,TUR,トルコ,(Paid UA) CPP,1.000,good,マッチング,
 欧州・中東（グループ2）,TUR,トルコ,(Paid UA) D7 ARPPU,1.000,bad,マッチング,
 欧州・中東（グループ2）,TUR,トルコ,Revenue Potential,0.007,,マッチング,
@@ -320,9 +320,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 欧州・中東（グループ2）,FIN,フィンランド,(Paid UA) CPP,4.000,bad,マッチング,
 欧州・中東（グループ2）,FIN,フィンランド,(Paid UA) D7 ARPPU,3.000,medium,マッチング,
 欧州・中東（グループ2）,FIN,フィンランド,Revenue Potential,0.001,,マッチング,
-世界の新興市場,All countries,すべての国,(Paid UA) CPP,2.000,good,マッチング,
-世界の新興市場,All countries,すべての国,(Paid UA) D7 ARPPU,2.000,bad,マッチング,
-世界の新興市場,All countries,すべての国,Revenue Potential,0.042,,マッチング,
+世界の新興市場,All countries,世界の新興市場,(Paid UA) CPP,2.000,good,マッチング,
+世界の新興市場,All countries,世界の新興市場,(Paid UA) D7 ARPPU,2.000,bad,マッチング,
+世界の新興市場,All countries,世界の新興市場,Revenue Potential,0.042,,マッチング,
 世界の新興市場,BRA,ブラジル,(Paid UA) CPP,1.000,good,マッチング,
 世界の新興市場,BRA,ブラジル,(Paid UA) D7 ARPPU,1.000,bad,マッチング,
 世界の新興市場,BRA,ブラジル,Revenue Potential,0.015,,マッチング,
@@ -347,18 +347,18 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 世界の新興市場,ZAF,南アフリカ,(Paid UA) CPP,1.000,good,マッチング,YES
 世界の新興市場,ZAF,南アフリカ,(Paid UA) D7 ARPPU,4.000,good,マッチング,YES
 世界の新興市場,ZAF,南アフリカ,Revenue Potential,0.004,,マッチング,YES
-中南米スペイン語圏,All countries,すべての国,(Paid UA) CPP,3.000,medium,マッチング,
-中南米スペイン語圏,All countries,すべての国,(Paid UA) D7 ARPPU,2.000,bad,マッチング,
-中南米スペイン語圏,All countries,すべての国,Revenue Potential,0.019,,マッチング,
+中南米スペイン語圏,All countries,中南米スペイン語圏,(Paid UA) CPP,3.000,medium,マッチング,
+中南米スペイン語圏,All countries,中南米スペイン語圏,(Paid UA) D7 ARPPU,2.000,bad,マッチング,
+中南米スペイン語圏,All countries,中南米スペイン語圏,Revenue Potential,0.019,,マッチング,
 中南米スペイン語圏,MEX,メキシコ,(Paid UA) CPP,1.000,good,マッチング,
 中南米スペイン語圏,MEX,メキシコ,(Paid UA) D7 ARPPU,1.000,bad,マッチング,
 中南米スペイン語圏,MEX,メキシコ,Revenue Potential,0.010,,マッチング,
 中南米スペイン語圏,CHL,チリ,(Paid UA) CPP,2.000,good,マッチング,
 中南米スペイン語圏,CHL,チリ,(Paid UA) D7 ARPPU,2.000,bad,マッチング,
 中南米スペイン語圏,CHL,チリ,Revenue Potential,0.003,,マッチング,
-米国および英語圏,All countries,すべての国,(Paid UA) CPP,4.000,bad,RPG,
-米国および英語圏,All countries,すべての国,(Paid UA) D7 ARPPU,3.000,medium,RPG,
-米国および英語圏,All countries,すべての国,Revenue Potential,0.245,,RPG,
+米国および英語圏,All countries,米国および英語圏,(Paid UA) CPP,4.000,bad,RPG,
+米国および英語圏,All countries,米国および英語圏,(Paid UA) D7 ARPPU,3.000,medium,RPG,
+米国および英語圏,All countries,米国および英語圏,Revenue Potential,0.245,,RPG,
 米国および英語圏,USA,米国,(Paid UA) CPP,5.000,bad,RPG,
 米国および英語圏,USA,米国,(Paid UA) D7 ARPPU,4.000,good,RPG,
 米国および英語圏,USA,米国,Revenue Potential,0.198,,RPG,
@@ -371,9 +371,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 米国および英語圏,AUS,オーストラリア,(Paid UA) CPP,3.000,medium,RPG,
 米国および英語圏,AUS,オーストラリア,(Paid UA) D7 ARPPU,3.000,medium,RPG,
 米国および英語圏,AUS,オーストラリア,Revenue Potential,0.013,,RPG,
-東アジア・太平洋地域,All countries,すべての国,(Paid UA) CPP,4.000,bad,RPG,
-東アジア・太平洋地域,All countries,すべての国,(Paid UA) D7 ARPPU,5.000,good,RPG,
-東アジア・太平洋地域,All countries,すべての国,Revenue Potential,0.520,,RPG,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,(Paid UA) CPP,4.000,bad,RPG,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,(Paid UA) D7 ARPPU,5.000,good,RPG,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,Revenue Potential,0.520,,RPG,
 東アジア・太平洋地域,KOR,韓国,(Paid UA) CPP,4.000,bad,RPG,YES
 東アジア・太平洋地域,KOR,韓国,(Paid UA) D7 ARPPU,5.000,good,RPG,YES
 東アジア・太平洋地域,KOR,韓国,Revenue Potential,0.223,,RPG,YES
@@ -389,9 +389,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 東アジア・太平洋地域,SGP,シンガポール,(Paid UA) CPP,3.000,medium,RPG,YES
 東アジア・太平洋地域,SGP,シンガポール,(Paid UA) D7 ARPPU,5.000,good,RPG,YES
 東アジア・太平洋地域,SGP,シンガポール,Revenue Potential,0.010,,RPG,YES
-欧州・中東（グループ1）,All countries,すべての国,(Paid UA) CPP,3.000,medium,RPG,
-欧州・中東（グループ1）,All countries,すべての国,(Paid UA) D7 ARPPU,4.000,good,RPG,
-欧州・中東（グループ1）,All countries,すべての国,Revenue Potential,0.092,,RPG,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,(Paid UA) CPP,3.000,medium,RPG,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,(Paid UA) D7 ARPPU,4.000,good,RPG,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,Revenue Potential,0.092,,RPG,
 欧州・中東（グループ1）,DEU,ドイツ,(Paid UA) CPP,3.000,medium,RPG,YES
 欧州・中東（グループ1）,DEU,ドイツ,(Paid UA) D7 ARPPU,4.000,good,RPG,YES
 欧州・中東（グループ1）,DEU,ドイツ,Revenue Potential,0.030,,RPG,YES
@@ -419,9 +419,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 欧州・中東（グループ1）,DNK,デンマーク,(Paid UA) CPP,4.000,bad,RPG,
 欧州・中東（グループ1）,DNK,デンマーク,(Paid UA) D7 ARPPU,3.000,medium,RPG,
 欧州・中東（グループ1）,DNK,デンマーク,Revenue Potential,0.002,,RPG,
-欧州・中東（グループ2）,All countries,すべての国,(Paid UA) CPP,2.000,good,RPG,
-欧州・中東（グループ2）,All countries,すべての国,(Paid UA) D7 ARPPU,2.000,bad,RPG,
-欧州・中東（グループ2）,All countries,すべての国,Revenue Potential,0.035,,RPG,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,(Paid UA) CPP,2.000,good,RPG,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,(Paid UA) D7 ARPPU,2.000,bad,RPG,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,Revenue Potential,0.035,,RPG,
 欧州・中東（グループ2）,RUS,ロシア,(Paid UA) CPP,4.000,bad,RPG,
 欧州・中東（グループ2）,RUS,ロシア,(Paid UA) D7 ARPPU,2.000,bad,RPG,
 欧州・中東（グループ2）,RUS,ロシア,Revenue Potential,0.012,,RPG,
@@ -431,9 +431,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 欧州・中東（グループ2）,POL,ポーランド,(Paid UA) CPP,1.000,good,RPG,
 欧州・中東（グループ2）,POL,ポーランド,(Paid UA) D7 ARPPU,2.000,bad,RPG,
 欧州・中東（グループ2）,POL,ポーランド,Revenue Potential,0.004,,RPG,
-世界の新興市場,All countries,すべての国,(Paid UA) CPP,1.000,good,RPG,
-世界の新興市場,All countries,すべての国,(Paid UA) D7 ARPPU,1.000,bad,RPG,
-世界の新興市場,All countries,すべての国,Revenue Potential,0.097,,RPG,
+世界の新興市場,All countries,世界の新興市場,(Paid UA) CPP,1.000,good,RPG,
+世界の新興市場,All countries,世界の新興市場,(Paid UA) D7 ARPPU,1.000,bad,RPG,
+世界の新興市場,All countries,世界の新興市場,Revenue Potential,0.097,,RPG,
 世界の新興市場,BRA,ブラジル,(Paid UA) CPP,2.000,good,RPG,
 世界の新興市場,BRA,ブラジル,(Paid UA) D7 ARPPU,1.000,bad,RPG,
 世界の新興市場,BRA,ブラジル,Revenue Potential,0.010,,RPG,
@@ -452,12 +452,12 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 世界の新興市場,MYS,マレーシア,(Paid UA) CPP,2.000,good,RPG,
 世界の新興市場,MYS,マレーシア,(Paid UA) D7 ARPPU,2.000,bad,RPG,
 世界の新興市場,MYS,マレーシア,Revenue Potential,0.006,,RPG,
-中南米スペイン語圏,All countries,すべての国,(Paid UA) CPP,1.000,good,RPG,
-中南米スペイン語圏,All countries,すべての国,(Paid UA) D7 ARPPU,1.000,bad,RPG,
-中南米スペイン語圏,All countries,すべての国,Revenue Potential,0.008,,RPG,
-米国および英語圏,All countries,すべての国,(Paid UA) CPP,4.000,bad,カジノ,
-米国および英語圏,All countries,すべての国,(Paid UA) D7 ARPPU,4.000,good,カジノ,
-米国および英語圏,All countries,すべての国,Revenue Potential,0.652,,カジノ,
+中南米スペイン語圏,All countries,中南米スペイン語圏,(Paid UA) CPP,1.000,good,RPG,
+中南米スペイン語圏,All countries,中南米スペイン語圏,(Paid UA) D7 ARPPU,1.000,bad,RPG,
+中南米スペイン語圏,All countries,中南米スペイン語圏,Revenue Potential,0.008,,RPG,
+米国および英語圏,All countries,米国および英語圏,(Paid UA) CPP,4.000,bad,カジノ,
+米国および英語圏,All countries,米国および英語圏,(Paid UA) D7 ARPPU,4.000,good,カジノ,
+米国および英語圏,All countries,米国および英語圏,Revenue Potential,0.652,,カジノ,
 米国および英語圏,USA,米国,(Paid UA) CPP,5.000,bad,カジノ,YES
 米国および英語圏,USA,米国,(Paid UA) D7 ARPPU,5.000,good,カジノ,YES
 米国および英語圏,USA,米国,Revenue Potential,0.530,,カジノ,YES
@@ -473,9 +473,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 米国および英語圏,NZL,ニュージーランド,(Paid UA) CPP,3.000,medium,カジノ,
 米国および英語圏,NZL,ニュージーランド,(Paid UA) D7 ARPPU,1.000,bad,カジノ,
 米国および英語圏,NZL,ニュージーランド,Revenue Potential,0.005,,カジノ,
-東アジア・太平洋地域,All countries,すべての国,(Paid UA) CPP,5.000,bad,カジノ,
-東アジア・太平洋地域,All countries,すべての国,(Paid UA) D7 ARPPU,5.000,good,カジノ,
-東アジア・太平洋地域,All countries,すべての国,Revenue Potential,0.102,,カジノ,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,(Paid UA) CPP,5.000,bad,カジノ,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,(Paid UA) D7 ARPPU,5.000,good,カジノ,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,Revenue Potential,0.102,,カジノ,
 東アジア・太平洋地域,JPN,日本,(Paid UA) CPP,5.000,bad,カジノ,
 東アジア・太平洋地域,JPN,日本,(Paid UA) D7 ARPPU,4.000,good,カジノ,
 東アジア・太平洋地域,JPN,日本,Revenue Potential,0.035,,カジノ,
@@ -488,9 +488,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 東アジア・太平洋地域,SGP,シンガポール,(Paid UA) CPP,5.000,bad,カジノ,YES
 東アジア・太平洋地域,SGP,シンガポール,(Paid UA) D7 ARPPU,5.000,good,カジノ,YES
 東アジア・太平洋地域,SGP,シンガポール,Revenue Potential,0.006,,カジノ,YES
-欧州・中東（グループ1）,All countries,すべての国,(Paid UA) CPP,3.000,medium,カジノ,
-欧州・中東（グループ1）,All countries,すべての国,(Paid UA) D7 ARPPU,4.000,good,カジノ,
-欧州・中東（グループ1）,All countries,すべての国,Revenue Potential,0.112,,カジノ,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,(Paid UA) CPP,3.000,medium,カジノ,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,(Paid UA) D7 ARPPU,4.000,good,カジノ,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,Revenue Potential,0.112,,カジノ,
 欧州・中東（グループ1）,DEU,ドイツ,(Paid UA) CPP,4.000,bad,カジノ,
 欧州・中東（グループ1）,DEU,ドイツ,(Paid UA) D7 ARPPU,3.000,medium,カジノ,
 欧州・中東（グループ1）,DEU,ドイツ,Revenue Potential,0.036,,カジノ,
@@ -524,9 +524,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 欧州・中東（グループ1）,DNK,デンマーク,(Paid UA) CPP,4.000,bad,カジノ,
 欧州・中東（グループ1）,DNK,デンマーク,(Paid UA) D7 ARPPU,4.000,good,カジノ,
 欧州・中東（グループ1）,DNK,デンマーク,Revenue Potential,0.002,,カジノ,
-欧州・中東（グループ2）,All countries,すべての国,(Paid UA) CPP,1.000,good,カジノ,
-欧州・中東（グループ2）,All countries,すべての国,(Paid UA) D7 ARPPU,2.000,bad,カジノ,
-欧州・中東（グループ2）,All countries,すべての国,Revenue Potential,0.057,,カジノ,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,(Paid UA) CPP,1.000,good,カジノ,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,(Paid UA) D7 ARPPU,2.000,bad,カジノ,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,Revenue Potential,0.057,,カジノ,
 欧州・中東（グループ2）,TUR,トルコ,(Paid UA) CPP,2.000,good,カジノ,
 欧州・中東（グループ2）,TUR,トルコ,(Paid UA) D7 ARPPU,1.000,bad,カジノ,
 欧州・中東（グループ2）,TUR,トルコ,Revenue Potential,0.020,,カジノ,
@@ -539,9 +539,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 欧州・中東（グループ2）,HUN,ハンガリー,(Paid UA) CPP,2.000,good,カジノ,
 欧州・中東（グループ2）,HUN,ハンガリー,(Paid UA) D7 ARPPU,1.000,bad,カジノ,
 欧州・中東（グループ2）,HUN,ハンガリー,Revenue Potential,0.002,,カジノ,
-世界の新興市場,All countries,すべての国,(Paid UA) CPP,1.000,good,カジノ,
-世界の新興市場,All countries,すべての国,(Paid UA) D7 ARPPU,2.000,bad,カジノ,
-世界の新興市場,All countries,すべての国,Revenue Potential,0.061,,カジノ,
+世界の新興市場,All countries,世界の新興市場,(Paid UA) CPP,1.000,good,カジノ,
+世界の新興市場,All countries,世界の新興市場,(Paid UA) D7 ARPPU,2.000,bad,カジノ,
+世界の新興市場,All countries,世界の新興市場,Revenue Potential,0.061,,カジノ,
 世界の新興市場,BRA,ブラジル,(Paid UA) CPP,1.000,good,カジノ,YES
 世界の新興市場,BRA,ブラジル,(Paid UA) D7 ARPPU,2.000,bad,カジノ,YES
 世界の新興市場,BRA,ブラジル,Revenue Potential,0.026,,カジノ,YES
@@ -557,18 +557,18 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 世界の新興市場,ZAF,南アフリカ,(Paid UA) CPP,1.000,good,カジノ,
 世界の新興市場,ZAF,南アフリカ,(Paid UA) D7 ARPPU,1.000,bad,カジノ,
 世界の新興市場,ZAF,南アフリカ,Revenue Potential,0.002,,カジノ,
-中南米スペイン語圏,All countries,すべての国,(Paid UA) CPP,2.000,good,カジノ,
-中南米スペイン語圏,All countries,すべての国,(Paid UA) D7 ARPPU,3.000,medium,カジノ,
-中南米スペイン語圏,All countries,すべての国,Revenue Potential,0.009,,カジノ,
+中南米スペイン語圏,All countries,中南米スペイン語圏,(Paid UA) CPP,2.000,good,カジノ,
+中南米スペイン語圏,All countries,中南米スペイン語圏,(Paid UA) D7 ARPPU,3.000,medium,カジノ,
+中南米スペイン語圏,All countries,中南米スペイン語圏,Revenue Potential,0.009,,カジノ,
 中南米スペイン語圏,MEX,メキシコ,(Paid UA) CPP,3.000,medium,カジノ,YES
 中南米スペイン語圏,MEX,メキシコ,(Paid UA) D7 ARPPU,3.000,medium,カジノ,YES
 中南米スペイン語圏,MEX,メキシコ,Revenue Potential,0.004,,カジノ,YES
 中南米スペイン語圏,CHL,チリ,(Paid UA) CPP,1.000,good,カジノ,
 中南米スペイン語圏,CHL,チリ,(Paid UA) D7 ARPPU,2.000,bad,カジノ,
 中南米スペイン語圏,CHL,チリ,Revenue Potential,0.001,,カジノ,
-米国および英語圏,All countries,すべての国,(Paid UA) CPP,3.000,medium,戦略,
-米国および英語圏,All countries,すべての国,(Paid UA) D7 ARPPU,3.000,medium,戦略,
-米国および英語圏,All countries,すべての国,Revenue Potential,0.408,,戦略,
+米国および英語圏,All countries,米国および英語圏,(Paid UA) CPP,3.000,medium,戦略,
+米国および英語圏,All countries,米国および英語圏,(Paid UA) D7 ARPPU,3.000,medium,戦略,
+米国および英語圏,All countries,米国および英語圏,Revenue Potential,0.408,,戦略,
 米国および英語圏,USA,米国,(Paid UA) CPP,5.000,bad,戦略,
 米国および英語圏,USA,米国,(Paid UA) D7 ARPPU,4.000,good,戦略,
 米国および英語圏,USA,米国,Revenue Potential,0.320,,戦略,
@@ -581,9 +581,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 米国および英語圏,AUS,オーストラリア,(Paid UA) CPP,4.000,bad,戦略,
 米国および英語圏,AUS,オーストラリア,(Paid UA) D7 ARPPU,3.000,medium,戦略,
 米国および英語圏,AUS,オーストラリア,Revenue Potential,0.020,,戦略,
-東アジア・太平洋地域,All countries,すべての国,(Paid UA) CPP,5.000,bad,戦略,
-東アジア・太平洋地域,All countries,すべての国,(Paid UA) D7 ARPPU,5.000,good,戦略,
-東アジア・太平洋地域,All countries,すべての国,Revenue Potential,0.260,,戦略,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,(Paid UA) CPP,5.000,bad,戦略,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,(Paid UA) D7 ARPPU,5.000,good,戦略,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,Revenue Potential,0.260,,戦略,
 東アジア・太平洋地域,KOR,韓国,(Paid UA) CPP,5.000,bad,戦略,
 東アジア・太平洋地域,KOR,韓国,(Paid UA) D7 ARPPU,5.000,good,戦略,
 東アジア・太平洋地域,KOR,韓国,Revenue Potential,0.113,,戦略,
@@ -599,9 +599,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 東アジア・太平洋地域,SGP,シンガポール,(Paid UA) CPP,5.000,bad,戦略,YES
 東アジア・太平洋地域,SGP,シンガポール,(Paid UA) D7 ARPPU,5.000,good,戦略,YES
 東アジア・太平洋地域,SGP,シンガポール,Revenue Potential,0.007,,戦略,YES
-欧州・中東（グループ1）,All countries,すべての国,(Paid UA) CPP,4.000,bad,戦略,
-欧州・中東（グループ1）,All countries,すべての国,(Paid UA) D7 ARPPU,3.000,medium,戦略,
-欧州・中東（グループ1）,All countries,すべての国,Revenue Potential,0.155,,戦略,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,(Paid UA) CPP,4.000,bad,戦略,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,(Paid UA) D7 ARPPU,3.000,medium,戦略,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,Revenue Potential,0.155,,戦略,
 欧州・中東（グループ1）,DEU,ドイツ,(Paid UA) CPP,4.000,bad,戦略,YES
 欧州・中東（グループ1）,DEU,ドイツ,(Paid UA) D7 ARPPU,4.000,good,戦略,YES
 欧州・中東（グループ1）,DEU,ドイツ,Revenue Potential,0.057,,戦略,YES
@@ -635,9 +635,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 欧州・中東（グループ1）,DNK,デンマーク,(Paid UA) CPP,2.000,good,戦略,YES
 欧州・中東（グループ1）,DNK,デンマーク,(Paid UA) D7 ARPPU,3.000,medium,戦略,YES
 欧州・中東（グループ1）,DNK,デンマーク,Revenue Potential,0.003,,戦略,YES
-欧州・中東（グループ2）,All countries,すべての国,(Paid UA) CPP,2.000,good,戦略,
-欧州・中東（グループ2）,All countries,すべての国,(Paid UA) D7 ARPPU,2.000,bad,戦略,
-欧州・中東（グループ2）,All countries,すべての国,Revenue Potential,0.089,,戦略,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,(Paid UA) CPP,2.000,good,戦略,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,(Paid UA) D7 ARPPU,2.000,bad,戦略,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,Revenue Potential,0.089,,戦略,
 欧州・中東（グループ2）,RUS,ロシア,(Paid UA) CPP,5.000,bad,戦略,
 欧州・中東（グループ2）,RUS,ロシア,(Paid UA) D7 ARPPU,4.000,good,戦略,
 欧州・中東（グループ2）,RUS,ロシア,Revenue Potential,0.027,,戦略,
@@ -653,9 +653,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 欧州・中東（グループ2）,CZE,チェコ,(Paid UA) CPP,3.000,medium,戦略,
 欧州・中東（グループ2）,CZE,チェコ,(Paid UA) D7 ARPPU,1.000,bad,戦略,
 欧州・中東（グループ2）,CZE,チェコ,Revenue Potential,0.003,,戦略,
-世界の新興市場,All countries,すべての国,(Paid UA) CPP,1.000,good,戦略,
-世界の新興市場,All countries,すべての国,(Paid UA) D7 ARPPU,1.000,bad,戦略,
-世界の新興市場,All countries,すべての国,Revenue Potential,0.069,,戦略,
+世界の新興市場,All countries,世界の新興市場,(Paid UA) CPP,1.000,good,戦略,
+世界の新興市場,All countries,世界の新興市場,(Paid UA) D7 ARPPU,1.000,bad,戦略,
+世界の新興市場,All countries,世界の新興市場,Revenue Potential,0.069,,戦略,
 世界の新興市場,BRA,ブラジル,(Paid UA) CPP,1.000,good,戦略,
 世界の新興市場,BRA,ブラジル,(Paid UA) D7 ARPPU,1.000,bad,戦略,
 世界の新興市場,BRA,ブラジル,Revenue Potential,0.012,,戦略,
@@ -671,12 +671,12 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 世界の新興市場,MYS,マレーシア,(Paid UA) CPP,1.000,good,戦略,
 世界の新興市場,MYS,マレーシア,(Paid UA) D7 ARPPU,1.000,bad,戦略,
 世界の新興市場,MYS,マレーシア,Revenue Potential,0.006,,戦略,
-中南米スペイン語圏,All countries,すべての国,(Paid UA) CPP,3.000,medium,戦略,
-中南米スペイン語圏,All countries,すべての国,(Paid UA) D7 ARPPU,1.000,bad,戦略,
-中南米スペイン語圏,All countries,すべての国,Revenue Potential,0.013,,戦略,
-米国および英語圏,All countries,すべての国,(Paid UA) CPP,4.000,bad,シミュレーション,
-米国および英語圏,All countries,すべての国,(Paid UA) D7 ARPPU,3.000,medium,シミュレーション,
-米国および英語圏,All countries,すべての国,Revenue Potential,0.495,,シミュレーション,
+中南米スペイン語圏,All countries,中南米スペイン語圏,(Paid UA) CPP,3.000,medium,戦略,
+中南米スペイン語圏,All countries,中南米スペイン語圏,(Paid UA) D7 ARPPU,1.000,bad,戦略,
+中南米スペイン語圏,All countries,中南米スペイン語圏,Revenue Potential,0.013,,戦略,
+米国および英語圏,All countries,米国および英語圏,(Paid UA) CPP,4.000,bad,シミュレーション,
+米国および英語圏,All countries,米国および英語圏,(Paid UA) D7 ARPPU,3.000,medium,シミュレーション,
+米国および英語圏,All countries,米国および英語圏,Revenue Potential,0.495,,シミュレーション,
 米国および英語圏,USA,米国,(Paid UA) CPP,4.000,bad,シミュレーション,
 米国および英語圏,USA,米国,(Paid UA) D7 ARPPU,3.000,medium,シミュレーション,
 米国および英語圏,USA,米国,Revenue Potential,0.385,,シミュレーション,
@@ -692,9 +692,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 米国および英語圏,NZL,ニュージーランド,(Paid UA) CPP,2.000,good,シミュレーション,YES
 米国および英語圏,NZL,ニュージーランド,(Paid UA) D7 ARPPU,4.000,good,シミュレーション,YES
 米国および英語圏,NZL,ニュージーランド,Revenue Potential,0.004,,シミュレーション,YES
-東アジア・太平洋地域,All countries,すべての国,(Paid UA) CPP,5.000,bad,シミュレーション,
-東アジア・太平洋地域,All countries,すべての国,(Paid UA) D7 ARPPU,4.000,good,シミュレーション,
-東アジア・太平洋地域,All countries,すべての国,Revenue Potential,0.236,,シミュレーション,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,(Paid UA) CPP,5.000,bad,シミュレーション,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,(Paid UA) D7 ARPPU,4.000,good,シミュレーション,
+東アジア・太平洋地域,All countries,東アジア・太平洋地域,Revenue Potential,0.236,,シミュレーション,
 東アジア・太平洋地域,KOR,韓国,(Paid UA) CPP,5.000,bad,シミュレーション,YES
 東アジア・太平洋地域,KOR,韓国,(Paid UA) D7 ARPPU,4.000,good,シミュレーション,YES
 東アジア・太平洋地域,KOR,韓国,Revenue Potential,0.041,,シミュレーション,YES
@@ -707,9 +707,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 東アジア・太平洋地域,HKG,香港,(Paid UA) CPP,5.000,bad,シミュレーション,
 東アジア・太平洋地域,HKG,香港,(Paid UA) D7 ARPPU,3.000,medium,シミュレーション,
 東アジア・太平洋地域,HKG,香港,Revenue Potential,0.009,,シミュレーション,
-欧州・中東（グループ1）,All countries,すべての国,(Paid UA) CPP,3.000,medium,シミュレーション,
-欧州・中東（グループ1）,All countries,すべての国,(Paid UA) D7 ARPPU,4.000,good,シミュレーション,
-欧州・中東（グループ1）,All countries,すべての国,Revenue Potential,0.141,,シミュレーション,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,(Paid UA) CPP,3.000,medium,シミュレーション,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,(Paid UA) D7 ARPPU,4.000,good,シミュレーション,
+欧州・中東（グループ1）,All countries,欧州・中東（グループ1）,Revenue Potential,0.141,,シミュレーション,
 欧州・中東（グループ1）,DEU,ドイツ,(Paid UA) CPP,5.000,bad,シミュレーション,
 欧州・中東（グループ1）,DEU,ドイツ,(Paid UA) D7 ARPPU,5.000,good,シミュレーション,
 欧州・中東（グループ1）,DEU,ドイツ,Revenue Potential,0.053,,シミュレーション,
@@ -743,9 +743,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 欧州・中東（グループ1）,DNK,デンマーク,(Paid UA) CPP,3.000,medium,シミュレーション,YES
 欧州・中東（グループ1）,DNK,デンマーク,(Paid UA) D7 ARPPU,4.000,good,シミュレーション,YES
 欧州・中東（グループ1）,DNK,デンマーク,Revenue Potential,0.003,,シミュレーション,YES
-欧州・中東（グループ2）,All countries,すべての国,(Paid UA) CPP,1.000,good,シミュレーション,
-欧州・中東（グループ2）,All countries,すべての国,(Paid UA) D7 ARPPU,1.000,bad,シミュレーション,
-欧州・中東（グループ2）,All countries,すべての国,Revenue Potential,0.050,,シミュレーション,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,(Paid UA) CPP,1.000,good,シミュレーション,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,(Paid UA) D7 ARPPU,1.000,bad,シミュレーション,
+欧州・中東（グループ2）,All countries,欧州・中東（グループ2）,Revenue Potential,0.050,,シミュレーション,
 欧州・中東（グループ2）,TUR,トルコ,(Paid UA) CPP,1.000,good,シミュレーション,
 欧州・中東（グループ2）,TUR,トルコ,(Paid UA) D7 ARPPU,1.000,bad,シミュレーション,
 欧州・中東（グループ2）,TUR,トルコ,Revenue Potential,0.009,,シミュレーション,
@@ -755,9 +755,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 欧州・中東（グループ2）,CZE,チェコ,(Paid UA) CPP,3.000,medium,シミュレーション,
 欧州・中東（グループ2）,CZE,チェコ,(Paid UA) D7 ARPPU,3.000,medium,シミュレーション,
 欧州・中東（グループ2）,CZE,チェコ,Revenue Potential,0.003,,シミュレーション,
-世界の新興市場,All countries,すべての国,(Paid UA) CPP,1.000,good,シミュレーション,
-世界の新興市場,All countries,すべての国,(Paid UA) D7 ARPPU,1.000,bad,シミュレーション,
-世界の新興市場,All countries,すべての国,Revenue Potential,0.056,,シミュレーション,
+世界の新興市場,All countries,世界の新興市場,(Paid UA) CPP,1.000,good,シミュレーション,
+世界の新興市場,All countries,世界の新興市場,(Paid UA) D7 ARPPU,1.000,bad,シミュレーション,
+世界の新興市場,All countries,世界の新興市場,Revenue Potential,0.056,,シミュレーション,
 世界の新興市場,BRA,ブラジル,(Paid UA) CPP,1.000,good,シミュレーション,
 世界の新興市場,BRA,ブラジル,(Paid UA) D7 ARPPU,1.000,bad,シミュレーション,
 世界の新興市場,BRA,ブラジル,Revenue Potential,0.014,,シミュレーション,
@@ -776,9 +776,9 @@ Tier,Market,Market full name,type of value,value,good/bad,genre,OPPORTUNITY
 世界の新興市場,ZAF,南アフリカ,(Paid UA) CPP,1.000,good,シミュレーション,
 世界の新興市場,ZAF,南アフリカ,(Paid UA) D7 ARPPU,2.000,bad,シミュレーション,
 世界の新興市場,ZAF,南アフリカ,Revenue Potential,0.002,,シミュレーション,
-中南米スペイン語圏,All countries,すべての国,(Paid UA) CPP,1.000,good,シミュレーション,
-中南米スペイン語圏,All countries,すべての国,(Paid UA) D7 ARPPU,1.000,bad,シミュレーション,
-中南米スペイン語圏,All countries,すべての国,Revenue Potential,0.017,,シミュレーション,
+中南米スペイン語圏,All countries,中南米スペイン語圏,(Paid UA) CPP,1.000,good,シミュレーション,
+中南米スペイン語圏,All countries,中南米スペイン語圏,(Paid UA) D7 ARPPU,1.000,bad,シミュレーション,
+中南米スペイン語圏,All countries,中南米スペイン語圏,Revenue Potential,0.017,,シミュレーション,
 中南米スペイン語圏,MEX,メキシコ,(Paid UA) CPP,1.000,good,シミュレーション,
 中南米スペイン語圏,MEX,メキシコ,(Paid UA) D7 ARPPU,2.000,bad,シミュレーション,
 中南米スペイン語圏,MEX,メキシコ,Revenue Potential,0.009,,シミュレーション,
