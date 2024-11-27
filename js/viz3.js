@@ -239,16 +239,16 @@ if (urlPath3.includes('/ja/')) {
     drawViz3(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz3-zh.csv',
         divId = "#geo-viz3",
-        title = "Some marketers focus on their local regions, while others take a more global approach to user acquisition",
-        subtitle = "2025 estimated user acquisition spend by country, filtered by app developer HQ location",
-        titleFirstRow = "HQ in the U.S.",
-        titleSecondRow = "Select HQ to compare",
-        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
-        labelForUS = 'U.S.',
-        spendIn = 'Spend in ',
-        leftToRight = true,
-        country2 = 'China',
-        uniqueDestinations = ['North America', 'Europe', 'Asia Pacific', 'Rest of World']
+        title = "一部分营销人员更加专注本土市场，而另一部分营销人员则会采取更加全球化的用户获取策略",
+        subtitle = "2025 年各国及各类别用户获取支出预估，根据 App 开发商总部所在地区分类",
+        titleFirstRow = "总部在美国",
+        titleSecondRow = "选择总部所属地区比较数据",
+        sources = "来源：Moloco 预估的移动游戏应用内购买（IAP）用户获取支出（2025年）。Moloco 结合多项指标预估付费 UA 支出，包括来自 Sensor Tower 旗下 data.ai 的安装数据、付费及自然用户获取比例的预估，以及特定 App 类别的实际或预估的每次安装成本（CPI）。本分析不包含在中国大陆市场的投放，但包括中国本土移动游戏 App 在海外市场的投放。",
+        labelForUS = '美国',
+        spendIn = '地区支出',
+        leftToRight = false,
+        country2 = '中国大陆',
+        uniqueDestinations = ['北美', '欧洲', '亚太地区', '世界其他地区']
     );
 } else if (urlPath3.includes('/ko/')) {
     drawViz3(
