@@ -453,7 +453,7 @@ if (urlPath8.includes('/ja/')) {
         initialGenre = 'すべてのジャンル',
         columnLabels = [
             '', 
-            'Geography', 
+            '地域', 
             `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">1購入あたりのコストの中央値</span></div>`,
             `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">ゲームアプリにおける有料ユーザー1人あたりのD7平均収益の中央値</span></div>`, 
             `IAP収益 <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">総収益（オーガニックおよび有料）が市場全体に占める割合</span></div>`
