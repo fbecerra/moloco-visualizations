@@ -1,5 +1,5 @@
 function drawViz8(dataSource, divId, title, subtitle, howToRead, explainHowToRead, sources,
-    legendLabels, selectGenre, initialGenre, columnLabels, groups, low, medium, high
+    legendLabels, selectGenre, initialGenre, genres, columnLabels, groups, low, medium, high
 ) {
 
     const windowWidth = Math.min(window.innerWidth, screen.width);
@@ -114,7 +114,7 @@ function drawViz8(dataSource, divId, title, subtitle, howToRead, explainHowToRea
         })
 
         let selectedGenre = initialGenre;
-        const genres = getUniquesMenu(markets, 'genre');
+        // const genres = getUniquesMenu(markets, 'genre');
 
         buttons.selectAll(".button-viz")
             .data(genres)
@@ -451,6 +451,7 @@ if (urlPath8.includes('/ja/')) {
         },
         selectGenre = 'ジャンルを選択',
         initialGenre = 'すべてのジャンル',
+        genres = ['すべてのジャンル', 'カジノ', 'マッチング', 'RPG', 'シミュレーション', '戦略'],
         columnLabels = [
             '', 
             '地域', 
@@ -487,6 +488,7 @@ if (urlPath8.includes('/ja/')) {
         },
         selectGenre = 'Select genre',
         initialGenre = 'All genres',
+        genres = ['All genres', 'Casino', 'Match', 'RPG', 'Simulation', 'Strategy'],
         columnLabels = [
             '', 
             'Geography', 
@@ -523,6 +525,7 @@ if (urlPath8.includes('/ja/')) {
         },
         selectGenre = '장르 선택',
         initialGenre = '모든 장르',
+        genres = ['All genres', 'Casino', 'Match', 'RPG', 'Simulation', 'Strategy'],
         columnLabels = [
             '', 
             '지리', 
@@ -559,6 +562,7 @@ if (urlPath8.includes('/ja/')) {
         },
         selectGenre = 'Select genre',
         initialGenre = 'All genres',
+        genres = ['All genres', 'Casino', 'Match', 'RPG', 'Simulation', 'Strategy'],
         columnLabels = [
             '', 
             'Geography', 
