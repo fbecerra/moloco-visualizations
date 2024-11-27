@@ -278,14 +278,14 @@ if (urlPath2.includes('/ja/')) {
     drawViz2(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz2-zh.csv', 
         divId = "#geo-viz2", 
-        title = "RPG is popular in East Asia, while Match and Casino thrive in English-speaking regions", 
-        subtitle = "2025 estimated user acquisition spend by country/region and genre", 
-        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
-        selectGenre = "Select genre",
-        initialGenre = "RPG", // Translation for "RPG"
+        title = "角色扮演游戏（RPG）在东亚很流行，而匹配类和博彩类游戏在英语国家大受欢迎", 
+        subtitle = "2025 年各国/地区及各类别用户获取支出预估", 
+        sources = "来源：Moloco 预估的移动游戏 应用内购买（IAP）用户获取支出（2025年）。Moloco 结合多项指标预估付费 UA 支出，包括来自 Sensor Tower 旗下 data.ai 的安装数据、付费及自然用户获取比例的预估，以及特定 App 类别的实际或预估的每次安装成本（CPI）。本分析不包含在中国大陆市场的投放，但包括中国本土移动游戏 App 在海外市场的投放。",
+        selectGenre = "选择类型",
+        initialGenre = "角色扮演类", // Translation for "RPG"
         iOSColumnTitle = 'iOS',
-        androidColumnTItle = 'Android',
-        totalColumnTitle = 'Total'
+        androidColumnTItle = '安卓',
+        totalColumnTitle = '全渠道'
     );
 } else if (urlPath2.includes('/ko/')) {
     drawViz2(
