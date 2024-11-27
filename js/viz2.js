@@ -268,7 +268,7 @@ if (urlPath2.includes('/ja/')) {
         title = "RPGは東アジアで人気が高く、マッチングとカジノは英語圏地域で勢いがある", 
         subtitle = "2025年の国・ジャンル別ユーザー獲得コスト（推定）の内訳", 
         sources = "データソース：Molocoによる2025年のモバイルゲーム （アプリ内購入）におけるユーザー獲得コストの推定。Molocoは、有料ユーザーの獲得コストを推定するためにさまざまなインプットを使用しています。これには、Sensor Towerの一部であるdata.aiからのインストールデータ、有料対オーガニックの推定比率、特定のアプリ市場の実際または推定のCPIが含まれます。中国本土での支出は除外されていますが、中国を拠点とするモバイルゲームアプリによる国外市場での支出は含まれています。",
-        selectGenre = "Select genre",
+        selectGenre = "ジャンルを選ぶ",
         initialGenre = "RPG", // Translation for "RPG"
         iOSColumnTitle = 'iOS',
         androidColumnTItle = 'Android',
