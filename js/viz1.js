@@ -176,13 +176,13 @@ if (urlPath.includes('/ja/')) {
         xlabels = ['iOS', 'Android'],
         ylabel = 'Market full name',
         colors = ["#040078", "#558FC9"],
-        title = "Almost three-quarters of user acquisition spend for mobile gaming is concentrated in ten countries",
-        subtitle = "2025 estimated user acquisition spend concentration by country",
-        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025). Moloco uses a number of inputs to estimate paid UA spend, including install data sourced from data.ai, a Sensor Tower company, assumptions on paid vs. organic ratios, and actual or estimated CPIs for specific app segments. Spend in mainland China is excluded from this analysis, but spend by mobile gaming apps based in China in non-domestic markets is included.",
-        othersLabel = 'Others',
-        operatingSystem = 'Operating System',
+        title = "近四分之三的移动游戏用户获取支出集中在  10 个国家",
+        subtitle = "2025 年各国预计用户获取支出集中程度",
+        sources = "来源：Moloco 预估的移动游戏应用内购买（IAP）用户获取支出（2025年）。Moloco 结合多项指标预估付费 UA 支出，包括来自 Sensor Tower 旗下 data.ai 的安装数据、付费及自然用户获取比例的预估，以及特定 App 类别的实际或预估的每次安装成本（CPI）。本分析不包含在中国大陆市场的投放，但包括中国本土移动游戏 App 在海外市场的投放。",
+        othersLabel = '其他',
+        operatingSystem = '操作系统',
         iOS = 'iOS',
-        android = 'Android'
+        android = '安卓'
     );
 } else if (urlPath.includes('/ko/')) {
     drawViz1(
