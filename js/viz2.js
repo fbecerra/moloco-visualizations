@@ -248,7 +248,7 @@ function drawViz2(dataSource, divId, title, subtitle, sources, selectGenre, init
             .on("click", function(d){
                 document.getElementById("select-content-2").classList.toggle("show");
             });
-        d3.select("#select-dropdown-2").select(".dropbtn").html('RPG');
+        d3.select("#select-dropdown-2").select(".dropbtn").html(initialGenre);
         genreOpts.selectAll("a").on("click", function(event, d){
             if (d !== selectedGenre) {
                 selectedGenre = d;
