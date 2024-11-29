@@ -226,13 +226,13 @@ if (urlPath5.includes('/ja/')) {
     drawViz5(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz5-ko.csv',
         divId = "#geo-viz5",
-        title = "East Asia Pacific leads when it comes to average revenue per paying user, although this picture changes by OS and genre",
-        subtitle = "D7 ARPPU ($USD) for top 15 countries and regions",
+        title = "동아시아 태평양 시장이 ARPPU에서는 앞서지만, 이러한 양상은 OS 및 장르에 따라 크게 변동",
+        subtitle = "D7 ARPPU($USD) 상위 15개국",
         selectLabels = {
             'genre': '장르 선택',
             'OS': '운영체제(OS) 선택'
         },
-        sources = "Source: Moloco advertiser median D7 ARPPU across all organic and paid channels (August 2023 to August 2024). Only apps with more than $1000 (USD) D7 IAP revenue are included. Excluding Mainland China.",
+        sources = "출처: 몰로코 광고주의 오가닉 및 페이드 채널에 걸친 D7 ARPPU 중앙값 (2023년 8월~2024년 8월 기준). D7 IAP 매출이 1,000 달러를 넘는 앱만 포함하며 중국 본토는 제외합니다.",
         selectedGenre = "모든 장르",
         selectedOS = '전체',
         allSystems = '전체',
