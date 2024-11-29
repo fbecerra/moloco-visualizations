@@ -446,11 +446,11 @@ function drawViz6(dataSource, divId, title, subtitle, selectCountry, countriesAn
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="padding-right: ${paddingRows}px">paid UA budget
+                                            <td style="padding-right: ${paddingRows}px">${uaText}
                                             </td>
-                                            <td style="padding-right: ${paddingRows}px">gaming IAP revenue
+                                            <td style="padding-right: ${paddingRows}px">${revenueText}
                                             </td>
-                                            <td>D7 ARPPU
+                                            <td>${arppuText}
                                             </td>   
                                         </tr>
                                     </table>`);
