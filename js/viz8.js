@@ -498,9 +498,9 @@ if (urlPath8.includes('/ja/')) {
         columnLabels = [
             '', 
             '地区', 
-            `每付费用户成本（CPP） <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">每付费用户成本中位数</span></div>`,
-            `每付费用户平均收益（ARPPU） <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">游戏 App 第七天每付费用户平均收益中位数</span></div>`, 
-            `应用内购买（IAP）收益 <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`
+            `每付费用户成本 (CPP) <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">每付费用户成本中位数</span></div>`,
+            `每付费用户平均收益 (ARPPU) <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">游戏 App 第七天每付费用户平均收益中位数</span></div>`, 
+            `应用内购买 (IAP) 收益 <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`
         ],
         groups = [
             '美国及英语国家',
@@ -576,7 +576,7 @@ if (urlPath8.includes('/ja/')) {
             'Geography', 
             `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Cost Per Payer</span></div>`,
             `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Median Gaming App D7 Average Revenue Per Paying User</span></div>`, 
-            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">市场带来的总收益贡献（包括付费流量和自然流量）</span></div>`
+            `IAP revenue <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">Total (Organic and Paid) Revenue Contribution of Market</span></div>`
         ],
         groups = [
             'US and English Language',
