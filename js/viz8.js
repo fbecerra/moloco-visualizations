@@ -24,6 +24,11 @@ function drawViz8(dataSource, divId, title, subtitle, howToRead, explainHowToRea
     addTitle(divId, title);
     addSubtitle(divId, subtitle);
 
+    if (alignLeft === true) {
+        d3.select(divId + ' .title').style("display", "block");
+        d3.select(divId + ' .subtitle').style("display", "block");
+    }
+
     d3.select(`${divId} .title`)
         .style("max-width", "700px")
         .style("margin", "auto");
@@ -469,7 +474,8 @@ if (urlPath8.includes('/ja/')) {
         ],
         low = '低',
         medium = '中',
-        high = '高'
+        high = '高',
+        alignLeft = true
     );
 } else if (urlPath8.includes('/zh/')) {
     drawViz8(
@@ -506,7 +512,8 @@ if (urlPath8.includes('/ja/')) {
         ],
         low = '低',
         medium = '中',
-        high = '高'
+        high = '高',
+        alignLeft = true
     );
 } else if (urlPath8.includes('/ko/')) {
     drawViz8(
@@ -543,7 +550,8 @@ if (urlPath8.includes('/ja/')) {
         ],
         low = 'low',
         medium = 'medium',
-        high = 'high'
+        high = 'high',
+        alignLeft = false
     );
 } else {
     drawViz8(
@@ -580,7 +588,8 @@ if (urlPath8.includes('/ja/')) {
         ],
         low = 'low',
         medium = 'medium',
-        high = 'high'
+        high = 'high',
+        alignLeft = false
     );
 }
 
