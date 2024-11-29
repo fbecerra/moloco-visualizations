@@ -1,4 +1,4 @@
-function drawViz7(dataSource, divId, title, subtitle, sources, paragraphs, arppuLabel, countryLabels) {
+function drawViz7(dataSource, divId, title, subtitle, sources, paragraphs, arppuLabel, countryLabels, longTooltip) {
 
     const windowWidth = Math.min(window.innerWidth, screen.width);
     const smallScreen = windowWidth < 700;
@@ -155,19 +155,21 @@ function drawViz7(dataSource, divId, title, subtitle, sources, paragraphs, arppu
 
         const tooltip = svg.append("g");
 
+        const tooltipWidth = longTooltip === false ? 120 : 220;
+
         const rect = tooltip.append("rect")
             .attr("height", '32px')
-            .attr("width", '120px')
+            .attr("width", `${tooltipWidth}px`)
             .attr("fill", "#0280FB");
 
         const triangle = tooltip.append("path")
-            .attr("d", "M50 30 L70 30 L60 40 z")
+            .attr("d", `M${tooltipWidth/2 - 10} 30 L${tooltipWidth/2 + 10} 30 L${tooltipWidth/2} 40 z`)
             .attr("fill", "#0280FB")
 
         const text = tooltip.append('text')
             .attr("fill", "#FFF")
             .attr("y", 22)
-            .attr("x", 60)
+            .attr("x", tooltipWidth/2)
             .attr("text-anchor", "middle")
             .style("font-family", 'Spacegrotesk')
             .style("font-size", "16px")
@@ -286,7 +288,8 @@ if (urlPath7.includes('/ja/')) {
             'Italy': 'イタリア',
             'Indonesia': 'インドネシア',
             'Germany': 'ドイツ'
-        }
+        },
+        longTooltip = false
     );
 } else if (urlPath7.includes('/zh/')) {
     drawViz7(
@@ -308,7 +311,8 @@ if (urlPath7.includes('/ja/')) {
             'Italy': '意大利',
             'Indonesia': '印度尼西亚',
             'Germany': '德国'
-        }
+        },
+        longTooltip = true
     );
 } else if (urlPath7.includes('/ko/')) {
     drawViz7(
@@ -330,7 +334,8 @@ if (urlPath7.includes('/ja/')) {
             'Italy': '이탈리아',
             'Indonesia': '인도네시아',
             'Germany': '독일'
-        }
+        },
+        longTooltip = false
     );
 } else {
     drawViz7(
@@ -352,7 +357,8 @@ if (urlPath7.includes('/ja/')) {
             'Italy': 'Italy',
             'Indonesia': 'Indonesia',
             'Germany': 'Germany'
-        }
+        },
+        longTooltip = false
     );
 }
 
