@@ -551,7 +551,7 @@ if (urlPath8.includes('/ja/')) {
         low = 'low',
         medium = 'medium',
         high = 'high',
-        alignLeft = false
+        alignLeft = true
     );
 } else {
     drawViz8(
