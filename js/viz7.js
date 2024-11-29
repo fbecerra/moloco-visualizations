@@ -318,13 +318,13 @@ if (urlPath7.includes('/ja/')) {
     drawViz7(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz7-ko.csv',
         divId = "#geo-viz7",
-        title = "Top payers drive the majority of total IAP revenue",
-        subtitle = "High-value users aren’t confined to well-known markets — they can be found in every corner of the globe. In most markets, the top-paying users account for a disproportionate share of total IAP revenue. To illustrate this, let’s take a closer look at D7 IAP revenue for the RPG genre across a selection of global markets.<br><br>Hover over market to see D7 ARPPU.",
-        sources = "Source: RPG total gaming IAP revenue by user (organic and paid, 7-day sample period in July 2024).",
+        title = "상위 구매 유저, IAP 매출의 대부분을 차지",
+        subtitle = "고가치 유저는 잘 알려진 시장에만 있는 것은 아닙니다. 전 세계 어디에서나 찾을 수 있죠. 대부분 시장에서 상위 구매 유저가 전체 IAP 수익에서 불균형적일 정도로 많은 비율을 차지합니다. 이는 다양한 글로벌 시장에서 RPG 장르의 D7 IAP 매출 트렌드를 통해 확인할 수 있습니다.<br><br>마우스를 올려 시장별 D7 ARPPU를 확인해 보세요.",
+        sources = "출처: RPG 장르의 유저별 총 게임 IAP 매출 (2024년 7월, 7일간의 샘플 기간, 오가닉 및 페이드 유입 유저 기준)",
         paragraphs = [
             '', 
-            '<p>The top 2% of paying users generate roughly 35% to 45% of total IAP revenue, a trend that broadly holds across different market sizes and genres.</p>',
-            '<p>The top 10% of paying users account for 70% to 85% of total IAP revenue.</p>'
+            '<p>상위 2%의 구매 유저가 전체 IAP 매출의 약 35%~45%를 창출하며, 이러한 트렌드는 다양한 시장 규모와 장르에 걸쳐 확인됩니다.</p>',
+            '<p>상위 10%의 구매 유저가 전체 IAP 매출의 70%~85%를 차지합니다.</p>'
         ],
         arppuLabel = 'ARPPU',
         countryLabels = { // No need to change country names in the data
