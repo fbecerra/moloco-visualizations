@@ -519,11 +519,11 @@ if (urlPath8.includes('/ja/')) {
     drawViz8(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz8-ko.csv',
         divId = "#geo-viz8",
-        title = "Paid user acquisition campaign outcomes showcase markets of opportunity",
-        subtitle = "Benchmarked performance for each market by payer acquisition, value, and overall revenue potential, August 2023-2024",
+        title = "페이드 유저 확보 캠페인 결과로 보는 기회의 시장",
+        subtitle = "각 시장별 구매 유저 확보, 유저 가치, 전반적인 매출 잠재력에 따른 벤치마크 성과 (8월 2023-2024 기준)",
         howToRead = "자료 해석 방법",
         explainHowToRead = "높은 값과 낮은 값은 지표에 따라 다른 의미를 가질 수 있습니다.</br>아이콘을 참고하여 해석해 보세요.",
-        sources = "Source: Moloco campaign outcomes from August 2023 to August 2024. Opportunity markets flagged where there is a marked positive difference between acquisition cost (CPP) and value (ARPPU). Countries and regions that do not meet minimum thresholds are not shown.",
+        sources = "출처: 2023년 8월부터 2024년 8월까지의 몰로코 캠페인 결과로, 구매 유저 확보 비용(CPP) 및 가치(ARPPU) 간 뚜렷하고 긍정적 차이가 있는 기회 시장이 표시되었습니다.",
         legendLabels = {
             'Good': '우수',
             'Moderate': '보통',
@@ -532,7 +532,7 @@ if (urlPath8.includes('/ja/')) {
         },
         selectGenre = '장르 선택',
         initialGenre = '모든 장르',
-        genres = ['All genres', 'Casino', 'Match', 'RPG', 'Simulation', 'Strategy'],
+        genres = ['모든 장르', '카지노', '매치', 'RPG', '시뮬레이션', '전략'],
         columnLabels = [
             '', 
             '지리', 
