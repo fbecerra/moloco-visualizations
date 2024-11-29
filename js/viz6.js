@@ -564,8 +564,8 @@ if (urlPath6.includes('/ja/')) {
     drawViz6(
         dataSource = 'https://raw.githubusercontent.com/fbecerra/moloco-visualizations/refs/heads/master/data/data-viz6-ko.csv',
         divId = "#geo-viz6",
-        title = "Mapping global opportunities",
-        subtitle = "Interact with this visualization to learn more about user value, user acquisition, and revenue dynamics by region. Hover over individual countries or regions for a market-level overview.",
+        title = "글로벌 확장 기회 탐색",
+        subtitle = "해당 자료를 통해 지역별 유저 가치, UA, 매출 특징에 대해 자세히 알아보세요. 각 국가 위에 마우스를 올려 해당 시장에 대한 개요를 확인해보세요.",
         selectCountry = "국가 그룹 선택",
         countriesAndRegions = "국가",
         uaText = "UA 지출",
@@ -589,7 +589,7 @@ if (urlPath6.includes('/ja/')) {
         },
         selectGenre = "장르 선택",
         selectedGenre ='모든 장르',
-        sources = "Source: Moloco estimates of mobile gaming (IAP) user acquisition spend (2025) & Moloco advertiser total gaming IAP revenue (organic and paid) by market (Aug 2023 to Aug 2024). Spend in Mainland China is excluded from this analysis, but spend by Chinese marketers in non-domestic markets is included.",
+        sources = "출처: 몰로코의 모바일 게임(IAP) 유저 확보 지출 추정치(2025년) 및 몰로코 광고주 시장별 총 게임 IAP 매출 (오가닉 및 페이드, 2023년 9월~2024년 9월 기준). 중국 본토 내 광고 비용은 제외되었으나 중국 기반 모바일 게임 앱의 해외 시장 광고 비용은 포함합니다.",
         comma = ', ',
     );
 } else {
