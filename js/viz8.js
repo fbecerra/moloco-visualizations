@@ -548,9 +548,9 @@ if (urlPath8.includes('/ja/')) {
             '라틴아메리카 스페인어 사용 국가', 
             '글로벌 개발도상국 시장'
         ],
-        low = 'low',
-        medium = 'medium',
-        high = 'high',
+        low = '낮은',
+        medium = '중간',
+        high = '높음',
         alignLeft = true
     );
 } else {
