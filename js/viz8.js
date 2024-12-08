@@ -535,7 +535,7 @@ if (urlPath8.includes('/ja/')) {
         genres = ['모든 장르', '카지노', '매치', 'RPG', '시뮬레이션', '전략'],
         columnLabels = [
             '', 
-            '지리', 
+            '지역', 
             `CPP <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">구매 유저당 비용의 중앙값</span></div>`,
             `ARPPU <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">게임 앱 구매 유저당 D7 평균 매출의 중앙값</span></div>`, 
             `IAP 매출 <div id="cpp-tooltip" class="column-tooltip" style="vertical-align: text-top;">${moreInfoIcon}<span class="column-tooltip-text">시장 기여 총 매출 (오가닉 및 페이드)</span></div>`
