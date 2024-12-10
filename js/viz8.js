@@ -484,7 +484,7 @@ if (urlPath8.includes('/ja/')) {
         title = "付费用户获取 campaign 的结果揭示了潜在的市场机会",
         subtitle = "按付费用户获取、用户价值及总体收益潜力评估各个市场的基准表现（2023 年 8 月至 2024 年 8 月）。",
         howToRead = "如何阅读本图表",
-        explainHowToRead = "不同指标的高低含义各不相同，请根据旁边的图标解读</br>良好 中等 受限 机会",
+        explainHowToRead = "不同指标的高低含义各不相同，请根据旁边的图标解读",
         sources = "来源：Moloco 从 2023 年 8 月至 2024 年 8 月的 campaign 结果。获取成本（每付费用户成本，CPP）小于用户价值（每付费用户平均收益，ARPPU）的市场被标记为有机会的市场。未达到最低标准的国家和地区将不予显示。",
         legendLabels = {
             'Good': '良好',
